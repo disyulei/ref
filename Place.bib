@@ -16,37 +16,17 @@
   year={2013},
   abstract={global re-placement + local detailed placement further minimizes the local congestion and wirelength},
 }
-
-% ==========================================
-%            Ancient Placement
-% ==========================================
-@article{PLACE_TCAS81_Goto,
-  title={An efficient algorithm for the two-dimensional placement problem in electrical circuit layout},
-  author={Satoshi Goto},
-  journal=tcas,
-  volume={28},
-  number={1},
-  pages={12--18},
-  year={1981},
+@inproceedings{PLACE_ICCAD2010_Taghavi,
+  title={New placement prediction and mitigation techniques for local routing congestion},
+  author={Taghavi, Taraneh and Alpert, Charles and Huber, Andrew and Li, Zhuo and Nam, Gi-Joon and Ramji, Shyam},
+  booktitle=iccad,
+  pages={621--624},
+  year={2010},
 }
 
 
 % ==========================================
-%       Clustering Based Placement
-% ==========================================
-@ARTICLE{PLACE_TCAD04_Hu, 
-  author={Bo Hu and Marek-Sadowska, M.}, 
-  title={Fine granularity clustering-based placement}, 
-  journal = tcad,
-  year={2004}, 
-  month={april}, 
-  volume={23}, 
-  number={4}, 
-  pages={ 527 - 536}, 
-}
-
-% ==========================================
-%           Analytical Placement
+%       Global Placement -- Quadratic
 % ==========================================
 @inproceedings{PLACE_ASPDAC07_Luo,
   author = {Luo, Tao and Pan, David Z.},
@@ -63,9 +43,40 @@
   year={2005}
 }
 
+
+% ==========================================
+%     Global Placement -- Non-Linear
+% ==========================================
+
+
+% ==========================================
+%       Global Placement -- Others
+% ==========================================
+@article{PLACE_TCAS81_Goto,
+  title={An efficient algorithm for the two-dimensional placement problem in electrical circuit layout},
+  author={Satoshi Goto},
+  journal=tcas,
+  volume={28},
+  number={1},
+  pages={12--18},
+  year={1981},
+}
+@ARTICLE{PLACE_TCAD04_Hu, 
+  author={Bo Hu and Marek-Sadowska, M.}, 
+  title={Fine granularity clustering-based placement}, 
+  journal = tcad,
+  year={2004}, 
+  month={april}, 
+  volume={23}, 
+  number={4}, 
+  pages={ 527 - 536}, 
+}
+
+
 % ==========================================
 %           Linear Placement
 % ==========================================
+%{{{
 @inproceedings{PLACE_DATE98_Vygen,
   title={Algorithms for detailed placement of standard cells},
   author={Vygen, Jens},
@@ -108,10 +119,13 @@
   pages={48--55},
   year={2005},
 }
+%}}}
+
 
 % ==========================================
 %         Incremental Placement
 % ==========================================
+%{{{
 @inproceedings{PLACE_DAC06_Luo,
   author = {Luo, Tao and Newmark, David and Pan, David Z.},
   title = {A new LP based incremental timing driven placement for high performance designs},
@@ -120,7 +134,6 @@
   pages = {1115--1120},
   numpages = {6}
 }
-
 @inproceedings{PLACE_ISPD07_Hu,
   author = {Hu, Shiyan and Hu, Jiang},
   title = {Pattern sensitive placement for manufacturability},
@@ -128,7 +141,6 @@
   year = {2007},
   pages = {27--34}
 } 
-
 @inproceedings{PLACE_ICCAD08_Luo,
   author = {Luo, Tao and Papa, David A. and Li, Zhuo and Sze, C. N. and Alpert, Charles J. and Pan, David Z.},
   title = {Pyramids: an efficient computational geometry-based approach for timing-driven placement},
@@ -136,7 +148,6 @@
   year = {2008},
   pages = {204--211}
 }
-
 @inproceedings{PLACE_ICCAD05_Luo,
   author = {Luo, T. and Ren, H. and Alpert, C. J. and Pan, D. Z.},
   title = {Computational geometry based placement migration},
@@ -144,7 +155,6 @@
   year = {2005},
   pages = {41--47}
 }
-
 @inproceedings{PLACE_DAC05_Ren,
   author = {Ren, Haoxing and Pan, David Z. and Alpert, Charles J. and Villarrubia, Paul},
   title = {Diffusion-based placement migration},
@@ -152,4 +162,5 @@
   year = {2005},
   pages = {515--520}
 }
+%}}}
 
