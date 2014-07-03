@@ -1,3 +1,0 @@
-# README #
-
-All paper reference.

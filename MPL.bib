@@ -215,32 +215,12 @@ volume = {8}
 %                 DPL Decomposition
 % =======================================================
 %{{{
-@Conference{DPL_SPIE07_Toyama,
- Title="{Pattern decomposition for double patterning from photomask viewpoint}",
- Author="N. Toyama and T. Adachi and Y. Inazuki and T. Sutou and Y. Morikawa and H. Mohri and N. Hayashi",
- Booktitle="Proc. of SPIE",
- volume = "6521",
- Year="2007",
- month = "Feb"
-}
 @INPROCEEDINGS{DPL_SPIE07_Anton,
-  author = {VAN OOSTEN Anton and NIKOLSKY Peter and HUCKABAY Judy and GOOSSENS
-	Ronald and NABER Robert},
+  author = {VAN OOSTEN Anton and NIKOLSKY Peter and HUCKABAY Judy and GOOSSENS Ronald and NABER Robert},
   title = {Pattern Split Rules! A Feasibility Study of Rule Based Pitch Decomposition for Double Patterning},
   booktitle = spie,
   volume = {6730},
   year = {2007}
-}
-@ARTICLE{DPL_TCAD2010_Kahng,
-  author = {Kahng, Andrew B. and Park, Chul-Hong and Xu, Xu and Yao, Hailong},
-  title = {Layout decomposition approaches for double patterning lithography},
-  journal = tcad,
-  year = {2010},
-  volume = {29},
-  pages = {939--952},
-  month = {June},
-  issue = {6},
-  numpages = {14}
 }
 @INPROCEEDINGS{DPL_ICCAD08_Kahng,
   author = {Kahng, Andrew B. and Park, Chul-Hong and Xu, Xu and Yao, Hailong},
@@ -265,6 +245,17 @@ volume = {8}
   volume={29}, 
   number={2}, 
   pages={185-196}
+}
+@ARTICLE{DPL_TCAD2010_Kahng,
+  author = {Kahng, Andrew B. and Park, Chul-Hong and Xu, Xu and Yao, Hailong},
+  title = {Layout decomposition approaches for double patterning lithography},
+  journal = tcad,
+  year = {2010},
+  volume = {29},
+  pages = {939--952},
+  month = {June},
+  issue = {6},
+  numpages = {14},
 }
 @INPROCEEDINGS{DPL_ICCAD09_Xu,
   author = {Xu, Yue and Chu, Chris},
@@ -298,17 +289,9 @@ volume = {8}
 
 
 % =======================================================
-%               Layout Modification
+%               DPL Layout Modification
 % =======================================================
 %{{{
-@INPROCEEDINGS{DPL_ICCAD2010_Yuan,
-  author = {Kun Yuan and Pan, David Z.},
-  title = {{WISDOM}: Wire spreading enhanced decomposition of masks in Double Patterning Lithography},
-  booktitle = iccad,
-  year = {2010},
-  pages = {32--38},
-}
-
 @INPROCEEDINGS{DPL_ICCAD09_Hsu,
   author = {Hsu, Chin-Hsiung and Chang, Yao-Wen and Nassif, Sani Rechard},
   title = {Simultaneous layout migration and decomposition for double patterning technology},
@@ -316,37 +299,20 @@ volume = {8}
   pages = {595--600},
   year = {2009},
 }
-
-@ARTICLE{DPL_TCAD2010_Hsu, 
-author={Chin-Hsiung Hsu and Yao-Wen Chang and Nassif, Sani Rechard}, 
-journal=tcad,
-title={Simultaneous Layout Migration and Decomposition for Double Patterning Technology}, 
-year={2011}, 
-month={feb.}, 
-volume={30}, 
-number={2}, 
-pages={284--294},
-}
-
-@ARTICLE{DPL_TCAD2012_Fang, 
-author={Fang, S.-Y. and Chen, S.-Y. and Chang, Y.-W.}, 
-journal=tcad,
-title={Native-Conflict and Stitch-Aware Wire Perturbation for Double Patterning Technology}, 
-year={2012}, 
-month={may }, 
-volume={31}, 
-number={5}, 
-pages={703--716},
-}
-
 @INPROCEEDINGS{DPL_ICCAD2010_Chen,
   author = {Szu-Yu Chen and Yao-Wen Chang},
   title = {Native-conflict-aware wire perturbation for double patterning technology},
+  booktitle=iccad,
+  pages={556--561},
+  year={2010},
+}
+@INPROCEEDINGS{DPL_ICCAD2010_Yuan,
+  author = {Kun Yuan and Pan, David Z.},
+  title = {{WISDOM}: Wire spreading enhanced decomposition of masks in Double Patterning Lithography},
   booktitle = iccad,
   year = {2010},
-  pages = {556--561},
+  pages = {32--38},
 }
-
 @inproceedings{DPL_ICCAD2011_Ghaida,
  author = {Ghaida, Rani S. and Agarwal, Kanak B. and Nassif, Sani R. and Yuan, Xin and Liebmann, Lars W. and Gupta, Puneet},
   title = {A framework for double patterning-enabled design},
@@ -354,6 +320,42 @@ pages={703--716},
   year = {2011},
   pages = {14--20},
 } 
+@ARTICLE{DPL_TCAD2010_Hsu, 
+  author={Chin-Hsiung Hsu and Yao-Wen Chang and Nassif, Sani Rechard}, 
+  journal=tcad,
+  title={Simultaneous Layout Migration and Decomposition for Double Patterning Technology}, 
+  year={2011}, 
+  month={feb.}, 
+  volume={30}, 
+  number={2}, 
+  pages={284--294},
+}
+@ARTICLE{DPL_TCAD2012_Fang, 
+  author={Fang, S.-Y. and Chen, S.-Y. and Chang, Y.-W.}, 
+  journal=tcad,
+  title={Native-Conflict and Stitch-Aware Wire Perturbation for Double Patterning Technology}, 
+  year={2012}, 
+  month={may }, 
+  volume={31}, 
+  number={5}, 
+  pages={703--716},
+}
+@article{DPL_TCAD2013_Ghaida,
+  title={Layout decomposition and legalization for double-patterning technology},
+  author={Ghaida, Rani S and Agarwal, Kanak B and Nassif, Sani R and Yuan, Xin and Liebmann, Lars W and Gupta, Puneet},
+  journal=tcad,
+  volume={32},
+  number={2},
+  pages={202--215},
+  year={2013},
+}
+@inproceedings{DPL_ASPDAC2014_Bhattacharya,
+  title={Fixing Double Patterning violations with look-ahead.},
+  author={Bhattacharya, Sambuddha and Rajagopalan, Subramanian and Batterywala, Shabbir H},
+  booktitle=aspdac,
+  pages={149--154},
+  year={2014}
+}
 %}}}
 
 
