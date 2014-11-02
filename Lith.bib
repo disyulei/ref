@@ -98,8 +98,9 @@
 % ===================================================
 %                 DFM aware Routing
 % ===================================================
+% ==== for DPL/SADP/TPL
 %{{{
-% === for DPL
+% ==== DPL
 @INPROCEEDINGS{DFM_ICCAD08_Cho,
   author = {Cho, Minsik and Ban, Yongchan and Pan, David Z.},
   title = {Double patterning technology friendly detailed routing},
@@ -113,6 +114,14 @@
  booktitle = dac,
  pages={63--66},
  year = {2009},
+}
+@inproceedings{DFM_SPIE2010_Yang,
+  title={{DRCPlus} in a router: automatic elimination of lithography hotspots using {2D} pattern detection and correction},
+  author={Yang, Jie and Rodriguez, Norma and Omedes, Olivier and Gennari, Frank and Lai, Ya-Chieh and Mankad, Viral},
+  booktitle=spie,
+  volume=7641,
+  pages={76410Q},
+  year={2010},
 }
 @inproceedings{DFM_DAC2010_Lin,
  author = {Yen-Hung Lin and Yih-Lang Li},
@@ -137,7 +146,8 @@
   location = {Yokohama, Japan},
   abstract={Novelty: proof that DPL layout decomposition with stitch and conflict minimization is NP-complete.},
 }
-% === for SADP
+
+% ==== for SADP
 @inproceedings{DFM_SPIE2011_Mirsaeedi,
 	title = {Self-aligned double-patterning {(SADP)} friendly detailed routing},
 	Booktitle=spie,
@@ -159,13 +169,16 @@
   pages={267--272},
   YEAR = {2013},
 }
-@inproceedings{DFM_ISPD2013_Fang,
-  author = {S.-Y. Fang and C.-W. Lin and G.-W. Liao and Y.-W. Chang},
-  title = {Simultaneous {OPC-} and {CMP-}aware routing based on accurate closed-form modeling},
-  booktitle = ispd,
-  year = {2013},
-} 
-% === for TPL
+@inproceedings{DFM_SPIE2013_Gao2,
+  title={Self-aligned double patterning compliant routing with in-design physical verification flow},
+  author={Gao, Jhih-Rong and Jawandha, Harshdeep and Atkar, Prasad and Walimbe, Atul and Baidya, Bikram and Rizzo, Olivier and Pan, David Z},
+  booktitle=spie,
+  volume=8684,
+  pages={868408},
+  year={2013},
+}
+
+% ==== for TPL
 @inproceedings{DFM_DAC2012_Ma,
  author = {Ma, Qiang and Zhang, Hongbo and Wong, Martin D. F.},
  title = {Triple patterning aware routing and its comparison with double patterning aware routing in 14nm technology},
@@ -175,26 +188,30 @@
   location = {San Francisco, California},
 }
 @inproceedings{DFM_ICCAD2012_Lin,
- author = {Yen-Hung Lin and Bei Yu and David Z. Pan and Yih-Lang Li},
- title = {{TRIAD}: A Triple Patterning Lithography Aware Detailed Router},
+  author = {Yen-Hung Lin and Bei Yu and David Z. Pan and Yih-Lang Li},
+  title = {{TRIAD}: A Triple Patterning Lithography Aware Detailed Router},
   booktitle = iccad,
   pages={123--129},
   year = {2012},
   location = {San Jose, California},
 }
+%}}}
 
+% ==== lithography friendly
+%{{{
 @Conference{DFM_DAC04_Huang,
   author = {L.-D. Huang and M. D. F. Wong},
   title = "{Optical Proximity Correction (OPC): Friendly Maze Routing}",
   booktitle=dac,
-  year="2004"
+  pages={186--191},
+  year={2004},
 }
 @Conference{DFM_DAC05_Wu,
   author = {Y.-R. Wu and M.-C. Tsai and T.-C. Wang},
   title = "{Maze Routing with OPC Consideration}",
   booktitle=dac,
   pages={186--191},
-  year="2005"
+  year={2005},
 }
 @Conference{DFM_DAC05_Mitra,
   author = {Joydeep Mitra and Peng Yu and David Z. Pan},
@@ -219,12 +236,6 @@
   pages={1625--1636},
   year={2007},
 }
-@article{DFM_TVLSI2010_Shen,
-  author = {Y. Shen and Q. Zhou and Y. Cai and X. Hong},
-  title = "{Ecp- and cmp-aware detailed routing algorithm for dfm}",
-  booktitle=tvlsi,
-  year={2010}
-}
 @article{DFM_TCAD09_Cho,
   author = {M. Cho and K. Yuan and Y. Ban and D. Z. Pan},
   title = "{{ELIAD}: Efficient Lithography Aware Detailed Routing Algorithm with Compact and Macro Post-{OPC} Printability Prediction}",
@@ -235,14 +246,7 @@
   author = {Huang-Yu Chen and Szu-Jui Chou and Sheng-Lung Wang and Y.-W. Chang},
   title = "{A Novel Wire-Density-Driven Full-Chip Routing System for {CMP} Variation Control}",
   journal=tcad,
-  Year="2009"
-}
-@INPROCEEDINGS{DFM_DAC2011_Ding,
-  TITLE = "{AENEID}: a generic lithography-friendly detailed router based on post-{RET} data learning and hotspot detection.",
-  author= "Duo Ding and Jhih-Rong Gao and Kun Yuan and David Z. Pan",
-  booktitle = dac,
-  PAGES = {795-800},
-  YEAR = {2011} 
+  Year={2009},
 }
 @article{DFM_TCAD2010_Chen,
   author = {T.-C. Chen and G.-W. Liao and Y.-W. Chang},
@@ -250,6 +254,25 @@
   journal=tcad,
   year={2010}
 }
+@article{DFM_TVLSI2010_Shen,
+  author = {Y. Shen and Q. Zhou and Y. Cai and X. Hong},
+  title = "{Ecp- and cmp-aware detailed routing algorithm for dfm}",
+  booktitle=tvlsi,
+  year={2010}
+}
+@INPROCEEDINGS{DFM_DAC2011_Ding,
+  TITLE = "{AENEID}: a generic lithography-friendly detailed router based on post-{RET} data learning and hotspot detection.",
+  author= "Duo Ding and Jhih-Rong Gao and Kun Yuan and David Z. Pan",
+  booktitle = dac,
+  PAGES = {795-800},
+  YEAR = {2011},
+}
+@inproceedings{DFM_ISPD2013_Fang,
+  author = {S.-Y. Fang and C.-W. Lin and G.-W. Liao and Y.-W. Chang},
+  title = {Simultaneous {OPC-} and {CMP-}aware routing based on accurate closed-form modeling},
+  booktitle = ispd,
+  year = {2013},
+} 
 %}}}
 
 
@@ -301,6 +324,14 @@
   pages = {1229--1242},
   numpages = {14},
 } 
+@inproceedings{DFM_SPIE2011_Liebmann,
+  title={Decomposition-aware standard cell design flows to enable double-patterning technology},
+  author={Liebmann, Lars and Pietromonaco, David and Graf, Matthew},
+  booktitle=spie,
+  volume=7974,
+  pages={79740K},
+  year={2011},
+}
 @inproceedings{DFM_ICCAD2013_Yu,
   author={Bei Yu and Xiaoqing Xu and Gao, Jhih-Rong and Pan, David Z},
   title={Methodology for Standard Cell Compliance and Detailed Placement for Triple Patterning Lithography},
