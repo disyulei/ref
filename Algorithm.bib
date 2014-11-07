@@ -2,39 +2,33 @@
 % ====================================================
 %           General Algorithm Books
 % ====================================================
-@BOOK{book90Algorithm,
+@book{ALG_b90_Cormen,
   title = {Introduction to algorithms},
-  publisher = {MIT Press},
-  year = {1990},
   author = {Cormen, Thomas T. and Leiserson, Charles E. and Rivest, Ronald L.},
+  year = {1990},
   address = {Cambridge, MA, USA},
   isbn = {0-262-03141-8},
+  publisher = {MIT Press},
 }
-@book{book2002combinatorial,
+@book{ALG_b02_Hu,
   title={Combinatorial Algorithms: Enlarged Second Edition},
   author={Hu, Te Chiang and Shing, Man-Tak},
   year={2002},
-  publisher={Courier Dover Publications}
+  publisher={Courier Dover Publications},
 }
-@book{book_2005_flow,
-  author = {R.K.Ahuja and T.L.Magnanti and J.B.Orlin},
-  title = {Network Flows: Theory, Algorithms, and Applications},
-  publisher = {Prentice Hall/Pearson},
-  year = {2005},
-}
-@book{book2010Neapolitan,
+@book{ALG_b2010_Neapolitan,
   title={Foundations of algorithms},
   author={Neapolitan, Richard and Naimipour, Kumarss},
   year={2010},
   publisher={Jones \& Bartlett Publishers},
 }
-@book{book2011approx,
+@book{ALG_b2011_Williamson,
   title={The design of approximation algorithms},
   author={Williamson, David P and Shmoys, David B},
   year={2011},
   publisher={Cambridge University Press}
 }
-@BOOK{book01:Approximation,
+@BOOK{ALG_b01_Vijay,
   title = {Approximation Algorithms},
   publisher = {Springer},
   year = {2001},
@@ -42,45 +36,59 @@
 }
 
 
-@ARTICLE{JACM01Jain,
-  author = {Jain, Kamal and Vazirani, Vijay V.},
-  title = {Approximation algorithms for metric facility location and k-Median
-	problems using the primal-dual schema and Lagrangian relaxation},
-  journal = {J. ACM},
-  year = {2001},
-  volume = {48},
-  pages = {274--296},
-  number = {2},
-  issn = {0004-5411},
-  publisher = {ACM}
-}
-@INBOOK{graph_2001Ravi,
-  pages = {241-+},
-  title = {{Approximation Algorithms for Degree-Constrained Minimum-Cost Network-Design Problems}},
-  year = {2009},
-  editor = {{Ravi, S.~S.~\& Shukla, S.~K.}},
-  author = {{Ravi}, R. and {Marathe}, M.~V. and {Ravi}, S.~S. and {Rosenkrantz},
-	D.~J. and {Hunt}, H.~B.},
-  booktitle = {Fundamental Problems in Computing}
-}
-
-
 
 % ======================================================
-% ===     NP-Completeness
+%                NP-Completeness
 % ======================================================
-@book{book90Garey,
+@book{NPC_b90_Garey,
  author = {Garey, Michael R. and Johnson, David S.},
  title = {Computers and Intractability; A Guide to the Theory of NP-Completeness},
  year = {1990},
  publisher = {W. H. Freeman \& Co.}
 } 
+@ARTICLE{NPC_TCS76_Garey,
+  title={Some simplified {NP}-complete graph problems},
+  author={Garey, Michael R and Johnson, David S. and Stockmeyer, Larry},
+  journal =tcs,
+  volume={1},
+  number={3},
+  pages={237--267},
+  year={1976},
+  publisher={Elsevier},
+  abstract={},
+}
 
 
 % ======================================================
-% ===         Shortest Path
+% ===     ILP and LP
 % ======================================================
-@article{1959_Dijkstra,
+@article{ILP_1987_Raghavan,
+  title = {Randomized rounding: a technique for provably good algorithms and algorithmic proofs},
+  author = {Raghavan, Prabhakar and Tompson, Clark D.},
+  journal = {Combinatorica},
+  volume = {7},
+  issue = {4},
+  month = {December},
+  year = {1987},
+  pages = {365--374},
+  numpages = {10},
+}
+@article{ILP_IJOC00_Johnson,
+  title={Progress in linear programming-based algorithms for integer programming: An exposition},
+  author={Johnson, Ellis L and Nemhauser, George L and Savelsbergh, Martin WP},
+  journal=ijoc,
+  volume={12},
+  number={1},
+  pages={2--23},
+  year={2000},
+  publisher={INFORMS},
+}
+
+% ======================================================
+%             Classical Problems
+% ======================================================
+% ==== Shortest Path
+@article{ALG_1959_Dijkstra,
   title={A note on two problems in connexion with graphs},
   author={Dijkstra, Edsger W},
   journal={Numerische mathematik},
@@ -90,30 +98,23 @@
   year={1959},
 }
 
-
-% ======================================================
-% ===         Steiner Tree
-% ======================================================
-@article{ALG_SIAMJ66_Hanan,
-  title={On Steiner's problem with rectilinear distance},
-  author={Hanan, Maurice},
-  journal={SIAM Journal on Applied Mathematics},
-  volume={14},
+% ==== Facility Problem
+@article{ALG_JACM01_Jain,
+  title={Approximation algorithms for metric facility location and k-median problems using the primal-dual schema and Lagrangian relaxation},
+  author={Jain, Kamal and Vazirani, Vijay V},
+  journal=jacm,
+  volume={48},
   number={2},
-  pages={255--265},
-  year={1966},
-  publisher={SIAM},
-  abstract={introduce Hanan grid},
+  pages={274--296},
+  year={2001},
+  publisher={ACM},
 }
 
-
-% ======================================================
-%               Assignment Problem 
-% ======================================================
-@article{Assignment_1986_Queyranne,
+% ==== Quadratic Assignment 
+@article{ALG_ORL86_Queyranne,
   title={Performance ratio of polynomial heuristics for triangle inequality quadratic assignment problems},
   author={Queyranne, Maurice},
-  journal={Operations Research Letters},
+  journal=orl,
   volume={4},
   number={5},
   pages={231--234},
@@ -122,14 +123,11 @@
   abstract={hardness of quadratic assignment problem, unless P=NP, no approximable in polynomial time within some finite approximation ratio.}
 }
 
-
-% ======================================================
-% ===         Polygon Decomposition
-% ======================================================
+% === Polygon Decomposition
 @article{ALG_1984_Edelsbrunner,
   author = {H. Edelsbrunner and J. O'Rourke and E. Welzl},
   title = {Stationing guards in rectilinear art galleries},
-  journal = {Comput. Vision, Graphics, Image Process},
+  journal = {Computer Vision, Graphics, and Image Processing},
   volume = {28},
   year = {1984},
   pages = {167--176}
@@ -145,62 +143,29 @@
   pages = {371--395}
 }
 
-
-% ======================================================
-% ===     ILP and LP
-% ======================================================
-@article{Raghavan1987,
- author = {Raghavan, Prabhakar and Tompson, Clark D.},
-  title = {Randomized rounding: a technique for provably good algorithms and algorithmic proofs},
-  journal = {Combinatorica},
-  volume = {7},
-  issue = {4},
-  month = {December},
-  year = {1987},
-  pages = {365--374},
-  numpages = {10}
+% === Knapsack
+@book{Knapsack_b90_Martello,
+  author={Martello, Silvano and Toth, Paolo},
+  title={Knapsack problems: algorithms and computer implementations},
+  year={1990},
+  isbn={0-471-92420-2},
+  publisher={John Wiley \& Sons, Inc.},
+  address={New York, NY, USA},
 }
-@article{Johnson2000,
-  title={Progress in linear programming-based algorithms for integer programming: An exposition},
-  author={Johnson, Ellis L and Nemhauser, George L and Savelsbergh, Martin WP},
-  journal={INFORMS Journal on Computing},
-  volume={12},
-  number={1},
-  pages={2--23},
+@article{Knapsack_JCO00_Dawande,
+  title={Approximation Algorithms for the Multiple Knapsack Problem with Assignment Restrictions},
+  author={Dawande, M. and Kalagnanam, J. and Keskinocak, P. and Salman, F.S. and Ravi, R.},
+  journal=jco,
+  publisher={Springer Netherlands},
+  issn={1382-6905},
+  pages={171--186},
+  volume={4},
+  issue={2},
   year={2000},
-  publisher={INFORMS}
 }
 
-
-% ======================================================
-% ===     Knapsack
-% ======================================================
-@book{book90Knapsack,
-  author = {Martello, Silvano and Toth, Paolo},
-  title = {Knapsack problems: algorithms and computer implementations},
-  year = {1990},
-  isbn = {0-471-92420-2},
-  publisher = {John Wiley \& Sons, Inc.},
-  address = {New York, NY, USA},
-}
-
-@article{Knapsack_JCO00Dawande,
-  author = {Dawande, M. and Kalagnanam, J. and Keskinocak, P. and Salman, F.S. and Ravi, R.},
-  title = {Approximation Algorithms for the Multiple Knapsack Problem with Assignment Restrictions},
-  journal = {Journal of Combinatorial Optimization},
-  publisher = {Springer Netherlands},
-  issn = {1382-6905},
-  pages = {171--186},
-  volume = {4},
-  issue = {2},
-  year = {2000}
-}
-
-
-% ======================================================
-% ===     Strip Packing / Bin Packing
-% ======================================================
-@INPROCEEDINGS{Packing_FOCS96, 
+% === Strip Packing / Bin Packing
+@INPROCEEDINGS{ALG_FOCS96_Kenyon, 
   author={Kenyon, C. and Remila, E.}, 
   title={Approximate strip packing}, 
   booktitle=focs,
@@ -211,26 +176,9 @@
   pages={31--36}
 }
 
-
-% ======================================================
-% ====     Data Structure
-% ======================================================
-@article{KDTree,
-  author = {Bentley, Jon Louis},
-  title = {Multidimensional binary search trees used for associative searching},
-  journal = {Commun. ACM},
-  volume = {18},
-  issue = {9},
-  month = {September},
-  year = {1975},
-  pages = {509--517},
-  numpages = {9},
-} 
-
-
-% === Coloring Techniques
+% === Coloring
 %{{{
-@article{1977Appel,
+@article{COLOR_1977_Appel,
   title={Every planar map is four colorable. Part I: Discharging},
   author={Appel, Kenneth and Haken, Wolfgang},
   journal={Illinois Journal of Mathematics},
@@ -240,93 +188,109 @@
   year={1977},
   abstract={planar graph is 4-colorable}
 }
-@article{1930Kuratowski,
+@article{COLOR_FM30_Kuratowski,
   title={Sur le probleme des courbes gauches en topologie},
   author={Kuratowski, Casimir},
-  journal={Fundamenta mathematicae},
+  journal=fm,
   volume={15},
   number={1},
   pages={271--283},
   year={1930},
-  publisher={Institute of Mathematics Polish Academy of Sciences}
+  publisher={Institute of Mathematics Polish Academy of Sciences},
+  abstract={},
 }
-@inproceedings{1996Robertson,
+@inproceedings{COLOR_STOC96_Robertson,
   title={Efficiently four-coloring planar graphs},
   author={Robertson, Neil and Sanders, Daniel P and Seymour, Paul and Thomas, Robin},
-  booktitle={ACM Symposium on Theory of computing},
+  booktitle=stoc,
   pages={571--575},
   year={1996},
   organization={ACM},
   abstract={Quadratic algorithm for planar graph 4-coloring}
 }
-@ARTICLE{2003Borodin,
+@article{COLOR_JCTB03_Borodin,
   author = {Borodin, O. V. and Raspaud, A.},
   title = {A sufficient condition for planar graphs to be 3-colorable},
-  journal = {J. Comb. Theory Ser. B},
+  journal =jctb,
   year = {2003},
   volume = {88},
   pages = {17--27},
   month = {May},
   issue = {1}
 }
-@ARTICLE{1976Garey,
-  author = {M. R. Garey and D. S. Johnson and L. Stockmeye},
-  title = {Some simplified {NP}-complete graph problems},
-  journal = {Theoretical Computer Science},
-  year = {1976},
-  volume = {1},
-  pages = {237--267},
-  issue = {1}
-}
-@ARTICLE{1998Karger,
-  author = {Karger, David and Motwani, Rajeev and Sudan, Madhu},
-  title = {Approximate graph coloring by semidefinite programming},
-  journal = {J. ACM},
-  year = {1998},
-  volume = {45},
-  pages = {246--265},
-  month = {March},
-  issue = {2},
-  numpages = {20},
+@article{COLOR_JACM98_Karger,
+  author={Karger, David and Motwani, Rajeev and Sudan, Madhu},
+  title={Approximate graph coloring by semidefinite programming},
+  journal=jacm,
+  year={1998},
+  volume={45},
+  pages={246--265},
+  month={March},
+  issue={2},
+  numpages={20},
   abstract={Best paper for graph coloring using SDP},
 }
-@INPROCEEDINGS{1992Khanna,
-  author = {Khanna, S. and Linial, N. and Safra, S.},
-  title = {On the hardness of approximating the chromatic number},
-  booktitle = {Theory and Computing Systems, 1993., Proceedings of the 2nd Israel
-	Symposium on the},
-  year = {1993},
-  pages = {250--260},
-  month = jun,
+@inproceedings{COLOR_1992_Khanna,
+  author={Khanna, S. and Linial, N. and Safra, S.},
+  title={On the hardness of approximating the chromatic number},
+  booktitle={Israel Symposium of Theory and Computing Systems},
+  year={1993},
+  pages={250--260},
+  month=jun,
 }
 %}}}
 
 
-% === FLOW
+% ======================================================
+%                   Data Structure
+% ======================================================
+@article{KDTree_CACM75_Bentley,
+  author = {Bentley, Jon Louis},
+  title = {Multidimensional binary search trees used for associative searching},
+  journal = cacm,
+  volume = {18},
+  issue = {9},
+  month = {September},
+  year = {1975},
+  pages = {509--517},
+  numpages = {9},
+} 
+
+
+
+% ======================================================
+%                  Network Flow
+% ======================================================
 %{{{
-@article{FLOW_1997_Goldberg,
+@book{FLOW_b2005_Ahuja,
+  author = {R.K.Ahuja and T.L.Magnanti and J.B.Orlin},
+  title = {Network Flows: Theory, Algorithms, and Applications},
+  publisher = {Prentice Hall/Pearson},
+  year = {2005},
+}
+@article{FLOW_JALG97_Goldberg,
   title={An efficient implementation of a scaling minimum-cost flow algorithm},
   author={Goldberg, Andrew V},
-  journal={Journal of algorithms},
+  journal=jalg,
   volume={22},
   number={1},
   pages={1--29},
   year={1997},
 }
-@ARTICLE{FLOW_2001_Ahuja,
+@ARTICLE{FLOW_MNSC01_Ahuja,
   author = {Ahuja, Ravindra K. and Hochbaum, Dorit S. and Orlin, James B.},
   title = {Solving the Convex Cost Integer Dual Network Flow Problem},
-  journal = {Manage. Sci.},
+  journal = mnsc,
   year = {2003},
   volume = {49},
   pages = {950--964},
   number = {7},
-  issn = {0025-1909}
+  issn = {0025-1909},
 }
-@article{FLOW_1986_Galil,
+@article{FLOW_CSUR86_Galil,
   author = {Galil, Zvi},
   title = {Efficient algorithms for finding maximum matching in graphs},
-  journal = {ACM Comput. Surv.},
+  journal = csur,
   volume = {18},
   number = {1},
   month = mar,
@@ -351,7 +315,7 @@
   number={5},
   pages={1277--1280},
   year={1970},
-  abstract={Dinic algorithm to solve Max-Flow}
+  abstract={Dinic algorithm to solve Max-Flow},
 }
 %}}}
 
