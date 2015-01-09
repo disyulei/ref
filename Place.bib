@@ -14,6 +14,7 @@
 % ==========================================
 %           Routability Driven
 % ==========================================
+%{{{
 @inproceedings{PLACE_ICCAD2010_Taghavi,
   title     = {New placement prediction and mitigation techniques for local routing congestion},
   author    = {Taghavi, Taraneh and Alpert, Charles and Huber, Andrew and Li, Zhuo and Nam, Gi-Joon and Ramji, Shyam},
@@ -43,6 +44,7 @@
   pages     = {1--6},
   year      = {2013},
 }
+%}}}
 
 
 % ==========================================
@@ -80,28 +82,28 @@
 %       Global Placement -- Others
 % ==========================================
 @article{PLACE_TCAS1_81_Goto,
-  title={An efficient algorithm for the two-dimensional placement problem in electrical circuit layout},
-  author={Satoshi Goto},
-  journal=tcas1,
-  volume={28},
-  number={1},
-  pages={12--18},
-  year={1981},
+  title   = {An efficient algorithm for the two-dimensional placement problem in electrical circuit layout},
+  author  = {Satoshi Goto},
+  journal = tcas1,
+  volume  = {28},
+  number  = {1},
+  pages   = {12--18},
+  year    = {1981},
 }
 @ARTICLE{PLACE_TCAD04_Hu, 
-  author={Bo Hu and Marek-Sadowska, M.}, 
-  title={Fine granularity clustering-based placement}, 
+  title   = {Fine granularity clustering-based placement}, 
+  author  = {Bo Hu and Marek-Sadowska, M.}, 
   journal = tcad,
-  year={2004}, 
-  month={april}, 
-  volume={23}, 
-  number={4}, 
-  pages={527--536}, 
+  year    = {2004}, 
+  month   = {april}, 
+  volume  = {23}, 
+  number  = {4}, 
+  pages   = {527--536}, 
 }
 
 
 % ==========================================
-%         Legalization
+%             Migration
 % ==========================================
 @inproceedings{PLACE_DAC05_Ren,
   author    = {Ren, Haoxing and Pan, David Z. and Alpert, Charles J. and Villarrubia, Paul},
@@ -117,32 +119,10 @@
   year      = {2005},
   pages     = {41--47},
 }
-@inproceedings{PLACE_ISPD08_Spindler,
-  title     = {Abacus: fast legalization of standard cell circuits with minimal movement},
-  author    = {Spindler, Peter and Schlichtmann, Ulf and Johannes, Frank M},
-  booktitle = ispd,
-  pages     = {47--53},
-  year      = {2008},
-}
-@inproceedings{PLACE_DAC2014_Popovych,
-  title     = {Density-aware Detailed Placement with Instant Legalization},
-  author    = {Popovych, Sergiy and Lai, Hung-Hao and Wang, Chieh-Min and Li, Yih-Lang and Liu, Wen-Hao and Wang, Ting-Chi},
-  booktitle = dac,
-  pages     = {1--6},
-  year      = {2014},
-}
-@inproceedings{PLACE_ISPD2014_Chow,
-  author    = {Chow, Wing-Kai and Kuang, Jian and He, Xu and Cai, Wenzan and Young, Evangeline F.Y.},
-  title     = {Cell Density-driven Detailed Placement with Displacement Constraint},
-  booktitle = ispd,
-  year      = {2014},
-  pages     = {3--10},
-  numpages  = {8},
-  abstract  = {ripple-dp},
-}
+
 
 % ==========================================
-%           Linear Placement
+%     Detailed Placement: linear problem
 % ==========================================
 %{{{
 @inproceedings{PLACE_DATE98_Vygen,
@@ -187,6 +167,29 @@
   pages     = {48--55},
   year      = {2005},
 }
+@inproceedings{PLACE_ISPD08_Spindler,
+  title     = {Abacus: fast legalization of standard cell circuits with minimal movement},
+  author    = {Spindler, Peter and Schlichtmann, Ulf and Johannes, Frank M},
+  booktitle = ispd,
+  pages     = {47--53},
+  year      = {2008},
+}
+@inproceedings{PLACE_DAC2014_Popovych,
+  title     = {Density-aware Detailed Placement with Instant Legalization},
+  author    = {Popovych, Sergiy and Lai, Hung-Hao and Wang, Chieh-Min and Li, Yih-Lang and Liu, Wen-Hao and Wang, Ting-Chi},
+  booktitle = dac,
+  pages     = {1--6},
+  year      = {2014},
+}
+@inproceedings{PLACE_ISPD2014_Chow,
+  author    = {Chow, Wing-Kai and Kuang, Jian and He, Xu and Cai, Wenzan and Young, Evangeline F.Y.},
+  title     = {Cell Density-driven Detailed Placement with Displacement Constraint},
+  booktitle = ispd,
+  year      = {2014},
+  pages     = {3--10},
+  numpages  = {8},
+  abstract  = {ripple-dp},
+}
 %}}}
 
 
@@ -195,16 +198,16 @@
 % ==========================================
 %{{{
 @inproceedings{PLACE_DAC06_Luo,
+  title     = {A new {LP} based incremental timing driven placement for high performance designs},
   author    = {Luo, Tao and Newmark, David and Pan, David Z.},
-  title     = {A new LP based incremental timing driven placement for high performance designs},
   booktitle = dac,
   year      = {2006},
   pages     = {1115--1120},
   numpages  = {6},
 }
 @inproceedings{PLACE_ICCAD08_Luo,
-  author    = {Luo, Tao and Papa, David A. and Li, Zhuo and Sze, C. N. and Alpert, Charles J. and Pan, David Z.},
   title     = {Pyramids: an efficient computational geometry-based approach for timing-driven placement},
+  author    = {Luo, Tao and Papa, David A. and Li, Zhuo and Sze, C. N. and Alpert, Charles J. and Pan, David Z.},
   booktitle = iccad,
   year      = {2008},
   pages     = {204--211},
@@ -216,39 +219,39 @@
 %          Data-Path Placement
 % ==========================================
 @inproceedings{PLACE_ISPD2011_Ward,
-  title={Quantifying academic placer performance on custom designs},
-  author={Ward, Samuel I and Papa, David A and Li, Zhuo and Sze, Cliff N and Alpert, Charles J and Swartzlander, Earl},
-  booktitle=ispd,
-  pages={91--98},
-  year={2011},
+  title     = {Quantifying academic placer performance on custom designs},
+  author    = {Ward, Samuel I and Papa, David A and Li, Zhuo and Sze, Cliff N and Alpert, Charles J and Swartzlander, Earl},
+  booktitle = ispd,
+  pages     = {91--98},
+  year      = {2011},
 }
 @inproceedings{PLACE_ISPD2012_Ward,
-  title={Keep it straight: teaching placement how to better handle designs with datapaths},
-  author={Ward, Samuel I and Kim, Myung-Chul and Viswanathan, Natarajan and Li, Zhuo and Alpert, Charles and Swartzlander Jr, Earl E and Pan, David Z},
-  booktitle=ispd,
-  pages={79--86},
-  year={2012},
+  title     = {Keep it straight: teaching placement how to better handle designs with datapaths},
+  author    = {Ward, Samuel I and Kim, Myung-Chul and Viswanathan, Natarajan and Li, Zhuo and Alpert, Charles and Swartzlander Jr, Earl E and Pan, David Z},
+  booktitle = ispd,
+  pages     = {79--86},
+  year      = {2012},
 }
 @inproceedings{PLACE_DAC2012_Ward,
-  title={{PADE}: a high-performance placer with automatic datapath extraction and evaluation through high dimensional data learning},
-  author={Ward, Samuel and Ding, Duo and Pan, David Z},
-  booktitle=dac,
-  pages={756--761},
-  year={2012},
+  title     = {{PADE}: a high-performance placer with automatic datapath extraction and evaluation through high dimensional data learning},
+  author    = {Ward, Samuel and Ding, Duo and Pan, David Z},
+  booktitle = dac,
+  pages     = {756--761},
+  year      = {2012},
 }
 @inproceedings{PLACE_DAC2012_Chou,
-  title={Structure-aware placement for datapath-intensive circuit designs},
-  author={Chou, Sheng and Hsu, Meng-Kai and Chang, Yao-Wen},
-  booktitle=dac,
-  pages={762--767},
-  year={2012},
+  title     = {Structure-aware placement for datapath-intensive circuit designs},
+  author    = {Chou, Sheng and Hsu, Meng-Kai and Chang, Yao-Wen},
+  booktitle = dac,
+  pages     = {762--767},
+  year      = {2012},
 }
 @inproceedings{PLACE_ISPD2013_Xiang,
-  title={Network flow based datapath bit slicing},
-  author={Xiang, Hua and Cho, Minsik and Ren, Haoxing and Ziegler, Matthew and Puri, Ruchir},
-  booktitle=ispd,
-  pages={139--146},
-  year={2013},
+  title     = {Network flow based datapath bit slicing},
+  author    = {Xiang, Hua and Cho, Minsik and Ren, Haoxing and Ziegler, Matthew and Puri, Ruchir},
+  booktitle = ispd,
+  pages     = {139--146},
+  year      = {2013},
 }
 
 
@@ -266,25 +269,25 @@
   publisher = {IEEE},
 }
 @inproceedings{LATCH_ICCAD2013_Cho,
-  title={LatchPlanner: latch placement algorithm for datapath-oriented high-performance {VLSI} designs},
-  author={Cho, Minsik and Xiang, Hua and Ren, Haoxing and Ziegler, Matthew M and Puri, Ruchir},
-  booktitle=iccad,
-  pages={342--348},
-  year={2013},
+  title     = {{LatchPlanner}: latch placement algorithm for datapath-oriented high-performance {VLSI} designs},
+  author    = {Cho, Minsik and Xiang, Hua and Ren, Haoxing and Ziegler, Matthew M and Puri, Ruchir},
+  booktitle = iccad,
+  pages     = {342--348},
+  year      = {2013},
 }
 @inproceedings{LATCH_ICCAD2013_Ward,
-  title={Clock power minimization using structured latch templates and decision tree induction},
-  author={Ward, Samuel I and Viswanathan, Natarajan and Zhou, Nancy Y and Sze, Cliff CN and Li, Zhuo and Alpert, Charles J and Pan, David Z},
-  booktitle=iccad,
-  pages={599--606},
-  year={2013},
+  title     = {Clock power minimization using structured latch templates and decision tree induction},
+  author    = {Ward, Samuel I and Viswanathan, Natarajan and Zhou, Nancy Y and Sze, Cliff CN and Li, Zhuo and Alpert, Charles J and Pan, David Z},
+  booktitle = iccad,
+  pages     = {599--606},
+  year      = {2013},
 }
 @inproceedings{LATCH_DAC2014_Held,
-  title={Post-Routing Latch Optimization for Timing Closure},
-  author={Held, Stephan and Schorr, Ulrike},
-  booktitle=dac,
-  pages={1--6},
-  year={2014},
+  title     = {Post-Routing Latch Optimization for Timing Closure},
+  author    = {Held, Stephan and Schorr, Ulrike},
+  booktitle = dac,
+  pages     = {1--6},
+  year      = {2014},
 }
 
 
