@@ -17,6 +17,63 @@
 % =======================================================
 %                 Analog Sizing
 % =======================================================
+%{{{
+@article{ANLG_TCAD01_Boyd,
+  title     = {Optimal design of a {CMOS} op-amp via geometric programming},
+  author    = {Boyd, SP and Lee, TH and others},
+  journal   = tcad,
+  volume    = {20},
+  number    = {1},
+  pages     = {1--21},
+  year      = {2001},
+  publisher = {IEEE},
+  abstract  = {geometrical programming},
+}
+@inproceedings{ANLG_ICCAD01_Daems,
+  title     = {Simulation-based Automatic Generation of Signomial and Posynomial Performance Models for Analog Integrated Circuit Sizing},
+  author    = {Daems, Walter and Gielen, Georges and Sansen, Willy},
+  booktitle = iccad,
+  year      = {2001},
+  pages     = {70--74},
+  location  = {San Jose, California},
+  abstract  = {fitting into convex model},
+} 
+@inproceedings{ANLG_ICCAD02_Hershenson,
+  title     = {Design of pipeline analog-to-digital converters via geometric programming},
+  author    = {del Mar Hershenson, Maria},
+  booktitle = iccad,
+  pages     = {317--324},
+  year      = {2002},
+  abstract  = {geometrical programming}
+}
+@article{ANLG_TCAD03_Daems,
+  title     = {Simulation-based generation of posynomial performance models for the sizing of analog integrated circuits},
+  author    = {Daems, Walter and Gielen, Georges and Sansen, Willy},
+  journal   = tcad,
+  volume    = {22},
+  number    = {5},
+  pages     = {517--534},
+  year      = {2003},
+  publisher = {IEEE},
+  abstract  = {iccad01 journal version},
+}
+@article{ANLG_TODAES04_Doboli,
+  title     = {A two-layer library-based approach to synthesis of analog systems from {VHDL-AMS} specifications},
+  author    = {Doboli, Alex and Dhanwada, Nagu and Nunez-Aldana, Adrian and Vemuri, Ranga},
+  journal   = todaes,
+  volume    = {9},
+  number    = {2},
+  pages     = {238--271},
+  year      = {2004},
+  publisher = {ACM},
+}
+@inproceedings{ANLG_DAC05_Gielen,
+  title     = {Performance space modeling for hierarchical synthesis of analog integrated circuits},
+  author    = {Gielen, Georges and McConaghy, Trent and Eeckelaert, Tom},
+  booktitle = dac,
+  pages     = {881--886},
+  year      = {2005},
+}
 @inproceedings{ANLG_DAC07_Mcconaghy,
   title     = {Simultaneous multi-topology multi-objective sizing across thousands of analog circuit topologies},
   author    = {McConaghy, Trent and Palmers, Pieter and Gielen, Georges and Steyaert, Michiel},
@@ -39,14 +96,121 @@
   title     = {Enabling Efficient Analog Synthesis by Coupling Sparse Regression and Polynomial Optimization},
   author    = {Wang, Ye and Orshansky, Michael and Caramanis, Constantine},
   booktitle = dac,
-  pages     = {1--6},
+  pages     = {164:1--164:6},
   year      = {2014},
 }
+%}}}
+
+
+% =======================================================
+%             Place and Route
+% =======================================================
+%{{{
+@book{ANLG_B99_Lampaert,
+  title     = {{Analog Layout Generation for Performance and Manufacturability}},
+  author    = {Lampaert, Koen and Gielen, Georges and Sansen, Willy MC},
+  year      = {1999},
+  publisher = {Springer},
+  abstract  = {[to check]},
+}
+@inproceedings{ANLG_ICCAD2010_Xiao,
+  title     = {Practical Placement and Routing Techniques for Analog Circuit Designs},
+  author    = {Linfu Xiao and Evangeline F.Y. Young and Xiaoyong He and K.P. Pun},
+  booktitle = iccad,
+  year      = {2010},
+  pages     = {675--679},
+}
+@inproceedings{ANLG_DAC2013_Ou,
+  title     = {Simultaneous analog placement and routing with current flow and current density considerations},
+  author    = {Ou, Hung-Chih and Chien, Hsing-Chih Chang and Chang, Yao-Wen},
+  booktitle = dac,
+  pages     = {5:1--5:6},
+  year      = {2013},
+}
+% ==== place
+@inproceedings{ANLG_ASPDAC06_Cho,
+  title     = {Fast Substrate Noise-Aware Floorplanning with Preference Directed Graph for Mixed-Signal {SOCs}},
+  author    = {M. Cho and H. Shin and D. Z. Pan},
+  booktitle = aspdac,
+  year      = {2006},
+  pages     = {765--770},
+}
+@inproceedings{ANLG_DAC08_Lin,
+  title     = {Analog placement based on hierarchical module clustering},
+  author    = {Lin, Po-Hung and Lin, Shyh-Chang},
+  booktitle = dac,
+  pages     = {50--55},
+  year      = {2008},
+  abstract  = {b*-tree based, symmetry \& matching constraints},
+}
+@article{ANLG_TCAD2011_Eick,
+  title     = {Comprehensive generation of hierarchical placement rules for analog integrated circuits},
+  author    = {Eick, Michael and Strasser, Martin and Lu, Kun and Schlichtmann, Ulf and Graeb, Helmut E},
+  journal   = tcad,
+  volume    = {30},
+  number    = {2},
+  pages     = {180--193},
+  year      = {2011},
+  publisher = {IEEE},
+}
+@inproceedings{ANLG_VLSIDAT2012_Chen,
+  title     = {Challenges and solutions in modern analog placement},
+  author    = {Chen, Tung-Chieh and Kuan, Ta-Yu and Hsieh, Chung-Che and Peng, Chi-Chen},
+  booktitle = vlsidat,
+  pages     = {1--4},
+  year      = {2012},
+}
+% ==== Route
+@inproceedings{ANLG_ICCAD90_Malavasi,
+  title     = {A Routing Methodology for Analog Integrated Circuits.},
+  author    = {Malavasi, Enrico and Choudhury, Umakanta and Sangiovanni-Vincentelli, Alberto L},
+  booktitle = iccad,
+  pages     = {202--205},
+  year      = {1990},
+}
+@inproceedings{ANLG_ICCAD09_Ozdal,
+  title     = {Exact route matching algorithms for analog and mixed signal integrated circuits},
+  author    = {Ozdal, Muhammet Mustafa and Hentschke, Renato Fernandes},
+  booktitle = iccad,
+  pages     = {231--238},
+  year      = {2009},
+  abstract  = {matching both length, layers; Dynamic Programming based},
+}
+@inproceedings{ANLG_ASPDAC2012_Yao,
+  title     = {{LEMAR}: A novel length matching routing algorithm for analog and mixed signal circuits},
+  author    = {Yao, Hailong and Cai, Yici and Gao, Qiang},
+  booktitle = aspdac,
+  pages     = {157--162},
+  year      = {2012},
+}
+@inproceedings{ANLG_ICCAD2012_Pan,
+  title     = {Configurable analog routing methodology via technology and design constraint unification},
+  author    = {Pan, Po-Cheng and Chen, Hung-Ming and Cheng, Yi-Kan and Liu, Jill and Hu, Wei-Yi},
+  booktitle = iccad,
+  pages     = {620--626},
+  year      = {2012},
+}
+@inproceedings{ANLG_DAC2013_Ho,
+  title     = {Coupling-aware length-ratio-matching routing for capacitor arrays in analog integrated circuits},
+  author    = {Ho, Kuan-Hsien and Ou, Hung-Chih and Chang, Yao-Wen and Tsao, Hui-Fang},
+  booktitle = dac,
+  pages     = {6:1--6:6},
+  year      = {2013},
+}
+@inproceedings{ANLG_DAC2014_Lin,
+  title     = {Parasitic-aware Sizing and Detailed Routing for Binary-weighted Capacitors in Charge-scaling {DAC}},
+  author    = {Lin, Mark Po-Hung and Hsiao, Vincent Wei-Hao and Lin, Chun-Yu},
+  booktitle = dac,
+  pages     = {165:1--165:6},
+  year      = {2014},
+}
+%}}}
 
 
 % =======================================================
 %             Analog Migration/Retargeting
 % =======================================================
+%{{{
 @inproceedings{ANLG_DAC05_Bhattacharya,
   title     = {Template-driven parasitic-aware optimization of analog integrated circuit layouts},
   author    = {Bhattacharya, Sambuddha and Jangkrajarng, Nuttorn and Shi, CJ},
@@ -78,73 +242,5 @@
   pages     = {40--47},
   year      = {2013},
 }
-
-% =======================================================
-%             Analog Floorplan/Placement
-% =======================================================
-@book{ANLG_B99_Lampaert,
-  title     = {{Analog Layout Generation for Performance and Manufacturability}},
-  author    = {Lampaert, Koen and Gielen, Georges and Sansen, Willy MC},
-  year      = {1999},
-  publisher = {Springer},
-  abstract  = {[to check]},
-}
-@inproceedings{ANLG_DAC08_Lin,
-  title     = {Analog placement based on hierarchical module clustering},
-  author    = {Lin, Po-Hung and Lin, Shyh-Chang},
-  booktitle = dac,
-  pages     = {50--55},
-  year      = {2008},
-  abstract  = {b*-tree based, symmetry \& matching constraints},
-}
-@article{ANLG_TCAD2011_Eick,
-  title     = {Comprehensive generation of hierarchical placement rules for analog integrated circuits},
-  author    = {Eick, Michael and Strasser, Martin and Lu, Kun and Schlichtmann, Ulf and Graeb, Helmut E},
-  journal   = tcad,
-  volume    = {30},
-  number    = {2},
-  pages     = {180--193},
-  year      = {2011},
-  publisher = {IEEE},
-}
-@inproceedings{ANLG_VLSIDAT2012_Chen,
-  title     = {Challenges and solutions in modern analog placement},
-  author    = {Chen, Tung-Chieh and Kuan, Ta-Yu and Hsieh, Chung-Che and Peng, Chi-Chen},
-  booktitle = vlsidat,
-  pages     = {1--4},
-  year      = {2012},
-}
-
-
-% =======================================================
-%                  Analog Routing
-% =======================================================
-@inproceedings{ANLG_ICCAD90_Malavasi,
-  title     = {A Routing Methodology for Analog Integrated Circuits.},
-  author    = {Malavasi, Enrico and Choudhury, Umakanta and Sangiovanni-Vincentelli, Alberto L},
-  booktitle = iccad,
-  pages     = {202--205},
-  year      = {1990},
-}
-@inproceedings{ANLG_ASPDAC2012_Yao,
-  title     = {{LEMAR}: A novel length matching routing algorithm for analog and mixed signal circuits},
-  author    = {Yao, Hailong and Cai, Yici and Gao, Qiang},
-  booktitle = aspdac,
-  pages     = {157--162},
-  year      = {2012},
-}
-@inproceedings{ANLG_ICCAD2012_Pan,
-  title     = {Configurable analog routing methodology via technology and design constraint unification},
-  author    = {Pan, Po-Cheng and Chen, Hung-Ming and Cheng, Yi-Kan and Liu, Jill and Hu, Wei-Yi},
-  booktitle = iccad,
-  pages     = {620--626},
-  year      = {2012},
-}
-@inproceedings{ANLG_DAC2014_Lin,
-  title     = {Parasitic-aware Sizing and Detailed Routing for Binary-weighted Capacitors in Charge-scaling {DAC}},
-  author    = {Lin, Mark Po-Hung and Hsiao, Vincent Wei-Hao and Lin, Chun-Yu},
-  booktitle = dac,
-  pages     = {1--6},
-  year      = {2014},
-}
+%}}}
 
