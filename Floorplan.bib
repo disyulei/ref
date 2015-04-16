@@ -1,168 +1,142 @@
-% This file was created with JabRef 2.6.
-% Encoding: GBK
 
-% ==== Fixed-Outline
+% ==============================================================
+%                    Fixed-Outline
+% ==============================================================
+@inproceedings{FLOOR_ASPDAC01_Dong,
+  title     = {{VLSI} Block Placement Using Less Flexibility First Principles},
+  author    = {Sheqin Dong and Xianlong Hong and Youliang Wu and Yizhou Lin and Jun Gu},
+  booktitle = aspdac,
+  pages     = {601--604},
+  year      = {2001},
+}
 @article{FLOOR_TVLSI03_Adya,
-  title={Fixed-outline floorplanning: Enabling hierarchical design},
-  author={Adya, Saurabh N and Markov, Igor L},
-  journal=tvlsi,
-  volume={11},
-  number={6},
-  pages={1120--1135},
-  year={2003},
+  title   = {Fixed-outline floorplanning: Enabling hierarchical design},
+  author  = {Adya, Saurabh N and Markov, Igor L},
+  journal = tvlsi,
+  volume  = {11},
+  number  = {6},
+  pages   = {1120--1135},
+  year    = {2003},
+}
+@inproceedings{FLOOR_DAC08_Yan,
+  author    = {Jackey Z. Yan and Chris Chu},
+  title     = {{DeFer}: Deferred Decision Making Enabled Fixed-Outline Floorplanner},
+  booktitle = dac,
+  pages     = {161--166},
+  year      = {2008},
 }
 
-% **************************************************************
-% *                      Sizing
-% **************************************************************
+% ==============================================================
+%                    Area Optimization
+% ==============================================================
 @inproceedings{FLOOR_DAC00_Chen,
-  author = {Pinhong Chen and Ernest S. Kuh},
-  title = {Floorplan Sizing by Linear Programming Approximation},
+  author    = {Pinhong Chen and Ernest S. Kuh},
+  title     = {Floorplan Sizing by Linear Programming Approximation},
   booktitle = dac,
-  year = {2000}
+  year      = {2000},
+  pages     = {468--471},
 }
 
-% **************************************************************
-% *                   Cell Flipping
-% **************************************************************
-%/*{{{*/
-@article{FLOOR_TC91_CKCheng,
-  author = {Cheng, C. K. and Yao, S. Z. and Hu, T. C.},
-  title = {The Orientation of Modules Based on Graph Decomposition},
-  journal = {IEEE Trans. Comput.},
-  volume = {40},
-  issue = {6},
-  month = {June},
-  year = {1991},
-  pages = {774--780},
-  numpages = {7}
+% ==============================================================
+%                    Wire-Length Optimization
+% ==============================================================
+@article{FLOOR_TC91_Cheng,
+  title    = {The Orientation of Modules Based on Graph Decomposition},
+  author   = {Cheng, C. K. and Yao, S. Z. and Hu, T. C.},
+  journal  = tc,
+  volume   = {40},
+  issue    = {6},
+  month    = {June},
+  year     = {1991},
+  pages    = {774--780},
+  numpages = {7},
 } 
-
+@inproceedings{FLOOR_ASPDAC05_Tang,
+  title     = {Optimal redistribution of white space for wire length minimization},
+  author    = {Tang, Xiaoping and Tian, Ruiqi and Wong, Martin DF},
+  booktitle = aspdac,
+  pages     = {412--417},
+  year      = {2005},
+}
 @inproceedings{FLOOR_ICCAD05_Hao,
-  author = {Hao, Xin and Brewer, F.},
-  title = {Wirelength optimization by optimal block orientation},
+  author    = {Hao, Xin and Brewer, F.},
+  title     = {Wirelength optimization by optimal block orientation},
   booktitle = iccad,
-  year = {2005},
-  pages = {64--70},
-  numpages = {7}
+  year      = {2005},
+  pages     = {64--70},
+  numpages  = {7},
 }
-
-@INPROCEEDINGS{FLOOR_DAC06_Sham, 
-  author={Chiu-Wing Sham and Young, F.Y. and Chu, Chris}, 
-  title={Optimal cell flipping in placement and floorplanning}, 
+@inproceedings{FLOOR_DAC06_Sham, 
+  title     = {Optimal cell flipping in placement and floorplanning}, 
+  author    ={Chiu-Wing Sham and Young, F.Y. and Chu, Chris}, 
   booktitle = dac,
-  year={2006}, 
-  pages={1109 -1114}, 
-}
-%/*}}}*/
-
-% **************************************************************
-% *                   Data Structure
-% **************************************************************
-%/*{{{*/
-@ARTICLE{FLOOR_kdtree,
-  author = {Bentley, Jon Louis},
-  title = {Multidimensional binary search trees used for associative searching},
-  journal = {Commun. ACM},
-  year = {1975},
-  volume = {18},
-  pages = {509--517},
-  month = {September},
-  issue = {9}
+  year      = {2006}, 
+  pages     = {1109 -1114}, 
 }
 
-@INCOLLECTION{FLOOR_DAC00_BTree,
-  author = {Yun-Chih Chang and Yao-Wen Chang and Guang-Ming Wu and Shu-Wei Wu},
-  title = {B*-Trees: A New Representation for Non-Slicing Floorplans},
-  booktitle = {ACM/IEEE Design Automation Conference (DAC)},
-  year = {2000},
-  pages = {458 - 463}
+
+% ==============================================================
+%                    Data Structure
+% ==============================================================
+%{{{
+@inproceedings{FLOOR_DAC00_BTree,
+  author    = {Yun-Chih Chang and Yao-Wen Chang and Guang-Ming Wu and Shu-Wei Wu},
+  title     = {B*-Trees: A New Representation for Non-Slicing Floorplans},
+  booktitle = dac,
+  year      = {2000},
+  pages     = {458--463},
 }
-
-@ARTICLE{FLOOR_TCAD01_OTREE,
-  author = {Pei Ning Guo and Toshihiko Takahashi and Chung Kuan Cheng and Takeshi Yoshimura},
-  title = {Floorplanning Using a Tree Representation},
-  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)},
-  year = {2001},
-  volume = {20},
-  pages = {281-289}
+@article{FLOOR_TCAD01_OTREE,
+  author  = {Pei Ning Guo and Toshihiko Takahashi and Chung Kuan Cheng and Takeshi Yoshimura},
+  title   = {Floorplanning Using a Tree Representation},
+  journal = tcad,
+  year    = {2001},
+  volume  = {20},
+  pages   = {281-289},
 }
-
-@ARTICLE{FLOOR_TCAS04_CBL,
-  author = {Xianlong Hong and Sheqin Dong},
-  title = {Non-slicing floorplan and placement using corner block list topological representation},
-  journal = {IEEE Transaction on CAS-II},
-  year = {2004},
-  volume = {51}
+@article{FLOOR_TCAS2_04_CBL,
+  title   = {Non-slicing floorplan and placement using corner block list topological representation},
+  author  = {Xianlong Hong and Sheqin Dong},
+  journal = tcas2,
+  year    = {2004},
+  volume  = {51},
 }
-
-@INCOLLECTION{FLOOR_DAC01_TCG,
-  author = {Jai-Ming Lin and Yao-Wen Chang},
-  title = {TCG: A Transitive Closure Graph-Based Representation for Non-Slicing Floorplans},
-  booktitle = {ACM/IEEE Design Automation Conference (DAC)},
-  year = {2001},
-  pages = {764-769}
+@inproceedings{FLOOR_DAC01_TCG,
+  title     = {{TCG}: A Transitive Closure Graph-Based Representation for Non-Slicing Floorplans},
+  author    = {Jai-Ming Lin and Yao-Wen Chang},
+  booktitle = dac,
+  year      = {2001},
+  pages     = {764--769},
 }
-
-@INCOLLECTION{FLOOR_ICCAD95_SP,
-  author = {H. Murata and K. Fujiyoshi and S. Nakatake and Y. Kajitani},
-  title = {Rectangle-packing based module placement},
-  booktitle = {ACM/IEEE International Conference on Computer Aided Design (ICCAD)},
-  year = {1995},
-  pages = {472-479}
+@inproceedings{FLOOR_ICCAD95_SP,
+  title     = {Rectangle-packing based module placement},
+  author    = {H. Murata and K. Fujiyoshi and S. Nakatake and Y. Kajitani},
+  booktitle = iccad,
+  year      = {1995},
+  pages     = {472-479},
 }
-
-@ARTICLE{FLOOR_TCAD96_SP,
-  author = {H. Murata and K. Fujiyoshi and S. Nakatake and Y. Kajitani},
-  title = {{VLSI} module placement based on rectangle-packing by the sequence-pair},
-  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)},
-  year = {1996},
-  volume = {12},
-  pages = {1518-1524}
+@article{FLOOR_TCAD96_SP,
+  title   = {{VLSI} module placement based on rectangle-packing by the sequence-pair},
+  author  = {H. Murata and K. Fujiyoshi and S. Nakatake and Y. Kajitani},
+  journal = tcad,
+  year    = {1996},
+  volume  = {12},
+  pages   = {1518-1524},
 }
-%/*}}}*/
+%}}}
 
 
-% **************************************************************
-% *                   Heuristic Methods
-% **************************************************************
-/*{{{*/
-@CONFERENCE{FLOOR_ASPDAC01_Dong,
-  author = {Sheqin Dong and Xianlong Hong and Youliang Wu and Yizhou Lin and Jun Gu},
-  title = {{VLSI} Block Placement Using Less Flexibility First Principles},
-  booktitle = {IEEE/ACM Asia and South Pacific Design Automation Conference (ASPDAC)},
-  year = {2001}
+% ==============================================================
+%                    ILP Methods
+% ==============================================================
+@article{FLOOR_TCAD91_Sutanthavibul, 
+  author  = {Sutanthavibul, S. and Shragowitz, E. and Rosen, J.B.}, 
+  title   = {An analytical approach to floorplan design and optimization}, 
+  journal = tcad,
+  year    = {1991}, 
+  month   = {jun}, 
+  volume  = {10}, 
+  number  = {6}, 
+  pages   = {761--769},
 }
-
-@CONFERENCE{FLOOR_DAC08_Yan,
-  author = {Jackey Z. Yan and Chris Chu},
-  title = {DeFer: Deferred Decision Making Enabled Fixed-Outline Floorplanner},
-  booktitle = {DAC},
-  year = {2008}
-}
-/*}}}*/
-
-
-% **************************************************************
-% *                   ILP Methods
-% **************************************************************
-@ARTICLE{FLOOR_TCAD91_Sutanthavibul, 
-  author={Sutanthavibul, S. and Shragowitz, E. and Rosen, J.B.}, 
-  title={An analytical approach to floorplan design and optimization}, 
-  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)},
-  year={1991}, 
-  month={jun}, 
-  volume={10}, 
-  number={6}, 
-  pages={761 -769}
-}
-
-@comment{jabref-meta: selector_publisher:}
-
-@comment{jabref-meta: selector_author:}
-
-@comment{jabref-meta: selector_journal:}
-
-@comment{jabref-meta: selector_keywords:}
-
 
