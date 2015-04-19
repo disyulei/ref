@@ -36,7 +36,6 @@
 }
 
 
-
 % ======================================================
 %                NP-Completeness
 % ======================================================
@@ -62,6 +61,100 @@
   author    = {Arora, Sanjeev and Barak, Boaz},
   year      = {2009},
   publisher = {Cambridge University Press},
+}
+
+
+% ======================================================
+%                   Data Structure
+% ======================================================
+@article{KDTree_CACM75_Bentley,
+  author   = {Bentley, Jon Louis},
+  title    = {Multidimensional binary search trees used for associative searching},
+  journal  = cacm,
+  volume   = {18},
+  issue    = {9},
+  month    = {September},
+  year     = {1975},
+  pages    = {509--517},
+  numpages = {9},
+} 
+
+
+% ======================================================
+%                  Network Flow
+% ======================================================
+%{{{
+@book{FLOW_B05_Ahuja,
+  title     = {{Network Flows: Theory, Algorithms, and Applications}},
+  author    = {R. K. Ahuja and T. L. Magnanti and J. B. Orlin},
+  year      = {2005},
+  publisher = {Prentice Hall/Pearson},
+}
+@article{FLOW_JALG97_Goldberg,
+  title   = {An efficient implementation of a scaling minimum-cost flow algorithm},
+  author  = {Goldberg, Andrew V},
+  journal = jalg,
+  volume  = {22},
+  number  = {1},
+  pages   = {1--29},
+  year    = {1997},
+}
+@article{FLOW_MNSC01_Ahuja,
+  author  = {Ahuja, Ravindra K. and Hochbaum, Dorit S. and Orlin, James B.},
+  title   = {Solving the Convex Cost Integer Dual Network Flow Problem},
+  journal = mnsc,
+  year    = {2003},
+  volume  = {49},
+  pages   = {950--964},
+  number  = {7},
+  issn    = {0025-1909},
+}
+@article{FLOW_CSUR86_Galil,
+  title    = {Efficient algorithms for finding maximum matching in graphs},
+  author   = {Galil, Zvi},
+  journal  = csur,
+  volume   = {18},
+  number   = {1},
+  month    = mar.,
+  year     = {1986},
+  pages    = {23--38},
+  numpages = {16},
+} 
+@article{FLOW_1997_Pioro,
+  author  = {Michal Pioro and Piotr Gajowniczek},
+  title   = {Solving multicommodity integral flow problems by simulated allocation},
+  journal = {Telecommunication Systems},
+  year    = {1997},
+  volume  = {7},
+  pages   = {17--28},
+  number  = {1--3},
+}
+@inproceedings{FLOW_1970_Dinic,
+  title     = {Algorithm for solution of a problem of maximum flow in networks with power estimation},
+  author    = {Dinic, Efim A},
+  booktitle = {Soviet Math. Dokl},
+  volume    = {11},
+  number    = {5},
+  pages     = {1277--1280},
+  year      = {1970},
+  abstract  = {Dinic algorithm to solve Max-Flow},
+}
+%}}}
+
+
+% ======================================================
+%                     SAT
+% ======================================================
+@article{SAT_JIPL79_Aspvall,
+  title     = {A linear-time algorithm for testing the truth of certain quantified boolean formulas},
+  author    = {Aspvall, Bengt and Plass, Michael F and Tarjan, Robert Endre},
+  journal   = jipl,
+  volume    = {8},
+  number    = {3},
+  pages     = {121--123},
+  year      = {1979},
+  publisher = {Elsevier},
+  abstract  = {linear time 2-SAT solver},
 }
 
 
@@ -305,93 +398,127 @@
 
 
 % ======================================================
-%                   Data Structure
+%               Steiner Tree
 % ======================================================
-@article{KDTree_CACM75_Bentley,
-  author   = {Bentley, Jon Louis},
-  title    = {Multidimensional binary search trees used for associative searching},
-  journal  = cacm,
-  volume   = {18},
-  issue    = {9},
-  month    = {September},
-  year     = {1975},
-  pages    = {509--517},
-  numpages = {9},
-} 
+@article{Steiner_SIAP66_Hanan,
+  title     = {On Steiner's problem with rectilinear distance},
+  author    = {Hanan, Maurice},
+  journal   = siap,
+  volume    = {14},
+  number    = {2},
+  pages     = {255--265},
+  year      = {1966},
+  publisher = {SIAM},
+  abstract  = {introduce Hanan grid},
+}
+@article{Steiner_ALGO01_Ravi,
+  title     = {Approximation algorithms for degree-constrained minimum-cost network-design problems},
+  author    = {Ravi, R and Marathe, Madhav V and Ravi, SS and Rosenkrantz, Daniel J and Hunt III, Harry B},
+  journal   = algo,
+  volume    = {31},
+  number    = {1},
+  pages     = {58--78},
+  year      = {2001},
+  publisher = {Springer},
+  abstract  = {approximation to steiner tree},
+}
 
 
 
-% ======================================================
-%                  Network Flow
-% ======================================================
+% ====================================================
+%                  Partitioning
+% ====================================================
 %{{{
-@book{FLOW_B05_Ahuja,
-  title     = {{Network Flows: Theory, Algorithms, and Applications}},
-  author    = {R. K. Ahuja and T. L. Magnanti and J. B. Orlin},
-  year      = {2005},
-  publisher = {Prentice Hall/Pearson},
+@article{PAR_JVLSI95_Alpert,
+  author   = {Alpert, Charles J. and Kahng, Andrew B.},
+  title    = {Recent directions in netlist partitioning: a survey},
+  journal  = jvlsi,
+  volume   = {19},
+  issue    = {1-2},
+  month    = {August},
+  year     = {1995},
+  pages    = {1--81},
+  numpages = {81},
 }
-@article{FLOW_JALG97_Goldberg,
-  title   = {An efficient implementation of a scaling minimum-cost flow algorithm},
-  author  = {Goldberg, Andrew V},
-  journal = jalg,
-  volume  = {22},
-  number  = {1},
-  pages   = {1--29},
-  year    = {1997},
-}
-@article{FLOW_MNSC01_Ahuja,
-  author  = {Ahuja, Ravindra K. and Hochbaum, Dorit S. and Orlin, James B.},
-  title   = {Solving the Convex Cost Integer Dual Network Flow Problem},
-  journal = mnsc,
-  year    = {2003},
-  volume  = {49},
-  pages   = {950--964},
-  number  = {7},
-  issn    = {0025-1909},
-}
-@article{FLOW_CSUR86_Galil,
-  title    = {Efficient algorithms for finding maximum matching in graphs},
-  author   = {Galil, Zvi},
-  journal  = csur,
-  volume   = {18},
-  number   = {1},
-  month    = mar.,
-  year     = {1986},
-  pages    = {23--38},
-  numpages = {16},
+@inproceedings{PAR_DAC82_FM,
+  author    = {Fiduccia, C. M. and Mattheyses, R. M.},
+  title     = {A linear-time heuristic for improving network partitions},
+  booktitle = dac,
+  year      = {1982},
+  pages     = {175--181},
+  abstract  = {FM partition},
 } 
-@article{FLOW_1997_Pioro,
-  author  = {Michal Pioro and Piotr Gajowniczek},
-  title   = {Solving multicommodity integral flow problems by simulated allocation},
-  journal = {Telecommunication Systems},
-  year    = {1997},
-  volume  = {7},
-  pages   = {17--28},
-  number  = {1--3},
+@article{PAR_TC89_Sanchis,
+ author   = {Sanchis, L. A.},
+ title    = {Multiple-Way Network Partitioning},
+ journal  = tcomp,
+ volume   = {38},
+ issue    = {1},
+ month    = {January},
+ year     = {1989},
+ pages    = {62--81},
+ numpages = {20},
+} 
+@inproceedings{PAR_DAC97_Karypis,
+  author    = {Karypis, George and Aggarwal, Rajat and Kumar, Vipin and Shekhar, Shashi},
+  title     = {Multilevel hypergraph partitioning: application in {VLSI} domain},
+  booktitle = dac,
+  year      = {1997},
+  pages     = {526--529},
+  numpages  = {4},
+  abstract  = {hMetis, multi-way partition}
 }
-@inproceedings{FLOW_1970_Dinic,
-  title     = {Algorithm for solution of a problem of maximum flow in networks with power estimation},
-  author    = {Dinic, Efim A},
-  booktitle = {Soviet Math. Dokl},
-  volume    = {11},
-  number    = {5},
-  pages     = {1277--1280},
-  year      = {1970},
-  abstract  = {Dinic algorithm to solve Max-Flow},
+@inproceedings{PAR_DAC99_Karypis,
+  author    = {Karypis, George and Kumar, Vipin},
+  title     = {Multilevel k-way hypergraph partitioning},
+  booktitle = dac,
+  year      = {1999},
+  pages     = {343--348},
+  numpages  = {6},
 }
+@article{PAR_TPAMI02_Kanungo,
+  author    = {T. Kanungo and D. M. Mount and N. S. Netanyahu and C. D. Piatko and R. Silverman and A. Y. Wu},
+  title     = {An efficient k-means clustering algorithm : Analysis and implementation},
+  journal   = tpami,
+  volume    = {24},
+  number    = {7},
+  pages     = {881--892},
+  publisher = {IEEE},
+  year      = {2002},
+} 
+@article{PAR_TCAD04_Cong, 
+  author  = {Cong, J. and Sung Kyu Lim}, 
+  title   = {Edge separability-based circuit clustering with application to multilevel circuit partitioning}, 
+  journal = tcad,
+  year    = {2004}, 
+  month   = {march}, 
+  volume  = {23}, 
+  number  = {3}, 
+  pages   = {346--357},
+}
+@article{PAR_TCAD06_Nam, 
+  author  = {Gi-Joon Nam and Reda, S. and Alpert, C.J. and Villarrubia, P.G. and Kahng, A.B.}, 
+  title   = {A fast hierarchical quadratic placement algorithm}, 
+  journal = tcad,
+  year    = {2006}, 
+  month   = {april}, 
+  volume  = {25}, 
+  number  = {4}, 
+  pages   = {678--691},
+}
+@inproceedings{PAR_ISPD07_Li,
+  author    = {Li, Jianhua and Behjat, Laleh and Huang, Jie},
+  title     = {An effective clustering algorithm for mixed-size placement},
+  booktitle = ispd,
+  year      = {2007},
+  pages     = {111--118},
+}
+@inproceedings{PAR_ISPD2010_Yan,
+  author    = {Jackey Z. Yan and Chris Chu and Wai-Kei Mak},
+  title     = {{SafeChoice}: a novel clustering algorithm for wirelength-driven placement},
+  booktitle = ispd,
+  year      = {2010},
+  pages     = {185--192},
+} 
 %}}}
-
-
-@article{SAT_JIPL79_Aspvall,
-  title     = {A linear-time algorithm for testing the truth of certain quantified boolean formulas},
-  author    = {Aspvall, Bengt and Plass, Michael F and Tarjan, Robert Endre},
-  journal   = jipl,
-  volume    = {8},
-  number    = {3},
-  pages     = {121--123},
-  year      = {1979},
-  publisher = {Elsevier},
-  abstract  = {linear time 2-SAT solver},
-}
 
