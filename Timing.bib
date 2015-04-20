@@ -2,7 +2,81 @@
 % ====================================================================
 %                 Incremental Timing Optimization
 % ====================================================================
+%{{{
+@inproceedings{TIMING_DATE06_Albrecht,
+  title     = {Efficient incremental clock latency scheduling for large circuits},
+  author    = {Christoph Albrecht},
+  booktitle = date,
+  volume    = {1},
+  pages     = {1--6},
+  year      = {2006},
+  abstract  = {},
+}
+@inproceedings{TIMING_ASPDAC07_Karandikar,
+  title     = {Fast electrical correction using resizing and buffering},
+  author    = {Karandikar, Shrirang K and Alpert, Charles J and Yildiz, Mehmet Can and Villarrubia, Paul and Quay, Steve and Mahmud, Tuhin},
+  booktitle = aspdac,
+  pages     = {553--558},
+  year      = {2007},
+  abstract  = {incremental gate sizing \& buffer insertion},
+}
+@inproceedings{TIMING_ICCAD2010_Fang,
+  title     = {Redundant-wires-aware {ECO} timing and mask cost optimization},
+  author    = {Fang, Shao-Yun and Chien, Tzuo-Fan and Chang, Yao-Wen},
+  booktitle = iccad,
+  pages     = {381--386},
+  year      = {2010},
+  abstract  = {ECO, spare cell, multi-commodity flow, ILP},
+}
+@inproceedings{TIMING_ICCAD2011_Chang,
+  title     = {Timing {ECO} optimization via B{\'e}zier curve smoothing and fixability identification},
+  author    = {Chang, Hua-Yu and Jiang, Iris Hui-Ru and Chang, Yao-Wen},
+  booktitle = iccad,
+  pages     = {742--746},
+  year      = {2011},
+  abstract  = {clock scheduling with spare cell, ECO},
+}
+@article{TIMING_TCAD2012_Chang,
+  title    = {Timing {ECO} optimization via {B}{\'e}zier curve smoothing and fixability identification},
+  author   = {Chang, Hua-Yu and Jiang, IH-R and Chang, Yao-Wen},
+  journal  = tcad,
+  volume   = {31},
+  number   = {12},
+  pages    = {1857--1866},
+  year     = {2012},
+  abstract = {journal version of ICCAD'11},
+}
+@inproceedings{TIMING_ASPDAC2012_Ho,
+  title     = {Clock rescheduling for timing engineering change orders},
+  author    = {Ho, Kuan-Hsien and Shih, Xin-Wei and Jiang, J-HR},
+  booktitle = aspdac,
+  pages     = {517--522},
+  year      = {2012},
+  abstract  = {clock scheduling with spare cell, ECO, sequential circuit, MILP},
+}
+@inproceedings{TIMING_ASPDAC2013_Wei,
+  title     = {{Mountain-Mover}: An intuitive logic shifting heuristic for improving timing slack violating paths},
+  author    = {Wei, Xing and Tang, Wai-Chung and Wu, Yu-Liang and Sze, Cliff and Alpert, Charles},
+  booktitle = aspdac,
+  pages     = {350--355},
+  year      = {2013},
+  abstract  = {},
+}
+%}}}
 
+
+
+% ====================================================================
+%                   Clock Tree Synthesis (CTS)
+% ====================================================================
+@inproceedings{CTS_ISPD2014_Roy,
+  title     = {Clock tree resynthesis for multi-corner multi-mode timing closure},
+  author    = {Roy, Subhendu and Mattheakis, Pavlos M and Masse-Navette, Laurent and Pan, David Z},
+  booktitle = ispd,
+  pages     = {69--76},
+  year      = {2014},
+  abstract  = {incremental CTS},
+}
 
 
 % ====================================================================
@@ -57,8 +131,8 @@
 %                          SSTA
 % ====================================================================
 @article{TIMING_JVLSI2012_Ramalingam,
-  author   = {Anand Ramalingam and Ashish Kumar Singh and Sani R. Nassif and Gi-Joon Nam and Michael Orshansky and David Z. Pan},
   title    = {An accurate sparse-matrix based framework for statistical static timing analysis},
+  author   = {Anand Ramalingam and Ashish Kumar Singh and Sani R. Nassif and Gi-Joon Nam and Michael Orshansky and David Z. Pan},
   journal  = jvlsi,
   volume   = {45},
   number   = {4},

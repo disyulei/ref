@@ -1,19 +1,53 @@
 % ==========================================
-%          Placement Summary
+%              Summary
 % ==========================================
-@inproceedings{PLACE_ICCAD2013_Kim,
+@inproceedings{PD_ISPD00_Cong,
+  title     = {Incremental physical design},
+  author    = {Jason Cong and Majid Sarrafzadeh},
+  booktitle = ispd,
+  pages     = {84--92},
+  year      = {2000},
+}
+@inproceedings{PD_ICCAD00_Coudert,
+  title     = {Incremental {CAD}},
+  author    = {Coudert, Olivier and Cong, Jason and Malik, Sharad and Sarrafzadeh, Majid},
+  booktitle = iccad,
+  pages     = {236--244},
+  year      = {2000},
+}
+% ==== placement summary
+@inproceedings{PLACE_ICCAD2013_Contest,
   title     = {{ICCAD-2013 CAD} contest in placement finishing and benchmark suite},
   author    = {Kim, Myung-Chul and Viswanathan, Natarajan and Li, Zhuo and Alpert, Charles},
   booktitle = iccad,
   pages     = {268--270},
   year      = {2013},
+  abstract  = {iccad'13 incremental placement contest},
 }
-@inproceedings{PLACE_ICCAD2014_Kim,
+@inproceedings{PLACE_ICCAD2014_Contest,
   title     = {{ICCAD-2014 CAD} Contest in Incremental Timing-driven Placement and Benchmark Suite},
   author    = {Kim, Myung-Chul and Hu, Jin and Viswanathan, Natarajan},
   booktitle = iccad,
   pages     = {361--366},
   year      = {2014},
+  abstract  = {iccad'14 incremental timing driven placement contest},
+}
+% ==== routing summary
+@inproceedings{ROUTE_ISPD07_Contest,
+  title     = {{ISPD} Placement Contest Updates and {ISPD} 2007 Global Routing Contest},
+  author    = {Nam, Gi-Joon and Yildiz, Mehmet and Pan, David Z. and Madden, Patrick H.},
+  booktitle = ispd,
+  pages     = {167--167},
+  year      = {2007},
+  abstract  = {ispd'07 global routing contest},
+}
+@inproceedings{ROUTE_ISPD08_Contest,
+  title     = {The {ISPD} global routing benchmark suite},
+  author    = {Nam, Gi-Joon and Sze, Cliff and Yildiz, Mehmet},
+  booktitle = ispd,
+  pages     = {156--159},
+  year      = {2008},
+  abstract  = {ispd'08 global routing contest},
 }
 
 
@@ -55,8 +89,20 @@
 
 
 % ==========================================
-%       Global Placement -- Quadratic
+%       Global Placement
 % ==========================================
+% ==== partition based
+@ARTICLE{PLACE_TCAD04_Hu, 
+  title   = {Fine granularity clustering-based placement}, 
+  author  = {Bo Hu and Marek-Sadowska, M.}, 
+  journal = tcad,
+  year    = {2004}, 
+  month   = {april}, 
+  volume  = {23}, 
+  number  = {4}, 
+  pages   = {527--536}, 
+}
+% ==== Quadratic
 %{{{
 @inproceedings{PLACE_ICCAD05_Kahng,
   title     = {Architecture and details of a high quality, large-scale analytical placer},
@@ -80,35 +126,7 @@
   year      = {2007},
 }
 %}}}
-
-
-% ==========================================
-%     Global Placement -- Non-Linear
-% ==========================================
-
-
-% ==========================================
-%       Global Placement -- Others
-% ==========================================
-@article{PLACE_TCAS81_Goto,
-  title   = {An efficient algorithm for the two-dimensional placement problem in electrical circuit layout},
-  author  = {Satoshi Goto},
-  journal = tcas,
-  volume  = {28},
-  number  = {1},
-  pages   = {12--18},
-  year    = {1981},
-}
-@ARTICLE{PLACE_TCAD04_Hu, 
-  title   = {Fine granularity clustering-based placement}, 
-  author  = {Bo Hu and Marek-Sadowska, M.}, 
-  journal = tcad,
-  year    = {2004}, 
-  month   = {april}, 
-  volume  = {23}, 
-  number  = {4}, 
-  pages   = {527--536}, 
-}
+% ==== Non-Linear
 
 
 % ==========================================
@@ -128,12 +146,47 @@
   year      = {2005},
   pages     = {41--47},
 }
+@inproceedings{PLACE_ASPDAC07_Ren,
+  title     = {Hippocrates: first-do-no-harm detailed placement},
+  author    = {Ren, Haoxing and Pan, David Z and Alpert, Charles J and Nam, Gi-Joon and Villarrubia, Paul},
+  booktitle = aspdac,
+  pages     = {141--146},
+  year      = {2007},
+  abstract  = {},
+}
+@inproceedings{PLACE_ASPDAC07_Roy,
+  title     = {{ECO}-system: Embracing the Change in Placement},
+  author    = {Roy, JA and Markov, IL},
+  booktitle = aspdac,
+  pages     = {147--152},
+  year      = {2007},
+  abstract  = {},
+}
+@article{PLACE_TCAD07_Roy,
+  title    = {{ECO}-system: Embracing the Change in Placement},
+  author   = {Roy, Jarrod A and Markov, Igor L},
+  journal  = tcad,
+  volume   = {26},
+  number   = {12},
+  pages    = {2173--2185},
+  year     = {2007},
+  abstract = {},
+}
 
 
 % ==========================================
 %     Detailed Placement: linear problem
 % ==========================================
 %{{{
+@article{PLACE_TCAS81_Goto,
+  title   = {An efficient algorithm for the two-dimensional placement problem in electrical circuit layout},
+  author  = {Satoshi Goto},
+  journal = tcas,
+  volume  = {28},
+  number  = {1},
+  pages   = {12--18},
+  year    = {1981},
+}
 @inproceedings{PLACE_DATE98_Vygen,
   title     = {Algorithms for detailed placement of standard cells},
   author    = {Vygen, Jens},
@@ -322,6 +375,14 @@
   year      = {2012},
   abstract  = {Bonn-Router},
 }
+@inproceedings{ROUTE_DAC2012_Zhang,
+  title     = {{GDRouter}: Interleaved global routing and detailed routing for ultimate routability},
+  author    = {Zhang, Yanheng and Chu, Chris},
+  booktitle = dac,
+  pages     = {597--602},
+  year      = {2012},
+  abstract  = {incremental global routing though applying detailed routing, improve routability},
+}
 % ==== sequential global routing
 %{{{
 @inproceedings{ROUTE_ASPDAC08_Moffitt,
@@ -332,13 +393,14 @@
   year      = {2008},
 }
 @article{ROUTE_TCAD08_Moffitt,
-  title   ={{MaizeRouter}: Engineering an effective global router},
-  author  ={Moffitt, Michael D},
-  journal =tcad,
-  volume  ={27},
-  number  ={11},
-  pages   ={2017--2026},
-  year    ={2008},
+  title    = {{MaizeRouter}: Engineering an effective global router},
+  author   = {Moffitt, Michael D},
+  journal  = tcad,
+  volume   = {27},
+  number   = {11},
+  pages    = {2017--2026},
+  year     = {2008},
+  abstract = {cheap and incremental topolog- ical reconstruction},
 }
 @inproceedings{ROUTE_ICCAD08_Hsu,
   title     = {Multi-layer global routing considering via and wire capacities},
