@@ -1,7 +1,7 @@
 
-% ==========================================
-%              Summary
-% ==========================================
+% =====================================================================
+%                     Physical Design Summary
+% =====================================================================
 %{{{
 @inproceedings{PD_ISPD00_Cong,
   title     = {Incremental physical design},
@@ -54,11 +54,12 @@
 %}}}
 
 
-% ==========================================
-%       Global Placement
-% ==========================================
-% ==== partition based
-@ARTICLE{PLACE_TCAD04_Hu, 
+% =====================================================================
+%                            Placement
+% =====================================================================
+% ==== partition global place
+%{{{
+@article{PLACE_TCAD04_Hu, 
   title   = {Fine granularity clustering-based placement}, 
   author  = {Bo Hu and Marek-Sadowska, M.}, 
   journal = tcad,
@@ -68,7 +69,9 @@
   number  = {4}, 
   pages   = {527--536}, 
 }
-% ==== Quadratic
+%}}}
+
+% ==== quadratic global place
 %{{{
 @inproceedings{PLACE_ICCAD05_Kahng,
   title     = {Architecture and details of a high quality, large-scale analytical placer},
@@ -78,8 +81,8 @@
   year      = {2005},
 }
 @inproceedings{PLACE_ASPDAC07_Luo,
-  author    = {Luo, Tao and Pan, David Z.},
   title     = {{DPlace2.0}: a stable and efficient analytical placement based on diffusion},
+  author    = {Luo, Tao and Pan, David Z.},
   booktitle = aspdac,
   year      = {2008},
   pages     = {346--351},
@@ -92,12 +95,10 @@
   year      = {2007},
 }
 %}}}
-% ==== Non-Linear
 
+% ==== non-linear global place
 
-% ==========================================
-%     Detailed Placement: linear problem
-% ==========================================
+% ==== detailed / linear place 
 %{{{
 @article{PLACE_TCAS81_Goto,
   title   = {An efficient algorithm for the two-dimensional placement problem in electrical circuit layout},
@@ -165,8 +166,8 @@
   year      = {2014},
 }
 @inproceedings{PLACE_ISPD2014_Chow,
-  author    = {Chow, Wing-Kai and Kuang, Jian and He, Xu and Cai, Wenzan and Young, Evangeline F.Y.},
   title     = {Cell Density-driven Detailed Placement with Displacement Constraint},
+  author    = {Chow, Wing-Kai and Kuang, Jian and He, Xu and Cai, Wenzan and Young, Evangeline F.Y.},
   booktitle = ispd,
   year      = {2014},
   pages     = {3--10},
@@ -175,10 +176,7 @@
 }
 %}}}
 
-
-% ==========================================
-%      Routability Driven Placement
-% ==========================================
+% ==== routability driven place
 %{{{
 @inproceedings{PLACE_ICCAD2010_Taghavi,
   title     = {New placement prediction and mitigation techniques for local routing congestion},
@@ -212,10 +210,7 @@
 }
 %}}}
 
-
-% ==========================================
-%     Incremental Placement (Migration)
-% ==========================================
+% ==== incremental place (migration)
 %{{{
 @article{PLACE_TCAD94_Doll,
   title    = {Iterative placement improvement by network flow methods},
@@ -301,10 +296,8 @@
 } 
 %}}}
 
-
-% =====================================================================
-%                    Timing Driven Placement
-% =====================================================================
+% ==== timing driven place
+%{{{
 @inproceedings{PLACE_ASPDAC08_Luo,
   title     = {Total power optimization combining placement, sizing and multi-{Vt} through slack distribution management},
   author    = {Luo, Tao and Newmark, David and Pan, David Z},
@@ -312,11 +305,9 @@
   pages     = {352--357},
   year      = {2008},
 }
+%}}}
 
-
-% ==========================================
-%          Data-Path Placement
-% ==========================================
+% ==== data-path place
 %{{{
 @inproceedings{PLACE_ISPD2011_Ward,
   title     = {Quantifying academic placer performance on custom designs},
@@ -356,48 +347,10 @@
 %}}}
 
 
-% ==========================================
-%             Latch/Register Placement
-% ==========================================
+% =====================================================================
+%                          Routing
+% =====================================================================
 %{{{
-@article{LATCH_MM2011_Papa,
-  title     = {Physical synthesis with clock-network optimization for large systems on chips},
-  author    = {Papa, David and Alpert, Charles and Sze, Cliff and Li, Zhuo and Viswanathan, Natarajan and Nam, Gi-Joon and Markov, Igor L},
-  journal   = mm,
-  volume    = {31},
-  number    = {4},
-  pages     = {51--62},
-  year      = {2011},
-  publisher = {IEEE},
-}
-@inproceedings{LATCH_ICCAD2013_Cho,
-  title     = {{LatchPlanner}: latch placement algorithm for datapath-oriented high-performance {VLSI} designs},
-  author    = {Cho, Minsik and Xiang, Hua and Ren, Haoxing and Ziegler, Matthew M and Puri, Ruchir},
-  booktitle = iccad,
-  pages     = {342--348},
-  year      = {2013},
-}
-@inproceedings{LATCH_ICCAD2013_Ward,
-  title     = {Clock power minimization using structured latch templates and decision tree induction},
-  author    = {Ward, Samuel I and Viswanathan, Natarajan and Zhou, Nancy Y and Sze, Cliff CN and Li, Zhuo and Alpert, Charles J and Pan, David Z},
-  booktitle = iccad,
-  pages     = {599--606},
-  year      = {2013},
-}
-@inproceedings{LATCH_DAC2014_Held,
-  title     = {Post-Routing Latch Optimization for Timing Closure},
-  author    = {Held, Stephan and Schorr, Ulrike},
-  booktitle = dac,
-  pages     = {7:1--7:6},
-  year      = {2014},
-}
-%}}}
-
-
-
-% ===============================================================
-%                 Global/Detailed Routing
-% ===============================================================
 @inproceedings{ROUTE_DAC2012_Gester,
   title     = {Algorithms and data structures for fast and good {VLSI} routing},
   author    = {Gester, Michael and M{\"u}ller, Dirk and Nieberg, Tim and Panten, Christian and Schulte, Christian and Vygen, Jens},
@@ -414,6 +367,8 @@
   year      = {2012},
   abstract  = {incremental global routing though applying detailed routing, improve routability},
 }
+%}}}
+
 % ==== sequential global routing
 %{{{
 @inproceedings{ROUTE_ICCAD07_Roy,
@@ -510,6 +465,7 @@
   abstract  = {NCTU-GR 2.0},
 }
 %}}}
+
 % ==== concurrent global routing
 %{{{
 @inproceedings{ROUTE_ISPD00_Albrecht,
@@ -595,22 +551,8 @@
   abstract = {dac'09 journal extension},
 }
 %}}}
-% ==== detailed routing
-%{{{
-@inproceedings{ROUTE_ICCAD2014_Jia,
-  title     = {{MCFRoute}: a detailed router based on multi-commodity flow method},
-  author    = {Jia, Xiaotao and Cai, Yici and Zhou, Qiang and Chen, Gang and Li, Zhuoyuan and Li, Zuowei},
-  booktitle = iccad,
-  pages     = {397--404},
-  year      = {2014},
-}
-%}}}
 
-
-
-% ===============================================================
-%              Layer Assignment 
-% ===============================================================
+% ==== layer assignment
 %{{{
 @article{ROUTE_TC89_Naclerio,
   title    = {The via minimization problem is {NP}-complete},
@@ -729,10 +671,8 @@
 }
 %}}}
 
-
-% ===============================================================
-%                 Layer Directive
-% ===============================================================
+% ==== layer directive
+%{{{
 @inproceedings{ROUTE_ASPDAC2011_Moffitt,
   title     = {Wire synthesizable global routing for timing closure},
   author    = {Moffitt, Michael D and Sze, CN},
@@ -756,24 +696,32 @@
   pages     = {1873--1878},
   year      = {2013},
 }
+%}}}
 
-
-% ===============================================================
-%          Routability Eveluation 
-% ===============================================================
-@inproceedings{ROUTE_DAC2013_Liu,
-  title    = {Routing congestion estimation with real design constraints},
-  author   = {Liu, Wen-Hao and Wei, Yaoguang and Sze, Cliff and Alpert, Charles J and Li, Zhuo and Li, Yih-Lang and Viswanathan, Natarajan},
-  booktitle= dac,
-  year     = {2013},
-  pages    = {92:1--92:8},
-  abstract = {consider the net grouping during routing},
+% ==== track assignment
+%{{{
+@inproceedings{ROUTE_DAC07_Cho,
+  title     = {{TROY}: Track Router with Yield-driven Wire Planning},
+  author    = {Minsik Cho and Hua Xiang and Ruchir Puri and David Z. Pan},
+  booktitle = dac,
+  pages     = {55--58},
+  year      = {2007},
 }
+%}}}
 
+% ==== detailed routing
+%{{{
+@inproceedings{ROUTE_ICCAD2014_Jia,
+  title     = {{MCFRoute}: a detailed router based on multi-commodity flow method},
+  author    = {Jia, Xiaotao and Cai, Yici and Zhou, Qiang and Chen, Gang and Li, Zhuoyuan and Li, Zuowei},
+  booktitle = iccad,
+  pages     = {397--404},
+  year      = {2014},
+}
+%}}}
 
-% ===============================================================
-%                    Channel Routing 
-% ===============================================================
+% ==== channel routing 
+%{{{
 @inproceedings{ROUTE_DAC71_Hashimoto,
   title     = {Wire routing by optimizing channel assignment within large apertures},
   author    = {Hashimoto, Akihiro and Stevens, James},
@@ -782,25 +730,125 @@
   year      = {1971},
   abstract  = {left-edge algorithm, no dog-leg is allowed},
 }
+%}}}
 
-
-% ===============================================================
-%                     Track Assignment
-% ===============================================================
-@inproceedings{ROUTE_DAC07_Cho,
-  title     = {{TROY}: Track Router with Yield-driven Wire Planning},
-  author    = {Minsik Cho and Hua Xiang and Ruchir Puri and David Z. Pan},
-  booktitle = dac,
-  pages     = {55--58},
-  year      = {2007},
+% ==== routability eveluation 
+%{{{
+@inproceedings{ROUTE_DAC2013_Liu,
+  title    = {Routing congestion estimation with real design constraints},
+  author   = {Liu, Wen-Hao and Wei, Yaoguang and Sze, Cliff and Alpert, Charles J and Li, Zhuo and Li, Yih-Lang and Viswanathan, Natarajan},
+  booktitle= dac,
+  year     = {2013},
+  pages    = {92:1--92:8},
+  abstract = {consider the net grouping during routing},
 }
+%}}}
 
 
+% =====================================================================
+%                   Redundant Via Insertion 
+% =====================================================================
+% ==== post-route redundant via
+%{{{
+@article{RVIA_TSM04_Allan,
+  title     = {Targeted layout modifications for semiconductor yield/reliability enhancement},
+  author    = {Allan, Gerard A},
+  journal   = tsm,
+  volume    = {17},
+  number    = {4},
+  pages     = {573--581},
+  year      = {2004},
+  publisher = {IEEE},
+  abstract  = {},
+}
+@inproceedings{RVIA_ASPDAC06_Lee,
+  title     = {Post-routing redundant via insertion for yield/reliability improvement},
+  author    = {Lee, Kuang-Yao and Wang, Ting-Chi},
+  booktitle = aspdac,
+  pages     = {303--308},
+  year      = {2006},
+  abstract  = {MIS based},
+}
+@inproceedings{RVIA_ICCAD06_Lee,
+  title     = {Post-routing redundant via insertion and line end extension with via density consideration},
+  author    = {Lee, Kuang-Yao and Wang, Ting-Chi and Chao, Kai-Yuan},
+  booktitle = iccad,
+  pages     = {633--640},
+  year      = {2006},
+  abstract  = {MIS based, redundant via + line-end extension},
+}
+@inproceedings{RVIA_ISPD08_Lee,
+  title     = {Optimal post-routing redundant via insertion},
+  author    = {Lee, Kuang-Yao and Koh, Cheng-Kok and Wang, Ting-Chi and Chao, Kai-Yuan},
+  booktitle = ispd,
+  pages     = {111--117},
+  year      = {2008},
+  abstract  = {ILP based},
+}
+@article{RVIA_TCAD08_Lee,
+  title     = {Fast and optimal redundant via insertion},
+  author    = {Lee, Kuang-Yao and Koh, Cheng-Kok and Wang, Ting-Chi and Chao, Kai-Yuan},
+  journal   = tcad,
+  volume    = {27},
+  number    = {12},
+  pages     = {2197--2208},
+  year      = {2008},
+  publisher = {IEEE},
+  abstract  = {ispd08 journal version},
+}
+@inproceedings{RVIA_ISPD09_Lee,
+  title     = {Redundant via insertion with wire bending},
+  author    = {Lee, Kuang-Yao and Lin, Shing-Tung and Wang, Ting-Chi},
+  booktitle = ispd,
+  pages     = {123--130},
+  year      = {2009},
+  abstract  = {redundant via + wire bending, 0-1 ILP},
+}
+@inproceedings{RVIA_ASPDAC2011_Lin,
+  title     = {Simultaneous redundant via insertion and line end extension for yield optimization},
+  author    = {Lin, Shing-Tung and Lee, Kuang-Yao and Wang, Ting-Chi and Koh, Cheng-Kok and Chao, Kai-Yuan},
+  booktitle = aspdac,
+  pages     = {633--638},
+  year      = {2011},
+  abstract  = {},
+}
+%}}}
+
+% ==== redundant via aware routing
+%{{{
+@inproceedings{ROUTE_ASPDAC05_Xu,
+  title     = {Redundant-via enhanced maze routing for yield improvement},
+  author    = {Xu, Gang and Huang, Li-Da and Pan, David Z and Wong, Martin DF},
+  booktitle = aspdac,
+  pages     = {1148--1151},
+  year      = {2005},
+  abstract  = {lagrangian relaxation; constrainted shortest path},
+}
+@inproceedings{ROUTE_GLSVLSI05_Yao,
+  title     = {Improved multilevel routing with redundant via placement for yield and reliability},
+  author    = {Yao, Hailong and Cai, Yici and Hong, Xianlong and Zhou, Qiang},
+  booktitle = glsvlsi,
+  pages     = {143--146},
+  year      = {2005},
+}
+@article{ROUTE_TCAD08_Chen,
+  title     = {Full-chip routing considering double-via insertion},
+  author    = {Chen, Huang-Yu and Chiang, Mei-Fang and Chang, Yao-Wen and Chen, Lumdo and Han, Brian},
+  journal   = tcad,
+  volume    = {27},
+  number    = {5},
+  pages     = {844--857},
+  year      = {2008},
+  publisher = {IEEE},
+}
+%}}}
 
 
-% ==============================================================
-%                 Fixed-Outline Floorplanning
-% ==============================================================
+% =====================================================================
+%                         Floorplanning
+% =====================================================================
+% ==== fixed-outline floorplan
+%{{{
 @inproceedings{FLOOR_ASPDAC01_Dong,
   title     = {{VLSI} Block Placement Using Less Flexibility First Principles},
   author    = {Sheqin Dong and Xianlong Hong and Youliang Wu and Yizhou Lin and Jun Gu},
@@ -818,28 +866,27 @@
   year    = {2003},
 }
 @inproceedings{FLOOR_DAC08_Yan,
-  author    = {Jackey Z. Yan and Chris Chu},
   title     = {{DeFer}: Deferred Decision Making Enabled Fixed-Outline Floorplanner},
+  author    = {Jackey Z. Yan and Chris Chu},
   booktitle = dac,
   pages     = {161--166},
   year      = {2008},
 }
+%}}}
 
-
-% ==============================================================
-%               Floorplan: Area Optimization
-% ==============================================================
+% ==== area optimization
+%{{{
 @inproceedings{FLOOR_DAC00_Chen,
-  author    = {Pinhong Chen and Ernest S. Kuh},
   title     = {Floorplan Sizing by Linear Programming Approximation},
+  author    = {Pinhong Chen and Ernest S. Kuh},
   booktitle = dac,
   year      = {2000},
   pages     = {468--471},
 }
+%}}}
 
-% ==============================================================
-%                Floorplan: Wire-Length Optimization
-% ==============================================================
+% ==== wire-length optimization
+%{{{
 @article{FLOOR_TC91_Cheng,
   title    = {The Orientation of Modules Based on Graph Decomposition},
   author   = {Cheng, C. K. and Yao, S. Z. and Hu, T. C.},
@@ -849,7 +896,7 @@
   month    = {June},
   pages    = {774--780},
   year     = {1991},
-  abstract  = {},
+  abstract = {},
 } 
 @inproceedings{FLOOR_ASPDAC05_Tang,
   title     = {Optimal redistribution of white space for wire length minimization},
@@ -875,15 +922,13 @@
   year      = {2006}, 
   abstract  = {},
 }
+%}}}
 
-
-% ==============================================================
-%                Floorplanning Data Structure
-% ==============================================================
+% ==== data structure
 %{{{
 @inproceedings{FLOOR_DAC00_BTree,
+  title     = {{B*-Trees}: A New Representation for Non-Slicing Floorplans},
   author    = {Yun-Chih Chang and Yao-Wen Chang and Guang-Ming Wu and Shu-Wei Wu},
-  title     = {B*-Trees: A New Representation for Non-Slicing Floorplans},
   booktitle = dac,
   pages     = {458--463},
   year      = {2000},
@@ -927,10 +972,8 @@
 }
 %}}}
 
-
-% ==============================================================
-%                    ILP Methods
-% ==============================================================
+% ==== ILP based 
+%{{{
 @article{FLOOR_TCAD91_Sutanthavibul, 
   title     = {An analytical approach to floorplan design and optimization}, 
   author    = {Sutanthavibul, S. and Shragowitz, E. and Rosen, J.B.}, 
@@ -942,4 +985,45 @@
   pages     = {761--769},
   abstract  = {},
 }
+%}}}
+
+
+
+% =====================================================================
+%                  Latch / Register Placement
+% =====================================================================
+%{{{
+@article{LATCH_MM2011_Papa,
+  title     = {Physical synthesis with clock-network optimization for large systems on chips},
+  author    = {Papa, David and Alpert, Charles and Sze, Cliff and Li, Zhuo and Viswanathan, Natarajan and Nam, Gi-Joon and Markov, Igor L},
+  journal   = mm,
+  volume    = {31},
+  number    = {4},
+  pages     = {51--62},
+  year      = {2011},
+  publisher = {IEEE},
+}
+@inproceedings{LATCH_ICCAD2013_Cho,
+  title     = {{LatchPlanner}: latch placement algorithm for datapath-oriented high-performance {VLSI} designs},
+  author    = {Cho, Minsik and Xiang, Hua and Ren, Haoxing and Ziegler, Matthew M and Puri, Ruchir},
+  booktitle = iccad,
+  pages     = {342--348},
+  year      = {2013},
+}
+@inproceedings{LATCH_ICCAD2013_Ward,
+  title     = {Clock power minimization using structured latch templates and decision tree induction},
+  author    = {Ward, Samuel I and Viswanathan, Natarajan and Zhou, Nancy Y and Sze, Cliff CN and Li, Zhuo and Alpert, Charles J and Pan, David Z},
+  booktitle = iccad,
+  pages     = {599--606},
+  year      = {2013},
+}
+@inproceedings{LATCH_DAC2014_Held,
+  title     = {Post-Routing Latch Optimization for Timing Closure},
+  author    = {Held, Stephan and Schorr, Ulrike},
+  booktitle = dac,
+  pages     = {7:1--7:6},
+  year      = {2014},
+}
+%}}}
+
 
