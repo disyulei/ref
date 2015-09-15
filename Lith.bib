@@ -147,6 +147,7 @@
 }
 %}}}
 
+
 % ===================================================
 %                 DFM aware Routing
 % ===================================================
@@ -527,9 +528,19 @@
 
 
 % ===================================================
-%                      OPC
+%                   OPC
 % ===================================================
 %{{{
+@article{OPC_JJAP96_Miyama,
+  title     = {Large-area optical proximity correction with a combination of rule-based and simulation-based methods},
+  author    = {Miyama, Sachiko and Yamamoto, Kazuko and Koyama, Kiyomi},
+  journal   = {Japanese Journal of Applied Physics},
+  volume    = {35},
+  number    = {12S},
+  pages     = {6370},
+  year      = {1996},
+  publisher = {IOP Publishing},
+}
 @inproceedings{OPC_SPIE03_Cobb,
   title     = {{OPC} methods to improve image slope and process window},
   author    = {Cobb, Nicolas B and Granik, Yuri},
@@ -581,14 +592,15 @@
   year     = {2008},
   abstract = {OPC with linear regression},
 }
-@article{OPC_JOIOP2010_Jia,
- title		= {Machine learning for inverse lithography: using stochastic gradient descent for robust photomask synthesis},
- author		= {Jia, Ningning and Lam, Edmund Y},
- journal	= joiop,
- volume		= {12},
- number		= {4},
- pages		= {045601:1--045601:9},
- year		= {2010},
+@article{OPC_JOIOP2013_Luo,
+  title     = {Optical proximity correction using a multilayer perceptron neural network},
+  author    = {Luo, Rui},
+  journal   = joiop,
+  volume    = {15},
+  number    = {7},
+  pages     = {075708},
+  year      = {2013},
+  publisher = {IOP Publishing},
 }
 @inproceedings{OPC_SPIE2013_Hsuan,
   title     = {Multiple-step process window aware {OPC} for hyper-{NA} lithography},
@@ -604,6 +616,27 @@
   pages     = {271--274},
   year      = {2013},
 }
+@article{OPC_JZUS2014_Luo,
+  title     = {{SVM} based layout retargeting for fast and regularized inverse lithography},
+  author    = {Luo, Kai-Sheng and Shi, Zheng and Yan, Xiao-Lang and Geng, Zhen},
+  journal   = {Journal of Zhejiang University SCIENCE C},
+  volume    = {15},
+  number    = {5},
+  pages     = {390--400},
+  year      = {2014},
+  publisher = {Springer},
+}
+%}}}
+% === ILT
+@article{OPC_JOIOP2010_Jia,
+ title		= {Machine learning for inverse lithography: using stochastic gradient descent for robust photomask synthesis},
+ author		= {Jia, Ningning and Lam, Edmund Y},
+ journal	= joiop,
+ volume		= {12},
+ number		= {4},
+ pages		= {045601:1--045601:9},
+ year		= {2010},
+}
 @inproceedings{OPC_DAC2014_Gao,
   title     = {{MOSAIC}: Mask Optimizing Solution With Process Window Aware Inverse Correction},
   author    = {Jhih-Rong Gao and Xiaoqing Xu and Bei Yu and David Z. Pan},
@@ -612,12 +645,11 @@
   year      = {2014},
   location  = {San Jose, California},
 }
-%}}}
 
 
-% ===========================================================
-%                        CMP
-% ===========================================================
+% ===================================================
+%                   CMP
+% ===================================================
 %{{{
 @inproceedings{CMP_ASPDAC99_Kahng,
   title     = {New multilevel and hierarchical algorithms for layout density control},
@@ -773,8 +805,9 @@
 
 
 % ===================================================
-%                     DSA
+%                   DSA
 % ===================================================
+% ==== DSA summary
 %{{{
 @inproceedings{DSA_IEDM2010_Chang,
   title     = {Experimental demonstration of aperiodic patterns of directed self-assembly by block copolymer lithography for random logic circuit layout},
@@ -782,6 +815,13 @@
   booktitle = iedm,
   pages     = {33.2.1--33.2.4},
   year      = {2010},
+}
+@inproceedings{DSA_SPIE2012_Seino,
+  title     = {Contact hole shrink process using directed self-assembly},
+  author    = {Seino, Yuriko and Yonemitsu, Hiroki and Sato, Hironobu and Kanno, Masahiro and Kato, Hikazu and Kobayashi, Katsutoshi and Kawanishi, Ayako and Azuma, Tsukasa and Muramatsu, Makoto and Nagahara, Seiji and others},
+  booktitle = spie,
+  volume    = 8323,
+  year      = {2012},
 }
 @inproceedings{DSA_SPIE2012_Somervell,
   title     = {Comparison of directed self-assembly integrations},
@@ -805,6 +845,9 @@
   number	= {23},
   year		= {2012},
 }
+%}}}
+% ==== DSA aware design
+%{{{
 @inproceedings{DSA_SPIE2012_Yi,
   title		= {Contact-hole patterning for random logic circuit using block copolymer directed self-assembly},
   author	= {He Yi and Xin-Yu Bao and Jie Zhang and Richard Tiberio and James Conway and Li-Wen Chang and Subhasish Mitra and H.-S. Philip Wong},
@@ -902,9 +945,11 @@
 }
 %}}}
 
-% ===========================================================
-%                    EUV Summary
-% ===========================================================
+
+% ===================================================
+%                   EUV
+% ===================================================
+% ==== EUV summary
 %{{{
 @article{EUV_JM3_09_Levinson,
   title   = {Extreme ultraviolet lithography’s path to manufacturing},
@@ -932,10 +977,7 @@
   year    = {2010},
 }
 %}}}
-
-% ========================================================================
-%                             EUV Models
-% ========================================================================
+% ==== EUV models
 %{{{
 @inproceedings{EUV_SPIE05_Schellenberg,
   title     = {Layout Compensation for {EUV} Flare},
@@ -1022,13 +1064,8 @@
   year      = {2010},
 }
 %}}}
-
-
-
-
-% ========================================================================
-%                    EUV Pattern Relocation
-% ========================================================================
+% ==== EUV pattern relocation
+%{{{
 @inproceedings{EUV_ASPDAC2012_Zhang,
   title     = {Efficient Pattern Relocation for {EUV} Blank Defect Mitigation},
   author    = {Hongbo Zhang and Yuelin Du and Martin D. F. Wong and Rasit O. Tapalaglu},
@@ -1050,11 +1087,9 @@
   pages     = {261--266},
   year      = {2013},
 }
-
-
-% ========================================================================
-%                   EUV aware Physical Design
-% ========================================================================
+%}}}
+% ==== EUV aware physical design
+%{{{
 @inproceedings{EUV_SPIE2011_Kagalwalla,
   title     = {Defect-aware Reticle Floorplanning for {EUV} Masks},
   author    = {Abde Ali Kagalwalla and Puneet Gupta and Duck-Hyung Hur and Chul-Hong Park},
@@ -1083,11 +1118,24 @@
   volume    = {7823},
   year      = {2010},
 }
+%}}}
 
 
-% ========================================================================
-%                                LER
-% ========================================================================
+% ===================================================
+%                   NIL
+% ===================================================
+@inproceedings{NIL_SPIE2011_Higashiki,
+  title     = {Nanoimprint lithography for semiconductor devices and future patterning innovation},
+  author    = {Higashiki, Tatsuhiko and Nakasugi, Tetsuro and Yoneda, Ikuo},
+  booktitle = spie,
+  volume    = {7970},
+  year      = {2011},
+}
+
+% ===================================================
+%                   LER
+% ===================================================
+%{{{
 @inproceedings{LER_SPIE09_Naulleau,
  title     = {Implications of image plane line-edge roughness requirements on extreme ultraviolet mask specifications},
  author    = {P. Naulleau and S. George},
@@ -1108,5 +1156,6 @@
   year      = {2011},
   pages     = {447--452},
 }
+%}}}
 
 
