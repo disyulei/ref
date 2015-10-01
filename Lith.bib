@@ -173,8 +173,44 @@
 % ===================================================
 %                 DFM aware Routing
 % ===================================================
+% ==== DSA aware routing
 %{{{
-% ==== DPL
+@inproceedings{DFMR_SPIE2014_Du,
+  title		= {{DSA}-Aware Detailed Routing for Via Layer Optimization},
+  author	= {Yuelin Du and Zigang Xiao and Martin D.F. Wong and He Yi and H.-S. Philip Wong},
+  booktitle	= spie,
+  volume	= {9049},
+  year		= {2014},
+}
+%}}}
+% ==== EBL aware routing
+%{{{
+@inproceedings{EBL_DAC2013_Fang,
+  title     = {Stitch-aware routing for multiple e-beam lithography},
+  author    = {Fang, Shao-Yun and Liu, Iou-Jen and Chang, Yao-Wen},
+  booktitle = dac,
+  pages     = {25:1--25:6},
+  year      = {2013},
+}
+@inproceedings{EBL_ISPD2013_Ikeno,
+  title     = {A structured routing architecture and its design methodology suitable for high-throughput electron beam direct writing with character projection},
+  author    = {Ikeno, Rimon and Maruyama, Takashi and Komatsu, Satoshi and Iizuka, Tetsuya and Ikeda, Makoto and Asada, Kunihiro},
+  booktitle = ispd,
+  pages     = {69--76},
+  year      = {2013},
+}
+@article{EBL_IEICE2013_Ikeno,
+  title   = {High-Throughput Electron Beam Direct Writing of {VIA} Layers by Character Projection with One-Dimensional {VIA} Characters},
+  author  = {IKENO, Rimon and MARUYAMA, Takashi and KOMATSU, Satoshi and IIZUKA, Tetsuya and IKEDA, Makoto and ASADA, Kunihiro},
+  journal = ieice,
+  volume  = {96},
+  number  = {12},
+  pages   = {2458--2466},
+  year    = {2013},
+}
+%}}}
+% ==== DPL aware routing
+%{{{
 @inproceedings{DFMR_ICCAD08_Cho,
   title     = {Double patterning technology friendly detailed routing},
   author    = {Cho, Minsik and Ban, Yongchan and Pan, David Z.},
@@ -220,7 +256,9 @@
   location  = {Yokohama, Japan},
   abstract  = {Novelty: proof that DPL layout decomposition with stitch and conflict minimization is NP-complete.},
 }
-% ==== for SADP
+%}}}
+% ==== SADP aware routing
+%{{{
 @inproceedings{DFMR_SPIE2011_Mirsaeedi,
   title     = {Self-aligned double-patterning {(SADP)} friendly detailed routing},
   author    = {Mirsaeedi, Minoo and Torres, J. Andres and Anis, Mohab},
@@ -284,8 +322,9 @@
   pages     = {28:1--28:6},
   year      = {2015},
 }
-
-% ==== for TPL
+%}}}
+% ==== TPL aware routing
+%{{{
 @inproceedings{DFMR_DAC2012_Ma,
   title      = {Triple patterning aware routing and its comparison with double patterning aware routing in 14nm technology},
   author     = {Ma, Qiang and Zhang, Hongbo and Wong, Martin D. F.},
@@ -316,8 +355,9 @@
   pages     = {1641--1646},
   year      = {2015},
 }
-
-% ==== lithography friendly
+%}}}
+% ==== general lithography aware routing
+%{{{
 @inproceedings{DFMR_DAC04_Huang,
   author    = {L.-D. Huang and M. D. F. Wong},
   title     = {Optical Proximity Correction ({OPC}): Friendly Maze Routing},
@@ -418,6 +458,7 @@
 % ===================================================
 %               DFM aware Placement
 % ===================================================
+% ==== general litho aware placement
 %{{{
 @article{DFMP_TCAD08_Chen,
   title   = {Metal-density-driven Placement for {CMP} Variation and Routability},
@@ -444,6 +485,9 @@
   pages   = {1002--1006},
   year    = {2010},
 }
+%}}}
+% ==== DPL aware placement
+%{{{
 @inproceedings{DFMP_ICCAD09_Gupta,
   title     = {Timing yield-aware color reassignment and detailed placement perturbation for double patterning lithography},
   author    = {Gupta, Mohit and Jeong, Kwangok and Kahng, Andrew B},
@@ -476,6 +520,9 @@
   month  = jul # "~23",
   note   = {{US} Patent 8,495,548},
 }
+%}}}
+% ==== SADP aware placement
+%{{{
 @inproceedings{DFMP_SPIE2013_Gao,
   title     = {Self-aligned Double Patterning Friendly Configuration for Standard Cell Library Considering Placement},
   author    = {Jhih-Rong Gao and Bei Yu and Ru Huang and David Z. Pan},
@@ -483,6 +530,9 @@
   volume    = {8684},
   year      = {2013},
 }
+%}}}
+% ==== TPL aware placement
+%{{{
 @inproceedings{DFMP_ICCAD2013_Yu,
   title     = {Methodology for Standard Cell Compliance and Detailed Placement for Triple Patterning Lithography},
   author    = {Bei Yu and Xiaoqing Xu and Gao, Jhih-Rong and Pan, David Z.},
@@ -537,16 +587,18 @@
   booktitle = iccad,
   year      = {2015},
 }
-
-% ==== FinFET aware
-@inproceedings{DFMP_DATE2014_Du,
-  title     = {Optimization of standard cell based detailed placement for 16 nm {FinFET} process},
-  author    = {Du, Yuelin and Martin D. F. Wong},
-  booktitle = date,
-  pages     = {357:1--357:6},
-  year      = {2014},
-}
 %}}}
+% ==== FinFET aware placement
+%{{{
+%}}}
+% ==== EBL aware placement
+@inproceedings{DFMP_ASPDAC2016_Lin,
+  title     = {Stitch Aware Detailed Placement for Multiple E-Beam Lithography},
+  author    = {Yibo Lin and Bei Yu and Yi Zou and Zhuo Li and Charles J. Alpert and David Z. Pan},
+  booktitle = aspdac,
+  year      = {2016},
+}
+% ==== DSA aware placement
 
 
 % ===================================================
@@ -829,7 +881,7 @@
 % ===================================================
 %                   DSA
 % ===================================================
-% ==== DSA summary
+% == DSA summary
 %{{{
 @inproceedings{DSA_IEDM2010_Chang,
   title     = {Experimental demonstration of aperiodic patterns of directed self-assembly by block copolymer lithography for random logic circuit layout},
@@ -852,6 +904,13 @@
   volume    = {8325},
   year      = {2012},
 }
+@inproceedings{DSA_SPIE2012_Yi,
+  title		= {Contact-hole patterning for random logic circuit using block copolymer directed self-assembly},
+  author	= {He Yi and Xin-Yu Bao and Jie Zhang and Richard Tiberio and James Conway and Li-Wen Chang and Subhasish Mitra and H.-S. Philip Wong},
+  booktitle	= spie,
+  volume	= {8323},
+  year		= {2012},
+}
 @inproceedings{DSA_SPIE2012_Wong,
   title		= {Block copolymer directed self-assembly enables sublithographic patterning for device fabrication},
   author	= {H.-S. Philip Wong and Chris Bencher and He Yi and Xin-Yu Bao and Li-Wen Chang},
@@ -866,31 +925,6 @@
   volume	= {24},
   number	= {23},
   year		= {2012},
-}
-%}}}
-% ==== DSA aware design
-%{{{
-@inproceedings{DSA_SPIE2012_Yi,
-  title		= {Contact-hole patterning for random logic circuit using block copolymer directed self-assembly},
-  author	= {He Yi and Xin-Yu Bao and Jie Zhang and Richard Tiberio and James Conway and Li-Wen Chang and Subhasish Mitra and H.-S. Philip Wong},
-  title		= {Contact-hole patterning for random logic circuit using block copolymer directed self-assembly},
-  booktitle	= spie,
-  volume	= {8323},
-  year		= {2012},
-}
-@inproceedings{DSA_SPIE2013_Xiao,
-  title		= {{DSA} Template Mask Determination and Cut Redistribution for Advanced {1D} Gridded Design},
-  author	= {Zigang Xiao and Yuelin Du and Martin D.F. Wong and Hongbo Zhang},
-  booktitle	= spie,
-  volume	= {8880},
-  year		= {2013},
-}
-@inproceedings{DSA_ICCAD2013_Du,
-  title		= {Block Copolymer Directed Self-Assembly ({DSA}) Aware Contact Layer Optimization for 10 nm {1D} Standard Cell Library},
-  author	= {Yuelin Du and Daifeng Guo and Martin D. F. Wong and He Yi and H.-S. Philip Wong and Hongbo Zhang and Qiang Ma},
-  booktitle	= iccad,
-  pages		= {186--193},
-  year		= {2013},
 }
 @article{DSA_MATERIAL2013_Jeong,
   title		= {Directed self-assembly of block copolymer for next generation nanolithography},
@@ -909,46 +943,11 @@
   number	= {3},
   year		= {2013},
 }
-@inproceedings{DSA_SPIE2014_Du,
-  title		= {{DSA}-Aware Detailed Routing for Via Layer Optimization},
-  author	= {Yuelin Du and Zigang Xiao and Martin D.F. Wong and He Yi and H.-S. Philip Wong},
-  booktitle	= spie,
-  volume	= {9049},
-  year		= {2014},
-}
-@inproceedings{DSA_SPIE2014_Ma,
-  title		= {Challenges and opportunities in applying grapho-epitaxy {DSA} lithography to metal cut and contact/via applications},
-  author	= {Yuansheng Ma and J. Andres Torres and Germain Fenger and Yuri Granik and Julien Ryckaert and Geert Vanderberghe and Joost Bekaert and James Word},
-  booktitle	= spie,
-  volume	= {9231},
-  year		= {2014},
-}
-@inproceedings{DSA_DAC2014_Xiao,
-  title     = {Directed Self-Assembly ({DSA}) Template Pattern Verification},
-  author    = {Xiao, Zigang and Du, Yuelin and Tian, Haitong and Wong, Martin D. F. and Yi, He and Wong, H-S Philip and Zhang, Hongbo},
-  booktitle = dac,
-  year      = {2014},
-  pages     = {55:1--55:6},
-}
 @inproceedings{DSA_SPIE2015_Graves,
   title		= {DSA graphoepitaxy calibration for contact hole multiplication},
   author	= {Trey Graves and Alessandro Vaglio Pret and Stewart Robertson and Mark Smith and Jan Doise and Joost Bekaert and Roel Gronheid},
   booktitle	= spie,
   volume	= {9425},
-  year		= {2015},
-}
-@inproceedings{DSA_GLSVLSI2015_Ou,
-  title		= {Directed Self-Assembly Based Cut Mask Optimization for Unidirectional Design},
-  author	= {Jiaojiao Ou and Bei Yu and Jhih-Rong Gao and David Z. Pan and Moshe Preil and Azat Latypov},
-  booktitle	= glsvlsi,
-  year		= {2015},
-  pages		= {83--86},
-}
-@inproceedings{DSA_SPIE2015_Badr,
-  title		= {Incorporating DSA in multipatterning Semiconductor manufacturing technologies},
-  author	= {Yasmine Badr and Juan Andres Torres and Yuansheng Ma and Joydeep Mitra and Puneet Gupta},
-  booktitle	= spie,
-  volume	= {9427},
   year		= {2015},
 }
 @inproceedings{DSA_ISPD2015_Wong,
@@ -958,12 +957,35 @@
   year		= {2015},
   pages		= {65--66},
 }
-@inproceedings{DSA_ASPDAC2015_Xiao,
-  title     = {Contact Pitch and Location Prediction for Directed Self-Assembly Template Verification},
-  author    = {Zigang Xiao and Yuelin Du and Martin D.F. Wong and He Yi and H.-S. Philip Wong and Hongbo Zhang},
-  booktitle	= aspdac,
-  year      = {2015},
-  pages     = {644--651},
+%}}}
+% == DSA template assignment
+%{{{
+@inproceedings{DSA_ICCAD2013_Du,
+  title		= {Block Copolymer Directed Self-Assembly ({DSA}) Aware Contact Layer Optimization for 10 nm {1D} Standard Cell Library},
+  author	= {Yuelin Du and Daifeng Guo and Martin D. F. Wong and He Yi and H.-S. Philip Wong and Hongbo Zhang and Qiang Ma},
+  booktitle	= iccad,
+  pages		= {186--193},
+  year		= {2013},
+}
+@inproceedings{DSA_SPIE2013_Xiao,
+  title		= {{DSA} Template Mask Determination and Cut Redistribution for Advanced {1D} Gridded Design},
+  author	= {Zigang Xiao and Yuelin Du and Martin D.F. Wong and Hongbo Zhang},
+  booktitle	= spie,
+  volume	= {8880},
+  year		= {2013},
+}
+@inproceedings{DSA_GLSVLSI2015_Ou,
+  title		= {Directed Self-Assembly Based Cut Mask Optimization for Unidirectional Design},
+  author	= {Jiaojiao Ou and Bei Yu and Jhih-Rong Gao and David Z. Pan and Moshe Preil and Azat Latypov},
+  booktitle	= glsvlsi,
+  year		= {2015},
+  pages		= {83--86},
+}
+@inproceedings{DSA_ICCAD2015_Fang,
+  title		= {Simultaneous Guiding Template Optimization and Redundant Via Insertion for Directed Self-Assembly},
+  author	= {Shao-Yun Fang and Yun-Xiang Hong and Yi-Zhen Lu},
+  booktitle	= iccad,
+  year		= {2015},
 }
 @article{DSA_JM3_2015_Ou,
   title		= {Directed self-assembly cut mask assignment for unidirectional design},
@@ -974,7 +996,22 @@
   year		= {2015},
 }
 %}}}
-% ==== DSA+MPL
+% == DSA+MP
+%{{{
+@inproceedings{DSA_SPIE2014_Ma,
+  title		= {Challenges and opportunities in applying grapho-epitaxy {DSA} lithography to metal cut and contact/via applications},
+  author	= {Yuansheng Ma and J. Andres Torres and Germain Fenger and Yuri Granik and Julien Ryckaert and Geert Vanderberghe and Joost Bekaert and James Word},
+  booktitle	= spie,
+  volume	= {9231},
+  year		= {2014},
+}
+@inproceedings{DSA_SPIE2015_Badr,
+  title		= {Incorporating DSA in multipatterning Semiconductor manufacturing technologies},
+  author	= {Yasmine Badr and Juan Andres Torres and Yuansheng Ma and Joydeep Mitra and Puneet Gupta},
+  booktitle	= spie,
+  volume	= {9427},
+  year		= {2015},
+}
 @inproceedings{DSA_DAC2015_Badr,
   title     = {Mask Assignment and Synthesis of {DSA-MP} Hybrid Lithography for Sub-7Nm Contacts/Vias},
   author    = {Badr, Yasmine and Torres, Andres and Gupta, Puneet},
@@ -982,6 +1019,24 @@
   year      = {2015},
   pages     = {70:1--70:6},
 }
+%}}}
+% == DSA verification
+%{{{
+@inproceedings{DSA_DAC2014_Xiao,
+  title     = {Directed Self-Assembly ({DSA}) Template Pattern Verification},
+  author    = {Xiao, Zigang and Du, Yuelin and Tian, Haitong and Wong, Martin D. F. and Yi, He and Wong, H-S Philip and Zhang, Hongbo},
+  booktitle = dac,
+  year      = {2014},
+  pages     = {55:1--55:6},
+}
+@inproceedings{DSA_ASPDAC2015_Xiao,
+  title     = {Contact Pitch and Location Prediction for Directed Self-Assembly Template Verification},
+  author    = {Zigang Xiao and Yuelin Du and Martin D.F. Wong and He Yi and H.-S. Philip Wong and Hongbo Zhang},
+  booktitle	= aspdac,
+  year      = {2015},
+  pages     = {644--651},
+}
+%}}}
 
 
 % ===================================================
