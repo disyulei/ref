@@ -34,12 +34,18 @@
   year      = {2014},
   publisher = {Springer},
 }
+@phdthesis{DFR_PHD2015_Roy,
+  title    = {Logic and Clock Network Optimization in Nanometer {VLSI} Circuits},
+  author   = {Subhendu Roy},
+  school   = {The University of Texas at Austin},
+  year     = {2015},
+}
 
 
 % ====================================================================
 %                   Electron-Migration
 % ====================================================================
-% ==== model
+% EM model
 %{{{
 @article{EM_JAP1991_Lloyd,
   title     = {Electromigration failure},
@@ -114,6 +120,13 @@
   publisher = {IEEE},
   abstract  = {},
 }
+@inproceedings{EM_IRPS2010_Park,
+  title     = {New electromigration validation: Via node vector method},
+  author    = {Park, Young-Joon and Jain, Palkesh and Krishnan, Srikanth},
+  booktitle = irps,
+  pages     = {698--704},
+  year      = {2010},
+}
 @article{EM_MicroRel2010_DeOrio,
   title     = {Physically based models of electromigration: From {Black’s} equation to modern {TCAD} models},
   author    = {De Orio, RL and Ceric, Hajdin and Selberherr, Siegfried},
@@ -135,6 +148,13 @@
   year      = {2012},
   publisher = {Elsevier},
   abstract  = {},
+}
+@inproceedings{EM_DAC2014_Huang,
+  title     = {Physics-based Electromigration Assessment for Power Grid Networks},
+  author    = {Huang, Xin and Yu, Tan and Sukharev, Valeriy and Tan, Sheldon X.-D.},
+  booktitle = dac,
+  year      = {2014},
+  pages     = {80:1--80:6},
 }
 @article{EM_TCAD2014_Pak,
   title     = {Electromigration Study for Multiscale Power/Ground Vias in {TSV}-Based {3-D ICs}},
@@ -162,7 +182,8 @@
   pages     = {111--118},
 }
 %}}}
-% ==== EM aware system design
+% EM aware system design
+%{{{
 @inproceedings{EM_ICCAD2014_Kim,
   title     = {Lifetime optimization for real-time embedded systems considering electromigration effects},
   author    = {Kim, Taeyoung and Zheng, Bowen and Chen, Hai-Bao and Zhu, Qi and Sukharev, Valeriy and Tan, Sheldon X-D},
@@ -170,7 +191,34 @@
   pages     = {434--439},
   year      = {2014},
 }
-% ==== EM aware cell design
+%}}}
+% EM aware synthesis
+%{{{
+% ==== cell design
+@inproceedings{EM_ICCAD2014_Posser,
+  title     = {A systematic approach for analyzing and optimizing cell-internal signal electromigration},
+  author    = {Posser, Gracieli and Mishra, Vivekanand and Jain, Paril and Reis, Ricardo and Sapatnekar, Sachin S},
+  booktitle = iccad,
+  pages     = {486--491},
+  year      = {2014},
+  abstract  = {EM aware cell design},
+}
+% ==== EM aware clock
+@inproceedings{EM_GLSVLSI2015_Lu,
+  title     = {Electromigration-aware Clock Tree Synthesis for {TSV}-based {3D-ICs}},
+  author    = {Lu, Tiantao and Srivastava, Ankur},
+  booktitle = glsvlsi,
+  pages     = {27--32},
+  year      = {2015},
+}
+@inproceedings{EM_IRPS2015_Jain,
+  title     = {Stochastic and topologically aware electromigration analysis for clock skew},
+  author    = {Jain, Palkesh and Sapatnekar, Sachin S and Cortadella, Jordi},
+  booktitle = irps,
+  pages     = {3D.4.1--3D.4.6},
+  year      = {2015},
+}
+% ==== EM aware routing
 @inproceedings{EM_ICCAD2012_Pak,
   title     = {Electromigration-aware routing for {3D ICs} with stress-aware {EM} modeling},
   author    = {Pak, Jiwoo and Lim, Sung Kyu and Pan, David Z},
@@ -179,8 +227,6 @@
   year      = {2012},
   abstract  = {EM aware detailed routing},
 }
-% ==== EM aware clock
-% ==== EM aware routing
 @article{EM_TDSC2012_Chen,
   title     = {An interconnect reliability-driven routing technique for electromigration failure avoidance},
   author    = {Chen, Xiaodao and Liao, Chen and Wei, Tongquan and Hu, Shiyan},
@@ -207,14 +253,6 @@
   pages     = {33--40},
   year      = {2013},
 }
-@inproceedings{EM_ICCAD2014_Posser,
-  title     = {A systematic approach for analyzing and optimizing cell-internal signal electromigration},
-  author    = {Posser, Gracieli and Mishra, Vivekanand and Jain, Paril and Reis, Ricardo and Sapatnekar, Sachin S},
-  booktitle = iccad,
-  pages     = {486--491},
-  year      = {2014},
-  abstract  = {EM aware cell design},
-}
 @inproceedings{EM_ASPDAC2015_Pak,
   title     = {Electromigration-aware redundant via insertion},
   author    = {Jiwoo Pak and Bei Yu and David Z. Pan},
@@ -222,6 +260,7 @@
   pages     = {544--549},
   year      = {2015},
 }
+%}}}
 
 
 % ====================================================================
