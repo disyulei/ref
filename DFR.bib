@@ -34,12 +34,18 @@
   year      = {2014},
   publisher = {Springer},
 }
+@phdthesis{DFR_PHD2015_Roy,
+  title    = {Logic and Clock Network Optimization in Nanometer {VLSI} Circuits},
+  author   = {Subhendu Roy},
+  school   = {The University of Texas at Austin},
+  year     = {2015},
+}
 
 
 % ====================================================================
-%                   Electron-Migration
+%                   Electron-Migration (EM)
 % ====================================================================
-% ==== model
+% EM model
 %{{{
 @article{EM_JAP1991_Lloyd,
   title     = {Electromigration failure},
@@ -70,6 +76,17 @@
   year      = {1999},
   publisher = {AIP Publishing},
   abstract  = {},
+}
+@article{EM_MicroRel2002_Nguyen,
+  title     = {Simulation and experimental characterization of reservoir and via layout effects on electromigration lifetime},
+  author    = {Nguyen, HV and Salm, Cora and Wenzel, R and Mouthaan, AJ and Kuper, Fred G},
+  journal   = microrel,
+  volume    = {42},
+  number    = {9-11},
+  pages     = {1421--1425},
+  year      = {2002},
+  publisher = {Elsevier},
+  abstract  = {reservoir effect},
 }
 @article{EM_TCAD2003_Blaauw,
   title     = {Static electromigration analysis for on-chip signal interconnects},
@@ -114,6 +131,13 @@
   publisher = {IEEE},
   abstract  = {},
 }
+@inproceedings{EM_IRPS2010_Park,
+  title     = {New electromigration validation: Via node vector method},
+  author    = {Park, Young-Joon and Jain, Palkesh and Krishnan, Srikanth},
+  booktitle = irps,
+  pages     = {698--704},
+  year      = {2010},
+}
 @article{EM_MicroRel2010_DeOrio,
   title     = {Physically based models of electromigration: From {Black’s} equation to modern {TCAD} models},
   author    = {De Orio, RL and Ceric, Hajdin and Selberherr, Siegfried},
@@ -136,6 +160,13 @@
   publisher = {Elsevier},
   abstract  = {},
 }
+@inproceedings{EM_DAC2014_Huang,
+  title     = {Physics-based Electromigration Assessment for Power Grid Networks},
+  author    = {Huang, Xin and Yu, Tan and Sukharev, Valeriy and Tan, Sheldon X.-D.},
+  booktitle = dac,
+  year      = {2014},
+  pages     = {80:1--80:6},
+}
 @article{EM_TCAD2014_Pak,
   title     = {Electromigration Study for Multiscale Power/Ground Vias in {TSV}-Based {3-D ICs}},
   author    = {Pak, Jiwoo and Lim, Sung Kyu and Pan, David Z},
@@ -146,6 +177,13 @@
   year      = {2014},
   publisher = {IEEE},
   abstract  = {},
+}
+@inproceedings{EM_DAC2015_Chen,
+  title     = {Interconnect reliability modeling and analysis for multi-branch interconnect trees},
+  author    = {Chen, Hai-Bao and Tan, Sheldon X-D and Sukharev, Valeriy and Huang, Xin and Kim, Taeyoung},
+  booktitle = dac,
+  pages     = {90:1--90:6},
+  year      = {2015},
 }
 @inproceedings{EM_IRPS2015_Li,
   title     = {A case study of electromigration reliability: From design point to system operations},
@@ -162,7 +200,8 @@
   pages     = {111--118},
 }
 %}}}
-% ==== EM aware system design
+% EM aware system design
+%{{{
 @inproceedings{EM_ICCAD2014_Kim,
   title     = {Lifetime optimization for real-time embedded systems considering electromigration effects},
   author    = {Kim, Taeyoung and Zheng, Bowen and Chen, Hai-Bao and Zhu, Qi and Sukharev, Valeriy and Tan, Sheldon X-D},
@@ -170,7 +209,48 @@
   pages     = {434--439},
   year      = {2014},
 }
-% ==== EM aware cell design
+%}}}
+% EM aware synthesis
+%{{{
+@inproceedings{EM_ISPD2006_Lienig,
+  title     = {Introduction to Electromigration-aware Physical Design},
+  author    = {Lienig, Jens},
+  booktitle = ispd,
+  year      = {2006},
+  pages     = {39--46},
+}
+@inproceedings{EM_ISPD2013_Lienig,
+  title     = {Electromigration and its impact on physical design in future technologies},
+  author    = {Lienig, Jens},
+  booktitle = ispd,
+  pages     = {33--40},
+  year      = {2013},
+}
+% ==== cell design
+@inproceedings{EM_ICCAD2014_Posser,
+  title     = {A systematic approach for analyzing and optimizing cell-internal signal electromigration},
+  author    = {Posser, Gracieli and Mishra, Vivekanand and Jain, Paril and Reis, Ricardo and Sapatnekar, Sachin S},
+  booktitle = iccad,
+  pages     = {486--491},
+  year      = {2014},
+  abstract  = {EM aware cell design},
+}
+% ==== EM aware clock
+@inproceedings{EM_GLSVLSI2015_Lu,
+  title     = {Electromigration-aware Clock Tree Synthesis for {TSV}-based {3D-ICs}},
+  author    = {Lu, Tiantao and Srivastava, Ankur},
+  booktitle = glsvlsi,
+  pages     = {27--32},
+  year      = {2015},
+}
+@inproceedings{EM_IRPS2015_Jain,
+  title     = {Stochastic and topologically aware electromigration analysis for clock skew},
+  author    = {Jain, Palkesh and Sapatnekar, Sachin S and Cortadella, Jordi},
+  booktitle = irps,
+  pages     = {3D.4.1--3D.4.6},
+  year      = {2015},
+}
+% ==== EM aware routing
 @inproceedings{EM_ICCAD2012_Pak,
   title     = {Electromigration-aware routing for {3D ICs} with stress-aware {EM} modeling},
   author    = {Pak, Jiwoo and Lim, Sung Kyu and Pan, David Z},
@@ -179,8 +259,6 @@
   year      = {2012},
   abstract  = {EM aware detailed routing},
 }
-% ==== EM aware clock
-% ==== EM aware routing
 @article{EM_TDSC2012_Chen,
   title     = {An interconnect reliability-driven routing technique for electromigration failure avoidance},
   author    = {Chen, Xiaodao and Liao, Chen and Wei, Tongquan and Hu, Shiyan},
@@ -200,27 +278,250 @@
   year      = {2012},
   abstract  = {EM aware steiner tree},
 }
-@inproceedings{EM_ISPD2013_Lienig,
-  title     = {Electromigration and its impact on physical design in future technologies},
-  author    = {Lienig, Jens},
-  booktitle = ispd,
-  pages     = {33--40},
-  year      = {2013},
-}
-@inproceedings{EM_ICCAD2014_Posser,
-  title     = {A systematic approach for analyzing and optimizing cell-internal signal electromigration},
-  author    = {Posser, Gracieli and Mishra, Vivekanand and Jain, Paril and Reis, Ricardo and Sapatnekar, Sachin S},
-  booktitle = iccad,
-  pages     = {486--491},
-  year      = {2014},
-  abstract  = {EM aware cell design},
-}
 @inproceedings{EM_ASPDAC2015_Pak,
   title     = {Electromigration-aware redundant via insertion},
   author    = {Jiwoo Pak and Bei Yu and David Z. Pan},
   booktitle = aspdac,
   pages     = {544--549},
   year      = {2015},
+}
+%}}}
+
+
+% ====================================================================
+%                      Soft-Error (SER)
+% ====================================================================
+% ==== summary SER
+%{{{
+@article{SER_TDMR2005_Nicolaidis,
+  title     = {Design for Soft Error Mitigation},
+  author    = {Nicolaidis, M},
+  booktitle = tdmr,
+  pages     = {405--418},
+  year      = {2005},
+  volume    = {5},
+  number    = {3},
+}
+@inproceedings{SER_DAC2015_Cho,
+  title     = {Understanding Soft Errors in Uncore Components},
+  author    = {Cho, Hyungmin and Cher, Chen-Yong and Shepherd, Thomas and Mitra, Subhasish},
+  booktitle = dac,
+  pages     = {89:1--89:6},
+  year      = {2015},
+}
+@inproceedings{SER_DAC2014_Kiamehr,
+  title     = {Radiation-Induced Soft Error Analysis of {SRAM}s in {SOI} {FinFET} Technology: A Device to Circuit Approach},
+  author    = {Kiamehr, S and Osiecki, T and Tahoori, M. B. and Nassif, S},
+  booktitle = dac,
+  pages     = {201:1--201:6},
+  year      = {2014},
+}
+@inproceedings{SER_ASPDAC2013_Ebrahimi,
+  title     = {CLASS: Combined Logic and Architectural Soft Error Sensitivity Analysis},
+  author    = {Ebrahimi, Mojtaba and Liang, Chen and Asadi H. and Tahoori, M. B.},
+  booktitle = aspdac,
+  pages     = {601--607},
+  year      = {2013},
+}
+%}}}
+% ==== synthesis SER
+%{{{
+@inproceedings{SER_DAC2009_Sheng,
+  title     = {Soft error optimization of standard cell circuits based on gate sizing and multi-objective genetic algorithm},
+  author    = {Sheng, Weiguang and Xiao, Liyi and Mao, Zhigang},
+  booktitle = dac,
+  pages     = {502--507},
+  year      = {2009},
+  abstract  = {},
+}
+@article{SER_TCASII2011_Reviriengo,
+  title     = {Structural DMR: A Technique for Implementation of Soft-Error-Tolerant FIR Filters},
+  author    = {Reviriengo, Pedro and Bleakly, Chris J. and Maestro, Juan Antonio},
+  booktitle = tcasii,
+  pages     = {512--516},
+  year      = {2011},
+  volume    = {58},
+  number    = {8},
+}
+@inproceedings{SER_DAC2015_Campbell,
+  title     = {High-Level Synthesis of Error Detecting Cores through Low-Cost Modulo-3 Shadow Datapaths},
+  author    = {Campbell, Keith A. and Vissa, Pranay and Pan, David Z. and Chen, Deming},
+  booktitle = dac,
+  pages     = {161:1--161:6},
+  year      = {2015},
+}
+@article{SER_TVLSI2015_Chou,
+  title     = {Soft-Error-Tolerant Design Methodology for Balancing Performance, Power, and Reliability},
+  author    = {Chou, Hsuan-Ming and others},
+  booktitle = tvlsi,
+  pages     = {1628--39},
+  year      = {2015},
+  volume    = {23},
+  number    = {9},
+}
+%}}}
+
+
+% ====================================================================
+%                        BTI
+% ====================================================================
+% ==== BTI summary
+%{{{
+@article{BTI_CSUR2015_Hong,
+  title   = {Lifetime Reliability Enhancement of Microprocessors: Mitigating the Impact of Negative Bias Temperature Instability},
+  author  = {Hong, Hyejeong and Lim, Jaeil and Lim, Hyunyul and Kang, Sungho},
+  journal = csur,
+  volume  = {48},
+  number  = {1},
+  month   = sep,
+  pages   = {9:1--9:25},
+  year    = {2015},
+}
+%}}}
+% ==== BTI model
+%{{{
+@inproceedings{BTI_DAC2006_Vattikonda,
+  title     = {Modeling and minimization of {PMOS NBTI} effect for robust nanometer design},
+  author    = {Vattikonda, Rakesh and Wang, Wenping and Cao, Yu},
+  booktitle = dac,
+  pages     = {1047--1052},
+  year      = {2006},
+}
+@inproceedings{BTI_DAC2006_Kumar,
+  title     = {An Analytical Model for Negative Bias Temperature Instability},
+  author    = {S. V. Kumar and C. H. Kim and S. Sapatnekar},
+  booktitle = iccad,
+  year      = {2006},
+  pages     = {493--496},
+}
+%}}}
+% ==== BTI architecture level
+%{{{
+@inproceedings{BTI_DSN2012_Oboril,
+  title     = {{ExtraTime}: Modeling and Analysis of Wearout due to Transistor Aging at Microarchitecture-Level},
+  author    = {F. Oboril and M. B. Tahoori},
+  booktitle = dsn,
+  year      = {2012},
+  pages     = {1--12},
+}
+%}}}
+% ==== BTI synthesis
+%{{{
+@inproceedings{BTI_DAC2007_Kumar,
+  title     = {{NBTI} aware Synthesis of Digital Circuits},
+  author    = {S. V. Kumar and C. H. Kim and S. S. Sapatnekar},
+  booktitle = dac,
+  pages     = {370--375},
+  year      = {2007},
+  abstract  = {BTI aware technology mapping},
+}
+@inproceedings{BTI_ISQED2007_Yang,
+  title     = {Combating {NBTI} Degradation via Gate Sizing},
+  author    = {X. Yang and K. Saluja},
+  booktitle = isqed,
+  pages     = {47--52},
+  year      = {2007},
+}
+@article{BTI_EDL2008_Lee,
+  title   = {{PBTI}-Associated High-Temperature Hot Carrier Degradation of {nMOSFETs} With Metal-Gate/High-k Dielectrics},
+  author  = {K. T. Lee and others},
+  journal = edl,
+  pages   = {389--391},
+  year    = {2008},
+}
+@inproceedings{BTI_DATE2009_Chakraborty,
+  title     = {Analysis and optimization of {NBTI} induced clock skew in gated clock trees},
+  author    = {Chakraborty, Ashutosh and Ganesan, Gokul and Rajaram, Anand and Pan, David Z},
+  booktitle = date,
+  pages     = {296--299},
+  year      = {2009},
+}
+@inproceedings{BTI_DATE2009_Wu,
+  title     = {Joint Logic Restructuring and Pin Reordering against {NBTI}-induced Performance Degradation},
+  author    = {Wu, Kai-Chiang and Marculescu, Diana},
+  booktitle = date,
+  pages     = {75--80},
+  year      = {2009},
+}
+@article{BTI_ISPD2010_Chakraborty,
+  title     = {Skew Management of {NBTI} Impacted Gated Clock Trees},
+  author    = {A. Chakraborty and D. Z. Pan},
+  booktitle = ispd, 
+  pages     = {127--133},
+  year      = {2010},
+}
+@inproceedings{BTI_ISQED2010_Fang,
+  title     = {Scalable Methods for the Analysis and Optimization of Gate Oxide Breakdown},
+  author    = {J. Fang and S. Sapatnekar},
+  booktitle = isqed, 
+  pages     = {638--645},
+  year      = {2010},
+}
+@inproceedings{BTI_ASPDAC2011_Chakraborty,
+  title     = {Controlling {NBTI} degradation during static burn-in testing},
+  author    = {Chakraborty, Ashutosh and Pan, David Z},
+  booktitle = aspdac,
+  pages     = {597--602},
+  year      = {2011},
+}
+@inproceedings{BTI_GLSVLSI2012_Liu,
+  title     = {{NBTI} Effects on Tree-like Clock Distribution Networks},
+  author    = {Liu, Wei and Miryala, Sandeep and Tenace, Valerio and Calimera, Andrea and Macii, Enrico and Poncino, Massimo},
+  booktitle = glsvlsi,
+  year      = {2012},
+  pages     = {279--282},
+} 
+@inproceedings{BTI_ICCAD2013_Ebrahimi,
+  title     = {Aging-aware logic synthesis},
+  author    = {Ebrahimi, Mojtaba and Oboril, Fabian and Kiamehr, Saman and Tahoori, Mehdi B},
+  booktitle = iccad,
+  pages     = {61--68},
+  year      = {2013},
+  abstract  = {},
+}
+@article{BTI_TCAD2013_Chakraborty,
+  title   = {Skew management of {NBTI} impacted gated clock trees},
+  author  = {Chakraborty, Arpan and Pan, David Z},
+  journal = tcad,
+  volume  = {32},
+  pages   = {918--927},
+  year    = {2013},
+}
+@inproceedings{BTI_VLSID2014_Roy,
+  title     = {Reliability Aware Gate Sizing Combating {NBTI} and Oxide Breakdown},
+  author    = {Subhendu Roy and David Z. Pan},
+  booktitle = vlsid,
+  year      = {2014},
+  pages     = {38-43},
+}
+@inproceedings{BTI_ICCD2015_Lin,
+  title     = {{CSL}: Coordinated and Scalable Logic Synthesis Techniques for Effective {NBTI} Reduction},
+  author    = {C. H. Lin and S. Roy and C. Y. Wang and D. Z. Pan and D. Chen},
+  booktitle = iccd,
+  year      = {2015},
+}
+%}}}
+
+
+% ====================================================================
+%                        RTN 
+% ====================================================================
+@inproceedings{RTN_DATE2011_Aadithya,
+  title     = {{SAMURAI}: An accurate method for modelling and simulating non-stationary Random Telegraph Noise in {SRAMs}},
+  author    = {Aadithya, Karthik V and Demir, Alper and Venugopalan, Sriramkumar and Roychowdhury, Jaijeet},
+  booktitle = date,
+  pages     = {1--6},
+  year      = {2011},
+}
+@article{RTN_TED2013_Realov,
+  title     = {Analysis of random telegraph noise in 45-nm {CMOS} using on-chip characterization system},
+  author    = {Realov, Simeon and Shepard, Kenneth L},
+  journal   = ted,
+  volume    = {60},
+  number    = {5},
+  pages     = {1716--1722},
+  year      = {2013},
+  publisher = {IEEE},
 }
 
 
@@ -260,3 +561,4 @@
   pages     = {126--129},
   year      = {1981},
 }
+
