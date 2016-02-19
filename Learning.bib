@@ -22,6 +22,12 @@
   year      = {2006},
   publisher = {Springer New York},
 }
+@book{LEARN_B2001_Scholkopf,
+  title     = {Learning with kernels: support vector machines, regularization, optimization, and beyond},
+  author    = {Scholkopf, Bernhard and Smola, Alexander J},
+  year      = {2001},
+  publisher = {MIT press},
+}
 @book{LEARN_B2012_Mohri,
   title     = {{Foundations of Machine Learning}},
   author    = {Mohri, Mehryar and Rostamizadeh, Afshin and Talwalkar, Ameet},
@@ -207,15 +213,23 @@
 
 
 % ===========================================================
-%                       Boosting
+%                       Ensemble Method 
 % ===========================================================
-@inproceedings{BOOST_COLT1995_Freund,
+@inproceedings{ENSEM_COLT1995_Freund,
   title     = {A desicion-theoretic generalization of on-line learning and an application to boosting},
   author    = {Freund, Yoav and Schapire, Robert E},
   booktitle = colt,
   pages     = {23--37},
   year      = {1995},
   abstract  = {boost},
+}
+
+@inproceedings{ENSEM_ICCV2009_Saffari,
+  title   = {On-line random forests},
+  author    = {Saffari, Amir and Leistner, Christian and Santner, Jakob and Godec, Martin and Bischof, Horst},
+  booktitle = iccv,
+  pages   = {1393--1400},
+  year    = {2009},
 }
 
 
@@ -347,6 +361,64 @@
 }
 
 
+@inproceedings{LEARN_NIPS2006_Lee,
+  title    = {Efficient sparse coding algorithms},
+  author     = {Lee, Honglak and Battle, Alexis and Raina, Rajat and Ng, Andrew Y},
+  booktitle  = nips,
+  pages    = {801--808},
+  year     = {2006}
+}
+
+% ============================================================================
+%                        Batch learning
+% ============================================================================
+
+@article{BL_MI2005_Hastie,
+  title     = {The elements of statistical learning: data mining, inference and prediction},
+  author    = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome and Franklin, James},
+  journal   = {The Mathematical Intelligencer},
+  volume    = {27},
+  number    = {2},
+  pages     = {83--85},
+  year      = {2005},
+  publisher = {Springer},
+}
+@article{BL_AOS2000_Friedman,
+  title     = {Additive logistic regression: a statistical view of boosting (with discussion and a rejoinder by the authors)},
+  author    = {Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert and others},
+  journal   = aos,
+  volume    = {28},
+  number    = {2},
+  pages     = {337--407},
+  year      = {2000},
+}
+@article{BL_JMLR2003_Servedio,
+  title     = {Smooth boosting and learning with malicious noise},
+  author    = {Servedio, Rocco A},
+  journal   = jmlr,
+  volume    = {4},
+  pages     = {633--648},
+  year      = {2003},
+}
+@article{BL_ML1997_Utgoff,
+  title     = {Decision tree induction based on efficient tree restructuring},
+  author    = {Utgoff, Paul E and Berkman, Neil C and Clouse, Jeffery A},
+  journal   = ml,
+  volume    = {29},
+  number    = {1},
+  pages     = {5--44},
+  year      = {1997},
+}
+@inproceedings{BL_ICCMC2005_Oza,
+  title     = {Online bagging and boosting},
+  author    = {Oza, Nikunj C},
+  booktitle = {2005 IEEE international conference on Systems, man and cybernetics},
+  volume    = {3},
+  pages     = {2340--2345},
+  year      = {2005},
+}
+
+
 % ===========================================================
 %                         Others 
 % ===========================================================
@@ -413,5 +485,64 @@
   pages	    = {695--699},
   year      = {1996},
   abstract  = {Bayes Error},
+}
+
+
+
+% ============================================================================
+%                     Machine Learning Applications 
+% ============================================================================
+@inproceedings{HSD_CVPR2014_Cheng,
+  title      = {{BING}: Binarized normed gradients for objectness estimation at 300fps},
+  author     = {Cheng, Ming-Ming and Zhang, Ziming and Lin, Wen-Yan and Torr, Philip},
+  booktitle  = cvpr,
+  pages      = {3286--3293},
+  year       = {2014},
+}
+@inproceedings{HSD_ICCV2013_Ou,
+  title      = {Joint deep learning for pedestrian detection},
+  author     = {Ouyang, Wanli and Wang, Xiaogang},
+  booktitle  = iccv,
+  pages      = {2056--2063},
+  year       = {2013},
+}
+@article{HSD_CSUR2002_Sebastiani,
+  title     = {Machine learning in automated text categorization},
+  author    = {Sebastiani, Fabrizio},
+  journal   = csur,
+  volume    = {34},
+  number    = {1},
+  pages     = {1--47},
+  year      = {2002},
+  publisher = {ACM},
+}
+
+
+% ============================================================================
+%                	    	On-line Ensemble Leaning 
+% ============================================================================
+@inproceedings{ONL_CVPR2006_Grabner,
+	title	  = {On-line boosting and vision},
+	author	  = {Grabner, Helmut and Bischof, Horst},
+	booktitle = cvpr,
+	volume	  = {1},
+	pages	  = {260--267},
+	year	  = {2006},
+}
+@article{ONL_IJCV2008_Ross,
+	title	  = {Incremental learning for robust visual tracking},
+	author	  = {Ross, David A and Lim, Jongwoo and Lin, Ruei-Sung and Yang, Ming-Hsuan},
+	journal	  = ijcv,
+	volume	  = {77},
+	number	  = {1-3},
+	pages	  = {125--141},
+	year	  = {2008},
+}
+@inproceedings{ONL_ICCV2009_Saffari,
+	title	  = {On-line random forests},
+	author	  = {Saffari, Amir and Leistner, Christian and Santner, Jakob and Godec, Martin and Bischof, Horst},
+	booktitle = iccv,
+	pages	  = {1393--1400},
+	year	  = {2009},
 }
 
