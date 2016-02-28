@@ -1,7 +1,7 @@
-
 % ==================================================================
 %                   Machine Learning Books
 % ==================================================================
+%{{{
 @book{LEARN_B2005_Markov,
   title     = {{Markov Chain Monte Carlo}},
   author    = {Gilks, Walter R},
@@ -46,23 +46,13 @@
   year      = {2012},
   publisher = {AMLBook},
 }
-
-
-% ==================================================================
-%                    Clustering 
-% ==================================================================
-@book{LEARN_B1988_Jain,
-  title     = {{Algorithms for Clustering Data}},
-  author    = {Jain, Anil K and Dubes, Richard C},
-  year      = {1988},
-  publisher = {Prentice-Hall, Inc.},
-  abstract  = {K-means clustering},
-}
+%}}}
 
 
 % ==================================================================
 %                     Pattern/Template Matching
 % ==================================================================
+%{{{
 % ==== exact matching
 @article{MTCH_SICOMP1977_Knuth,
   title     = {Fast pattern matching in strings},
@@ -104,13 +94,13 @@
   pages   = {1570--1579},
   year    = {2005},
 }
+%}}}
 
 
 % ==================================================================
 %             Regression
 % ==================================================================
 % ==== SVR
-% ==== SVR applications
 @incollection{SVM_2006_Hao,
   title     = {Support Vector Regression for Financial Time Series Forecasting},
   author    = {Hao, Wei and Yu, Songnian},
@@ -213,28 +203,7 @@
 
 
 % ===========================================================
-%                       Ensemble Method 
-% ===========================================================
-@inproceedings{ENSEM_COLT1995_Freund,
-  title     = {A desicion-theoretic generalization of on-line learning and an application to boosting},
-  author    = {Freund, Yoav and Schapire, Robert E},
-  booktitle = colt,
-  pages     = {23--37},
-  year      = {1995},
-  abstract  = {boost},
-}
-
-@inproceedings{ENSEM_ICCV2009_Saffari,
-  title   = {On-line random forests},
-  author    = {Saffari, Amir and Leistner, Christian and Santner, Jakob and Godec, Martin and Bischof, Horst},
-  booktitle = iccv,
-  pages   = {1393--1400},
-  year    = {2009},
-}
-
-
-% ===========================================================
-%            Genral Learning / Classifications
+%            General Learning / Classifications
 % ===========================================================
 @book{LEARN_B1984_Breiman,
   title     = {{Classification and Regression Trees}},
@@ -268,111 +237,16 @@
 @article{LEARN_JSS2010_Arlot,
   title     = {A survey of cross-validation procedures for model selection},
   author    = {Arlot, Sylvain and Celisse, Alain},
-  journal   = jss,
+  journal   = ss,
   volume    = {4},
   pages     = {40--79},
   year      = {2010},
-  publisher = {The author, under a Creative Commons Attribution License},
   abstract  = {introduction to validation},
-}
-
-
-% ===========================================================
-%                 Dimension Reduction 
-% ===========================================================
-% ==== PCA
-@inproceedings{PCA_JESWA2010_Gumus,
-  author    = {Ergun Gumus and Niyazi Kilic and Ahmet Sertbas and Osman N. Ucan},
-  title     = {Evaluation of face recognition techniques using {PCA}, wavelets and {SVM}},
-  booktitle = jeswa,
-  volume    = {37},
-  number    = {9},
-  pages     = {6404--6408},
-  year      = {2010},
-  publisher = {Elsevier},
-} 
-@book{PCA_B2005_Jolliffe,
-  title     = {{Principal Component Analysis}},
-  author    = {Jolliffe, Ian},
-  year      = {2005},
-  publisher = {Wiley Online Library},
-}
-% ==== Spectral based
-@inproceedings{LEARN_NIPS2004_He,
-  title     = {Locality preserving projections},
-  author    = {He, Xiaofei and Niyogi, Partha},
-  booktitle = nips,
-  volume    = {16},
-  pages     = {153},
-  year      = {2004},
-}
-@inproceedings{LEARN_NIPS2001_Belkin,
- title		= {Laplacian eigenmaps and spectral techniques for embedding and clustering},
- author		= {Belkin, Mikhail and Niyogi, Partha},
- booktitle	= nips,
- volume		= {14},
- pages		= {585--591},
- year		= {2001},
-}
-
-
-% =======================================================
-%                       Features
-% =======================================================
-@article{LEARN_PR2007_Toyoda,
-  title     = {Extension of higher order local autocorrelation features},
-  author    = {Toyoda, Takahiro and Hasegawa, Osamu},
-  journal   = {Pattern Recognition},
-  volume    = {40},
-  number    = {5},
-  pages     = {1466--1473},
-  year      = {2007},
-  publisher = {Elsevier},
-  abstract  = {HLAC feature},
-}
-@article{LEARN_1936_Mahalanobis,
-  title    = {On the generalized distance in statistics},
-  author   = {Mahalanobis, Prasanta Chandra},
-  journal  = {Proceedings of the National Institute of Sciences (Calcutta)},
-  volume   = {2},
-  pages    = {49--55},
-  year     = {1936},
-  abstract = {feature distances},
-}
-@article{LEARN_TPAMI1991_Arkin,
-  author   = {Esther M.Arkin and L.Paul Chew and Daniel P.Huttenlocher and Klara Kedem and Joseph S.B.Mitchell},
-  title    = {An efficiently Computable Metric for Comparing Polygonal Shapes},
-  journal  = tpami,
-  year     = {1991},
-  vol      = 13,
-  number   = 3,
-  pages    = {209-216},
-  abstract = {},
-}
-@article{LEARN_TPAMI2000_Latecki,
-  author   = {Longin Jan Latecki and Rolf Lakamper},
-  title    = {Shape Similarity Measure Based on Correspondence of Visual Parts},
-  journal  = tpami,
-  year     = {2000},
-  vol      = 22,
-  number   = 10,
-  pages    = {1-6},
-  abstract = {},
-}
-
-
-@inproceedings{LEARN_NIPS2006_Lee,
-  title    = {Efficient sparse coding algorithms},
-  author     = {Lee, Honglak and Battle, Alexis and Raina, Rajat and Ng, Andrew Y},
-  booktitle  = nips,
-  pages    = {801--808},
-  year     = {2006}
 }
 
 % ============================================================================
 %                        Batch learning
 % ============================================================================
-
 @article{BL_MI2005_Hastie,
   title     = {The elements of statistical learning: data mining, inference and prediction},
   author    = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome and Franklin, James},
@@ -419,6 +293,151 @@
 }
 
 
+% ============================================================================
+%                	    	On-line Ensemble Leaning 
+% ============================================================================
+@inproceedings{ONL_CVPR2006_Grabner,
+	title	  = {On-line boosting and vision},
+	author	  = {Grabner, Helmut and Bischof, Horst},
+	booktitle = cvpr,
+	volume	  = {1},
+	pages	  = {260--267},
+	year	  = {2006},
+}
+@article{ONL_IJCV2008_Ross,
+	title	  = {Incremental learning for robust visual tracking},
+	author	  = {Ross, David A and Lim, Jongwoo and Lin, Ruei-Sung and Yang, Ming-Hsuan},
+	journal	  = ijcv,
+	volume	  = {77},
+	number	  = {1-3},
+	pages	  = {125--141},
+	year	  = {2008},
+}
+@inproceedings{ONL_ICCV2009_Saffari,
+	title	  = {On-line random forests},
+	author	  = {Saffari, Amir and Leistner, Christian and Santner, Jakob and Godec, Martin and Bischof, Horst},
+	booktitle = iccv,
+	pages	  = {1393--1400},
+	year	  = {2009},
+}
+@inproceedings{ONL_COLT1995_Freund,
+	title     = {A desicion-theoretic generalization of on-line learning and an application to boosting},
+	author    = {Freund, Yoav and Schapire, Robert E},
+	booktitle = colt,
+	pages     = {23--37},
+	year      = {1995},
+	abstract  = {boost},
+}
+
+
+% ===========================================================
+%                 Dimension Reduction 
+% ===========================================================
+%{{{
+% ==== K-means
+@book{LEARN_B1988_Jain,
+  title     = {{Algorithms for Clustering Data}},
+  author    = {Jain, Anil K and Dubes, Richard C},
+  year      = {1988},
+  publisher = {Prentice-Hall, Inc.},
+  abstract  = {K-means clustering},
+}
+% ==== PCA
+@inproceedings{PCA_JESWA2010_Gumus,
+  author    = {Ergun Gumus and Niyazi Kilic and Ahmet Sertbas and Osman N. Ucan},
+  title     = {Evaluation of face recognition techniques using {PCA}, wavelets and {SVM}},
+  booktitle = jeswa,
+  volume    = {37},
+  number    = {9},
+  pages     = {6404--6408},
+  year      = {2010},
+  publisher = {Elsevier},
+} 
+@book{PCA_B2005_Jolliffe,
+  title     = {{Principal Component Analysis}},
+  author    = {Jolliffe, Ian},
+  year      = {2005},
+  publisher = {Wiley Online Library},
+}
+% ==== Spectral based
+@inproceedings{LEARN_NIPS2004_He,
+  title     = {Locality preserving projections},
+  author    = {He, Xiaofei and Niyogi, Partha},
+  booktitle = nips,
+  volume    = {16},
+  pages     = {153},
+  year      = {2004},
+}
+@inproceedings{LEARN_NIPS2001_Belkin,
+ title		= {Laplacian eigenmaps and spectral techniques for embedding and clustering},
+ author		= {Belkin, Mikhail and Niyogi, Partha},
+ booktitle	= nips,
+ volume		= {14},
+ pages		= {585--591},
+ year		= {2001},
+}
+%}}}
+
+
+% =======================================================
+%                       Features
+% =======================================================
+%{{{
+@article{LEARN_PR2007_Toyoda,
+  title     = {Extension of higher order local autocorrelation features},
+  author    = {Toyoda, Takahiro and Hasegawa, Osamu},
+  journal   = {Pattern Recognition},
+  volume    = {40},
+  number    = {5},
+  pages     = {1466--1473},
+  year      = {2007},
+  publisher = {Elsevier},
+  abstract  = {HLAC feature},
+}
+@article{LEARN_1936_Mahalanobis,
+  title    = {On the generalized distance in statistics},
+  author   = {Mahalanobis, Prasanta Chandra},
+  journal  = {Proceedings of the National Institute of Sciences (Calcutta)},
+  volume   = {2},
+  pages    = {49--55},
+  year     = {1936},
+  abstract = {feature distances},
+}
+@article{LEARN_TPAMI1991_Arkin,
+  title    = {An efficiently Computable Metric for Comparing Polygonal Shapes},
+  author   = {Esther M.Arkin and L.Paul Chew and Daniel P.Huttenlocher and Klara Kedem and Joseph S.B.Mitchell},
+  journal  = tpami,
+  year     = {1991},
+  volume   = 13,
+  number   = 3,
+  pages    = {209-216},
+  abstract = {},
+}
+@article{LEARN_TPAMI2000_Latecki,
+  title    = {Shape Similarity Measure Based on Correspondence of Visual Parts},
+  author   = {Longin Jan Latecki and Rolf Lakamper},
+  journal  = tpami,
+  year     = {2000},
+  volume   = 22,
+  number   = 10,
+  pages    = {1-6},
+  abstract = {},
+}
+%}}}
+
+
+% ============================================================================
+%                       Dictionary Learning
+% ============================================================================
+@inproceedings{LEARN_NIPS2006_Lee,
+  title     = {Efficient sparse coding algorithms},
+  author    = {Lee, Honglak and Battle, Alexis and Raina, Rajat and Ng, Andrew Y.},
+  booktitle = nips,
+  pages     = {801--808},
+  year      = {2006}
+}
+
+
 % ===========================================================
 %                         Others 
 % ===========================================================
@@ -457,7 +476,7 @@
   pages     = {353--355},
   year      = {1973},
   publisher = {JSTOR},
-  abstract  = {Dirichlet Process & Chinese Restaurant Process},
+  abstract  = {Dirichlet Process \& Chinese Restaurant Process},
 }
 @article{LEARN_AOS1973_Ferguson,
   title		= {A Bayesian analysis of some nonparametric problems},
@@ -517,32 +536,4 @@
   publisher = {ACM},
 }
 
-
-% ============================================================================
-%                	    	On-line Ensemble Leaning 
-% ============================================================================
-@inproceedings{ONL_CVPR2006_Grabner,
-	title	  = {On-line boosting and vision},
-	author	  = {Grabner, Helmut and Bischof, Horst},
-	booktitle = cvpr,
-	volume	  = {1},
-	pages	  = {260--267},
-	year	  = {2006},
-}
-@article{ONL_IJCV2008_Ross,
-	title	  = {Incremental learning for robust visual tracking},
-	author	  = {Ross, David A and Lim, Jongwoo and Lin, Ruei-Sung and Yang, Ming-Hsuan},
-	journal	  = ijcv,
-	volume	  = {77},
-	number	  = {1-3},
-	pages	  = {125--141},
-	year	  = {2008},
-}
-@inproceedings{ONL_ICCV2009_Saffari,
-	title	  = {On-line random forests},
-	author	  = {Saffari, Amir and Leistner, Christian and Santner, Jakob and Godec, Martin and Bischof, Horst},
-	booktitle = iccv,
-	pages	  = {1393--1400},
-	year	  = {2009},
-}
 
