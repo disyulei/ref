@@ -50,7 +50,7 @@
 
 
 % ==================================================================
-%                     Pattern/Template Matching
+%                 Pattern/Template Matching
 % ==================================================================
 %{{{
 % ==== exact matching
@@ -98,8 +98,9 @@
 
 
 % ==================================================================
-%             Regression
+%                     Regression
 % ==================================================================
+%{{{
 % ==== SVR
 @incollection{SVM_BC2006_Hao,
   title     = {Support Vector Regression for Financial Time Series Forecasting},
@@ -150,11 +151,25 @@
   publisher = {CRC press},
   abstract  = {Sparse regression},
 }
+%}}}
 
 
 % ===========================================================
-%                           SVM
+%                     Classification 
 % ===========================================================
+%{{{
+@article{LEARN_JIPL1987_Blumer,
+  title     = {Occam's razor},
+  author    = {Blumer, Anselm and Ehrenfeucht, Andrzej and Haussler, David and Warmuth, Manfred K},
+  journal   = jipl,
+  volume    = {24},
+  number    = {6},
+  pages     = {377--380},
+  year      = {1987},
+  publisher = {Elsevier},
+  abstract  = {simple model is sometimes better},
+}
+% ==== SVM
 %{{{
 % ====
 @inproceedings{SVM_COLT1992_Boser,
@@ -217,12 +232,7 @@
   abstract = {working set selection},
 }
 %}}}
-
-
-
-% ===========================================================
-%                           ANN
-% ===========================================================
+% ==== ANN
 @book{ANN_B1996_Hagan,
   title     = {{Neural Network Design}},
   author    = {Hagan, Martin T and Demuth, Howard B and Beale, Mark H},
@@ -240,80 +250,13 @@
   year      = {2001},
   publisher = {Elsevier},
 }
-
-
-% ===========================================================
-%            General Learning / Classifications
-% ===========================================================
+% ==== Decision Tree
 @book{LEARN_B1984_Breiman,
   title     = {{Classification and Regression Trees}},
   author    = {Breiman, Leo and Friedman, Jerome and Stone, Charles J and Olshen, Richard A},
   year      = {1984},
   publisher = {CRC press},
   abstract  = {decision tree},
-}
-@article{LEARN_JIPL1987_Blumer,
-  title     = {Occam's razor},
-  author    = {Blumer, Anselm and Ehrenfeucht, Andrzej and Haussler, David and Warmuth, Manfred K},
-  journal   = jipl,
-  volume    = {24},
-  number    = {6},
-  pages     = {377--380},
-  year      = {1987},
-  publisher = {Elsevier},
-  abstract  = {simple model is sometimes better},
-}
-@article{LEARN_TEST2006_Bickel,
-  title     = {Regularization in statistics},
-  author    = {Bickel, Peter J and Li, Bo and Tsybakov, Alexandre B and van de Geer, Sara A and Yu, Bin and Vald{\'e}s, Te{\'o}filo and Rivero, Carlos and Fan, Jianqing and van der Vaart, Aad},
-  journal   = test,
-  volume    = {15},
-  number    = {2},
-  pages     = {271--344},
-  year      = {2006},
-  publisher = {Springer},
-  abstract  = {introduction to regularization},
-}
-@article{LEARN_JSS2010_Arlot,
-  title     = {A survey of cross-validation procedures for model selection},
-  author    = {Arlot, Sylvain and Celisse, Alain},
-  journal   = ss,
-  volume    = {4},
-  pages     = {40--79},
-  year      = {2010},
-  abstract  = {introduction to validation},
-}
-
-
-% ============================================================================
-%                       Ensemble Learning
-% ============================================================================
-@article{ENL_TMIN2005_Hastie,
-  title     = {The elements of statistical learning: data mining, inference and prediction},
-  author    = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome and Franklin, James},
-  journal   = tmin,
-  volume    = {27},
-  number    = {2},
-  pages     = {83--85},
-  year      = {2005},
-  publisher = {Springer},
-}
-@article{ENL_AOS2000_Friedman,
-  title     = {Additive logistic regression: a statistical view of boosting (with discussion and a rejoinder by the authors)},
-  author    = {Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert and others},
-  journal   = aos,
-  volume    = {28},
-  number    = {2},
-  pages     = {337--407},
-  year      = {2000},
-}
-@article{ENL_JMLR2003_Servedio,
-  title     = {Smooth boosting and learning with malicious noise},
-  author    = {Servedio, Rocco A},
-  journal   = jmlr,
-  volume    = {4},
-  pages     = {633--648},
-  year      = {2003},
 }
 @article{ENL_ML1997_Utgoff,
   title     = {Decision tree induction based on efficient tree restructuring},
@@ -324,11 +267,71 @@
   pages     = {5--44},
   year      = {1997},
 }
+%}}}
+
+
+% ============================================================================
+%                       Ensemble Learning
+% ============================================================================
+@article{ENL_JCSS1997_Freund,
+  title     = {A decision-theoretic generalization of on-line learning and an application to boosting},
+  author    = {Freund, Yoav and Schapire, Robert E.},
+  journal   = jcss,
+  volume    = {55},
+  number    = {1},
+  pages     = {119--139},
+  year      = {1997},
+  publisher = {Elsevier},
+  abstract  = {boosting},
+}
+@article{ENL_AOS2000_Friedman,
+  title     = {Additive logistic regression: a statistical view of boosting (with discussion and a rejoinder by the authors)},
+  author    = {Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert and others},
+  journal   = aos,
+  volume    = {28},
+  number    = {2},
+  pages     = {337--407},
+  year      = {2000},
+}
+@article{ENL_TMIN2005_Hastie,
+  title     = {The elements of statistical learning: data mining, inference and prediction},
+  author    = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome and Franklin, James},
+  journal   = tmin,
+  volume    = {27},
+  number    = {2},
+  pages     = {83--85},
+  year      = {2005},
+  publisher = {Springer},
+}
+@article{ENL_JMLR2003_Servedio,
+  title     = {Smooth boosting and learning with malicious noise},
+  author    = {Servedio, Rocco A},
+  journal   = jmlr,
+  volume    = {4},
+  pages     = {633--648},
+  year      = {2003},
+}
 
 
 % ============================================================================
 %                	 On-line Ensemble Learning 
 % ============================================================================
+@inproceedings{ONL_COLT1995_Freund,
+	title     = {A desicion-theoretic generalization of on-line learning and an application to boosting},
+	author    = {Freund, Yoav and Schapire, Robert E},
+	booktitle = colt,
+	pages     = {23--37},
+	year      = {1995},
+	abstract  = {boost},
+}
+@inproceedings{ONL_ICCMC2005_Oza,
+  title     = {Online bagging and boosting},
+  author    = {Oza, Nikunj C},
+  booktitle = icsmc,
+  volume    = {3},
+  pages     = {2340--2345},
+  year      = {2005},
+}
 @inproceedings{ONL_CVPR2006_Grabner,
 	title	  = {On-line boosting and vision},
 	author	  = {Grabner, Helmut and Bischof, Horst},
@@ -352,22 +355,6 @@
 	booktitle = iccv,
 	pages	  = {1393--1400},
 	year	  = {2009},
-}
-@inproceedings{ONL_COLT1995_Freund,
-	title     = {A desicion-theoretic generalization of on-line learning and an application to boosting},
-	author    = {Freund, Yoav and Schapire, Robert E},
-	booktitle = colt,
-	pages     = {23--37},
-	year      = {1995},
-	abstract  = {boost},
-}
-@inproceedings{ONL_ICCMC2005_Oza,
-  title     = {Online bagging and boosting},
-  author    = {Oza, Nikunj C},
-  booktitle = icsmc,
-  volume    = {3},
-  pages     = {2340--2345},
-  year      = {2005},
 }
 
 
@@ -522,6 +509,26 @@
   pages     = {434--455},
   year      = {1998},
   publisher = {Taylor \& Francis},
+}
+@article{LEARN_TEST2006_Bickel,
+  title     = {Regularization in statistics},
+  author    = {Bickel, Peter J and Li, Bo and Tsybakov, Alexandre B and van de Geer, Sara A and Yu, Bin and Vald{\'e}s, Te{\'o}filo and Rivero, Carlos and Fan, Jianqing and van der Vaart, Aad},
+  journal   = test,
+  volume    = {15},
+  number    = {2},
+  pages     = {271--344},
+  year      = {2006},
+  publisher = {Springer},
+  abstract  = {introduction to regularization},
+}
+@article{LEARN_JSS2010_Arlot,
+  title     = {A survey of cross-validation procedures for model selection},
+  author    = {Arlot, Sylvain and Celisse, Alain},
+  journal   = ss,
+  volume    = {4},
+  pages     = {40--79},
+  year      = {2010},
+  abstract  = {introduction to validation},
 }
 @inproceedings{LEARN_NIPS2008_Sugiyama,
   title     = {Direct importance estimation with model selection and its application to covariate shift adaptation},
