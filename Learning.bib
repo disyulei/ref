@@ -2,6 +2,12 @@
 %                   Machine Learning Books
 % ==================================================================
 %{{{
+@book{LEARN_B1968_Kullback,
+  title     = {{Information Theory and Statistics}},
+  author    = {Kullback, Solomon},
+  year      = {1968},
+  publisher = {Courier Corporation},
+}
 @book{LEARN_B2005_Markov,
   title     = {{Markov Chain Monte Carlo}},
   author    = {Gilks, Walter R},
@@ -36,7 +42,7 @@
 }
 @book{LEARN_B2012_Duda,
   title     = {{Pattern Classification}},
-  author    = {Duda, Richard O and Hart, Peter E and Stork, David G},
+  author    = {Duda, Richard O. and Hart, Peter E. and Stork, David G.},
   year      = {2012},
   publisher = {John Wiley \& Sons},
 }
@@ -101,8 +107,18 @@
 %                     Regression
 % ==================================================================
 %{{{
+@article{REGR_WDMKD2015_Borchani,
+  title     = {A survey on multi-output regression},
+  author    = {Borchani, Hanen and Varando, Gherardo and Bielza, Concha and Larra{\~n}aga, Pedro},
+  journal   = wdmkd,
+  volume    = {5},
+  number    = {5},
+  pages     = {216--233},
+  year      = {2015},
+  publisher = {Wiley Online Library},
+}
 % ==== SVR
-@incollection{SVM_BC2006_Hao,
+@incollection{REGR_BC2006_Hao,
   title     = {Support Vector Regression for Financial Time Series Forecasting},
   author    = {Hao, Wei and Yu, Songnian},
   booktitle = {Knowledge Enterprise: Intelligent Strategies in Product Design, Manufacturing, and Management},
@@ -112,7 +128,7 @@
   abstract  = {},
 }
 % ==== Lasso
-@article{LASSO_JRSSB1996_Tib,
+@article{REGR_JRSSB1996_Tib,
   title    = {Regression shrinkage and selection via the {Lasso}},
   author   = {Robert Tibshirani},
   journal  = jrssb,
@@ -120,7 +136,7 @@
   pages    = {267-288},
   year     = {1996},
 }
-@article{LASSO_JASA2006_Zou,
+@article{REGR_JASA2006_Zou,
   title    = {The adaptive {Lasso} and its oracle properties},
   author   = {Hui Zou},
   journal  = jasa,
@@ -128,7 +144,7 @@
   pages    = {1418-1429},
   year     = {2006},
 }
-@article{LASSO_AOAS2007_Friedman,
+@article{REGR_AOAS2007_Friedman,
   title    = {Pathwise coordinate optimization},
   author   = {Jerome friedman and Trevor Hastie and Holger H\"{o}fling and Robert Tibshirani},
   journal  = aoas,
@@ -136,7 +152,7 @@
   pages    = {302-332},
   year     = {2007},
 }
-@article{LASSO_STATSIN2008_Huang,
+@article{REGR_STATSIN2008_Huang,
   title    = {Adaptive {Lasso} for sparse high-dimensional regression models},
   author   = {Jian Huang and Shuangge Ma and Cun-Hui Zhang},
   journal  = statsin,
@@ -144,7 +160,7 @@
   pages    = {1603-1618},
   year     = {2008},
 }
-@book{LASSO_CRC2015_Hastie,
+@book{REGR_CRC2015_Hastie,
   title     = {Statistical Learning with sparsity: the {Lasso} and generalization},
   author    = {Trevor Hastie and Robert Tibshirani and Martin Wainwright},
   year      = {2015},
@@ -160,7 +176,7 @@
 %{{{
 @article{LEARN_JIPL1987_Blumer,
   title     = {Occam's razor},
-  author    = {Blumer, Anselm and Ehrenfeucht, Andrzej and Haussler, David and Warmuth, Manfred K},
+  author    = {Blumer, Anselm and Ehrenfeucht, Andrzej and Haussler, David and Warmuth, Manfred K.},
   journal   = jipl,
   volume    = {24},
   number    = {6},
@@ -342,7 +358,7 @@
 }
 @article{ONL_IJCV2008_Ross,
 	title	  = {Incremental learning for robust visual tracking},
-	author	  = {Ross, David A and Lim, Jongwoo and Lin, Ruei-Sung and Yang, Ming-Hsuan},
+	author	  = {Ross, David A. and Lim, Jongwoo and Lin, Ruei-Sung and Yang, Ming-Hsuan},
 	journal	  = ijcv,
 	volume	  = {77},
 	number	  = {1-3},
@@ -370,6 +386,19 @@
   pages     = {201--221},
   year      = {1994},
   publisher = {Springer},
+}
+@inproceedings{ATL_ICML2007_Hanneke,
+  title     = {A bound on the label complexity of agnostic active learning},
+  author    = {Hanneke, Steve},
+  booktitle = icml,
+  pages     = {353--360},
+  year      = {2007},
+}
+@inproceedings{ATL_ICML2009_Dasgupta,
+  title     = {A tutorial on active learning},
+  author    = {Dasgupta, Sanjoy and Langford, John},
+  booktitle = icml,
+  year      = {2009}
 }
 
 
@@ -567,7 +596,7 @@
 }
 @article{LEARN_AOS1973_Blackwell,
   title     = {Ferguson distributions via P{\'o}lya urn schemes},
-  author    = {Blackwell, David and MacQueen, James B},
+  author    = {Blackwell, David and MacQueen, James B.},
   journal   = aos,
   pages     = {353--355},
   year      = {1973},
@@ -594,9 +623,40 @@
 }
 
 
+% ============================================================================
+%                   Applications in VLSI CAD
+% ============================================================================
+@mastersthesis{LEARN_MS2007_Wiener,
+  title  = {Intelligate: An Algorithm for Learning Boolean Functions for Dynamic Power Reduction},
+  author = {Wiener, Roni},
+  year   = {2007},
+  school = {University of Haifa},
+}
+@inproceedings{LEARN_ASPDAC2015_Yu,
+  title     = {Machine learning and pattern matching in physical design},
+  author    = {Yu, Bei and Pan, David Z. and Matsunawa, Tetsuaki and Zeng, Xuan},
+  booktitle = aspdac,
+  pages     = {286--293},
+  year      = {2015},
+}
+@inproceedings{LEARN_ASPDAC2016_Chan,
+  title     = {Learning-based prediction of embedded memory timing failures during initial floorplan design},
+  author    = {Chan, Wei-Ting J. and Chung, Kun Young and Kahng, Andrew B. and MacDonald, Nancy D. and Nath, Siddhartha},
+  booktitle = aspdac,
+  pages     = {178--185},
+  year      = {2016},
+}
+@inproceedings{LEARN_DATE2016_Meng,
+  title     = {Adaptive Threshold Non-Pareto Elimination: Re-thinking Machine Learning for System Level Design Space Exploration on {FPGAs}},
+  author    = {Meng, Pingfan and Althoff, Alric and Gautier, Quentin and Kastner, Ryan},
+  booktitle = date,
+  pages     = {918--923},
+  year      = {2016},
+}
+
 
 % ============================================================================
-%                     Machine Learning Applications 
+%                      Applications in CV
 % ============================================================================
 @inproceedings{HSD_CVPR2014_Cheng,
   title      = {{BING}: Binarized normed gradients for objectness estimation at 300fps},
