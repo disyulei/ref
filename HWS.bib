@@ -1,9 +1,31 @@
 
 % ==========================================================
+%                   HWS Summary
+% ==========================================================
+@article{HWS_Ele2015_Jin,
+  title     = {Introduction to Hardware Security},
+  author    = {Jin, Yier},
+  journal   = {Electronics},
+  volume    = {4},
+  number    = {4},
+  pages     = {763--784},
+  year      = {2015},
+  publisher = {Multidisciplinary Digital Publishing Institute},
+}
+
+
+% ==========================================================
 %                      PUF 
 % ==========================================================
 % == PUF summary
 %{{{
+@inproceedings{PUF_ITC2008_Majzoobi,
+  title     = {Testing techniques for hardware security},
+  author    = {Majzoobi, Mehrdad and Koushanfar, Farinaz and Potkonjak, Miodrag},
+  booktitle = itc,
+  pages     = {1--10},
+  year      = {2008},
+}
 @incollection{PUF_BC2010_Maes,
   title     = {Physically unclonable functions: A study on the state of the art and future research directions},
   author    = {Maes, Roel and Verbauwhede, Ingrid},
@@ -41,6 +63,13 @@
   author    = {Rostami, Masoud and Wendt, James B and Potkonjak, Miodrag and Koushanfar, Farinaz},
   booktitle = date,
   pages     = {352:1--352:6},
+  year      = {2014},
+}
+@inproceedings{PUF_ICCAD2014_Hussain,
+  title     = {{BIST-PUF}: online, hardware-based evaluation of physically unclonable circuit identifiers},
+  author    = {Hussain, Siam U. and Yellapantula, Sudha and Majzoobi, Mehrdad and Koushanfar, Farinaz},
+  booktitle = iccad,
+  pages     = {162--169},
   year      = {2014},
 }
 @article{PUF_PIEEE2014_Herder,
@@ -112,7 +141,7 @@
 }
 @inproceedings{PUF_DAC2007_Suh,
   title     = {Physical unclonable functions for device authentication and secret key generation},
-  author    = {Suh, G Edward and Devadas, Srinivas},
+  author    = {Suh, G.~Edward and Devadas, Srinivas},
   booktitle = dac,
   pages     = {9--14},
   year      = {2007},
@@ -121,14 +150,14 @@
 % ==== Arbiter based
 @inproceedings{PUF_VLSIC2004_Lee,
   title     = {A technique to build a secret key in integrated circuits for identification and authentication applications},
-  author    = {Lee, Jae W and Lim, Daihyun and Gassend, Blaise and Suh, G Edward and Van Dijk, Marten and Devadas, Srinivas},
+  author    = {Lee, Jae W. and Lim, Daihyun and Gassend, Blaise and Suh, G.~Edward and Van Dijk, Marten and Devadas, Srinivas},
   booktitle = vlsic,
   pages     = {176--179},
   year      = {2004},
 }
 @article{PUF_TVLSI2005_Lim,
   title     = {Extracting secret keys from integrated circuits},
-  author    = {Lim, Daihyun and Lee, Jae W and Gassend, Blaise and Suh, G Edward and Van Dijk, Marten and Devadas, Srinivas},
+  author    = {Lim, Daihyun and Lee, Jae W and Gassend, Blaise and Suh, G.~Edward and Van Dijk, Marten and Devadas, Srinivas},
   journal   = tvlsi,
   volume    = {13},
   number    = {10},
@@ -146,7 +175,7 @@
 }
 @inproceedings{PUF_FPL2009_Yu,
   title     = {Towards a unique fpga-based identification circuit using process variations},
-  author    = {Yu, Haile and Leong, Philip Heng Wai and Hinkelmann, Heiko and Moller, L and Glesner, Manfred and Zipf, Peter},
+  author    = {Yu, Haile and Leong, Philip Heng Wai and Hinkelmann, Heiko and Moller, L. and Glesner, Manfred and Zipf, Peter},
   booktitle = fpl,
   pages     = {397--402},
   year      = {2009},
@@ -166,7 +195,7 @@
 % ==== Butterfly based
 @inproceedings{PUF_HOST2008_Kumar,
   title     = {The butterfly {PUF} protecting {IP} on every {FPGA}},
-  author    = {Kumar, Sandeep S and Guajardo, Jorge and Maes, Roel and Schrijen, Geert-Jan and Tuyls, Pim},
+  author    = {Kumar, Sandeep S. and Guajardo, Jorge and Maes, Roel and Schrijen, Geert-Jan and Tuyls, Pim},
   booktitle = host,
   pages     = {67--70},
   year      = {2008},
@@ -191,7 +220,7 @@
 }
 @inproceedings{PUF_RFIDSec2007_Holcomb,
   title     = {Initial {SRAM} state as a fingerprint and source of true random numbers for {RFID} tags},
-  author    = {Holcomb, Daniel E and Burleson, Wayne P and Fu, Kevin and others},
+  author    = {Holcomb, Daniel E. and Burleson, Wayne P. and Fu, Kevin and others},
   booktitle = {Conference on RFID Security},
   volume    = {7},
   year      = {2007},
@@ -199,7 +228,7 @@
 }
 @article{PUF_TOC2009_Holcomb,
   title     = {Power-up {SRAM} state as an identifying fingerprint and source of true random numbers},
-  author    = {Holcomb, Daniel E and Burleson, Wayne P and Fu, Kevin},
+  author    = {Holcomb, Daniel E. and Burleson, Wayne P. and Fu, Kevin},
   journal   = toc,
   volume    = {58},
   number    = {9},
@@ -259,7 +288,7 @@
 }
 @inproceedings{PUF_ICHI2014_Xu,
   title     = {Matched digital {PUFs} for low power security in implantable medical devices},
-  author    = {Xu, Teng and Wendt, James B and Potkonjak, Miodrag},
+  author    = {Xu, Teng and Wendt, James B. and Potkonjak, Miodrag},
   booktitle = ichi,
   pages     = {33--38},
   year      = {2014},
@@ -339,6 +368,36 @@
 %}}}
 
 
+% ==== Reverse Engineering
+@misc{HWS_chipwork,
+  title        = {Chipwork},
+  howpublished = "\url{http://ww.chipworks.com/}",
+}
+@inproceedings{HWS_DAC2011_Torrance,
+  title     = {The state-of-the-art in semiconductor reverse engineering},
+  author    = {Torrance, Randy and James, Dick},
+  booktitle = dac,
+  pages     = {333--338},
+  year      = {2011},
+}
+
+
+% ==========================================================
+%                    Trajons 
+% ==========================================================
+% ==== Do Trajons
+@article{TROJAN_JCEN2014_Becker,
+  title     = {Stealthy dopant-level hardware {Trojans}: extended version},
+  author    = {Becker, Georg T. and Regazzoni, Francesco and Paar, Christof and Burleson, Wayne P.},
+  journal   = jcen,
+  volume    = {4},
+  number    = {1},
+  pages     = {19--31},
+  year      = {2014},
+  publisher = {Springer},
+}
+
+
 % ==========================================================
 %                    Fingerprint
 % ==========================================================
@@ -363,7 +422,7 @@
 
 
 % ==========================================================
-%              DRTr: Design for Trust
+%              DFTr: Design for Trust
 % ==========================================================
 % ==== Split manufacturing
 %{{{
@@ -444,4 +503,80 @@
   abstract  = {FM based partitioning + SA based floorplanning},
 }
 %}}}
+
+% ==== IC Camouflage
+@misc{CAMO_Patent2007_Chow,
+  title  = {Covert transformation of transistor properties as a circuit protection method},
+  author = {Chow, Lap-Wai and Clark Jr, William M. and Baukus, James P.},
+  year   = {2007},
+  month  = may # "~15",
+  note   = {US Patent 7,217,977},
+}
+@misc{CAMO_Patent2007_Integrated,
+  title  = {Integrated circuits protected against reverse engineering and method for fabricating the same using an apparent metal contact line terminating on field oxide},
+  author = {Chow, Lap-Wai and Baukus, James P. and Clark Jr, William M.},
+  year   = {2007},
+  month  = nov # "~13",
+  note   = {US Patent 7,294,935},
+}
+@inproceedings{CAMO_CCS2013_Rajendran,
+  title     = {Security Analysis of Integrated Circuit Camouflaging},
+  author    = {Rajendran, Jeyavijayan and Sam, Michael and Sinanoglu, Ozgur and Karri, Ramesh},
+  booktitle = ccs,
+  pages     = {709--720},
+  year      = {2013},
+}
+@inproceedings{CAMO_DAC2014_Cocchi,
+  title     = {Circuit Camouflage Integration for Hardware {IP} Protection},
+  author    = {Cocchi, Ronald P. and Baukus, James P. and Chow, Lap Wai and Wang, B Jiangyun},
+  booktitle = dac,
+  pages     = {153:1--153:5},
+  year      = {2014},
+}
+@inproceedings{CAMO_NDSS2015_ElMassad,
+  title     = {Integrated Circuit ({IC}) Decamouflaging: Reverse Engineering Camouflaged {ICs} within Minutes.},
+  author    = {El Massad, Mohamed and Garg, Siddharth and Tripunitara, Mahesh V.},
+  booktitle = ndss,
+  year      = {2015},
+}
+@inproceedings{CAMO_ITC2013_Rajendran,
+  title     = {{VLSI} testing based security metric for {IC} camouflaging},
+  author    = {Rajendran, Jeyavijayan and Sinanoglu, Ozgur and Karri, Ramesh},
+  booktitle = itc,
+  year      = {2013},
+}
+@article{CAMO_arXiv2015_Iyengar,
+  title   = {Threshold Voltage-Defined Switches for Programmable Gates},
+  author  = {Iyengar, Anirudh and Ghosh, Swaroop},
+  journal = {arXiv preprint},
+  year    = {2015},
+}
+@inproceedings{CAMO_LATS2015_Lee,
+  title     = {Improving logic obfuscation via logic cone analysis},
+  author    = {Lee, Yu-Wei and Touba, Nur A},
+  booktitle = lats,
+  pages     = {1--6},
+  year      = {2015},
+}
+@inproceedings{CAMO_ISVLSI2015_Malik,
+  title     = {Development of a Layout-Level Hardware Obfuscation Tool},
+  author    = {Malik, Shweta and Becker, Georg T. and Paar, Christof and Burleson, Wayne P.},
+  booktitle = isvlsi,
+  pages     = {204--209},
+  year      = {2015},
+}
+@inproceedings{CAMO_HOST2015_Subra,
+  title     = {Evaluating the security of logic encryption algorithms},
+  author    = {Subramanyan, Pramod and Ray, Sayak and Malik, Sharad},
+  booktitle = host,
+  pages     = {137--143},
+  year      = {2015},
+}
+@inproceedings{CAMO_DATE2016_Liu,
+  title     = {Oracle-Guided Incremental {SAT} Solving to Reverse Engineer Camouflaged Logic Circuits},
+  author    = {Liu, Duo and Yu, Cunxi and Zhang, Xiangyu and Holcomb, Daniel},
+  booktitle = date,
+  pages     = {433--438},
+  year      = {2016},
+}
 

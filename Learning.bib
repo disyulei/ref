@@ -1,7 +1,13 @@
-
 % ==================================================================
 %                   Machine Learning Books
 % ==================================================================
+%{{{
+@book{LEARN_B1968_Kullback,
+  title     = {{Information Theory and Statistics}},
+  author    = {Kullback, Solomon},
+  year      = {1968},
+  publisher = {Courier Corporation},
+}
 @book{LEARN_B2005_Markov,
   title     = {{Markov Chain Monte Carlo}},
   author    = {Gilks, Walter R},
@@ -22,6 +28,12 @@
   year      = {2006},
   publisher = {Springer New York},
 }
+@book{LEARN_B2001_Scholkopf,
+  title     = {{Learning with Kernels: Support Vector Machines, Regularization, Optimization, and Beyond}},
+  author    = {Scholkopf, Bernhard and Smola, Alexander J.},
+  year      = {2001},
+  publisher = {MIT press},
+}
 @book{LEARN_B2012_Mohri,
   title     = {{Foundations of Machine Learning}},
   author    = {Mohri, Mehryar and Rostamizadeh, Afshin and Talwalkar, Ameet},
@@ -30,7 +42,7 @@
 }
 @book{LEARN_B2012_Duda,
   title     = {{Pattern Classification}},
-  author    = {Duda, Richard O and Hart, Peter E and Stork, David G},
+  author    = {Duda, Richard O. and Hart, Peter E. and Stork, David G.},
   year      = {2012},
   publisher = {John Wiley \& Sons},
 }
@@ -40,23 +52,20 @@
   year      = {2012},
   publisher = {AMLBook},
 }
-
-
-% ==================================================================
-%                    Clustering 
-% ==================================================================
-@book{LEARN_B1988_Jain,
-  title     = {{Algorithms for Clustering Data}},
-  author    = {Jain, Anil K and Dubes, Richard C},
-  year      = {1988},
-  publisher = {Prentice-Hall, Inc.},
-  abstract  = {K-means clustering},
+@book{LEARN_B2015_Hastie,
+  title     = {{Statistical Learning with Sparsity: The Lasso and Generalization}},
+  author    = {Trevor Hastie and Robert Tibshirani and Martin Wainwright},
+  year      = {2015},
+  publisher = {CRC press},
+  abstract  = {Sparse regression},
 }
+%}}}
 
 
 % ==================================================================
-%                     Pattern/Template Matching
+%                 Pattern/Template Matching
 % ==================================================================
+%{{{
 % ==== exact matching
 @article{MTCH_SICOMP1977_Knuth,
   title     = {Fast pattern matching in strings},
@@ -98,14 +107,25 @@
   pages   = {1570--1579},
   year    = {2005},
 }
+%}}}
 
 
 % ==================================================================
-%             Regression
+%                     Regression
 % ==================================================================
+%{{{
+@article{REGR_WDMKD2015_Borchani,
+  title     = {A survey on multi-output regression},
+  author    = {Borchani, Hanen and Varando, Gherardo and Bielza, Concha and Larra{\~n}aga, Pedro},
+  journal   = wdmkd,
+  volume    = {5},
+  number    = {5},
+  pages     = {216--233},
+  year      = {2015},
+  publisher = {Wiley Online Library},
+}
 % ==== SVR
-% ==== SVR applications
-@incollection{SVM_2006_Hao,
+@incollection{REGR_BC2006_Hao,
   title     = {Support Vector Regression for Financial Time Series Forecasting},
   author    = {Hao, Wei and Yu, Songnian},
   booktitle = {Knowledge Enterprise: Intelligent Strategies in Product Design, Manufacturing, and Management},
@@ -114,11 +134,58 @@
   publisher = {Springer},
   abstract  = {},
 }
+% ==== Lasso
+@article{LASSO_JRSSB1996_Tib,
+  title    = {Regression shrinkage and selection via the {Lasso}},
+  author   = {Robert Tibshirani},
+  journal  = jrssb,
+  volume   = {58},
+  pages    = {267-288},
+  year     = {1996},
+}
+@article{LASSO_JASA2006_Zou,
+  title    = {The adaptive {Lasso} and its oracle properties},
+  author   = {Hui Zou},
+  journal  = jasa,
+  volume   = {101},
+  pages    = {1418-1429},
+  year     = {2006},
+}
+@article{LASSO_AOAS2007_Friedman,
+  title    = {Pathwise coordinate optimization},
+  author   = {Jerome friedman and Trevor Hastie and Holger H\"{o}fling and Robert Tibshirani},
+  journal  = aoas,
+  volume   = {1},
+  pages    = {302-332},
+  year     = {2007},
+}
+@article{LASSO_STATSIN2008_Huang,
+  title    = {Adaptive {Lasso} for sparse high-dimensional regression models},
+  author   = {Jian Huang and Shuangge Ma and Cun-Hui Zhang},
+  journal  = statsin,
+  volume   = {18},
+  pages    = {1603-1618},
+  year     = {2008},
+}
+%}}}
 
 
 % ===========================================================
-%                           SVM
+%                     Classification 
 % ===========================================================
+%{{{
+@article{LEARN_JIPL1987_Blumer,
+  title     = {Occam's razor},
+  author    = {Blumer, Anselm and Ehrenfeucht, Andrzej and Haussler, David and Warmuth, Manfred K.},
+  journal   = jipl,
+  volume    = {24},
+  number    = {6},
+  pages     = {377--380},
+  year      = {1987},
+  publisher = {Elsevier},
+  abstract  = {simple model is sometimes better},
+}
+% ==== SVM
 %{{{
 % ====
 @inproceedings{SVM_COLT1992_Boser,
@@ -181,12 +248,7 @@
   abstract = {working set selection},
 }
 %}}}
-
-
-
-% ===========================================================
-%                           ANN
-% ===========================================================
+% ==== ANN
 @book{ANN_B1996_Hagan,
   title     = {{Neural Network Design}},
   author    = {Hagan, Martin T and Demuth, Howard B and Beale, Mark H},
@@ -194,9 +256,9 @@
   year      = {1996},
   publisher = {Pws Boston},
 }
-@article{ANN_2001_Rafiq,
+@article{ANN_CompStru2001_Rafiq,
   title     = {Neural network design for engineering applications},
-  author    = {Rafiq, MY and Bugmann, G and Easterbrook, DJ},
+  author    = {Rafiq, M.Y. and Bugmann, G. and Easterbrook, D.J.},
   journal   = {Computers \& Structures},
   volume    = {79},
   number    = {17},
@@ -204,68 +266,154 @@
   year      = {2001},
   publisher = {Elsevier},
 }
-
-
-% ===========================================================
-%                       Boosting
-% ===========================================================
-@inproceedings{BOOST_COLT1995_Freund,
-  title     = {A desicion-theoretic generalization of on-line learning and an application to boosting},
-  author    = {Freund, Yoav and Schapire, Robert E},
-  booktitle = colt,
-  pages     = {23--37},
-  year      = {1995},
-  abstract  = {boost},
-}
-
-
-% ===========================================================
-%            Genral Learning / Classifications
-% ===========================================================
+% ==== Decision Tree
 @book{LEARN_B1984_Breiman,
   title     = {{Classification and Regression Trees}},
-  author    = {Breiman, Leo and Friedman, Jerome and Stone, Charles J and Olshen, Richard A},
+  author    = {Breiman, Leo and Friedman, Jerome and Stone, Charles J. and Olshen, Richard A.},
   year      = {1984},
   publisher = {CRC press},
   abstract  = {decision tree},
 }
-@article{LEARN_JIPL1987_Blumer,
-  title     = {Occam's razor},
-  author    = {Blumer, Anselm and Ehrenfeucht, Andrzej and Haussler, David and Warmuth, Manfred K},
-  journal   = jipl,
-  volume    = {24},
-  number    = {6},
-  pages     = {377--380},
-  year      = {1987},
-  publisher = {Elsevier},
-  abstract  = {simple model is sometimes better},
+@article{ENL_ML1997_Utgoff,
+  title     = {Decision tree induction based on efficient tree restructuring},
+  author    = {Utgoff, Paul E. and Berkman, Neil C. and Clouse, Jeffery A.},
+  journal   = ml,
+  volume    = {29},
+  number    = {1},
+  pages     = {5--44},
+  year      = {1997},
 }
-@article{LEARN_TEST2006_Bickel,
-  title     = {Regularization in statistics},
-  author    = {Bickel, Peter J and Li, Bo and Tsybakov, Alexandre B and van de Geer, Sara A and Yu, Bin and Vald{\'e}s, Te{\'o}filo and Rivero, Carlos and Fan, Jianqing and van der Vaart, Aad},
-  journal   = test,
+%}}}
+
+
+% ============================================================================
+%                       Ensemble Learning
+% ============================================================================
+@article{ENL_JCSS1997_Freund,
+  title     = {A decision-theoretic generalization of on-line learning and an application to boosting},
+  author    = {Freund, Yoav and Schapire, Robert E.},
+  journal   = jcss,
+  volume    = {55},
+  number    = {1},
+  pages     = {119--139},
+  year      = {1997},
+  publisher = {Elsevier},
+  abstract  = {boosting},
+}
+@article{ENL_AOS2000_Friedman,
+  title     = {Additive logistic regression: a statistical view of boosting (with discussion and a rejoinder by the authors)},
+  author    = {Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert and others},
+  journal   = aos,
+  volume    = {28},
+  number    = {2},
+  pages     = {337--407},
+  year      = {2000},
+}
+@article{ENL_TMIN2005_Hastie,
+  title     = {The elements of statistical learning: data mining, inference and prediction},
+  author    = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome and Franklin, James},
+  journal   = tmin,
+  volume    = {27},
+  number    = {2},
+  pages     = {83--85},
+  year      = {2005},
+  publisher = {Springer},
+}
+@article{ENL_JMLR2003_Servedio,
+  title     = {Smooth boosting and learning with malicious noise},
+  author    = {Servedio, Rocco A.},
+  journal   = jmlr,
+  volume    = {4},
+  pages     = {633--648},
+  year      = {2003},
+}
+
+
+% ============================================================================
+%                	 On-line Ensemble Learning 
+% ============================================================================
+@inproceedings{ONL_COLT1995_Freund,
+	title     = {A desicion-theoretic generalization of on-line learning and an application to boosting},
+	author    = {Freund, Yoav and Schapire, Robert E},
+	booktitle = colt,
+	pages     = {23--37},
+	year      = {1995},
+	abstract  = {boost},
+}
+@inproceedings{ONL_ICCMC2005_Oza,
+  title     = {Online bagging and boosting},
+  author    = {Oza, Nikunj C.},
+  booktitle = icsmc,
+  volume    = {3},
+  pages     = {2340--2345},
+  year      = {2005},
+}
+@inproceedings{ONL_CVPR2006_Grabner,
+	title	  = {On-line boosting and vision},
+	author	  = {Grabner, Helmut and Bischof, Horst},
+	booktitle = cvpr,
+	volume	  = {1},
+	pages	  = {260--267},
+	year	  = {2006},
+}
+@article{ONL_IJCV2008_Ross,
+	title	  = {Incremental learning for robust visual tracking},
+	author	  = {Ross, David A. and Lim, Jongwoo and Lin, Ruei-Sung and Yang, Ming-Hsuan},
+	journal	  = ijcv,
+	volume	  = {77},
+	number	  = {1-3},
+	pages	  = {125--141},
+	year	  = {2008},
+}
+@inproceedings{ONL_ICCV2009_Saffari,
+	title	  = {On-line random forests},
+	author	  = {Saffari, Amir and Leistner, Christian and Santner, Jakob and Godec, Martin and Bischof, Horst},
+	booktitle = iccv,
+	pages	  = {1393--1400},
+	year	  = {2009},
+}
+
+
+% ===========================================================
+%                 Active Learning 
+% ===========================================================
+@article{ATL_ML1994_Cohn,
+  title     = {Improving generalization with active learning},
+  author    = {Cohn, David and Atlas, Les and Ladner, Richard},
+  journal   = ml,
   volume    = {15},
   number    = {2},
-  pages     = {271--344},
-  year      = {2006},
+  pages     = {201--221},
+  year      = {1994},
   publisher = {Springer},
-  abstract  = {introduction to regularization},
 }
-@article{LEARN_JSS2010_Arlot,
-  title     = {A survey of cross-validation procedures for model selection},
-  author    = {Arlot, Sylvain and Celisse, Alain},
-  journal   = jss,
-  volume    = {4},
-  pages     = {40--79},
-  year      = {2010},
-  publisher = {The author, under a Creative Commons Attribution License},
-  abstract  = {introduction to validation},
+@inproceedings{ATL_ICML2007_Hanneke,
+  title     = {A bound on the label complexity of agnostic active learning},
+  author    = {Hanneke, Steve},
+  booktitle = icml,
+  pages     = {353--360},
+  year      = {2007},
+}
+@inproceedings{ATL_ICML2009_Dasgupta,
+  title     = {A tutorial on active learning},
+  author    = {Dasgupta, Sanjoy and Langford, John},
+  booktitle = icml,
+  year      = {2009}
 }
 
 
 % ===========================================================
 %                 Dimension Reduction 
 % ===========================================================
+%{{{
+% ==== K-means
+@book{LEARN_B1988_Jain,
+  title     = {{Algorithms for Clustering Data}},
+  author    = {Jain, Anil K and Dubes, Richard C},
+  year      = {1988},
+  publisher = {Prentice-Hall, Inc.},
+  abstract  = {K-means clustering},
+}
 % ==== PCA
 @inproceedings{PCA_JESWA2010_Gumus,
   author    = {Ergun Gumus and Niyazi Kilic and Ahmet Sertbas and Osman N. Ucan},
@@ -300,11 +448,13 @@
  pages		= {585--591},
  year		= {2001},
 }
+%}}}
 
 
 % =======================================================
 %                       Features
 % =======================================================
+%{{{
 @article{LEARN_PR2007_Toyoda,
   title     = {Extension of higher order local autocorrelation features},
   author    = {Toyoda, Takahiro and Hasegawa, Osamu},
@@ -326,26 +476,72 @@
   abstract = {feature distances},
 }
 @article{LEARN_TPAMI1991_Arkin,
-  author   = {Esther M.Arkin and L.Paul Chew and Daniel P.Huttenlocher and Klara Kedem and Joseph S.B.Mitchell},
   title    = {An efficiently Computable Metric for Comparing Polygonal Shapes},
+  author   = {Esther M.Arkin and L.Paul Chew and Daniel P.Huttenlocher and Klara Kedem and Joseph S.B.Mitchell},
   journal  = tpami,
   year     = {1991},
-  vol      = 13,
+  volume   = 13,
   number   = 3,
   pages    = {209-216},
   abstract = {},
 }
 @article{LEARN_TPAMI2000_Latecki,
-  author   = {Longin Jan Latecki and Rolf Lakamper},
   title    = {Shape Similarity Measure Based on Correspondence of Visual Parts},
+  author   = {Longin Jan Latecki and Rolf Lakamper},
   journal  = tpami,
   year     = {2000},
-  vol      = 22,
+  volume   = 22,
   number   = 10,
   pages    = {1-6},
   abstract = {},
 }
+@article{LEARN_TPAMI2005_Peng,
+  title    = {Feature selection based on mutual information criteria of max-dependency, max-relevance, and min-redundancy},
+  author   = {Peng, Hanchuan and Long, Fuhui and Ding, Chris},
+  journal  = tpami,
+  volume   = {27},
+  number   = {8},
+  pages    = {1226--1238},
+  year     = {2005},
+  publisher= {IEEE},
+}
+%}}}
 
+
+
+
+% ============================================================================
+%                       Dictionary Learning
+% ============================================================================
+@inproceedings{LEARN_NIPS2006_Lee,
+  title     = {Efficient sparse coding algorithms},
+  author    = {Lee, Honglak and Battle, Alexis and Raina, Rajat and Ng, Andrew Y.},
+  booktitle = nips,
+  pages     = {801--808},
+  year      = {2006},
+}
+
+
+% ===========================================================
+%                         Sampling
+% ===========================================================
+@article{SAMPL_TPAMI1984_Geman,
+  title    = {Stochastic relaxation, Gibbs distributions, and the Bayesian restoration of images},
+  author   = {Geman, Stuart and Geman, Donald},
+  journal  = tpami,
+  number   = {6},
+  pages    = {721--741},
+  year     = {1984},
+  abstract = {Gibbs sampling},
+}
+@article{SAMPL_WSC1992_Mckay,
+  title    = {Latin hypercube sampling as a tool in uncertainty analysis of computer models},
+  author   = {Michael, D., McKay},
+  journal  = {Proceedings of the 1992 Winter Simulation Conference},
+  pages    = {557-564},
+  year     = {1992},
+  abstract = {Latin sampling},
+}
 
 % ===========================================================
 %                         Others 
@@ -370,22 +566,42 @@
   year      = {1998},
   publisher = {Taylor \& Francis},
 }
-@inproceedings{LEARN_NIPS2008_Sugiyama,
+@article{LEARN_TEST2006_Bickel,
+  title     = {Regularization in statistics},
+  author    = {Bickel, Peter J and Li, Bo and Tsybakov, Alexandre B and van de Geer, Sara A and Yu, Bin and Vald{\'e}s, Te{\'o}filo and Rivero, Carlos and Fan, Jianqing and van der Vaart, Aad},
+  journal   = test,
+  volume    = {15},
+  number    = {2},
+  pages     = {271--344},
+  year      = {2006},
+  publisher = {Springer},
+  abstract  = {introduction to regularization},
+}
+@article{LEARN_JSS2010_Arlot,
+  title     = {A survey of cross-validation procedures for model selection},
+  author    = {Arlot, Sylvain and Celisse, Alain},
+  journal   = ss,
+  volume    = {4},
+  pages     = {40--79},
+  year      = {2010},
+  abstract  = {introduction to validation},
+}
+@inproceedings{LEARN_NIPS2007_Sugiyama,
   title     = {Direct importance estimation with model selection and its application to covariate shift adaptation},
-  author    = {Sugiyama, Masashi and Nakajima, Shinichi and Kashima, Hisashi and Buenau, Paul V and Kawanabe, Motoaki},
+  author    = {Sugiyama, Masashi and Nakajima, Shinichi and Kashima, Hisashi and Paul V.~Buenau and Kawanabe, Motoaki},
   booktitle = nips,
   pages     = {1433--1440},
-  year      = {2008},
+  year      = {2007},
   abstract  = {Density Estimation (Kullback-Leibler Importance Estimation Procedure)},
 }
 @article{LEARN_AOS1973_Blackwell,
   title     = {Ferguson distributions via P{\'o}lya urn schemes},
-  author    = {Blackwell, David and MacQueen, James B},
+  author    = {Blackwell, David and MacQueen, James B.},
   journal   = aos,
   pages     = {353--355},
   year      = {1973},
   publisher = {JSTOR},
-  abstract  = {Dirichlet Process & Chinese Restaurant Process},
+  abstract  = {Dirichlet Process \& Chinese Restaurant Process},
 }
 @article{LEARN_AOS1973_Ferguson,
   title		= {A Bayesian analysis of some nonparametric problems},
@@ -396,15 +612,6 @@
   publisher = {JSTOR},
   abstract  = {Nonparametric Bayes Model},
 }
-@article{LEARN_TPAMI1984_Geman,
-  title    = {Stochastic relaxation, Gibbs distributions, and the Bayesian restoration of images},
-  author   = {Geman, Stuart and Geman, Donald},
-  journal  = tpami,
-  number   = {6},
-  pages    = {721--741},
-  year     = {1984},
-  abstract = {Gibbs sampling},
-}
 @inproceedings{LEARN_ICPR1996_Tumer,
   title     = {Estimating the bayes error rate through classifier combining},
   author    = {Tumer, Kagan and Ghosh, Joydeep},
@@ -414,4 +621,66 @@
   year      = {1996},
   abstract  = {Bayes Error},
 }
+
+
+% ============================================================================
+%                   Applications in VLSI CAD
+% ============================================================================
+@mastersthesis{LEARN_MS2007_Wiener,
+  title  = {Intelligate: An Algorithm for Learning Boolean Functions for Dynamic Power Reduction},
+  author = {Wiener, Roni},
+  year   = {2007},
+  school = {University of Haifa},
+}
+@inproceedings{LEARN_ASPDAC2015_Yu,
+  title     = {Machine learning and pattern matching in physical design},
+  author    = {Yu, Bei and David Z.~Pan and Matsunawa, Tetsuaki and Zeng, Xuan},
+  booktitle = aspdac,
+  pages     = {286--293},
+  year      = {2015},
+}
+@inproceedings{LEARN_ASPDAC2016_Chan,
+  title     = {Learning-based prediction of embedded memory timing failures during initial floorplan design},
+  author    = {Chan, Wei-Ting J. and Chung, Kun Young and Kahng, Andrew B. and MacDonald, Nancy D. and Nath, Siddhartha},
+  booktitle = aspdac,
+  pages     = {178--185},
+  year      = {2016},
+}
+@inproceedings{LEARN_DATE2016_Meng,
+  title     = {Adaptive Threshold Non-Pareto Elimination: Re-thinking Machine Learning for System Level Design Space Exploration on {FPGAs}},
+  author    = {Meng, Pingfan and Althoff, Alric and Gautier, Quentin and Kastner, Ryan},
+  booktitle = date,
+  pages     = {918--923},
+  year      = {2016},
+}
+
+
+% ============================================================================
+%                      Applications in CV
+% ============================================================================
+@inproceedings{HSD_CVPR2014_Cheng,
+  title      = {{BING}: Binarized normed gradients for objectness estimation at 300fps},
+  author     = {Cheng, Ming-Ming and Zhang, Ziming and Lin, Wen-Yan and Torr, Philip},
+  booktitle  = cvpr,
+  pages      = {3286--3293},
+  year       = {2014},
+}
+@inproceedings{HSD_ICCV2013_Ou,
+  title      = {Joint deep learning for pedestrian detection},
+  author     = {Ouyang, Wanli and Wang, Xiaogang},
+  booktitle  = iccv,
+  pages      = {2056--2063},
+  year       = {2013},
+}
+@article{HSD_CSUR2002_Sebastiani,
+  title     = {Machine learning in automated text categorization},
+  author    = {Sebastiani, Fabrizio},
+  journal   = csur,
+  volume    = {34},
+  number    = {1},
+  pages     = {1--47},
+  year      = {2002},
+  publisher = {ACM},
+}
+
 

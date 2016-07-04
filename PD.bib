@@ -17,13 +17,6 @@
   pages     = {236--244},
   year      = {2000},
 }
-@inproceedings{PD_ASPDAC2015_Yu,
-  title     = {Machine learning and pattern matching in physical design},
-  author    = {Yu, Bei and Pan, David Z and Matsunawa, Tetsuaki and Zeng, Xuan},
-  booktitle = aspdac,
-  pages     = {286--293},
-  year      = {2015},
-}
 % ==== placement summary
 @inproceedings{PLACE_ICCAD2013_Contest,
   title     = {{ICCAD-2013 CAD} contest in placement finishing and benchmark suite},
@@ -87,6 +80,13 @@
   pages     = {891--898},
   year      = {2005},
 }
+@inproceedings{PLACE_ISPD2005_Chen,
+  title     = {{NTUplace}: a ratio partitioning based placement algorithm for large-scale mixed-size designs},
+  author    = {Chen, Tung-Chieh and Hsu, Tien-Chang and Jiang, Zhe-Wei and Chang, Yao-Wen},
+  booktitle = ispd,
+  pages     = {236--238},
+  year      = {2005},
+}
 @inproceedings{PLACE_ASPDAC2007_Luo,
   title     = {{DPlace2.0}: a stable and efficient analytical placement based on diffusion},
   author    = {Luo, Tao and Pan, David Z.},
@@ -108,6 +108,40 @@
   pages     = {165--170},
   year      = {2000},
 }
+@article{PLACE_TCAD2012_Kim,
+  title={{SimPL}: An effective placement algorithm},
+  author    = {Kim, Myung-Chul and Lee, Dong-Jin and Markov, Igor L.},
+  journal   = tcad,
+  volume    = {31},
+  number    = {1},
+  pages     = {50--60},
+  year      = {2012},
+  publisher = {IEEE},
+}
+@inproceedings{PLACE_ISPD2012_Kim,
+  title     = {{MAPLE}: multilevel adaptive placement for mixed-size designs},
+  author    = {Kim, Myung-Chul and Viswanathan, Natarajan and Charles J.~Alpert and Igor L.~Markov and Ramji, Shyam},
+  booktitle = ispd,
+  pages     = {193--200},
+  year      = {2012},
+}
+@inproceedings{PLACE_ICCAD2013_Lin,
+  title     = {{POLAR}: placement based on novel rough legalization and refinement},
+  author    = {Lin, Tao and Chu, Chris and Shinnerl, Joseph R and Bustany, Ismail and Nedelchev, Ivailo},
+  booktitle = iccad,
+  pages     = {357--362},
+  year      = {2013},
+}
+@article{PLACE_TCAD2015_Lu,
+  title     = {{ePlace-MS}: Electrostatics-Based Placement for Mixed-Size Circuits},
+  author    = {Lu, Jingwei and Zhuang, Hao and Chen, Pengwen and Chang, Hongliang and Chang, Chin-Chih and Wong, Yiu-Chung and Sha, Lu and Huang, Dennis and Luo, Yufeng and Teng, Chin-Chi and others},
+  journal   = tcad,
+  volume    = {34},
+  number    = {5},
+  pages     = {685--698},
+  year      = {2015},
+  publisher = {IEEE},
+}
 %}}}
 
 % ==== non-linear global place
@@ -122,6 +156,16 @@
   number  = {1},
   pages   = {12--18},
   year    = {1981},
+}
+@article{PLACE_TCAD1989_Chowdhury,
+  title     = {Analytical approaches to the combinatorial optimization in linear placement problems},
+  author    = {Chowdhury, Salim},
+  journal   = tcad,
+  volume    = {8},
+  number    = {6},
+  pages     = {630--639},
+  year      = {1989},
+  publisher = {IEEE},
 }
 @inproceedings{PLACE_DATE1998_Vygen,
   title     = {Algorithms for detailed placement of standard cells},
@@ -153,7 +197,7 @@
 }
 @inproceedings{PLACE_GLSVLSI2004_Kahng,
   title     = {On legalization of row-based placements},
-  author    = {Kahng, Andrew B and Markov, Igor L and Reda, Sherief},
+  author    = {Kahng, Andrew B. and Markov, Igor L. and Reda, Sherief},
   booktitle = glsvlsi,
   pages     = {214--219},
   year      = {2004},
@@ -181,12 +225,60 @@
 }
 @inproceedings{PLACE_ISPD2014_Chow,
   title     = {Cell Density-driven Detailed Placement with Displacement Constraint},
-  author    = {Chow, Wing-Kai and Kuang, Jian and He, Xu and Cai, Wenzan and Young, Evangeline F.Y.},
+  author    = {Chow, Wing-Kai and Kuang, Jian and He, Xu and Cai, Wenzan and Evangeline F.~Y.~Young},
   booktitle = ispd,
   year      = {2014},
   pages     = {3--10},
   numpages  = {8},
   abstract  = {ripple-dp},
+}
+@inproceedings{PLACE_GLSVLSI2014_Kahng,
+  title     = {Minimum implant area-aware gate sizing and placement},
+  author    = {Andrew B.~Kahng and Lee, Hyein},
+  booktitle = glsvlsi,
+  pages     = {57--62},
+  year      = {2014},
+}
+@article{PLACE_TCAD2015_Wu,
+  title     = {Detailed Placement Algorithm for {VLSI} Design with Double-Row Height Standard Cells},
+  author    = {Wu, Gang and Chu, Chris},
+  journal   = tcad,
+  year      = {2015},
+  publisher = {IEEE},
+}
+@inproceedings{PLACE_ICCAD2015_Dobre,
+  title     = {Mixed Cell-Height Implementation for Improved Design Quality in Advanced Nodes},
+  author    = {Dobre, Sorin and Andrew B.~Kahng and Li, Jiajia},
+  booktitle = iccad,
+  pages     = {854--860},
+  year      = {2015},
+}
+@inproceedings{PLACE_ASPDAC2016_Lei,
+  title     = {Minimum implant area-aware placement and threshold voltage refinement},
+  author    = {Lei, Seong-I and Mak, Wai-Kei and Chu, Chris},
+  booktitle = aspdac,
+  pages     = {192--197},
+  year      = {2016},
+}
+@inproceedings{PLACE_DAC2016_Chow,
+  title     = {Legalization Algorithm for Multiple-Row Height Standard Cell Design},
+  author    = {Chow, Wing-Kai and Pui, Chak-Wa and Evangeline F.~Y.~Young},
+  booktitle = dac,
+  pages     = {83:1--83:6},
+  year      = {2016},
+}
+@inproceedings{PLACE_DAC2016_Tseng,
+  title     = {Minimum-implant-area-aware detailed placement with spacing constraints},
+  author    = {Tseng, Kai-Han and Chang, Yao-Wen and Charles C.~C.~Liu},
+  booktitle = dac,
+  pages     = {84:1--84:6},
+  year      = {2016},
+}
+@inproceedings{PLACE_ICCAD2016_Lin,
+  title     = {{MrDP}: Multiple-row Detailed Placement of Heterogeneous-sized Cells for Advanced Nodes},
+  author    = {Yibo Lin and Bei Yu and Xiaoqing Xu and Jhih-Rong Gao and Natarajan Viswanathan and Wen-Hao Liu and Zhuo Li and Charles J.~Alpert and David Z.~Pan},
+  booktitle = iccad,
+  year      = {2016},
 }
 %}}}
 
@@ -217,7 +309,7 @@
 }
 @inproceedings{PLACE_DAC2013_He,
   title     = {Ripple 2.0: High quality routability-driven placement via global router integration},
-  author    = {He, Xu and Huang, Tao and Chow, Wing-Kai and Kuang, Jian and Lam, Ka-Chun and Cai, Wenzan and Young, Evangeline FY},
+  author    = {He, Xu and Huang, Tao and Chow, Wing-Kai and Kuang, Jian and Lam, Ka-Chun and Cai, Wenzan and Evangeline F.~Y.~Young},
   booktitle = dac,
   pages     = {152:1--152:6},
   year      = {2013},
@@ -261,7 +353,7 @@
 }
 @inproceedings{PLACE_DAC2006_Luo,
   title     = {A new {LP} based incremental timing driven placement for high performance designs},
-  author    = {Luo, Tao and Newmark, David and Pan, David Z.},
+  author    = {Luo, Tao and Newmark, David and David Z.~Pan},
   booktitle = dac,
   pages     = {1115--1120},
   year      = {2006},
@@ -269,7 +361,7 @@
 }
 @inproceedings{PLACE_ASPDAC2007_Ren,
   title     = {Hippocrates: first-do-no-harm detailed placement},
-  author    = {Ren, Haoxing and Pan, David Z and Alpert, Charles J and Nam, Gi-Joon and Villarrubia, Paul},
+  author    = {Ren, Haoxing and Pan, David Z. and Alpert, Charles J. and Nam, Gi-Joon and Villarrubia, Paul},
   booktitle = aspdac,
   pages     = {141--146},
   year      = {2007},
@@ -277,7 +369,7 @@
 }
 @inproceedings{PLACE_ASPDAC2007_Roy,
   title     = {{ECO}-system: Embracing the Change in Placement},
-  author    = {Roy, JA and Markov, IL},
+  author    = {Roy, J.A. and Markov, I.L.},
   booktitle = aspdac,
   pages     = {147--152},
   year      = {2007},
@@ -285,7 +377,7 @@
 }
 @article{PLACE_TCAD2007_Roy,
   title    = {{ECO}-system: Embracing the Change in Placement},
-  author   = {Roy, Jarrod A and Markov, Igor L},
+  author   = {Roy, Jarrod A. and Markov, Igor L.},
   journal  = tcad,
   volume   = {26},
   number   = {12},
@@ -314,7 +406,7 @@
 %{{{
 @inproceedings{PLACE_ASPDAC2008_Luo,
   title     = {Total power optimization combining placement, sizing and multi-{Vt} through slack distribution management},
-  author    = {Luo, Tao and Newmark, David and Pan, David Z},
+  author    = {Luo, Tao and Newmark, David and Pan, David Z.},
   booktitle = aspdac,
   pages     = {352--357},
   year      = {2008},
@@ -325,21 +417,21 @@
 %{{{
 @inproceedings{PLACE_ISPD2011_Ward,
   title     = {Quantifying academic placer performance on custom designs},
-  author    = {Ward, Samuel I and Papa, David A and Li, Zhuo and Sze, Cliff N and Alpert, Charles J and Swartzlander, Earl},
+  author    = {Ward, Samuel I and Papa, David A. and Li, Zhuo and Sze, Cliff N. and Alpert, Charles J. and Swartzlander, Earl},
   booktitle = ispd,
   pages     = {91--98},
   year      = {2011},
 }
 @inproceedings{PLACE_ISPD2012_Ward,
   title     = {Keep it straight: teaching placement how to better handle designs with datapaths},
-  author    = {Ward, Samuel I and Kim, Myung-Chul and Viswanathan, Natarajan and Li, Zhuo and Alpert, Charles and Swartzlander Jr, Earl E and Pan, David Z},
+  author    = {Ward, Samuel I and Kim, Myung-Chul and Viswanathan, Natarajan and Li, Zhuo and Alpert, Charles and Swartzlander, Earl and Pan, David Z.},
   booktitle = ispd,
   pages     = {79--86},
   year      = {2012},
 }
 @inproceedings{PLACE_DAC2012_Ward,
   title     = {{PADE}: a high-performance placer with automatic datapath extraction and evaluation through high dimensional data learning},
-  author    = {Ward, Samuel and Ding, Duo and Pan, David Z},
+  author    = {Ward, Samuel and Ding, Duo and Pan, David Z.},
   booktitle = dac,
   pages     = {756--761},
   year      = {2012},
@@ -397,7 +489,7 @@
 %{{{
 @inproceedings{ROUTE_ICCAD2007_Roy,
   title     = {High-performance routing at the nanometer scale},
-  author    = {Roy, Jarrod A and Markov, Igor L},
+  author    = {Roy, Jarrod A. and Markov, Igor L.},
   booktitle = iccad,
   pages     = {496--502},
   year      = {2007},
@@ -405,7 +497,7 @@
 }
 @article{ROUTE_TCAD2008_Roy,
   title    = {High-Performance Routing at the Nanometer Scale},
-  author   = {Roy, JA and Markov, IL},
+  author   = {J.~A.~Roy and I.~L.~Markov},
   journal  = tcad,
   volume   = {27},
   number   = {6},
@@ -490,7 +582,7 @@
 }
 @inproceedings{ROUTE_ICCAD2012_Zhang,
   title     = {Reclaiming over-the-{IP}-block routing resources with buffering-aware rectilinear Steiner minimum tree construction},
-  author    = {Zhang, Yilin and Chakraborty, Ashutosh and Chowdhury, Salim and Pan, David Z},
+  author    = {Zhang, Yilin and Chakraborty, Ashutosh and Chowdhury, Salim and Pan, David Z.},
   booktitle = iccad,
   pages     = {137--143},
   year      = {2012},
@@ -526,7 +618,7 @@
 }
 @inproceedings{ROUTE_DAC2006_Cho,
   title     = {{BoxRouter}: a new global router based on box expansion and progressive {ILP}},
-  author    = {Cho, Minsik and Pan, David Z},
+  author    = {Cho, Minsik and David Z.~Pan},
   booktitle = dac,
   pages     = {373--378},
   year      = {2006},
@@ -534,7 +626,7 @@
 }
 @article{ROUTE_TCAD2007_Cho,
   title    = {{BoxRouter}: a new global router based on box expansion and progressive {ILP}},
-  author   = {Cho, Minsik and Pan, David Z},
+  author   = {Cho, Minsik and Pan, David Z.},
   journal  = tcad,
   volume   = {26},
   number   = {12},
@@ -551,7 +643,7 @@
 }
 @inproceedings{ROUTE_ICCAD2007_Cho,
   title     = {{BoxRouter} 2.0: architecture and implementation of a hybrid and robust global router},
-  author    = {Cho, Minsik and Lu, Katrina and Yuan, Kun and Pan, David Z},
+  author    = {Cho, Minsik and Lu, Katrina and Yuan, Kun and Pan, David Z.},
   booktitle = iccad,
   pages     = {503--508},
   year      = {2007},
@@ -908,7 +1000,7 @@
 %{{{
 @inproceedings{ROUTE_ASPDAC2005_Xu,
   title     = {Redundant-via enhanced maze routing for yield improvement},
-  author    = {Xu, Gang and Huang, Li-Da and Pan, David Z and Wong, Martin DF},
+  author    = {Xu, Gang and Huang, Li-Da and David Z.~Pan and Martin D.~F.~Wong},
   booktitle = aspdac,
   pages     = {1148--1151},
   year      = {2005},
@@ -955,7 +1047,7 @@
 }
 @article{FLOOR_TVLSI2003_Adya,
   title   = {Fixed-outline floorplanning: Enabling hierarchical design},
-  author  = {Adya, Saurabh N and Markov, Igor L},
+  author  = {Adya, Saurabh N. and Markov, Igor L.},
   journal = tvlsi,
   volume  = {11},
   number  = {6},
@@ -997,7 +1089,7 @@
 } 
 @inproceedings{FLOOR_ASPDAC2005_Tang,
   title     = {Optimal redistribution of white space for wire length minimization},
-  author    = {Tang, Xiaoping and Tian, Ruiqi and Wong, Martin DF},
+  author    = {Tang, Xiaoping and Tian, Ruiqi and Martin D.~F.~Wong},
   booktitle = aspdac,
   pages     = {412--417},
   year      = {2005},
@@ -1013,7 +1105,7 @@
 }
 @inproceedings{FLOOR_DAC2006_Sham, 
   title     = {Optimal cell flipping in placement and floorplanning}, 
-  author    ={Chiu-Wing Sham and Young, F.Y. and Chu, Chris}, 
+  author    ={Chiu-Wing Sham and F.~Y.~Young and Chu, Chris},
   booktitle = dac,
   pages     = {1109--1114}, 
   year      = {2006}, 
@@ -1092,7 +1184,7 @@
 %{{{
 @article{LATCH_MM2011_Papa,
   title     = {Physical synthesis with clock-network optimization for large systems on chips},
-  author    = {Papa, David and Alpert, Charles and Sze, Cliff and Li, Zhuo and Viswanathan, Natarajan and Nam, Gi-Joon and Markov, Igor L},
+  author    = {Papa, David and Alpert, Charles and Sze, Cliff and Li, Zhuo and Viswanathan, Natarajan and Nam, Gi-Joon and Markov, Igor L.},
   journal   = mm,
   volume    = {31},
   number    = {4},
@@ -1109,7 +1201,7 @@
 }
 @inproceedings{LATCH_ICCAD2013_Ward,
   title     = {Clock power minimization using structured latch templates and decision tree induction},
-  author    = {Ward, Samuel I and Viswanathan, Natarajan and Zhou, Nancy Y and Sze, Cliff CN and Li, Zhuo and Alpert, Charles J and Pan, David Z},
+  author    = {Ward, Samuel I. and Viswanathan, Natarajan and Zhou, Nancy Y. and Sze, Cliff C.N. and Li, Zhuo and Alpert, Charles J. and Pan, David Z.},
   booktitle = iccad,
   pages     = {599--606},
   year      = {2013},
@@ -1123,4 +1215,41 @@
 }
 %}}}
 
+% =====================================================================
+%                  Multi-bit Flip-Flop
+% =====================================================================
+@inproceedings{MBFF_MWSCAS2011_Lin,
+  title     = {Recent research in clock power saving with multi-bit flip-flops},
+  author    = {Lin, Mark Po-Hung and Hsu, Chih-Cheng and Chang, Yao-Tsung},
+  booktitle = mwscas,
+  pages     = {1--4},
+  year      = {2011},
+}
+@inproceedings{MBFF_ISPD2013_Tsai,
+  title     = {{FF-Bond}: multi-bit flip-flop bonding at placement},
+  author    = {Tsai, Chang-Cheng and Shi, Yiyu and Luo, Guojie and Jiang, Iris Hui-Ru},
+  booktitle = ispd,
+  pages     = {147--153},
+  year      = {2013},
+}
+@inproceedings{MBFF_ICCAD2013_Hsu,
+  title     = {In-placement clock-tree aware multi-bit flip-flop generation for power optimization},
+  author    = {Hsu, Chih-Cheng and Chen, Yu-Chuan and Lin, Mark Po-Hung},
+  booktitle = iccad,
+  pages     = {592--598},
+  year      = {2013},
+}
+
+
+% =====================================================================
+%                        PG Network
+% =====================================================================
+% ==== PG planning
+@inproceedings{PG_ISPD2016_Chang,
+  title     = {Generating Routing-Driven Power Distribution Networks with Machine-Learning Technique},
+  author    = {Chang, Wen-Hsiang and Chen, Li-De and Lin, Chien-Hsueh and Mu, Szu-Pang and Chao, Mango C-T. and Tsai, Cheng-Hong and Chiu, Yen-Chih},
+  booktitle = ispd,
+  pages     = {145--152},
+  year      = {2016},
+}
 
