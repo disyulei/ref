@@ -2,7 +2,6 @@
 % =====================================================================
 %                     Physical Design Summary
 % =====================================================================
-%{{{
 @inproceedings{PD_ISPD2000_Cong,
   title     = {Incremental physical design},
   author    = {Jason Cong and Majid Sarrafzadeh},
@@ -17,6 +16,17 @@
   pages     = {236--244},
   year      = {2000},
 }
+@book{PD_BOOK2008_Alpert,
+  title     = {{Handbook of Algorithms for Physical Design Automation}},
+  author    = {Alpert, Charles J. and Mehta, Dinesh P. and Sapatnekar, Sachin S.},
+  year      = {2008},
+  publisher = {CRC press},
+}
+
+
+% =====================================================================
+%                            Placement
+% =====================================================================
 % ==== placement summary
 @inproceedings{PLACE_ICCAD2013_Contest,
   title     = {{ICCAD-2013 CAD} contest in placement finishing and benchmark suite},
@@ -34,29 +44,16 @@
   year      = {2014},
   abstract  = {iccad'14 incremental timing driven placement contest},
 }
-% ==== routing summary
-@inproceedings{ROUTE_ISPD2007_Contest,
-  title     = {{ISPD} Placement Contest Updates and {ISPD} 2007 Global Routing Contest},
-  author    = {Nam, Gi-Joon and Yildiz, Mehmet and Pan, David Z. and Madden, Patrick H.},
-  booktitle = ispd,
-  pages     = {167--167},
-  year      = {2007},
-  abstract  = {ispd'07 global routing contest},
+@article{PLACE_PIEEE2015_Markov,
+  title     = {Progress and challenges in {VLSI} placement research},
+  author    = {Markov, Igor L. and Hu, Jin and Kim, Myung-Chul},
+  journal   = PIEEE,
+  volume    = {103},
+  number    = {11},
+  pages     = {1985--2003},
+  year      = {2015},
+  publisher = {IEEE},
 }
-@inproceedings{ROUTE_ISPD2008_Contest,
-  title     = {The {ISPD} global routing benchmark suite},
-  author    = {Nam, Gi-Joon and Sze, Cliff and Yildiz, Mehmet},
-  booktitle = ispd,
-  pages     = {156--159},
-  year      = {2008},
-  abstract  = {ispd'08 global routing contest},
-}
-%}}}
-
-
-% =====================================================================
-%                            Placement
-% =====================================================================
 % ==== partition global place
 %{{{
 @article{PLACE_TCAD2004_Hu, 
@@ -125,12 +122,53 @@
   pages     = {193--200},
   year      = {2012},
 }
+@inproceedings{PLACE_DAC2013_He,
+  title     = {Ripple 2.0: High quality routability-driven placement via global router integration},
+  author    = {He, Xu and Huang, Tao and Chow, Wing-Kai and Kuang, Jian and Lam, Ka-Chun and Cai, Wenzan and Evangeline F.~Y.~Young},
+  booktitle = dac,
+  pages     = {152:1--152:6},
+  year      = {2013},
+}
 @inproceedings{PLACE_ICCAD2013_Lin,
   title     = {{POLAR}: placement based on novel rough legalization and refinement},
   author    = {Lin, Tao and Chu, Chris and Shinnerl, Joseph R and Bustany, Ismail and Nedelchev, Ivailo},
   booktitle = iccad,
   pages     = {357--362},
   year      = {2013},
+}
+@article{PLACE_TCAD2013_He,
+  title     = {Ripple: A robust and effective routability-driven placer},
+  author    = {He, Xu and Huang, Tao and Xiao, Linfu and Tian, Haitong and Young, Evangeline F.~Y.},
+  journal   = tcad,
+  volume    = {32},
+  number    = {10},
+  pages     = {1546--1556},
+  year      = {2013},
+  publisher = {IEEE},
+}
+@article{PLACE_TCAD2015_Lin,
+  title     = {{POLAR}: A high performance mixed-size wirelengh-driven placer with density constraints},
+  author    = {Lin, Tao and Chu, Chris and Shinnerl, Joseph R and Bustany, Ismail and Nedelchev, Ivailo},
+  journal   = tcad,
+  volume    = {34},
+  number    = {3},
+  pages     = {447--459},
+  year      = {2015},
+  publisher = {IEEE},
+}
+%}}}
+
+% ==== non-linear global place
+%{{{
+@article{PLACE_TCAD2014_Hsu,
+  title     = {{NTUplace4h}: A novel routability-driven placement algorithm for hierarchical mixed-size circuit designs},
+  author    = {Hsu, Meng-Kai and Chen, Yi-Fang and Huang, Chau-Chin and Chou, Sheng and Lin, Tzu-Hen and Chen, Tung-Chieh and Chang, Yao-Wen},
+  journal   = tcad,
+  volume    = {33},
+  number    = {12},
+  pages     = {1914--1927},
+  year      = {2014},
+  publisher = {IEEE},
 }
 @article{PLACE_TCAD2015_Lu,
   title     = {{ePlace-MS}: Electrostatics-Based Placement for Mixed-Size Circuits},
@@ -144,9 +182,34 @@
 }
 %}}}
 
-% ==== non-linear global place
+% ==== routability driven place
+%{{{
+@inproceedings{PLACE_ICCAD2010_Taghavi,
+  title     = {New placement prediction and mitigation techniques for local routing congestion},
+  author    = {Taghavi, Taraneh and Alpert, Charles and Huber, Andrew and Li, Zhuo and Nam, Gi-Joon and Ramji, Shyam},
+  booktitle = iccad,
+  pages     = {621--624},
+  year      = {2010},
+}
+@inproceedings{PLACE_DAC2012_Wei,
+  title     = {{GLARE}: Global and local wiring aware routability evaluation},
+  author    = {Wei, Yaoguang and Sze, Cliff and Viswanathan, Natarajan and Li, Zhuo and Alpert, Charles J and Reddy, Lakshmi and Huber, Andrew D and Tellez, Gustavo E and Keller, Douglas and Sapatnekar, Sachin S},
+  booktitle = dac,
+  pages     = {768--773},
+  year      = {2012},
+  abstract  = {local pin density into the congestion model},
+}
+@inproceedings{PLACE_DAC2013_Liu,
+  title     = {Optimization of placement solutions for routability},
+  author    = {Liu, Wen-Hao and Koh, Cheng-Kok and Li, Yih-Lang},
+  booktitle = dac,
+  pages     = {153:1--153:9},
+  year      = {2013},
+  abstract  = {global re-placement + local detailed placement further minimizes the local congestion and wirelength},
+}
+%}}}
 
-% ==== detailed / linear place 
+% ==== detailed placement / legalization
 %{{{
 @article{PLACE_TCAS1981_Goto,
   title   = {An efficient algorithm for the two-dimensional placement problem in electrical circuit layout},
@@ -166,6 +229,13 @@
   pages     = {630--639},
   year      = {1989},
   publisher = {IEEE},
+}
+@inproceedings{PLACE_DAC1996_Li,
+  title     = {New spectral linear placement and clustering approach},
+  author    = {Li, Jianmin and Lillis, John and Liu, Lung-Tien and Cheng, Chung-Kuan},
+  booktitle = dac,
+  pages     = {88--93},
+  year      = {1996},
 }
 @inproceedings{PLACE_DATE1998_Vygen,
   title     = {Algorithms for detailed placement of standard cells},
@@ -216,6 +286,13 @@
   pages     = {47--53},
   year      = {2008},
 }
+@inproceedings{PLACE_VLSISOC2010_Ho,
+  title     = {Fast legalization for standard cell placement with simultaneous wirelength and displacement minimization},
+  author    = {Ho, Tsung-Yi and Liu, Sheng-Hung},
+  booktitle = vlsisoc,
+  pages     = {291--311},
+  year      = {2010},
+}
 @inproceedings{PLACE_DAC2014_Popovych,
   title     = {Density-aware Detailed Placement with Instant Legalization},
   author    = {Popovych, Sergiy and Lai, Hung-Hao and Wang, Chieh-Min and Li, Yih-Lang and Liu, Wen-Hao and Wang, Ting-Chi},
@@ -239,6 +316,13 @@
   pages     = {57--62},
   year      = {2014},
 }
+@inproceedings{PLACE_VLSISOC2014_Kennings,
+  title     = {Detailed placement accounting for technology constraints},
+  author    = {Kennings, Andrew and Darav, Nima Karimpour and Behjat, Laleh},
+  booktitle = vlsisoc,
+  pages     = {1--6},
+  year      = {2014},
+}
 @article{PLACE_TCAD2015_Wu,
   title     = {Detailed Placement Algorithm for {VLSI} Design with Double-Row Height Standard Cells},
   author    = {Wu, Gang and Chu, Chris},
@@ -252,6 +336,15 @@
   booktitle = iccad,
   pages     = {854--860},
   year      = {2015},
+  abstract  = {multi-height cell placement},
+}
+@inproceedings{DFMP_ICCAD2015_Han,
+  title     = {Scalable detailed placement legalization for complex sub-14nm constraints},
+  author    = {Han, Kwangsoo and Kahng, Andrew B. and Lee, Hyein},
+  booktitle = iccad,
+  pages     = {867--873},
+  year      = {2015},
+  abstract  = {minimum implant are},
 }
 @inproceedings{PLACE_ASPDAC2016_Lei,
   title     = {Minimum implant area-aware placement and threshold voltage refinement},
@@ -279,40 +372,6 @@
   author    = {Yibo Lin and Bei Yu and Xiaoqing Xu and Jhih-Rong Gao and Natarajan Viswanathan and Wen-Hao Liu and Zhuo Li and Charles J.~Alpert and David Z.~Pan},
   booktitle = iccad,
   year      = {2016},
-}
-%}}}
-
-% ==== routability driven place
-%{{{
-@inproceedings{PLACE_ICCAD2010_Taghavi,
-  title     = {New placement prediction and mitigation techniques for local routing congestion},
-  author    = {Taghavi, Taraneh and Alpert, Charles and Huber, Andrew and Li, Zhuo and Nam, Gi-Joon and Ramji, Shyam},
-  booktitle = iccad,
-  pages     = {621--624},
-  year      = {2010},
-}
-@inproceedings{PLACE_DAC2012_Wei,
-  title     = {{GLARE}: Global and local wiring aware routability evaluation},
-  author    = {Wei, Yaoguang and Sze, Cliff and Viswanathan, Natarajan and Li, Zhuo and Alpert, Charles J and Reddy, Lakshmi and Huber, Andrew D and Tellez, Gustavo E and Keller, Douglas and Sapatnekar, Sachin S},
-  booktitle = dac,
-  pages     = {768--773},
-  year      = {2012},
-  abstract  = {local pin density into the congestion model},
-}
-@inproceedings{PLACE_DAC2013_Liu,
-  title     = {Optimization of placement solutions for routability},
-  author    = {Liu, Wen-Hao and Koh, Cheng-Kok and Li, Yih-Lang},
-  booktitle = dac,
-  pages     = {153:1--153:9},
-  year      = {2013},
-  abstract  = {global re-placement + local detailed placement further minimizes the local congestion and wirelength},
-}
-@inproceedings{PLACE_DAC2013_He,
-  title     = {Ripple 2.0: High quality routability-driven placement via global router integration},
-  author    = {He, Xu and Huang, Tao and Chow, Wing-Kai and Kuang, Jian and Lam, Ka-Chun and Cai, Wenzan and Evangeline F.~Y.~Young},
-  booktitle = dac,
-  pages     = {152:1--152:6},
-  year      = {2013},
 }
 %}}}
 
@@ -456,6 +515,23 @@
 % =====================================================================
 %                          Routing
 % =====================================================================
+% ==== routing summary
+@inproceedings{ROUTE_ISPD2007_Contest,
+  title     = {{ISPD} Placement Contest Updates and {ISPD} 2007 Global Routing Contest},
+  author    = {Nam, Gi-Joon and Yildiz, Mehmet and Pan, David Z. and Madden, Patrick H.},
+  booktitle = ispd,
+  pages     = {167--167},
+  year      = {2007},
+  abstract  = {ispd'07 global routing contest},
+}
+@inproceedings{ROUTE_ISPD2008_Contest,
+  title     = {The {ISPD} global routing benchmark suite},
+  author    = {Nam, Gi-Joon and Sze, Cliff and Yildiz, Mehmet},
+  booktitle = ispd,
+  pages     = {156--159},
+  year      = {2008},
+  abstract  = {ispd'08 global routing contest},
+}
 %{{{
 @article{ROUTE_JVLSI2001_Hu,
   title     = {A survey on multi-net global routing for integrated circuits},
