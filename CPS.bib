@@ -13,13 +13,21 @@
 
 
 % ==========================================================
-%               Smart Meter
+%      Advanced Metering Infractructure (AMI) 
 % ==========================================================
+% ==== AMI summary
+@inproceedings{AMI_CRIS2010_Liu,
+  title        = {Electricity grid operation and planning related benefits of advanced metering infrastructure},
+  author       = {Liu, E. and Chan, M.~L. and Huang, C.~W. and Wang, N.~C. and Lu, C.~N.},
+  booktitle    = cris,
+  pages        = {1--5},
+  year         = {2010},
+}
 % ==== NILM (energy disaggregation)
 %{{{
 @inproceedings{NILM_NIPS2010_Kolter,
   title     = {Energy disaggregation via discriminative sparse coding},
-  author    = {Kolter, J Zico and Batra, Siddharth and Ng, Andrew Y},
+  author    = {Kolter, J.~Zico and Batra, Siddharth and Ng, Andrew Y.},
   booktitle = nips,
   pages     = {1153--1161},
   year      = {2010},
@@ -27,7 +35,7 @@
 }
 @inproceedings{NILM_SustKDD2011_Kolter,
   title     = {{REDD}: A public data set for energy disaggregation research},
-  author    = {Kolter, J Zico and Johnson, Matthew J},
+  author    = {Kolter, J.~Zico and Johnson, Matthew J.},
   booktitle = sustkdd,
   volume    = {25},
   pages     = {59--62},
@@ -36,7 +44,7 @@
 }
 @inproceedings{NILM_SDM2011_Kim,
   title     = {Unsupervised Disaggregation of Low Frequency Power Measurements},
-  author    = {Kim, Hyungsul and Marwah, Manish and Arlitt, Martin F and Lyon, Geoff and Han, Jiawei},
+  author    = {Kim, Hyungsul and Marwah, Manish and Arlitt, Martin F. and Lyon, Geoff and Han, Jiawei},
   booktitle = sdm,
   volume    = {11},
   pages     = {747--758},
@@ -50,16 +58,17 @@
   year      = {2012},
 }
 @inproceedings{NILM_AISTATS2012_Kolter,
-  title     = {Approximate inference in additive factorial hmms with application to energy disaggregation},
+  title     = {Approximate inference in additive factorial {HMMS} with application to energy disaggregation},
   author    = {Kolter, J Zico and Jaakkola, Tommi},
   booktitle = aistats,
   pages     = {1472--1482},
   year      = {2012},
 }
 %}}}
-% ==== meter employment
+% ==== AMI deployment
+%{{{
 @article{AMI_TSG2013_Liao,
-  title     = {Strategic frtu deployment considering cybersecurity in secondary distribution network},
+  title     = {Strategic {FRTU} deployment considering cybersecurity in secondary distribution network},
   author    = {Liao, Chen and Ten, Chee-Wooi and Hu, Shiyan},
   journal   = tsg,
   volume    = {4},
@@ -78,7 +87,19 @@
   year      = {2014},
   publisher = {ACM},
 }
-% ==== meter security
+@article{AMI_TETC2015_Zhou,
+  title     = {A Dynamic Programming Algorithm for Leveraging Probabilistic Detection of Energy Theft in Smart Home},
+  author    = {Zhou, Yuchen and Chen, Xiaodao and Zomaya, Albert Y and Wang, Lizhe and Hu, Shiyan},
+  journal   = tetc,
+  volume    = {3},
+  number    = {4},
+  pages     = {502--513},
+  year      = {2015},
+  publisher = {IEEE},
+}
+%}}}
+% ==== AMI security
+%{{{
 @article{AMI_TR2014_Hernandez,
   title   = {Smart nest thermostat: A smart spy in your home},
   author  = {Hernandez, Grant and Arias, Orlando and Buentello, Daniel and Jin, Yier},
@@ -98,6 +119,7 @@
   booktitle = dac,
   pages     = {97:1--97:6},
   year      = {2015},
+  abstract  = {SVR + POMDP},
 }
 @article{AMI_TCSS2015_Liu,
   title     = {Cyberthreat Analysis and Detection for Energy Theft in Social Networking of Smart Homes},
@@ -108,16 +130,7 @@
   pages     = {148--158},
   year      = {2015},
   publisher = {IEEE},
-}
-@article{AMI_TETC2015_Zhou,
-  title     = {A Dynamic Programming Algorithm for Leveraging Probabilistic Detection of Energy Theft in Smart Home},
-  author    = {Zhou, Yuchen and Chen, Xiaodao and Zomaya, Albert Y. and Wang, Lizhe and Hu, Shiyan},
-  journal   = tetc,
-  volume    = {3},
-  number    = {4},
-  pages     = {502--513},
-  year      = {2015},
-  publisher = {IEEE},
+  abstract  = {POMDP},
 }
 @article{CPSS_TDSC2016_Liu,
   title     = {Leveraging Strategic Detection Techniques for Smart Home Pricing Cyberattacks},
@@ -128,7 +141,9 @@
   pages     = {220--235},
   year      = {2016},
   publisher = {IEEE},
+  abstract  = {game theory + SVR + POMDP; DAC-15 extension},
 }
+%}}}
 
 
 % ==========================================================
@@ -294,10 +309,20 @@
 
 
 % ==========================================================
-%               Smart Home
+%               Scheduling 
 % ==========================================================
+@article{SCHE_TSG2010_Rad,
+  title     = {Optimal residential load control with price prediction in real-time electricity pricing environments},
+  author    = {Mohsenian-Rad, Amir-Hamed and Leon-Garcia, Alberto},
+  journal   = tsg,
+  volume    = {1},
+  number    = {2},
+  pages     = {120--133},
+  year      = {2010},
+  publisher = {IEEE},
+}
 % ==== auto scheduling
-@inproceedings{PLAN_ICCAD2015_Lin,
+@inproceedings{SCHE_ICCAD2015_Lin,
   title     = {Machine learning-based energy management in a hybrid electric vehicle to minimize total operating cost},
   author    = {Lin, Xue and Bogdan, Paul and Chang, Naehyuck and Pedram, Massoud},
   booktitle = iccad,
@@ -306,7 +331,7 @@
 }
 % ==== home scheduling
 %{{{
-@article{PLAN_TSG2013_Chen,
+@article{SCHE_TSG2013_Chen,
   title     = {Uncertainty-aware household appliance scheduling considering dynamic electricity pricing in smart home},
   author    = {Chen, Xiaodao and Wei, Tongquan and Hu, Shiyan},
   journal   = tsg,
@@ -315,14 +340,23 @@
   pages     = {932--941},
   year      = {2013},
   publisher = {IEEE},
+  abstract  = {renewable energy scheduling: LP}
 }
-@article{PLAN_JSYST2015_Liu,
+@inproceedings{SCHE_MWSCAS2014_Liu,
+  title     = {Dynamic programming based game theoretic algorithm for economical multi-user smart home scheduling},
+  author    = {Liu, Lin and Zhou, Yuchen and Liu, Yang and Hu, Shiyan},
+  booktitle = mwscas,
+  pages     = {362--365},
+  year      = {2014},
+  abstract  = {single user: DP;    multiple users: game theory},
+}
+@article{SCHE_JSYST2015_Liu,
   title   = {Game-Theoretic Market-Driven Smart Home Scheduling Considering Energy Balancing},
   author  = {Liu, Yang and Hu, Shiyan and Huang, Han and Ranjan, Rajiv and Zomaya, Albert Y and Wang, Lizhe},
   journal = jsyst,
   year    = {2015}, 
 }
-@article{PLAN_TETC2015_Liu,
+@article{SCHE_TETC2015_Liu,
   title     = {Economical and balanced energy usage in the smart home infrastructure: A tutorial and new results},
   author    = {Liu, Lin and Liu, Yang and Wang, Lizhe and Zomaya, Albert and Hu, Shiyan},
   journal   = tetc,
@@ -331,6 +365,7 @@
   pages     = {556--570},
   year      = {2015},
   publisher = {IEEE},
+  abstract  = {extended from MWSCAS-2014},
 }
 %}}}
 
@@ -368,10 +403,11 @@
   publisher = {IEEE},
 }
 @ARTICLE{CPSS_TMSCS2016_Wurm,
-  title   = {Introduction to Cyber-Physical System Security: A Cross-Layer Perspective}, 
-  author  = {J.~Wurm and Y.~Jin and Y.~Liu and S.~Hu and K.~Heffner and F.~Rahman and M.~Tehranipoor}, 
-  journal = tmscs,
-  year    = {2016}, 
+  title     = {Introduction to Cyber-Physical System Security: A Cross-Layer Perspective}, 
+  author    = {J.~Wurm and Y.~Jin and Y.~Liu and S.~Hu and K.~Heffner and F.~Rahman and M.~Tehranipoor}, 
+  journal   = tmscs,
+  year      = {2016}, 
+  publisher = {IEEE},
 }
 
 
