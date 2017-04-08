@@ -138,7 +138,7 @@
 }
 @inproceedings{PLACE_ICCAD2013_Lin,
   title     = {{POLAR}: placement based on novel rough legalization and refinement},
-  author    = {Lin, Tao and Chu, Chris and Shinnerl, Joseph R and Bustany, Ismail and Nedelchev, Ivailo},
+  author    = {Lin, Tao and Chu, Chris and Shinnerl, Joseph R. and Bustany, Ismail and Nedelchev, Ivailo},
   booktitle = iccad,
   pages     = {357--362},
   year      = {2013},
@@ -155,7 +155,7 @@
 }
 @article{PLACE_TCAD2015_Lin,
   title     = {{POLAR}: A high performance mixed-size wirelengh-driven placer with density constraints},
-  author    = {Lin, Tao and Chu, Chris and Shinnerl, Joseph R and Bustany, Ismail and Nedelchev, Ivailo},
+  author    = {Lin, Tao and Chu, Chris and Shinnerl, Joseph R. and Bustany, Ismail and Nedelchev, Ivailo},
   journal   = tcad,
   volume    = {34},
   number    = {3},
@@ -364,7 +364,10 @@
   title     = {Detailed Placement Algorithm for {VLSI} Design with Double-Row Height Standard Cells},
   author    = {Wu, Gang and Chu, Chris},
   journal   = tcad,
-  year      = {2015},
+  volume    = {35},
+  number    = {9},
+  pages     = {1569--1573},
+  year      = {2016},
   publisher = {IEEE},
 }
 @inproceedings{PLACE_ICCAD2015_Dobre,
@@ -403,6 +406,13 @@
   booktitle = dac,
   pages     = {84:1--84:6},
   year      = {2016},
+}
+@inproceedings{PLACE_ASPDAC2017_Wang,
+  title     = {An effective legalization algorithm for mixed-cell-height standard cells},
+  author    = {Wang, Chao-Hung and Wu, Yen-Yi and Chen, Jianli and Chang, Yao-Wen and Kuo, Sy-Yen and Zhu, Wenxing and Fan, Genghua},
+  booktitle = aspdac,
+  pages     = {450--455},
+  year      = {2017},
 }
 @inproceedings{PLACE_ICCAD2016_Lin,
   title     = {{MrDP}: Multiple-row Detailed Placement of Heterogeneous-sized Cells for Advanced Nodes},
@@ -482,6 +492,14 @@
   year     = {2007},
   abstract = {},
 }
+@inproceedings{PLACE_ICCAD2008_Luo,
+  title     = {Pyramids: an efficient computational geometry-based approach for timing-driven placement},
+  author    = {Luo, Tao and Papa, David A. and Li, Zhuo and Sze, C. N. and Alpert, Charles J. and Pan, David Z.},
+  booktitle = iccad,
+  year      = {2008},
+  pages     = {204--211},
+  abstract  = {timing-driven incremental placement},
+}
 @inproceedings{PLACE_ISPD2010_Viswanathan,
   title     = {{ITOP}: Integrating Timing Optimization Within Placement},
   author    = {Viswanathan, Natarajan and Nam, Gi-Joon and Roy, Jarrod A. and Li, Zhuo and Alpert, Charles J. and Ramji, Shyam and Chu, Chris},
@@ -499,14 +517,6 @@
   booktitle = aspdac,
   pages     = {352--357},
   year      = {2008},
-}
-@inproceedings{PLACE_ICCAD2008_Luo,
-  title     = {Pyramids: an efficient computational geometry-based approach for timing-driven placement},
-  author    = {Luo, Tao and Papa, David A. and Li, Zhuo and Sze, C. N. and Alpert, Charles J. and Pan, David Z.},
-  booktitle = iccad,
-  year      = {2008},
-  pages     = {204--211},
-  abstract  = {timing-driven incremental placement},
 }
 %}}}
 
@@ -571,6 +581,17 @@
   abstract  = {ispd'08 global routing contest},
 }
 %{{{
+@article{FLUTE_TCAD2008_Chu,
+  title     = {{FLUTE}: Fast Lookup Table Based Rectilinear Steiner Minimal Tree Algorithm for {VLSI} Design},
+  author    = {Chu, Chris and Wong, Yiu-Chung},
+  journal   = tcad,
+  year      = {2008},
+  month     = {january},
+  volume    = {27},
+  number    = {1},
+  pages     = {70--83},
+  publisher = {IEEE},
+}
 @article{ROUTE_JVLSI2001_Hu,
   title     = {A survey on multi-net global routing for integrated circuits},
   author    = {Hu, Jiang and Sapatnekar, Sachin S},
@@ -937,6 +958,20 @@
   pages     = {85:1--85:6},
   year      = {2016},
 }
+@article{ROUTE_TCAD2017_Liu,
+  title     = {{TILA-S}: Timing-Driven Incremental Layer Assignment Avoiding Slew Violations},
+  author    = {Liu, Derong and Yu, Bei and Chowdhury, Salim and Pan, David Z.},
+  journal   = tcad,
+  year      = {2017},
+  publisher = {IEEE},
+}
+@article{ROUTE_TCAD2017_Livramento,
+  title     = {Incremental Layer Assignment Driven by an External Signoff Timing Engine},
+  author    = {Livramento, Vinicius and Liu, Derong and Chowdhury, Salim and Yu, Bei and Xu, Xiaoqing and Pan, David Z. and Guntzel, Jose Luis and dos Santos, Luiz C.~V.},
+  journal   = tcad,
+  year      = {2017},
+  publisher = {IEEE},
+}
 %}}}
 
 % ==== layer directive
@@ -1049,6 +1084,105 @@
 }
 %}}}
 
+% ==== bus planning
+%{{{
+@inproceedings{BUS_DAC1984_Persky,
+  title     = {Topological Routing of Multi-bit Data Buses},
+  author    = {Persky, G. and Tran, L.~V.},
+  booktitle = dac,
+  year      = {1984},
+  pages     = {679--682},
+}
+@article{BUS_TCAD2004_Xiang,
+  title     = {Bus-Driven Floorplanning},
+  author    = {Xiang, Hua and Tang, Xiaoping and Wong, Martin D.~F.},
+  journal   = tcad,
+  year      = {2004},
+  month     = {november},
+  volume    = {23},
+  number    = {11},
+  pages     = {1522--1530},
+}
+@inproceedings{BUS_ISPD2005_Young,
+  title     = {Multi-Bend Bus Driven Floorplanning},
+  author    = {Law, Jill H.~Y. and Young, Evangeline F.~Y.},
+  booktitle = ispd,
+  year      = {2005},
+  pages     = {113--120},
+}
+@inproceedings{BUS_DAC2005_Pasricha,
+  title     = {Floorplan-Aware Automated Synthesis of Bus-based Communication Architectures},
+  author    = {Pasricha, Sudeep and Dutt, Nikil and Bozorgzadeh, Elaheh and Ben-Romdhane, Mohamed},
+  booktitle = dac,
+  year      = {2005},
+  pages     = {565--570},
+}
+@inproceedings{BUS_ICCAD2007_Mo,
+  title     = {A Simultaneous Bus Orientation and Buses Pin Flipping Algorithm},
+  author    = {Mo, Fan and Brayton, Robert K.},
+  booktitle = iccad,
+  year      = {2007},
+  pages     = {386--389},
+}
+@inproceedings{BUS_ASPDAC2008_Ma,
+  title     = {{TCG}-based multi-bend bus driven floorplanning},
+  author    = {Ma, Tilen and Young, Evangeline F.~Y.},
+  booktitle = aspdac,
+  year      = {2008},
+  pages     = {192--197},
+}
+@inproceedings{BUS_ASPDAC2008_Kim,
+  title     = {Bus-Aware Microarchitectural Floorplanning},
+  author    = {Kim, Dae Hyun and Lim, Sung Kyu},
+  booktitle = aspdac,
+  pages     = {204--208},
+  year      = {2008},
+}
+@inproceedings{BUS_ASPDAC2008_Pandey,
+  title     = {Robust on-chip Bus Architecture Synthesis for {MPSoCs} under Random Tasks Arrival},
+  author    = {Pandey, Sujan and Drechsler, Rolf},
+  booktitle = aspdac,
+  year      = {2008},
+  pages     = {601--606},
+}
+@inproceedings{BUS_ISPD2010_Wang,
+  title     = {Physical Synthesis of Bus Matrix for High Bandwidth Low Power On-chip Communications},
+  author    = {Wang, Renshen and Young, Evangeline and Graham, Ronald and Cheng, Chung-Kuan},
+  booktitle = ispd,
+  pages     = {91--96},
+  year      = {2010},
+}
+%}}}
+
+
+% =====================================================================
+%                   PCB 
+% =====================================================================
+@inproceedings{PCB_ICCAD2007_Yan,
+  title     = {Untangling Twisted Nets for Bus Routing},
+  author    = {Yan, Tan and Wong, Martin D.~F.},
+  booktitle = iccad,
+  pages     = {396--400},
+  year      = {2007},
+}
+@inproceedings{PCB_ASPDAC2013_Wu,
+  title     = {An {ILP}-based Automatic Bus Planner for Dense {PCBs}},
+  author    = {Wu, Pei-Ci and Ma, Qiang and Wong, Martin D.~F.},
+  booktitle = aspdac,
+  pages     = {181--186},
+  year      = {2013},
+}
+@article{PCB_TCAD2016_Yan,
+  title     = {Efficient Layer Assignment of Bus-Oriented Nets in High-Speed {PCB} Designs},
+  author    = {Yan, Jin-Tai},
+  journal   = tcad,
+  year      = {2016},
+  month     = {August},
+  volume    = {35},
+  number    = {8},
+  pages     = {1332--1344},
+  publisher = {IEEE},
+}
 
 % =====================================================================
 %                   Redundant Via Insertion 
@@ -1383,18 +1517,5 @@
   booktitle = iccad,
   pages     = {592--598},
   year      = {2013},
-}
-
-
-% =====================================================================
-%                        PG Network
-% =====================================================================
-% ==== PG planning
-@inproceedings{PG_ISPD2016_Chang,
-  title     = {Generating Routing-Driven Power Distribution Networks with Machine-Learning Technique},
-  author    = {Chang, Wen-Hsiang and Chen, Li-De and Lin, Chien-Hsueh and Mu, Szu-Pang and Chao, Mango C-T. and Tsai, Cheng-Hong and Chiu, Yen-Chih},
-  booktitle = ispd,
-  pages     = {145--152},
-  year      = {2016},
 }
 
