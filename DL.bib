@@ -1,19 +1,13 @@
+% == this file is about Deep Neural Network reference
 
 % ==================================================================
-%                     Deep Neuron Network
+%                     Summary
 % ==================================================================
-% ==== summary
+%{{{
 @misc{DL_CS231_Andrej,
     title        = {{Stanford University CS231n: Convolutional Neural Networks for Visual Recognition}},
     author       = {Andrej Karpathy},
     howpublished = {\url{http://cs231n.github.io/neural-networks-3/}}
-}
-@book{DL_MIT2016_Goodfellow,
-  title     = {{Deep Learning}},
-  author    = {Ian Goodfellow and Yoshua Bengio and Aaron Courville},
-  publisher = {MIT Press},
-  note      = {\url{http://www.deeplearningbook.org}},
-  year      = {2016},
 }
 @book{DL_B2009_Haykins,
   title     = {{Neural Networks and Learning Machines}},
@@ -21,15 +15,26 @@
   year      = {2009},
   publisher = {Pearson Upper Saddle River, NJ, USA:}
 }
-% ==== benchmark
-@article{DL_IJCV2015_Olga,
-  title   = {{ImageNet} Large Scale Visual Recognition Challenge},
-  author  = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C.~Berg and Li Fei-Fei},
-  journal = ijcv,
-  volume  = {115},
-  number  = {3},
-  pages   = {211-252},
-  year    = {2015},
+@article{DL_APSIPA2012_Li,
+  title   = {Three classes of deep learning architectures and their applications: a tutorial survey},
+  author  = {Deng, Li},
+  journal = {APSIPA transactions on signal and information processing},
+  year    = {2012},
+}
+@inproceedings{DL_IJCAI2005_Hinton,
+  author    = {Geoffrey E.~Hinton},
+  title     = {What kind of graphical model is the brain?},
+  booktitle = ijcai,
+  pages     = {1765--1775},
+  year      = {2005},
+  abstract  = {deep learning basis},
+} 
+@book{DL_MIT2016_Goodfellow,
+  title     = {{Deep Learning}},
+  author    = {Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+  publisher = {MIT Press},
+  note      = {\url{http://www.deeplearningbook.org}},
+  year      = {2016},
 }
 % ==== tools
 @inproceedings{DL_ACMMM2014_Caffe,
@@ -46,8 +51,23 @@
   year      = {2016},
   pages     = {265--283},
 } 
-% ==== technique
-% ==== Journal ====
+% ==== benchmark
+@article{DL_IJCV2015_Olga,
+  title   = {{ImageNet} Large Scale Visual Recognition Challenge},
+  author  = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C.~Berg and Li Fei-Fei},
+  journal = ijcv,
+  volume  = {115},
+  number  = {3},
+  pages   = {211-252},
+  year    = {2015},
+}
+%}}}
+
+
+% ==================================================================
+%                     Training -- DNN
+% ==================================================================
+%{{{
 @article{DL_Nature1986_Rumelhart,
   title   = {Learning representations by back-propagating errors},
   author  = {Rumelhart, David E. and Hinton, Geoffrey E. and Williams, Ronald J.},
@@ -57,23 +77,80 @@
   pages   = {533--536},
   year    = {1986},
 }
+@inproceedings{DL_FLAIRS2002_Nasr,
+  title     = {Cross Entropy Error Function in Neural Networks: Forecasting Gasoline Demand},
+  author    = {Nasr, George E. and Badr, E.~A. and Joun, C.},
+  booktitle = {FLAIRS Conference},
+  pages     = {381--384},
+  year      = {2002},
+}
 @article{DL_NECO2006_Hinton,
-  author  = {Geoffrey E.~Hinton and Simon Osindero and Yee Whye Teh},
   title   = {A fast learning algorithm for deep belief nets},
+  author  = {Geoffrey E.~Hinton and Simon Osindero and Yee Whye Teh},
   journal = neco,
   volume  = {18},
   number  = {7},
   pages   = {1527--1554},
   year    = {2006},
 }
-@incollection{DL_BC2012_Yoshua,
-  title     = {Practical recommendations for gradient-based training of deep architectures},
-  author    = {Bengio, Yoshua},
-  booktitle = {{Neural Networks: Tricks of the Trade}},
-  editor    = {Orr, Genevieve B. and M{\"u}ller, Klaus-Robert},
-  pages     = {437--478},
+@inproceedings{DL_AISTATS2010_Glorot,
+  title     = {Understanding the difficulty of training deep feedforward neural networks},
+  author    = {Glorot, Xavier and Bengio, Yoshua},
+  booktitle = aistats,
+  volume    = {9},
+  pages     = {249--256},
+  year      = {2010},
+}
+@inproceedings{DL_ICML2010_Nair,
+  title     = {Rectified linear units improve restricted boltzmann machines},
+  author    = {Nair, Vinod and Hinton, Geoffrey E.},
+  booktitle = icml,
+  pages     = {807--814},
+  year      = {2010},
+}
+@inproceedings{DL_NIPSW2010_Lamblin,
+  title     = {Important Gains from Supervised Fine-tuning of Deep Architectures on Large Labeled Sets},
+  author    = {Pascal Lamblin and Yoshua Bengio},
+  booktitle = {NIPS Workshop on Deep Learning and Unsupervised Feature Learning},
+  year      = {2010},
+  abstract  = {finetune},
+}
+@inproceedings{DL_NIPS2012_Krizhevsky,
+  title     = {{ImageNet} Classification with Deep Convolutional Neural Networks},
+  author    = {Alex Krizhevsky and Ilya Sutskever and Geoffrey E.~Hinton},
+  booktitle = nips,
+  pages     = {1097--1105},
   year      = {2012},
-  publisher = {Springer},
+  abstract  = {deep learning image classification},
+}
+@inproceedings{DL_ECCV2014_Zeiler,
+  title     = {Visualizing and understanding convolutional networks},
+  author    = {Zeiler, Matthew D. and Fergus, Rob},
+  booktitle = eccv,
+  pages     = {818--833},
+  year      = {2014},
+}
+@article{DL_JMLR2014_Nitish,
+  title   = {Dropout: a simple way to prevent neural networks from overfitting.},
+  author  = {Srivastava, Nitish and Hinton, Geoffrey E. and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+  journal = jmlr,
+  volume  = {15},
+  number  = {1},
+  pages   = {1929--1958},
+  year    = {2014},
+}
+@inproceedings{DL_AISTATS2015_Choromanska,
+  title     = {The Loss Surfaces of Multilayer Networks},
+  author    = {Choromanska, Anna and Henaff, MIkael and Mathieu, Michael and Ben Arous, Gerard and LeCun, Yann},
+  booktitle = aistats,
+  pages     = {192--204},
+  year      = {2015},
+}
+@article{DL_ICLR2015_Karen,
+  title   = {Very deep convolutional networks for large-scale image recognition},
+  author  = {Simonyan, Karen and Zisserman, Andrew},
+  journal = iclr,
+  year    = {2015},
 }
 @article{DL_TSP2015_Giryes,
   title     = {Deep Neural Networks with Random Gaussian Weights: A Universal Classification Strategy?},
@@ -85,154 +162,13 @@
   year      = {2015},
   publisher = {IEEE},
 }
-@article{DL_APSIPA2012_Li,
-  title   = {Three classes of deep learning architectures and their applications: a tutorial survey},
-  author  = {Deng, Li},
-  journal = {APSIPA transactions on signal and information processing},
-  year    = {2012},
-}
-@incollection{DL_BC2001_Sepp,
-  title     = {Gradient flow in recurrent nets: the difficulty of learning long-term dependencies},
-  author    = {Hochreiter, Sepp and Bengio, Yoshua and Frasconi, Paolo and Schmidhuber, J{\"u}rgen},
-  booktitle = {{A Field Guide to Dynamical Recurrent Neural Networks}},
-  editor    = {Kolen, John F. and Kremer, Stefan C.},
-  publisher = {IEEE Press},
-  year      = {2001},
-}
-@article{DL_JMLR2014_Nitish,
-  title   = {Dropout: a simple way to prevent neural networks from overfitting.},
-  author  = {Srivastava, Nitish and Hinton, Geoffrey E. and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
-  journal = jmlr,
-  volume  = {15},
-  number  = {1},
-  pages   = {1929--1958},
-  year    = {2014},
-}
-@article{DL_TCYB2015_Ng,
-  title     = {Diversified Sensitivity-Based Undersampling for Imbalance Classification Problems},
-  author    = {Ng, Wing W.~Y. and Hu, Junjie and Yeung, Daniel S. and Yin, Shaohua and Roli, Fabio},
-  journal   = tcyb,
-  volume    = {45},
-  number    = {11},
-  pages     = {2402--2412},
-  year      = {2015},
-  publisher = {IEEE},
-}
-@inproceedings{DL_AISTATS2010_Glorot,
-  title     = {Understanding the difficulty of training deep feedforward neural networks},
-  author    = {Glorot, Xavier and Bengio, Yoshua},
-  booktitle = aistats,
-  volume    = {9},
-  pages     = {249--256},
-  year      = {2010},
-}
-% ==== Conference ==== 
-@inproceedings{DL_FLAIRS2002_Nasr,
-  title     = {Cross Entropy Error Function in Neural Networks: Forecasting Gasoline Demand},
-  author    = {Nasr, George E. and Badr, E.~A. and Joun, C.},
-  booktitle = {FLAIRS Conference},
-  pages     = {381--384},
-  year      = {2002},
-}
-@inproceedings{DL_NIPS2012_Krizhevsky,
-  title     = {{ImageNet} Classification with Deep Convolutional Neural Networks},
-  author    = {Alex Krizhevsky and Ilya Sutskever and Geoffrey E.~Hinton},
-  booktitle = nips,
-  pages     = {1097--1105},
-  year      = {2012},
-  abstract  = {deep learning image classification},
-}
-@inproceedings{DL_IJCAI2005_Hinton,
-  author    = {Geoffrey E.~Hinton},
-  title     = {What kind of graphical model is the brain?},
-  booktitle = ijcai,
-  pages     = {1765--1775},
-  year      = {2005},
-  abstract  = {deep learning basis},
-} 
-@inproceedings{DL_CVPR2016_Xiao,
-  title     = {Learning Deep Feature Representations with Domain Guided Dropout for Person Re-identification},
-  author    = {Tong Xiao and Hongsheng Li and Wanli Ouyang and Xiaogang Wang},
-  booktitle = cvpr,
-  pages     = {1249--1258},
-  year      = {2016},
-  abstract  = {deep learning basis},
-} 
-@inproceedings{DL_NIPS2010_Lamblin,
-  title     = {Important Gains from Supervised Fine-tuning of Deep Architectures on Large Labeled Sets},
-  author    = {Pascal Lamblin and Yoshua Bengio},
-  booktitle = {NIPS Workshop on Deep Learning and Unsupervised Feature Learning},
-  year      = {2010},
-  abstract  = {finetune},
-}
-@inproceedings{DL_ICCV2013_Yi,
-  title     = {Hybrid deep learning for face verification},
-  author    = {Sun, Yi and Wang, Xiaogang and Tang, Xiaoou},
-  booktitle = iccv,
-  pages     = {1489--1496},
-  year      = {2013},
-}
-@inproceedings{DL_CVPR2012_Huang,
-  title     = {Learning hierarchical representations for face verification with convolutional deep belief networks},
-  author    = {Huang, Gary B. and Lee, Honglak and Learned-Miller, Erik},
-  booktitle = cvpr,
-  pages     = {2518--2525},
-  year      = {2012},
-}
-@article{DL_ARXIV2104_Karen,
-  title   = {Very deep convolutional networks for large-scale image recognition},
-  author  = {Simonyan, Karen and Zisserman, Andrew},
-  journal = arxiv,
-  year    = {2014},
-}
-@inproceedings{DL_AISTATS2015_Choromanska,
-  title     = {The Loss Surfaces of Multilayer Networks},
-  author    = {Choromanska, Anna and Henaff, MIkael and Mathieu, Michael and Ben Arous, Gerard and LeCun, Yann},
-  booktitle = aistats,
-  pages     = {192--204},
-  year      = {2015},
-}
 @article{DL_ARXIV2016_Mishkin,
   title   = {Systematic evaluation of {CNN} advances on the {ImageNet}},
   author  = {Mishkin, Dmytro and Sergievskiy, Nikolay and Matas, Jiri},
   journal = arxiv,
   year    = {2016},
 }
-@inproceedings{DL_ECCV2014_Zeiler,
-  title     = {Visualizing and understanding convolutional networks},
-  author    = {Zeiler, Matthew D. and Fergus, Rob},
-  booktitle = eccv,
-  pages     = {818--833},
-  year      = {2014},
-}
-@inproceedings{DL_ICML2010_Nair,
-  title     = {Rectified linear units improve restricted boltzmann machines},
-  author    = {Nair, Vinod and Hinton, Geoffrey E.},
-  booktitle = icml,
-  pages     = {807--814},
-  year      = {2010},
-}
-@inproceedings{DL_IJCAI2015_Zhang,
-  title     = {Towards class-imbalance aware multi-label learning},
-  author    = {Zhang, Min-Ling and Li, Yu-Kun and Liu, Xu-Ying},
-  booktitle = ijcai,
-  pages     = {4041--4047},
-  year      = {2015},
-}
-@inproceedings{DL_IJCNN2008_He,
-  title     = {{ADASYN}: Adaptive synthetic sampling approach for imbalanced learning},
-  author    = {He, Haibo and Bai, Yang and Garcia, Edwardo A. and Li, Shutao},
-  booktitle = ijcnn,
-  pages     = {1322--1328},
-  year      = {2008},
-}
-@inproceedings{DL_ICLR2015_Simonyan,
-	title        = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
-	author       = {Karen, Simonyan and Andrew, Zisserman},
-	booktitle    = iclr,
-	year         = {2015},
-}
-====CNNSGD
+# ==== CNNSGD
 @article{DL_CMMP1964_Polyak,
   title     = {Some methods of speeding up the convergence of iteration methods},
   author    = {Polyak, Boris T.},
@@ -268,5 +204,68 @@
   pages   = {1139--1147},
   year    = {2013},
 }
+%}}}
+
+
+% ==================================================================
+%                    Applications -- DNN
+% ==================================================================
+% ==== Applications in CV
+%{{{
+@incollection{DL_BC2012_Yoshua,
+  title     = {Practical recommendations for gradient-based training of deep architectures},
+  author    = {Bengio, Yoshua},
+  booktitle = {{Neural Networks: Tricks of the Trade}},
+  editor    = {Orr, Genevieve B. and M{\"u}ller, Klaus-Robert},
+  pages     = {437--478},
+  year      = {2012},
+  publisher = {Springer},
+}
+@inproceedings{DL_CVPR2012_Huang,
+  title     = {Learning hierarchical representations for face verification with convolutional deep belief networks},
+  author    = {Huang, Gary B. and Lee, Honglak and Learned-Miller, Erik},
+  booktitle = cvpr,
+  pages     = {2518--2525},
+  year      = {2012},
+}
+@inproceedings{DL_ICCV2013_Yi,
+  title     = {Hybrid deep learning for face verification},
+  author    = {Sun, Yi and Wang, Xiaogang and Tang, Xiaoou},
+  booktitle = iccv,
+  pages     = {1489--1496},
+  year      = {2013},
+}
+@inproceedings{DL_CVPR2016_Xiao,
+  title     = {Learning Deep Feature Representations with Domain Guided Dropout for Person Re-identification},
+  author    = {Tong Xiao and Hongsheng Li and Wanli Ouyang and Xiaogang Wang},
+  booktitle = cvpr,
+  pages     = {1249--1258},
+  year      = {2016},
+  abstract  = {deep learning basis},
+} 
+%}}}
+
+
+% ==================================================================
+%                    Structure -- DNN 
+% ==================================================================
+% ==== RNN
+@incollection{DL_BC2001_Sepp,
+  title     = {Gradient flow in recurrent nets: the difficulty of learning long-term dependencies},
+  author    = {Hochreiter, Sepp and Bengio, Yoshua and Frasconi, Paolo and Schmidhuber, J{\"u}rgen},
+  booktitle = {{A Field Guide to Dynamical Recurrent Neural Networks}},
+  editor    = {Kolen, John F. and Kremer, Stefan C.},
+  publisher = {IEEE Press},
+  year      = {2001},
+}
+% ==== GAN
+@incollection{DL_NIPS2014_Ian,
+  title     = {Generative Adversarial Nets},
+  author    = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  booktitle = nips,
+  pages     = {2672--2680},
+  year      = {2014},
+}
+
 
 
