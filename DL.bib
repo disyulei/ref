@@ -208,6 +208,129 @@
 
 
 % ==================================================================
+%                    Structure -- DNN 
+% ==================================================================
+% ==== RNN
+@incollection{DL_BC2001_Sepp,
+  title     = {Gradient flow in recurrent nets: the difficulty of learning long-term dependencies},
+  author    = {Hochreiter, Sepp and Bengio, Yoshua and Frasconi, Paolo and Schmidhuber, J{\"u}rgen},
+  booktitle = {{A Field Guide to Dynamical Recurrent Neural Networks}},
+  editor    = {Kolen, John F. and Kremer, Stefan C.},
+  publisher = {IEEE Press},
+  year      = {2001},
+}
+% ==== GAN
+@incollection{DL_NIPS2014_Ian,
+  title     = {Generative Adversarial Nets},
+  author    = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  booktitle = nips,
+  pages     = {2672--2680},
+  year      = {2014},
+}
+
+
+% ==================================================================
+%                      Inference Speedup -- DNN
+% ==================================================================
+% ==== convolution speedup
+%{{{
+@article{SPEED_ARXIV2014_Chetlur,
+  title   = {{cuDNN}: Efficient primitives for deep learning},
+  author  = {Chetlur, Sharan and Woolley, Cliff and Vandermersch, Philippe and Cohen, Jonathan and Tran, John and Catanzaro, Bryan and Shelhamer, Evan},
+  journal = arxiv,
+  year    = {2014},
+}
+@inproceedings{SPEED_CVPR2015_Liu,
+  title     = {Sparse Convolutional Neural Networks},
+  author    = {Liu, Baoyuan and Wang, Min and Foroosh, Hassan and Tappen, Marshall and Penksy, Marianna},
+  booktitle = cvpr,
+  pages     = {806--814},
+  year      = {2015},
+}
+@inproceedings{SPEED_CVPR2016_Lavin,
+  title     = {Fast Algorithms for Convolutional Neural Networks},
+  author    = {Lavin, Andrew and Gray, Scott},
+  booktitle = cvpr,
+  pages     = {4013--4021},
+  year      = {2016},
+  abstract  = {winograd-based convolution},
+}
+@article{SPEED_ARXIV2017_Shi,
+  title   = {Speeding up Convolutional Neural Networks By Exploiting the Sparsity of Rectifier Units},
+  author  = {Shi, Shaohuai and Chu, Xiaowen},
+  journal = arxiv,
+  year    = {2017},
+}
+@inproceedings{SPEED_ICML2017_Cho,
+  title     = {{MEC}: memory-efficient convolution for deep neural network},
+  author    = {Cho, Minsik and Brand, Daniel},
+  booktitle = icml,
+  year      = {2017},
+}
+@inproceedings{SPEED_ICLR2017_Park,
+  title     = {Faster cnns with direct sparse convolutions and guided pruning},
+  author    = {Park, Jongsoo and Li, Sheng and Wen, Wei and Tang, Ping Tak Peter and Li, Hai and Chen, Yiran and Dubey, Pradeep},
+  booktitle = iclr,
+  year      = {2017},
+}
+%}}}
+% ==== Pruning / Hashing
+%{{{
+@inproceedings{SPEED_ICML2015_Chen,
+  title     = {Compressing neural networks with the hashing trick},
+  author    = {Chen, Wenlin and Wilson, James and Tyree, Stephen and Weinberger, Kilian and Chen, Yixin},
+  booktitle = icml,
+  pages     = {2285--2294},
+  year      = {2015},
+}
+@inproceedings{SPEED_NIPS2015_Han,
+  title     = {Learning both weights and connections for efficient neural network},
+  author    = {Han, Song and Pool, Jeff and Tran, John and Dally, William},
+  booktitle = nips,
+  pages     = {1135--1143},
+  year      = {2015},
+}
+@article{SPEED_ICLR2016_Han,
+  title     = {Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding},
+  author    = {Han, Song and Mao, Huizi and Dally, William J.},
+  booktitle = iclr,
+  year      = {2016},
+}
+@inproceedings{SPEED_ISCA2016_Han,
+  title     = {{EIE}: efficient inference engine on compressed deep neural network},
+  author    = {Han, Song and Liu, Xingyu and Mao, Huizi and Pu, Jing and Pedram, Ardavan and Horowitz, Mark A. and Dally, William J.},
+  booktitle = isca,
+  pages     = {243--254},
+  year      = {2016},
+}
+@inproceedings{SPEED_ISCA2017_Yu,
+  title     = {Scalpel: Customizing dnn pruning to the underlying hardware parallelism},
+  author    = {Yu, Jiecao and Lukefahr, Andrew and Palframan, David and Dasika, Ganesh and Das, Reetuparna and Mahlke, Scott},
+  booktitle = isca,
+  pages     = {548--560},
+  year      = {2017},
+}
+%}}}
+% ==== low rank approximation (LRA)
+%{{{
+@article{SPEED_ICLR2014_Davis,
+  title     = {Low-Rank Approximations for Conditional Feedforward Computation in Deep Neural Networks},
+  author    = {Davis, Andrew S. and Arel, Itamar},
+  booktitle = iclr,
+  year      = {2014},
+}
+@inproceedings{SPEED_ICML2014_Si,
+  title     = {Memory efficient kernel approximation},
+  author    = {Si, Si and Hsieh, Cho-Jui and Dhillon, Inderjit},
+  booktitle = icml,
+  pages     = {701--709},
+  year      = {2014},
+}
+%}}}
+
+
+
+% ==================================================================
 %                    Applications -- DNN
 % ==================================================================
 % ==== Applications in CV
@@ -244,28 +367,5 @@
   abstract  = {deep learning basis},
 } 
 %}}}
-
-
-% ==================================================================
-%                    Structure -- DNN 
-% ==================================================================
-% ==== RNN
-@incollection{DL_BC2001_Sepp,
-  title     = {Gradient flow in recurrent nets: the difficulty of learning long-term dependencies},
-  author    = {Hochreiter, Sepp and Bengio, Yoshua and Frasconi, Paolo and Schmidhuber, J{\"u}rgen},
-  booktitle = {{A Field Guide to Dynamical Recurrent Neural Networks}},
-  editor    = {Kolen, John F. and Kremer, Stefan C.},
-  publisher = {IEEE Press},
-  year      = {2001},
-}
-% ==== GAN
-@incollection{DL_NIPS2014_Ian,
-  title     = {Generative Adversarial Nets},
-  author    = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
-  booktitle = nips,
-  pages     = {2672--2680},
-  year      = {2014},
-}
-
 
 
