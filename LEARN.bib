@@ -1,6 +1,6 @@
-% ==================================================================
+% ===========================================================
 %                   Machine Learning Books
-% ==================================================================
+% ===========================================================
 %{{{
 @book{LEARN_B1968_Kullback,
     title     = {{Information Theory and Statistics}},
@@ -34,6 +34,12 @@
     year      = {2001},
     publisher = {MIT press},
 }
+@misc{LEARN_B2009_Hastie,
+    title     = {{The Elements of Statistical Learning; Data Mining, Inference and Prediction}},
+    author    = {Trevor Hastie and Robert Tibshirani and Jerome Friedman},
+    publisher = {Springer, New York},
+    year      = {2001},
+}
 @book{LEARN_B2012_Mohri,
     title     = {{Foundations of Machine Learning}},
     author    = {Mohri, Mehryar and Rostamizadeh, Afshin and Talwalkar, Ameet},
@@ -62,9 +68,9 @@
 %}}}
 
 
-% ==================================================================
-%                 Pattern/Template Matching
-% ==================================================================
+% ===========================================================
+%              Pattern/Template Matching
+% ===========================================================
 %{{{
 % ==== exact matching
 @article{MTCH_SICOMP1977_Knuth,
@@ -110,9 +116,9 @@
 %}}}
 
 
-% ==================================================================
+% ===========================================================
 %                     Regression
-% ==================================================================
+% ===========================================================
 %{{{
 @article{REGR_WDMKD2015_Borchani,
     title     = {A survey on multi-output regression},
@@ -205,6 +211,13 @@
     year      = {1987},
     publisher = {Elsevier},
     abstract  = {simple model is sometimes better},
+}
+@inproceedings{LEARN_SIGIR1994_Lewis,
+    title     = {A sequential algorithm for training text classifiers},
+    author    = {Lewis, David D. and Gale, William A.},
+    booktitle = sigir,
+    pages     = {3--12},
+    year      = {1994},
 }
 % ==== SVM
 %{{{
@@ -307,9 +320,9 @@
 %}}}
 
 
-% ============================================================================
-%                       Ensemble Learning
-% ============================================================================
+% ===========================================================
+%                    Ensemble Learning
+% ===========================================================
 %{{{
 @article{ENL_JCSS1997_Freund,
     title     = {A decision-theoretic generalization of on-line learning and an application to boosting},
@@ -397,7 +410,7 @@
 %                 Active Learning 
 % ===========================================================
 %{{{
-@article{ATL_ML1994_Cohn,
+@article{LEARN_ML1994_Cohn,
     title     = {Improving generalization with active learning},
     author    = {Cohn, David and Atlas, Les and Ladner, Richard},
     journal   = ml,
@@ -406,6 +419,22 @@
     pages     = {201--221},
     year      = {1994},
     publisher = {Springer},
+}
+@article{LEARN_ML1997_Freund,
+    title     = {Selective sampling using the query by committee algorithm},
+    author    = {Freund, Yoav and Seung, H Sebastian and Shamir, Eli and Tishby, Naftali},
+    journal   = ml,
+    volume    = {28},
+    number    = {2},
+    pages     = {133--168},
+    year      = {1997},
+    publisher = {Springer},
+}
+@techreport{LEARN_TR2010_Settles,
+    title     = {Active learning literature survey},
+    author    = {Settles, Burr},
+    institute = {University of Wisconsin, Madison},
+    year      = {2010},
 }
 @inproceedings{LEARN_ICML2000_Greg,
     title     = {Less is more: Active learning with support vector machines},
@@ -424,18 +453,25 @@
 	pages   = {45--66},
 	year    = {2001},
 }
-@inproceedings{ATL_ICML2007_Hanneke,
+@inproceedings{LEARN_ICML2007_Hanneke,
     title     = {A bound on the label complexity of agnostic active learning},
     author    = {Hanneke, Steve},
     booktitle = icml,
     pages     = {353--360},
     year      = {2007},
 }
-@inproceedings{ATL_ICML2009_Dasgupta,
+@inproceedings{LEARN_ICML2009_Dasgupta,
     title     = {A tutorial on active learning},
     author    = {Dasgupta, Sanjoy and Langford, John},
     booktitle = icml,
     year      = {2009},
+}
+@inproceedings{LEARN_ICDM2013_Cai,
+    title     = {Maximizing expected model change for active learning in regression},
+    author    = {Cai, Wenbin and Zhang, Ya and Zhou, Jun},
+    booktitle = icdm,
+    pages     = {51--60},
+    year      = {2013}
 }
 %}}}
 
@@ -498,9 +534,9 @@
 %}}}
 
 
-% =======================================================
-%                       Features
-% =======================================================
+% ===========================================================
+%                     Features
+% ===========================================================
 %{{{
 @article{LEARN_PR2007_Toyoda,
     title     = {Extension of higher order local autocorrelation features},
@@ -557,9 +593,9 @@
 
 
 
-% ============================================================================
-%                       Dictionary Learning
-% ============================================================================
+% ===========================================================
+%                 Dictionary Learning
+% ===========================================================
 @inproceedings{LEARN_NIPS2006_Lee,
     title     = {Efficient sparse coding algorithms},
     author    = {Lee, Honglak and Battle, Alexis and Raina, Rajat and Ng, Andrew Y.},
@@ -570,7 +606,7 @@
 
 
 % ===========================================================
-%                         Sampling
+%                       Sampling
 % ===========================================================
 @article{SAMPL_TPAMI1984_Geman,
     title    = {Stochastic relaxation, Gibbs distributions, and the Bayesian restoration of images},
@@ -591,7 +627,7 @@
 }
 
 % ===========================================================
-%                         Others 
+%                      Others 
 % ===========================================================
 % ==== imbalance
 @inproceedings{DL_IJCNN2008_He,
@@ -696,9 +732,9 @@
 }
 
 
-% ============================================================================
-%                   Applications in VLSI CAD
-% ============================================================================
+% ===========================================================
+%               Applications in VLSI CAD
+% ===========================================================
 @mastersthesis{LEARN_MS2007_Wiener,
     title  = {Intelligate: An Algorithm for Learning Boolean Functions for Dynamic Power Reduction},
     author = {Wiener, Roni},
@@ -721,9 +757,9 @@
 }
 
 
-% ============================================================================
-%                      Applications in CV
-% ============================================================================
+% ===========================================================
+%                 Applications in CV
+% ===========================================================
 @inproceedings{HSD_CVPR2014_Cheng,
     title      = {{BING}: Binarized normed gradients for objectness estimation at 300fps},
     author     = {Cheng, Ming-Ming and Zhang, Ziming and Lin, Wen-Yan and Torr, Philip},
