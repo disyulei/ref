@@ -395,6 +395,51 @@
   year      = {2011},
 }
 
+@inproceedings{CAMO_HOST2017_Kaveh,
+    author    = {Kaveh Shamsi and Meng Li and Travis Meade and Zheng Zhao and David Z. Pan and Yier Jin},
+    title     = {{AppSAT}: Approximately Deobfuscating Integrated Circuits},
+    booktitle = host,
+    pages     = {95--100},
+    year      = {2017}
+}
+
+@inproceedings{CAMO_CCS13_Rajendran,
+ author    = {Rajendran, Jeyavijayan and Sam, Michael and Sinanoglu, Ozgur and Karri, Ramesh},
+ title     = {Security Analysis of Integrated Circuit Camouflaging},
+ booktitle = ccs,
+ pages     = {709--720},
+ year      = {2013},
+}
+
+@inproceedings{CAMO_ICCAD2016_Li,
+ author    = {Li, Meng and Shamsi, Kaveh and Meade, Travis and Zhao, Zheng and Yu, Bei and Jin, Yier and Pan, David Z.},
+ title     = {Provably Secure Camouflaging Strategy for {IC} Protection},
+ volume    = {PP}, 
+ number    = {99}, 
+ pages     = {1-1},
+ booktitle = tcad,
+ year      ={2017},
+}
+ year = {2016},
+ pages = {28:1--28:8},
+ articleno = {28},
+ numpages = {8},
+
+@inproceedings{CAMO_GLSVLSI2017_Kaveh_Cyc,
+    author = {Kaveh Shamsi and Meng Li and Travis Meade and Zheng Zhao and David Z.~Pan and Yier Jin},
+    title  = {Cyclic Obfuscation for Creating SAT-Unresolvable Circuits},
+    booktitle = glsvlsi, 
+    pages  = {173--178},
+    year   = {2017}
+}
+
+@inproceedings{CAMO_GLSVLSI2017_Kaveh_Survey,
+    author = {Kaveh Shamsi and Meng Li and Travis Meade and Zheng Zhao and David Z.~Pan and Yier Jin},
+    title  = {Circuit Obfuscation and Oracle-guided Attacks: Who can Prevail?},
+    booktitle = glsvlsi, 
+    year   = {2017}
+}
+
 
 % ==========================================================
 %                    Trajons 
@@ -408,6 +453,16 @@
   pages   = {10--25},
   year    = {2010},
 }
+@article{TROJAN_TCAD2016_Wu,
+  title={TPAD: hardware Trojan prevention and detection for trusted integrated circuits},
+  author={Wu, Tony F and Ganesan, Karthik and Hu, Yunqing Alexander and Wong, H-S Philip and Wong, Simon and Mitra, Subhasish},
+  journal=tcad,
+  volume={35},
+  number={4},
+  pages={521--534},
+  year={2016},
+  publisher={IEEE}
+}
 @inproceedings{TROJAN_ISCAS2015_Bhasin,
   title     = {A survey on hardware trojan detection techniques},
   author    = {Bhasin, Shivam and Regazzoni, Francesco},
@@ -415,6 +470,7 @@
   pages     = {2021--2024},
   year      = {2015},
 }
+
 % ==== Do Trajons
 @article{TROJAN_JCEN2014_Becker,
   title     = {Stealthy dopant-level hardware {Trojans}: extended version},
@@ -430,6 +486,7 @@
   title     = {A2: Analog Malicious Hardware},
   author    = {K.~Yang and M.~Hicks and Q.~Dong and T.~Austin and D.~Sylvester},
   booktitle = sp,
+  pages     = {18--37},
   year      = {2016},
 }
 @inproceedings{TROJAN_ICCAD2016_Krieg,
@@ -439,7 +496,22 @@
   pages     = {43:1--43:8},
   year      = {2016},
 }
-
+@inproceedings{TROJAN_CHES2012_Skorobogatov,
+  title     = {Breakthrough silicon scanning discovers backdoor in military chip},
+  author    = {Skorobogatov, Sergei and Woods, Christopher},
+  booktitle = ches,
+  pages     = {23--40},
+  year      = {2012},
+  organization={Springer}
+}
+@inproceedings{TROJAN_ICCD2013_Salmani,
+  title={On design vulnerability analysis and trust benchmarks development},
+  author={Salmani, Hassan and Tehranipoor, Mohammad and Karri, Ramesh},
+  booktitle=iccd,
+  pages={471--474},
+  year={2013},
+}
+  pages={471--474},
 
 % ==========================================================
 %                    Fingerprint
@@ -482,24 +554,26 @@
   booktitle = cicc,
   pages     = {1--4},
   year      = {2013},
-  abstract  = {},
 }
+
 @inproceedings{HWS_DATE2013_Rajendran,
   title        = {Is split manufacturing secure?},
   author       = {Rajendran, Jeyavijayan and Sinanoglu, Ozgur and Karri, Ramesh},
   booktitle    = date,
-  pages        = {1259--1264},
   year         = {2013},
+  pages        = {1259--1264},
   abstract     = {},
 }
+
 @inproceedings{HWS_SECURITY2013_Imeson,
   title     = {Securing Computer Hardware Using {3D} Integrated Circuit ({IC}) Technology and Split Manufacturing for Obfuscation},
   author    = {Imeson, Frank and Emtenan, Ariq and Garg, Siddharth and Tripunitara, Mahesh V},
   booktitle = security,
-  volume    = {13},
+  pages     = {495--510},
   year      = {2013},
   abstract  = {},
 }
+
 @article{HWS_TCAD2013_Valamehr,
   title     = {A {3-D} Split Manufacturing Approach to Trustworthy System Development},
   author    = {Valamehr, Jonathan and Sherwood, Timothy and Kastner, Ryan and Marangoni-Simonsen, David and Huffmire, Ted and Irvine, Cynthia and Levin, Timothy},
@@ -515,10 +589,11 @@
   title     = {Detecting Reliability Attacks during Split Fabrication using Test-only {BEOL} Stack},
   author    = {Vaidyanathan, Kaushik and Das, Bishnu P and Pileggi, Larry},
   booktitle = dac,
-  pages     = {156:1--156:6},
   year      = {2014},
+  pages     = {156:1--156:6},
   abstract  = {},
 }
+
 @inproceedings{HWS_HOST2014_Jagasivamani,
   title     = {Split-fabrication obfuscation: Metrics and techniques},
   author    = {Jagasivamani, Meenatchi and Gadfort, Peter and Sika, Michel and Bajura, Michael and Fritze, Michael},
@@ -527,56 +602,126 @@
   year      = {2014},
   abstract  = {},
 }
+
 @inproceedings{HWS_HOST2014_Vaidyanathan,
   title      = {Efficient and secure intellectual property ({IP}) design with split fabrication},
   author     = {Vaidyanathan, Karthikeyan and Liu, Renzhi and Sumbul, Ekin and Zhu, Qiuling and Franchetti, Franz and Pileggi, Larry},
   booktitle  = host,
-  pages      = {13--18},
   year       = {2014},
+  pages      = {13--18},
   abstract   = {},
 }
+
+
+
 @inproceedings{HWS_HOST2015_Xiao,
   title     = {Efficient and secure split manufacturing via obfuscated built-in self-authentication},
   author    = {Xiao, Kan and Forte, Domenic and Tehranipoor, Mark Mohammed},
   booktitle = host,
-  pages     = {14--19},
   year      = {2015},
+  pages     = {14--19},
   abstract  = {},
 }
+
 @inproceedings{HWS_TrustED2015_Xie,
   title     = {Security-Aware Design Flow for {2.5D IC} Technology},
   author    = {Xie, Yang and Bao, Chongxi and Srivastava, Ankur},
   booktitle = trusted,
-  pages     = {31--38},
   year      = {2015},
   abstract  = {FM based partitioning + SA based floorplanning},
+  pages     = {31--38},
 }
+
 @inproceedings{HWS_DAC2016_Wang,
   title     = {The cat and mouse in split manufacturing},
   author    = {Wang, Yujie and Chen, Pu and Hu, Jiang and Rajendran, Jeyavijayan},
   booktitle = dac,
-  pages     = {165:1--165:6},
   year      = {2016},
+  pages     = {165:1--165:6},
 }
+
 @inproceedings{HWS_ICCAD2016_Magana,
   title     = {Are Proximity Attacks a Threat to the Security of Split Manufacturing of Integrated Circuits?},
   author    = {Maga\~{n}a, Jonathon and Shi, Daohang and Davoodi, Azadeh},
   booktitle = iccad,
-  pages     = {90:1--90:7},
   year      = {2016},
+  pages     = {90:1--90:7},
 }
+
+@inproceedings{HWS_ICCAD2017_Wang,
+  title     = {Front-End of Line Attacks in Split Manufacturing},
+  author    = {Wang, Yujie and Cao, Tri and Hu, Jiang and Rajendran, Jeyavijayan},
+  booktitle = iccad,
+  year      = {2017},
+}
+
+@inproceedings{HWS_ICCAD2017_Feng,
+  title     = {Making Split Fabrication Synergistically Secure and Manufacturable},
+  author    = {Feng, Lang and Wang, Yujie and Mak, Wai-Kei and Rajendran, Jeyavijayan and Hu, Jiang},
+  booktitle = iccad,
+  year      = {2017},
+}
+
+@inproceedings{HWS_ICCAD2017_Sengupta,
+  title     = {Rethinking Split Manufacturing: An Information-Theoretic Approach with Secure Layout Techniques},
+  author    = {Sengupta, Abhrajit and Patnaik, Satwik and Knechtel, Johann and Ashraf, Mohammed and Garg, Siddharth and Sinanoglu, Ozgur},
+  booktitle = iccad,
+  year      = {2017},
+}
+
+@inproceedings{HWS_ASPDAC2018_Li,
+  title     = {A Practical Split Manufacturing Framework for Trojan Prevention via Simultaneous Wire Lifting and Cell Insertion},
+  author    = {Li, Meng and Yu, Bei and Lin, Yibo and Xu, Xiaoqing and Li, Wuxi and Pan, David Z.},
+  booktitle = aspdac,
+  year      = {2018},
+}
+
+@inproceedings{HWS_GLSVLSI2017_Shi,
+  title     = {Securing Split Manufactured {IC}s with Wire Lifting Obfuscated Built-In Self-Authentication},
+  author    = {Shi, Qihang and Xiao, Kan and Forte, Domenic and Tehranipoor, Mark M.},
+  booktitle = glsvlsi,
+  pages     = {339--344},
+  year      = {2017},
+}
+
+@incollection{HWS_HPTO2017_Garg,
+  title     = {Split Manufacturing},
+  author    = {Garg, Siddharth and Rajendran, Jeyavijayan JV},
+  booktitle = {Hardware Protection through Obfuscation},
+  pages     = {243--262},
+  year      = {2017},
+  publisher = {Springer},
+}
+
+@inproceedings{HWS_ASPDAC2017_Wang,
+  title     = {Routing perturbation for enhanced security in split manufacturing},
+  author    = {Wang, Yujie and Chen, Pu and Hu, Jiang and Rajendran, Jeyavijayan JV},
+  booktitle = aspdac,
+  pages     = {605--510},
+  year      = {2017},
+}
+
+@incollection{HWS_HPTO2017_Xie,
+  title     = {{3D/2.5 D IC}-Based Obfuscation},
+  author    = {Xie, Yang and Bao, Chongxi and Srivastava, Ankur},
+  booktitle = {Hardware Protection through Obfuscation},
+  pages     = {291--314},
+  year      = {2017},
+  publisher = {Springer},
+}
+
 %}}}
 
 % ==== IC Camouflage
 %{{{
-@misc{CAMO_Patent2007_Chow,
+@misc{CAMO_USP2007_Chow,
   title  = {Covert transformation of transistor properties as a circuit protection method},
   author = {Chow, Lap-Wai and Clark Jr, William M. and Baukus, James P.},
   year   = {2007},
   month  = may # "~15",
   note   = {US Patent 7,217,977},
 }
-@misc{CAMO_Patent2007_Integrated,
+@misc{CAMO_USP2007_Integrated,
   title  = {Integrated circuits protected against reverse engineering and method for fabricating the same using an apparent metal contact line terminating on field oxide},
   author = {Chow, Lap-Wai and Baukus, James P. and Clark Jr, William M.},
   year   = {2007},
@@ -643,12 +788,5 @@
   pages     = {433--438},
   year      = {2016},
 }
-@inproceedings{CAMO_ICCAD2016_Li,
-  title = {Provably Secure Camouflaging Strategy for {IC} Protection},
-  author = {Li, Meng and Shamsi, Kaveh and Meade, Travis and Zhao, Zheng and Yu, Bei and Jin, Yier and Pan, David Z.},
-  booktitle = iccad,
-  pages = {28:1--28:8},
-  year = {2016},
-} 
 %}}}
 
