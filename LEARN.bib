@@ -141,17 +141,6 @@
     year      = {2015},
     publisher = {Wiley Online Library},
 }
-% ==== OMP
-@article{OMP_TIT2007_Tropp,
-    title     = {Signal recovery from random measurements via orthogonal matching pursuit},
-    author    = {Tropp, Joel A. and Gilbert, Anna C.},
-    journal   = tit,
-    volume    = {53},
-    number    = {12},
-    pages     = {4655--4666},
-    year      = {2007},
-    publisher = {IEEE},
-}
 % ==== SVR
 @article{REGR_STOC2004_Smola,
     title     = {A tutorial on support vector regression},
@@ -171,39 +160,6 @@
     year      = {2006},
     publisher = {Springer},
     abstract  = {},
-}
-% ==== Lasso
-@article{LASSO_JRSSB1996_Tib,
-    title    = {Regression shrinkage and selection via the {Lasso}},
-    author   = {Robert Tibshirani},
-    journal  = jrssb,
-    volume   = {58},
-    pages    = {267-288},
-    year     = {1996},
-}
-@article{LASSO_JASA2006_Zou,
-    title    = {The adaptive {Lasso} and its oracle properties},
-    author   = {Hui Zou},
-    journal  = jasa,
-    volume   = {101},
-    pages    = {1418-1429},
-    year     = {2006},
-}
-@article{LASSO_AOAS2007_Friedman,
-    title    = {Pathwise coordinate optimization},
-    author   = {Jerome friedman and Trevor Hastie and Holger H\"{o}fling and Robert Tibshirani},
-    journal  = aoas,
-    volume   = {1},
-    pages    = {302-332},
-    year     = {2007},
-}
-@article{LASSO_STATSIN2008_Huang,
-    title    = {Adaptive {Lasso} for sparse high-dimensional regression models},
-    author   = {Jian Huang and Shuangge Ma and Cun-Hui Zhang},
-    journal  = statsin,
-    volume   = {18},
-    pages    = {1603-1618},
-    year     = {2008},
 }
 %}}}
 
@@ -474,11 +430,11 @@
     year      = {2013}
 }
 @inproceedings{ATL_ICML2013_Marcela,
-    title     = {Active Learning for Multi-Objective Optimization},
-    author    = {Marcela Zuluaga and Andreas Krause and Guillaume Sergent and Markus P$\ddot{u}$schel},
-    booktitle = icml,
-    pages     = {462--470},
-    year      = {2013},
+  title     = {Active Learning for Multi-Objective Optimization},
+  author    = {Marcela Zuluaga, Andreas Krause, Guillaume Sergent and Markus P$\ddot{u}$schel},
+  booktitle = icml,
+  pages     = {462--470},
+  year      = {2013},
 }
 % ==== classification ATL
 %{{{
@@ -604,23 +560,6 @@
     publisher = {Prentice-Hall, Inc.},
     abstract  = {K-means clustering},
 }
-% ==== PCA
-@inproceedings{PCA_JESWA2010_Gumus,
-    author    = {Ergun Gumus and Niyazi Kilic and Ahmet Sertbas and Osman N. Ucan},
-    title     = {Evaluation of face recognition techniques using {PCA}, wavelets and {SVM}},
-    booktitle = jeswa,
-    volume    = {37},
-    number    = {9},
-    pages     = {6404--6408},
-    year      = {2010},
-    publisher = {Elsevier},
-} 
-@book{PCA_B2005_Jolliffe,
-    title     = {{Principal Component Analysis}},
-    author    = {Jolliffe, Ian},
-    year      = {2005},
-    publisher = {Wiley Online Library},
-}
 % ==== Spectral based
 @inproceedings{LEARN_NIPS2004_He,
     title     = {Locality preserving projections},
@@ -639,23 +578,33 @@
     year		= {2001},
 }
 %}}}
+% ===========================================================
+%                 PCA 
+% ===========================================================
+% ==== 
+@book{PCA_B2005_Jolliffe,
+    title     = {{Principal Component Analysis}},
+    author    = {Jolliffe, Ian},
+    year      = {2005},
+    publisher = {Wiley Online Library},
+}
+@inproceedings{PCA_JESWA2010_Gumus,
+    author    = {Ergun Gumus and Niyazi Kilic and Ahmet Sertbas and Osman N. Ucan},
+    title     = {Evaluation of face recognition techniques using {PCA}, wavelets and {SVM}},
+    booktitle = jeswa,
+    volume    = {37},
+    number    = {9},
+    pages     = {6404--6408},
+    year      = {2010},
+    publisher = {Elsevier},
+} 
+% ==== robust PCA
 
 
 % ===========================================================
 %                     Features
 % ===========================================================
 %{{{
-@article{LEARN_PR2007_Toyoda,
-    title     = {Extension of higher order local autocorrelation features},
-    author    = {Toyoda, Takahiro and Hasegawa, Osamu},
-    journal   = {Pattern Recognition},
-    volume    = {40},
-    number    = {5},
-    pages     = {1466--1473},
-    year      = {2007},
-    publisher = {Elsevier},
-    abstract  = {HLAC feature},
-}
 @article{LEARN_1936_Mahalanobis,
     title    = {On the generalized distance in statistics},
     author   = {Mahalanobis, Prasanta Chandra},
@@ -664,6 +613,16 @@
     pages    = {49--55},
     year     = {1936},
     abstract = {feature distances},
+}
+@article{LEARN_TIT1990_Daubechies,
+    title     = {The wavelet transform, time-frequency localization and signal analysis},
+    author    = {Daubechies, Ingrid},
+    journal   = tit,
+    volume    = {36},
+    number    = {5},
+    pages     = {961--1005},
+    year      = {1990},
+    publisher = {IEEE},
 }
 @article{LEARN_TPAMI1991_Arkin,
     title    = {An efficiently Computable Metric for Comparing Polygonal Shapes},
@@ -695,21 +654,176 @@
     year     = {2005},
     publisher= {IEEE},
 }
+@article{LEARN_TIP2005_Do,
+    title     = {The contourlet transform: an efficient directional multiresolution image representation},
+    author    = {Do, Minh N. and Vetterli, Martin},
+    journal   = tip,
+    volume    = {14},
+    number    = {12},
+    pages     = {2091--2106},
+    year      = {2005},
+    publisher = {IEEE},
+}
+@article{LEARN_PR2007_Toyoda,
+    title     = {Extension of higher order local autocorrelation features},
+    author    = {Toyoda, Takahiro and Hasegawa, Osamu},
+    journal   = {Pattern Recognition},
+    volume    = {40},
+    number    = {5},
+    pages     = {1466--1473},
+    year      = {2007},
+    publisher = {Elsevier},
+    abstract  = {HLAC feature},
+}
 %}}}
 
 
 
 
 % ===========================================================
-%                 Dictionary Learning
+%                Sparse Representation 
 % ===========================================================
-@inproceedings{LEARN_NIPS2006_Lee,
+% == OMP
+@inproceedings{OMP_ASILOMAR1993_Pati,
+    title        = {Orthogonal Matching Pursuit: Recursive function approximation with applications to wavelet decomposition},
+    author       = {Pati, Yagyensh Chandra and Rezaiifar, Ramin and Krishnaprasad, Perinkulam Sambamurthy},
+    booktitle    = asilomar,
+    pages        = {40--44},
+    year         = {1993},
+    organization = {IEEE},
+}
+@article{OMP_TSP1993_Mallat,
+    title     = {Matching pursuits with time-frequency dictionaries},
+    author    = {Mallat, St{\'e}phane G. and Zhang, Zhifeng},
+    journal   = tsp,
+    volume    = {41},
+    number    = {12},
+    pages     = {3397--3415},
+    year      = {1993},
+    publisher = {IEEE},
+}
+@article{OMP_TIT2007_Tropp,
+    title     = {Signal recovery from random measurements via orthogonal matching pursuit},
+    author    = {Tropp, Joel A. and Gilbert, Anna C.},
+    journal   = tit,
+    volume    = {53},
+    number    = {12},
+    pages     = {4655--4666},
+    year      = {2007},
+    publisher = {IEEE},
+}
+% ==== Lasso
+@article{LASSO_JRSSB1996_Tib,
+    title     = {Regression shrinkage and selection via the {Lasso}},
+    author    = {Robert Tibshirani},
+    journal   = jrssb,
+    volume    = {58},
+    pages     = {267-288},
+    year      = {1996},
+    publisher = {JSTOR}
+}
+@article{LASSO_JASA2006_Zou,
+    title    = {The adaptive {Lasso} and its oracle properties},
+    author   = {Hui Zou},
+    journal  = jasa,
+    volume   = {101},
+    pages    = {1418-1429},
+    year     = {2006},
+}
+@article{LASSO_AOAS2007_Friedman,
+    title    = {Pathwise coordinate optimization},
+    author   = {Jerome friedman and Trevor Hastie and Holger H\"{o}fling and Robert Tibshirani},
+    journal  = aoas,
+    volume   = {1},
+    pages    = {302-332},
+    year     = {2007},
+}
+@article{LASSO_STATSIN2008_Huang,
+    title    = {Adaptive {Lasso} for sparse high-dimensional regression models},
+    author   = {Jian Huang and Shuangge Ma and Cun-Hui Zhang},
+    journal  = statsin,
+    volume   = {18},
+    pages    = {1603-1618},
+    year     = {2008},
+}
+% == Dictionary Learning
+@inproceedings{DICL_NIPS2006_Lee,
     title     = {Efficient sparse coding algorithms},
     author    = {Lee, Honglak and Battle, Alexis and Raina, Rajat and Ng, Andrew Y.},
     booktitle = nips,
     pages     = {801--808},
     year      = {2006},
 }
+@article{DICL_TSP2006_Aharon,
+    title     = {$k$-{SVD}: An algorithm for designing overcomplete dictionaries for sparse representation},
+    author    = {Aharon, Michal and Elad, Michael and Bruckstein, Alfred},
+    journal   = tsp,
+    volume    = {54},
+    number    = {11},
+    pages     = {4311--4322},
+    year      = {2006},
+    publisher = {IEEE},
+}
+@inproceedings{DICL_ICML2009_Mairal,
+    title        = {Online dictionary learning for sparse coding},
+    author       = {Mairal, Julien and Bach, Francis and Ponce, Jean and Sapiro, Guillermo},
+    booktitle    = icml,
+    pages        = {689--696},
+    year         = {2009},
+    organization = {ACM},
+}
+@article{DICL_TSP2010_Skretting,
+    title     = {Recursive least squares dictionary learning algorithm},
+    author    = {Skretting, Karl and Engan, Kjersti},
+    journal   = tsp,
+    volume    = {58},
+    number    = {4},
+    pages     = {2121--2130},
+    year      = {2010},
+    publisher = {IEEE},
+}
+@inproceedings{DICL_ICML2016_Mensch,
+    title     = {Dictionary learning for massive matrix factorization},
+    author    = {Mensch, Arthur and Mairal, Julien and Thirion, Bertrand and Varoquaux, Ga{\"e}l},
+    booktitle = icml,
+    pages     = {1737--1746},
+    year      = {2016},
+}
+% ==== Supervised Dictionary Learning
+@article{DICL_arXiv2015_Gangeh,
+    title   = {Supervised dictionary learning and sparse representation-a review},
+    author  = {Gangeh, Mehrdad J. and Farahat, Ahmed K. and Ghodsi, Ali and Kamel, Mohamed S.},
+    journal = {arXiv preprint arXiv:1502.05928},
+    year    = {2015},
+}
+@inproceedings{DICL_ICASSP2017_Yankelevsky,
+    title        = {Structure-aware classification using supervised dictionary learning},
+    author       = {Yankelevsky, Yael and Elad, Michael},
+    booktitle    = icassp,
+    pages        = {4421--4425},
+    year         = {2017},
+    organization = {IEEE},
+}
+@inproceedings{DICL_CVPR2011_Jiang,
+    title        = {Learning a discriminative dictionary for sparse coding via label consistent {K-SVD}},
+    author       = {Jiang, Zhuolin and Lin, Zhe and Davis, Larry S.},
+    booktitle    = cvpr,
+    pages        = {1697--1704},
+    year         = {2011},
+    organization = {IEEE},
+}
+
+@article{LASSO_TAOS2004_Bradley,
+  title     = {Least angle regression},
+  author    = {Efron, Bradley and Hastie, Trevor and Johnstone, Iain and Tibshirani, Robert and others.},
+  journal   = {The Annals of statistics},
+  volume    = {32},
+  number    = {2},
+  pages     = {407--499},
+  year      = {2004},
+  publisher = {Institute of Mathematical Statistics}
+}
+
 
 
 % ===========================================================
@@ -916,3 +1030,4 @@
     pages     = {1015--1022},
     year      = {2010},
 }
+
