@@ -1,0 +1,292 @@
+% this file is about DNN speed-up references
+
+% ==================================================================
+%                      Accurate Speedup 
+% ==================================================================
+%{{{
+@article{SPEED-arXiv2014-Chetlur,
+    title   = {{cuDNN}: Efficient primitives for deep learning},
+    author  = {Chetlur, Sharan and Woolley, Cliff and Vandermersch, Philippe and Cohen, Jonathan and Tran, John and Catanzaro, Bryan and Shelhamer, Evan},
+    journal = arxiv,
+    year    = {2014},
+}
+@article{SPEED-arXiv2017-Shi,
+    title   = {Speeding up Convolutional Neural Networks By Exploiting the Sparsity of Rectifier Units},
+    author  = {Shi, Shaohuai and Chu, Xiaowen},
+    journal = arxiv,
+    year    = {2017},
+}
+@inproceedings{SPEED-ICML2017-Cho,
+    title     = {{MEC}: memory-efficient convolution for deep neural network},
+    author    = {Cho, Minsik and Brand, Daniel},
+    booktitle = icml,
+    year      = {2017},
+}
+% ==== sparse convolution
+@inproceedings{SPEED-CVPR2015-Liu,
+    title     = {Sparse Convolutional Neural Networks},
+    author    = {Liu, Baoyuan and Wang, Min and Foroosh, Hassan and Tappen, Marshall and Penksy, Marianna},
+    booktitle = cvpr,
+    pages     = {806--814},
+    year      = {2015},
+}
+@inproceedings{SPEED-ICLR2017-Park,
+    title     = {Faster {CNNs} with direct sparse convolutions and guided pruning},
+    author    = {Park, Jongsoo and Li, Sheng and Wen, Wei and Tang, Ping Tak Peter and Li, Hai and Chen, Yiran and Dubey, Pradeep},
+    booktitle = iclr,
+    year      = {2017},
+    abstract  = {SkimCaffe},
+}
+% ==== winograd-based
+@inproceedings{SPEED-CVPR2016-Lavin,
+    title     = {Fast Algorithms for Convolutional Neural Networks},
+    author    = {Lavin, Andrew and Gray, Scott},
+    booktitle = cvpr,
+    pages     = {4013--4021},
+    year      = {2016},
+}
+@inproceedings{SPEED-ICLR2018-Liu,
+    title    = {Efficient sparse-winograd convolutional neural networks},
+    author   = {Liu, Xingyu and Pool, Jeff and Han, Song and Dally, William J.},
+    booktitle= iclr,
+    year     = {2018},
+}
+%}}}
+
+
+% ==================================================================
+%                   Non-accurate Speedup 
+% ==================================================================
+% ==== Pruning / Hashing
+%{{{
+@inproceedings{SPEED-NIPS1990-LeCun,
+  title     = {Optimal brain damage},
+  author    = {LeCun, Yann and Denker, John S and Solla, Sara A},
+  booktitle = nips,
+  pages     = {598--605},
+  year      = {1990},
+}
+@inproceedings{SPEED-NIPS2013-Denil,
+  title      = {Predicting parameters in deep learning},
+  author     = {Denil, Misha and Shakibi, Babak and Dinh, Laurent and De Freitas, Nando and others},
+  booktitle  = nips,
+  pages      = {2148--2156},
+  year       = {2013}
+}
+@inproceedings{SPEED-ICML2015-Chen,
+    title     = {Compressing neural networks with the hashing trick},
+    author    = {Chen, Wenlin and Wilson, James and Tyree, Stephen and Weinberger, Kilian and Chen, Yixin},
+    booktitle = icml,
+    pages     = {2285--2294},
+    year      = {2015},
+}
+@inproceedings{SPEED-NIPS2015-Han,
+    title     = {Learning both weights and connections for efficient neural network},
+    author    = {Han, Song and Pool, Jeff and Tran, John and Dally, William},
+    booktitle = nips,
+    pages     = {1135--1143},
+    year      = {2015},
+}
+@inproceedings{SPEED-ICLR2016-Han,
+    title     = {{Deep Compression}: Compressing deep neural networks with pruning, trained quantization and huffman coding},
+    author    = {Han, Song and Mao, Huizi and Dally, William J.},
+    booktitle = iclr,
+    year      = {2016},
+}
+@inproceedings{SPEED-ISCA2016-Han,
+    title     = {{EIE}: efficient inference engine on compressed deep neural network},
+    author    = {Han, Song and Liu, Xingyu and Mao, Huizi and Pu, Jing and Pedram, Ardavan and Horowitz, Mark A. and Dally, William J.},
+    booktitle = isca,
+    pages     = {243--254},
+    year      = {2016},
+}
+@inproceedings{SPEED-NIPS2016-Alvarez,
+    title     = {Learning the number of neurons in deep networks},
+    author    = {Alvarez, Jose M and Salzmann, Mathieu},
+    booktitle = nips,
+    pages     = {2270--2278},
+    year      = {2016}
+}
+@inproceedings{SPEED-ICLR2017-Ullrich,
+    title     = {Soft weight-sharing for neural network compression},
+    author    = {Ullrich, Karen and Meeds, Edward and Welling, Max},
+    booktitle = iclr,
+    year      = {2017},
+}
+@inproceedings{SPEED-ICCV2017-He,
+    author    = {He, Yihui and Zhang, Xiangyu and Sun, Jian},
+    title     = {Channel Pruning for Accelerating Very Deep Neural Networks},
+    booktitle = iccv,
+    year      = {2017},
+}
+@inproceedings{SPEED-ICLR2016-Li,
+    title     = {Pruning filters for efficient convnets},
+    author    = {Li, Hao and Kadav, Asim and Durdanovic, Igor and Samet, Hanan and Graf, Hans Peter},
+    booktitle = iclr,
+    year      = {2016},
+}
+@inproceedings{SPEED-NIPS2016-Figurnov,
+    title     = {PerforatedCNNs: Acceleration through elimination of redundant convolutions},
+    author    = {Figurnov, Mikhail and Ibraimova, Aizhan and Vetrov, Dmitry P and Kohli, Pushmeet},
+    booktitle = nips,
+    year      = {2016},
+}
+@inproceedings{SPEED-KDD2016-Chen,
+    title     = {Compressing Convolutional Neural Networks in the Frequency Domain},
+    author    = {Chen, Wenlin and Wilson, James T and Tyree, Stephen and Weinberger, Kilian Q and Chen, Yixin},
+    booktitle = kdd,
+    pages     = {1475--1484},
+    year      = {2016},
+}
+@inproceedings{SPEED-NIPS2016-Wen,
+    title     = {Learning structured sparsity in deep neural networks},
+    author    = {Wen, Wei and Wu, Chunpeng and Wang, Yandan and Chen, Yiran and Li, Hai},
+    booktitle = nips,
+    pages     = {2074--2082},
+    year      = {2016},
+}
+@inproceedings{SPEED-ECCV2016-Zhou,
+  title     = {Less is more: Towards compact cnns},
+  author    = {Zhou, Hao and Alvarez, Jose M and Porikli, Fatih},
+  booktitle = eccv,
+  pages     = {662--677},
+  year      = {2016}
+}
+@inproceedings{SPEED-DATE2017-Razlighi,
+    title     = {{LookNN}: Neural network with no multiplication}, 
+    author    = {M.~S.~Razlighi and M.~Imani and F.~Koushanfar and T.~Rosing}, 
+    booktitle = date, 
+    year      = {2017}, 
+    pages     = {1775-1780}, 
+}
+@inproceedings{SPEED-ISCA2017-Yu,
+    title     = {Scalpel: Customizing dnn pruning to the underlying hardware parallelism},
+    author    = {Yu, Jiecao and Lukefahr, Andrew and Palframan, David and Dasika, Ganesh and Das, Reetuparna and Mahlke, Scott},
+    booktitle = isca,
+    pages     = {548--560},
+    year      = {2017},
+}
+@inproceedings{SPEED-NIPS2017-Aghasi,
+    title     = {{Net-Trim}: Convex Pruning of Deep Neural Networks with Performance Guarantee},
+    author    = {Aghasi, Alireza and Abdi, Afshin and Nguyen, Nam and Romberg, Justin},
+    booktitle = nips,
+    pages     = {3180--3189},
+    year      = {2017},
+}
+%}}}
+% ==== FFT/DCT based
+@inproceedings{SPEED-ICLR015-Vasilache,
+  title    = {Fast convolutional nets with fbfft: A {GPU} performance evaluation},
+  author   = {Vasilache, Nicolas and Johnson, Jeff and Mathieu, Michael and Chintala, Soumith and Piantino, Serkan and LeCun, Yann},
+  booktitle= iclr,
+  year     = {2015},
+}
+% ==== Low Rank Approximation (LR) 
+%{{{
+@inproceedings{SPEED-BMVC2014-Jaderberg,
+    title   = {Speeding up convolutional neural networks with low rank expansions},
+    author  = {Jaderberg, Max and Vedaldi, Andrea and Zisserman, Andrew},
+    booktitle= bmvc,
+    year    = {2014},
+}
+@inproceedings{SPEED-NIPS2014-Denton,
+    title     = {Exploiting linear structure within convolutional networks for efficient evaluation},
+    author    = {Denton, Emily L and Zaremba, Wojciech and Bruna, Joan and LeCun, Yann and Fergus, Rob},
+    booktitle = nips,
+    pages     = {1269--1277},
+    year      = {2014},
+}
+@inproceedings{SPEED-ICLR2014-Davis,
+    title     = {Low-Rank Approximations for Conditional Feedforward Computation in Deep Neural Networks},
+    author    = {Davis, Andrew S. and Arel, Itamar},
+    booktitle = iclr,
+    year      = {2014},
+}
+@inproceedings{SPEED-ICML2014-Si,
+    title     = {Memory efficient kernel approximation},
+    author    = {Si, Si and Hsieh, Cho-Jui and Dhillon, Inderjit},
+    booktitle = icml,
+    pages     = {701--709},
+    year      = {2014},
+}
+@inproceedings{SPEED-ICCV2015-Yang,
+    title     = {Deep fried convnets},
+    author    = {Yang, Zichao and Moczulski, Marcin and Denil, Misha and de Freitas, Nando and Smola, Alex and Song, Le and Wang, Ziyu},
+    booktitle = iccv,
+    pages     = {1476--1483},
+    year      = {2015},
+}
+@inproceedings{SPEED-ICLR2015-Lebedev,
+    title     = {Speeding-up convolutional neural networks using fine-tuned cp-decomposition},
+    author    = {Lebedev, Vadim and Ganin, Yaroslav and Rakhuba, Maksim and Oseledets, Ivan and Lempitsky, Victor},
+    booktitle = iclr,
+    year      = {2015},
+}
+@inproceedings{SPEED-CVPR2015-Zhang,
+    title     = {Efficient and accurate approximations of nonlinear convolutional networks}, 
+    author    = {Zhang, Xiangyu and Zou, Jianhua and Ming, Xiang and He, Kaiming and Sun, Jian},
+    booktitle = cvpr,
+    pages     = {1984--1992},
+    year      = {2015},
+}
+@article{SPEED-TPAMI2016-Zhang,
+    title     ={Accelerating very deep convolutional networks for classification and detection},
+    author    ={Zhang, Xiangyu and Zou, Jianhua and He, Kaiming and Sun, Jian},
+    journal   =tpami,
+    volume    ={38},
+    number    ={10},
+    pages     ={1943--1955},
+    year      ={2016},
+    publisher ={IEEE},
+}
+@inproceedings{SPEED-ICLR2016-Tai,
+    title     = {Convolutional neural networks with low-rank regularization},
+    author    = {Tai, Cheng and Xiao, Tong and Zhang, Yi and Wang, Xiaogang and others},
+    booktitle = iclr,
+    year      = {2016},
+}
+@inproceedings{SPEED-ICLR2016-Kim,
+    title    = {Compression of deep convolutional neural networks for fast and low power mobile applications},
+    author   = {Kim, Yong-Deok and Park, Eunhyeok and Yoo, Sungjoo and Choi, Taelim and Yang, Lu and Shin, Dongjun},
+    booktitle= iclr,
+    year     = {2016},
+}
+@inproceedings{SPEED-ICCV2017-Wen,
+    title     = {Coordinating filters for faster deep neural networks},
+    author    = {Wen, Wei and Xu, Cong and Wu, Chunpeng and Wang, Yandan and Chen, Yiran and Li, Hai},
+    booktitle = iccv,
+    pages     = {658--666},
+    year      = {2017},
+}
+@inproceedings{SPEED-IJCNN2018-Dai,
+    title     = {Fast Training and Model Compression of Gated RNNs via Singular Value Decomposition},
+    author    = {Dai, Rui and Li, Lefei and Yu, Wenjian},
+    booktitle = ijcnn,
+    year      = {2018}
+}
+%}}}
+% ==== Low rank + Sparse
+@inproceedings{SPEED-CVPR2017-Yu,
+    title      = {On compressing deep models by low rank and sparse decomposition},
+    author     = {Yu, Xiyu and Liu, Tongliang and Wang, Xinchao and Tao, Dacheng}, 
+    booktitle  = cvpr,
+    pages      = {7370--7379},
+    year       = {2017},
+    abstract   = {LRA + sparse},
+}
+@inproceedings{SPEED-NIPS2017-Alvarez,
+    title     = {Compression-aware Training of Deep Networks},
+    author    = {Alvarez, Jose M. and Salzmann, Mathieu},
+    booktitle = nips,
+    pages     = {856--867},
+    year      = {2017}
+}
+% ==== Quantization
+@inproceedings{SPEED-NIPS2015-Novikov,
+    title     = {Tensorizing Neural Networks},
+    author    = {Novikov, Alexander and Podoprikhin, Dmitry and Osokin, Anton and Vetrov, Dmitry},
+    booktitle = nips,
+    year      = {2015},
+    pages     = {442--450},
+}
+
