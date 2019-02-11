@@ -1,0 +1,151 @@
+% == this file is about neural architecture search (NAS)
+
+% === reinforcement learning (RL)
+%{{{
+@inproceedings{NAS-ICML2017-Bello,
+    title={Neural Optimizer Search with Reinforcement Learning},
+    author={Bello, Irwan and Zoph, Barret and Vasudevan, Vijay and Le, Quoc V.},
+    booktitle=icml,
+    pages={459--468},
+    year={2017},
+}
+@inproceedings{NAS-ICLR2017-Baker,
+    title={Designing Neural Network Architectures using Reinforcement Learning},
+    author={Baker, Bowen and Gupta, Otkrist and Naik, Nikhil and Raskar, Ramesh},
+    booktitle=iclr,
+    year={2017}
+}
+@inproceedings{NAS-ICLR2017-Zoph,
+    title={Neural Architecture Search with Reinforcement Learning},
+    author={Zoph, Barret and Le, Quoc},
+    booktitle=iclr,
+    year={2017},
+}
+@inproceedings{NAS-AAAI2018-Cai,
+    title={Efficient architecture search by network transformation},
+    author={Cai, Han and Chen, Tianyao and Zhang, Weinan and Yu, Yong and Wang, Jun},
+    booktitle=aaai,
+    year={2018},
+}
+@inproceedings{NAS-ICML2018-Pham,
+    title={Efficient Neural Architecture Search via Parameter Sharing},
+    author={Pham, Hieu and Guan, Melody Y and Zoph, Barret and Le, Quoc V and Dean, Jeff},
+    booktitle=icml,
+    year={2018},
+}
+@inproceedings{NAS-ICML2018-Cai,
+    title={Path-Level Network Transformation for Efficient Architecture Search},
+    author={Cai, Han and Yang, Jiacheng and Zhang, Weinan and Han, Song and Yu, Yong},
+    booktitle=icml,
+    year={2018},
+}
+@inproceedings{NAS-CVPR2018-Zoph,
+    title={Learning Transferable Architectures for Scalable Image Recognition},
+    author={Zoph, Barret and Vasudevan, Vijay and Shlens, Jonathon and Le, Quoc V},
+    booktitle=cvpr,
+    year={2018},
+}
+@inproceedings{NAS-CVPR2018-Zhong,
+    title={Practical Block-wise Neural Network Architecture Generation},
+    author={Zhong, Zhao and Yan, Junjie and Wu, Wei and Shao, Jing and Liu, Cheng-Lin},
+    booktitle=cvpr,
+    pages={2423--2432},
+    year={2018},
+}
+%}}}
+% === evolutionary based
+@inproceedings{NAS-ICLR2016-Loshchilov,
+    title={{CMA-ES} for Hyperparameter Optimization of Deep Neural Networks},
+    author={Loshchilov, Ilya and Hutter, Frank},
+    booktitle=iclr,
+    year={2016},
+}
+@inproceedings{NAS-ICCV2017-Xie,
+    title={Genetic {CNN}},
+    author={Xie, Lingxi and Yuille, Alan L},
+    booktitle=iccv,
+    pages={1388--1397},
+    year={2017},
+}
+@inproceedings{NAS-ICML2017-Real,
+    title={Large-Scale Evolution of Image Classifiers},
+    author={Real, Esteban and Moore, Sherry and Selle, Andrew and Saxena, Saurabh and Suematsu, Yutaka Leon and Tan, Jie and Le, Quoc V and Kurakin, Alexey},
+    booktitle=icml,
+    pages={2902--2911},
+    year={2017},
+}
+@inproceedings{NAS-ICLR2018-Liu,
+    title={Hierarchical Representations for Efficient Architecture Search},
+    author={Liu, Hanxiao and Simonyan, Karen and Vinyals, Oriol and Fernando, Chrisantha and Kavukcuoglu, Koray},
+    booktitle=iclr,
+    year={2018},
+}
+% === GP based
+@inproceedings{NAS-IJCAI2015-Domhan,
+    title={Speeding Up Automatic Hyperparameter Optimization of Deep Neural Networks by Extrapolation of Learning Curves.},
+    author={Domhan, Tobias and Springenberg, Jost Tobias and Hutter, Frank},
+    booktitle=ijcai,
+    pages={3460--8},
+    year={2015},
+}
+@inproceedings{NAS-ISLPED2017-Reagen,
+    title={A case for efficient accelerator design space exploration via Bayesian optimization},
+    author={Reagen, Brandon and Hern{\'a}ndez-Lobato, Jos{\'e} Miguel and Adolf, Robert and Gelbart, Michael and Whatmough, Paul and Wei, Gu-Yeon and Brooks, David},
+    booktitle=islped,
+    pages={1--6},
+    year={2017},
+}
+@article{NAS-arXiv2018-Kandasamy,
+    title={Neural architecture search with bayesian optimisation and optimal transport},
+    author={Kandasamy, Kirthevasan and Neiswanger, Willie and Schneider, Jeff and Poczos, Barnabas and Xing, Eric},
+    journal=arxiv,
+    year={2018},
+}
+@article{NAS-arXiv2018-Jin,
+    title={Efficient neural architecture search with network morphism},
+    author={Jin, Haifeng and Song, Qingquan and Hu, Xia},
+    journal=arxiv,
+    year={2018},
+}
+% === bandit based
+@inproceedings{NAS-ICLR2017-Li,
+    title={Hyperband: Bandit-based configuration evaluation for hyperparameter optimization},
+    author={Li, Lisha and Jamieson, Kevin and DeSalvo, Giulia and Rostamizadeh, Afshin and Talwalkar, Ameet},
+    booktitle=iclr,
+    year={2017},
+}
+@article{NAS-JMLR2018-Li,
+    title={Hyperband: A novel bandit-based approach to hyperparameter optimization},
+    author={Li, Lisha and Jamieson, Kevin and DeSalvo, Giulia and Rostamizadeh, Afshin and Talwalkar, Ameet},
+    journal=jmlr,
+    volume={18},
+    pages={1--52},
+    year={2018},
+}
+% === heuristic search
+@inproceedings{NAS-ECCV2018-Liu,
+    title={Progressive Neural Architecture Search},
+    author={Liu, Chenxi and Zoph, Barret and Shlens, Jonathon and Hua, Wei and Li, Li-Jia and Fei-Fei, Li and Yuille, Alan and Huang, Jonathan and Murphy, Kevin},
+    booktitle=eccv,
+    year={2018},
+}
+@inproceedings{NAS-ECCV2018-Dong,
+    title={{DPP-Net}: Device-aware Progressive Search for Pareto-optimal Neural Architectures},
+    author={Dong, Jin-Dong and Cheng, An-Chieh and Juan, Da-Cheng and Wei, Wei and Sun, Min},
+    booktitle=eccv,
+    year={2018},
+}
+% TO CLASSIFY
+@inproceedings{NAS-ICLR2017-Klein,
+    title={Learning curve prediction with Bayesian neural networks},
+    author={Klein, Aaron and Falkner, Stefan and Springenberg, Jost Tobias and Hutter, Frank},
+    booktitle=iclr,
+    year={2017},
+}
+@inproceedings{NAS-ICML2017-Cortes,
+    title={{AdaNet}: Adaptive Structural Learning of Artificial Neural Networks},
+    author={Cortes, Corinna and Gonzalvo, Xavier and Kuznetsov, Vitaly and Mohri, Mehryar and Yang, Scott},
+    booktitle=icml,
+    pages={874--883},
+    year={2017},
+}

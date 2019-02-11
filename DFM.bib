@@ -23,13 +23,13 @@
     publisher = {SPIE press},
 }
 @article{DFM-JM3-2002-Lin,
-	title   = {The k3 coefficient in nonparaxial $\lambda$/NA scaling equations for resolution, depth of focus, and immersion lithography},
-	author  = {Lin, Burn J.},
-	journal = jm3,
-	volume  = {1},
-	number  = {1},
-	pages   = {7--12},
-	year    = {2002},
+    title   = {The k3 coefficient in nonparaxial $\lambda$/NA scaling equations for resolution, depth of focus, and immersion lithography},
+    author  = {Lin, Burn J.},
+    journal = jm3,
+    volume  = {1},
+    number  = {1},
+    pages   = {7--12},
+    year    = {2002},
 }
 @book{DFM-B2004-John,
     title     = {{Field Guide to Geometrical Optics}},
@@ -906,6 +906,18 @@
 % ===================================================
 %                   OPC
 % ===================================================
+% === OPC summary
+@article{OPC-JJAS2016-Bisschop,
+    title={Optical proximity correction: a cross road of data flows},
+    author={De Bisschop, Peter},
+    journal={Japanese Journal of Applied Physics},
+    volume={55},
+    number={6S1},
+    pages={06GA01},
+    year={2016},
+    publisher={IOP Publishing},
+}
+% === model-based
 %{{{
 @inproceedings{OPC-RSL1951-Hopkins,
     title        = {The concept of partial coherence in optics},
@@ -1207,6 +1219,13 @@
     volume    = {9427},
     year      = {2015},
 }
+@inproceedings{OPC-ASPDAC2019-Geng,
+    title     = {{SRAF} Insertion via Supervised Dictionary Learning},
+    author    = {Hao Geng and Haoyu Yang and Yuzhe Ma and Joydeep Mitra and Bei Yu},
+    booktitle = aspdac,
+    pages     = {406--411},
+    year      = {2019},
+}
 %}}}
 % ==== OPC + MPL
 %{{{
@@ -1334,14 +1353,38 @@
     booktitle = dac,
     year      = {2003},
     pages     = {22--27},
-    numpages  = {6},
 } 
+@inproceedings{CMP-VLSIMI2005-Kahng,
+    title     = {Closing the Loop in Interconnect Analyses and Optimization: {CMP} Fill, Lithography and Timing},
+    author    = {Puneet Gupta and Andrew B.~Kahng and O.~Sam Nakagawa and Kambiz Samadi},
+    booktitle = {Proc.~VMIC},
+    year      = {2005},
+    pages     = {352--363},
+}
 @inproceedings{CMP-ISQED2005-Wang,
     title     = {A min-variance iterative method for fast smart dummy feature density assignment in chemical-mechanical polishing},
     author    = {Wang, Xin and Chiang, Charles C. and Kawa, Jamil and Su, Qing},
     booktitle = isqed,
     year      = {2005},
     pages     = {258--263},
+}
+@inproceedings{CMP-ISQED2006-Kahng, 
+    title     = {Study of floating fill impact on interconnect capacitance}, 
+    author    = {A.~B.~Kahng and K.~Samadi and P.~Sharma}, 
+    booktitle = isqed,
+    year      = {2006}, 
+}
+@inproceedings{CMP-EDSSC2007-Nan, 
+	title     = {Impact of Metal Dummy Fills on the Performance of {CMOS} Inductors}, 
+	author    = {L. Nan and K. Mouthaan and Y. Xiong and J. Shi and S. C. Rustagi and B. Ooi}, 
+	year      = {2007}, 
+	booktitle = {Prof.~EDSSC},
+}
+@inproceedings{CMP-VMIC2007-Kahng,
+    title     = {Performance-aware {CMP} fill pattern optimization},
+    author    = {Andrew B.~Kahng and Topaloglu, Rasit O.},
+    booktitle = {Proc.~VMIC},
+    year      = {2007},
 }
 @inproceedings{CMP-ISPD2007-Xiang,
     title     = {Dummy fill density analysis with coupling constraints},
@@ -1359,12 +1402,28 @@
     year      = {2007},
     abstract  = {},
 }
+@ARTICLE{CMP-TCAD2011-Feng, 
+    title   = {Efficient Approximation Algorithms for Chemical Mechanical Polishing Dummy Fill}, 
+    author  = {C. Feng and H. Zhou and C. Yan and J. Tao and X. Zeng}, 
+    journal = tcad,
+    year    = {2011}, 
+    volume  = {30}, 
+    number  = {3}, 
+    pages   = {402-415}, 
+}
 @inproceedings{CMP-ISQED2007-Topaloglu,
     title     = {Energy-minimization model for fill synthesis},
     author    = {Rasit Onur Topaloglu},
     booktitle = isqed,
     pages     = {444--451},
     year      = {2007},
+}
+@inproceedings{CMP-ISQED2005-Kurokawa, 
+	title     = {Dummy filling methods for reducing interconnect capacitance and number of fills}, 
+	author    = {A. Kurokawa and T. Kanamoto and T. Ibe and A. Kasebe and Chang Wei Fong and T. Kage and Y. Inoue and H. Masuda}, 
+	booktitle = isqed,
+	pages     = {586--591}, 
+	year      = {2005}, 
 }
 @article{CMP-TCAD2008-Kahng,
     title     = {{CMP} fill synthesis: A survey of recent studies},
@@ -1423,13 +1482,18 @@
     publisher = {Elsevier},
 }
 @inproceedings{CMP-ICCAD2014-Topaloglu,
-    author    = {Topaloglu, Rasit O.},
     title     = {{ICCAD-2014 CAD} Contest in Design for Manufacturability Flow for Advanced Semiconductor Nodes and Benchmark Suite},
+    author    = {Topaloglu, Rasit O.},
     booktitle = iccad,
     year      = {2014},
     pages     = {367--368},
-    numpages  = {2},
-} 
+}
+@inproceedings{CMP-ICCAD2018-Yang,
+    author    = {Bo, Yang and Sriraaman, Sridharan},
+    title     = {{ICCAD-2018 CAD} Contest in Timing-Aware Fill Insertion},
+    booktitle = iccad,
+    year      = {2018},
+}  
 @inproceedings{CMP-DAC2015-Lin,
     title     = {High performance dummy fill insertion with coupling and uniformity constraints},
     author    = {Yibo Lin and Bei Yu and David Z.~Pan},
@@ -2530,10 +2594,13 @@
     volume    = {7970},
     year      = {2011},
 }
+
+
+% == Litho Modeling
 @inproceedings{DFM-ISPD2018-Lin,
-	title={Data Efficient Lithography Modeling with Residual Neural Networks and Transfer Learning},
-	author={Lin, Yibo and Watanabe, Yuki and Kimura, Taiki and Matsunawa, Tetsuaki and Nojima, Shigeki and Li, Meng and Pan, David Z},
-	booktitle=ispd,
-	pages={82--89},
-	year={2018},
+    title     = {Data Efficient Lithography Modeling with Residual Neural Networks and Transfer Learning},
+    author    = {Lin, Yibo and Watanabe, Yuki and Kimura, Taiki and Matsunawa, Tetsuaki and Nojima, Shigeki and Li, Meng and Pan, David Z},
+    booktitle = ispd,
+    pages     = {82--89},
+    year      = {2018},
 }
