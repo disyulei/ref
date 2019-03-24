@@ -1,6 +1,13 @@
 % this file is about DNN speed-up references
 
 % ==== summary
+@inproceedings{SPEED-DAC2018-Han,
+    title     = {Bandwidth-efficient Deep Learning},
+    author    = {Han, Song and Dally, William J.},
+    booktitle = dac,
+    year      = {2018},
+    pages     = {147:1--147:6},
+}
 @article{SPEED-JNeuCom2019-Zhang,
     title     = {Recent advances in convolutional neural network acceleration},
     author    = {Zhang, Qianru and Zhang, Meng and Chen, Tinghuan and Sun, Zhifei and Ma, Yuzhe and Yu, Bei},
@@ -10,6 +17,32 @@
     year      = {2019},
     publisher = {Elsevier},
 }
+
+% ==================================================================
+%                      Architecture Level
+% ==================================================================
+@inproceedings{SPEED-ISCA2017-Yu,
+    title     = {Scalpel: Customizing {DNN} pruning to the underlying hardware parallelism},
+    author    = {Yu, Jiecao and Lukefahr, Andrew and Palframan, David and Dasika, Ganesh and Das, Reetuparna and Mahlke, Scott},
+    booktitle = isca,
+    pages     = {548--560},
+    year      = {2017},
+}
+@inproceedings{SPEED-CVPR2018-MobileNetV2,
+    title     = {{MobileNetV2}: Inverted residuals and linear bottlenecks},
+    author    = {Sandler, Mark and Howard, Andrew and Zhu, Menglong and Zhmoginov, Andrey and Chen, Liang-Chieh},
+    booktitle = cvpr,
+    pages     = {4510--4520},
+    year      = {2018},
+}
+@inproceedings{SPEED-CVPR2018-ShuffleNet,
+    title     = {{ShuffleNet}: An extremely efficient convolutional neural network for mobile devices},
+    author    = {Zhang, Xiangyu and Zhou, Xinyu and Lin, Mengxiao and Sun, Jian},
+    booktitle = cvpr,
+    pages     = {6848--6856},
+    year      = {2018},
+}
+
 
 
 % ==================================================================
@@ -21,6 +54,13 @@
     author  = {Chetlur, Sharan and Woolley, Cliff and Vandermersch, Philippe and Cohen, Jonathan and Tran, John and Catanzaro, Bryan and Shelhamer, Evan},
     journal = arxiv,
     year    = {2014},
+}
+@inproceedings{SPEED-ICANN2014-Cong,
+    title     = {Minimizing computation in convolutional neural networks},
+    author    = {Cong, Jason and Xiao, Bingjun},
+    booktitle = icann,
+    pages     = {281--290},
+    year      = {2014},
 }
 @article{SPEED-arXiv2017-Shi,
     title   = {Speeding up Convolutional Neural Networks By Exploiting the Sparsity of Rectifier Units},
@@ -105,12 +145,12 @@
     booktitle = iclr,
     year      = {2016},
 }
-@inproceedings{SPEED-ISCA2016-Han,
-    title     = {{EIE}: efficient inference engine on compressed deep neural network},
-    author    = {Han, Song and Liu, Xingyu and Mao, Huizi and Pu, Jing and Pedram, Ardavan and Horowitz, Mark A. and Dally, William J.},
-    booktitle = isca,
-    pages     = {243--254},
-    year      = {2016},
+@inproceedings{SPEED-ICML2015-Chen,
+    title     = {Compressing neural networks with the hashing trick},
+    author    = {Chen, Wenlin and Wilson, James and Tyree, Stephen and Weinberger, Kilian and Chen, Yixin},
+    booktitle = icml,
+    pages     = {2285--2294},
+    year      = {2015}
 }
 @inproceedings{SPEED-NIPS2016-Alvarez,
     title     = {Learning the number of neurons in deep networks},
@@ -128,6 +168,12 @@
 @inproceedings{SPEED-ICLR2017-Li,
     title     = {Pruning filters for efficient convnets},
     author    = {Li, Hao and Kadav, Asim and Durdanovic, Igor and Samet, Hanan and Graf, Hans Peter},
+    booktitle = iclr,
+    year      = {2017},
+}
+@inproceedings{SPEED-ICLR2017-Molchanov,
+    title     = {Pruning convolutional neural networks for resource efficient inference},
+    author    = {Molchanov, Pavlo and Tyree, Stephen and Karras, Tero and Aila, Timo and Kautz, Jan},
     booktitle = iclr,
     year      = {2017},
 }
@@ -170,12 +216,26 @@
   pages     = {662--677},
   year      = {2016}
 }
+@inproceedings{SPEED-CVPR2017-Mao,
+    title     = {Exploring the granularity of sparsity in convolutional neural networks},
+    author    = {Mao, Huizi and Han, Song and Pool, Jeff and Li, Wenshuo and Liu, Xingyu and Wang, Yu and Dally, William J},
+    booktitle = cvpr,
+    pages     = {13--20},
+    year      = {2017},
+}
 @inproceedings{SPEED-DATE2017-Razlighi,
     title     = {{LookNN}: Neural network with no multiplication}, 
     author    = {M.~S.~Razlighi and M.~Imani and F.~Koushanfar and T.~Rosing}, 
     booktitle = date, 
     year      = {2017}, 
     pages     = {1775-1780}, 
+}
+@inproceedings{SPEED-ICCV2017-Liu,
+    title     = {Learning efficient convolutional networks through network slimming},
+    author    = {Liu, Zhuang and Li, Jianguo and Shen, Zhiqiang and Huang, Gao and Yan, Shoumeng and Zhang, Changshui},
+    booktitle = iccv,
+    pages     = {2736--2744},
+    year      = {2017},
 }
 @inproceedings{SPEED-ISCA2017-Yu,
     title     = {Scalpel: Customizing dnn pruning to the underlying hardware parallelism},
@@ -326,3 +386,16 @@
     year      = {2015},
     pages     = {442--450},
 }
+
+% ==================================================================
+%                      Hardware Level
+% ==================================================================
+% ====== ASIC
+@inproceedings{SPEED-ISCA2016-Han,
+    title     = {{EIE}: efficient inference engine on compressed deep neural network},
+    author    = {Han, Song and Liu, Xingyu and Mao, Huizi and Pu, Jing and Pedram, Ardavan and Horowitz, Mark A and Dally, William J},
+    booktitle = isca,
+    pages     = {243--254},
+    year      = {2016},
+}
+
