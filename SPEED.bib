@@ -48,6 +48,7 @@
 % ==================================================================
 %                      Accurate Speedup 
 % ==================================================================
+% ==== dense convolution
 %{{{
 @article{SPEED-arXiv2014-Chetlur,
     title   = {{cuDNN}: Efficient primitives for deep learning},
@@ -74,7 +75,16 @@
     booktitle = icml,
     year      = {2017},
 }
+@inproceedings{SPEED-ASPDAC2017-Mishra,
+    title     = {Fine-grained accelerators for sparse machine learning workloads},
+    author    = {Mishra, Asit K. and Nurvitadhi, Eriko and Venkatesh, Ganesh and Pearce, Jonathan and Marr, Debbie},
+    booktitle = aspdac,
+    pages     = {635--640},
+    year      = {2017},
+}
+%}}}
 % ==== sparse convolution
+%{{{
 @inproceedings{SPEED-CVPR2015-Liu,
     title     = {Sparse Convolutional Neural Networks},
     author    = {Liu, Baoyuan and Wang, Min and Foroosh, Hassan and Tappen, Marshall and Penksy, Marianna},
@@ -216,10 +226,10 @@
   pages     = {662--677},
   year      = {2016}
 }
-@inproceedings{SPEED-CVPR2017-Mao,
+@inproceedings{SPEED-CVPRW2017-Mao,
     title     = {Exploring the granularity of sparsity in convolutional neural networks},
     author    = {Mao, Huizi and Han, Song and Pool, Jeff and Li, Wenshuo and Liu, Xingyu and Wang, Yu and Dally, William J},
-    booktitle = cvpr,
+    booktitle = {CVPR Workshop},
     pages     = {13--20},
     year      = {2017},
 }
@@ -379,12 +389,60 @@
     year={2018},
 }
 % ==== Quantization
+@inproceedings{SPEED-ICML2015-Gupta,
+    title     = {Deep learning with limited numerical precision},
+    author    = {Gupta, Suyog and Agrawal, Ankur and Gopalakrishnan, Kailash and Narayanan, Pritish},
+    booktitle = icml,
+    pages     = {1737--1746},
+    year      = {2015},
+}
+@inproceedings{SPEED-ICML2016-Lin,
+    title     = {Fixed point quantization of deep convolutional networks},
+    author    = {Lin, Darryl and Talathi, Sachin and Annapureddy, Sreekanth},
+    booktitle = icml,
+    pages     = {2849--2858},
+    year      = {2016},
+}
+@inproceedings{SPEED-ICLR2018-Khoram,
+  title     = {Adaptive quantization of neural networks},
+  author    = {Khoram, Soroosh and Li, Jing},
+  booktitle = iclr,
+  year      = {2018},
+}
+% ==== Binarized / Ternary 
 @inproceedings{SPEED-NIPS2015-Novikov,
     title     = {Tensorizing Neural Networks},
     author    = {Novikov, Alexander and Podoprikhin, Dmitry and Osokin, Anton and Vetrov, Dmitry},
     booktitle = nips,
     year      = {2015},
     pages     = {442--450},
+}
+@inproceedings{SPEED-ECCV2016-XNOR-NET,
+    title     = {{XNOR-NET}: Imagenet classification using binary convolutional neural networks},
+    author    = {Rastegari, Mohammad and Ordonez, Vicente and Redmon, Joseph and Farhadi, Ali},
+    booktitle = eccv,
+    pages     = {525--542},
+    year      = {2016},
+}
+@inproceedings{SPEED-FPGA2017-Zhao,
+    title     = {Accelerating binarized convolutional neural networks with software-programmable {FPGAs}},
+    author    = {Zhao, Ritchie and Song, Weinan and Zhang, Wentao and Xing, Tianwei and Lin, Jeng-Hau and Srivastava, Mani and Gupta, Rajesh and Zhang, Zhiru},
+    booktitle = fpga,
+    pages     = {15--24},
+    year      = {2017},
+}
+@inproceedings{SPEED-DAC2017-Kim,
+    author    = {Kim, Hyeonuk and Sim, Jaehyeong and Choi, Yeongjae and Kim, Lee-Sup},
+    title     = {A Kernel Decomposition Architecture for Binary-weight Convolutional Neural Networks},
+    booktitle = dac,
+    pages     = {60:1--60:6},
+    year      = {2017},
+}
+@inproceedings{SPEED-ICLR2017-Zhu,
+  title     = {Trained ternary quantization},
+  author    = {Zhu, Chenzhuo and Han, Song and Mao, Huizi and Dally, William J.},
+  booktitle = iclr,
+  year      = {2017},
 }
 
 % ==================================================================
