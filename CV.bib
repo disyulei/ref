@@ -1,9 +1,24 @@
 % == this file is about computer vision (CV)
 
+% =========================================
+%          Summary: CV 
+% =========================================
+@article{CV-IJCV2010-VOC,
+    title     = {The pascal visual object classes ({VOC}) challenge},
+    author    = {Everingham, Mark and Van Gool, Luc and Williams, Christopher KI and Winn, John and Zisserman, Andrew},
+    journal   = ijcv,
+    volume    = {88},
+    number    = {2},
+    pages     = {303--338},
+    year      = {2010},
+    publisher = {Springer},
+}
+
 
 % =========================================
 %        Image Classification 
 % =========================================
+%{{{
 @article{IMGC-TR2009-Krizhevsky,
 	title     = {{Learning Multiple Layers of Features from Tiny Images}},
 	author    = {Krizhevsky, Alex and Hinton, Geoffrey},
@@ -124,11 +139,54 @@
     journal = arxiv,
     year    = {2017},
 }
+@inproceedings{IMGC-CVPR2018-SENet,
+    title     = {Squeeze-and-excitation networks},
+    author    = {Hu, Jie and Shen, Li and Sun, Gang},
+    booktitle = cvpr,
+    pages     = {7132--7141},
+    year      = {2018},
+}
+@inproceedings{IMGC-ECCV2018-CBAM,
+    title     = {{CBAM}: Convolutional block attention module},
+    author    = {Woo, Sanghyun and Park, Jongchan and Lee, Joon-Young and So Kweon, In},
+    booktitle = eccv,
+    pages     = {3--19},
+    year      = {2018},
+}
+%}}}
+% === material recognition
+@inproceedings{IMGC-CVPR2017-DeepTEN,
+    title     = {Deep {TEN}: Texture encoding network},
+    author    = {Zhang, Hang and Xue, Jia and Dana, Kristin},
+    booktitle = cvpr,
+    pages     = {708--717},
+    year      = {2017},
+}
+
+
+% =========================================
+%         Summary: Object Detection 
+% =========================================
+@inproceedings{OD-CVPR2012-Geiger,
+  title     = {Are we ready for autonomous driving? the kitti vision benchmark suite},
+  author    = {Geiger, Andreas and Lenz, Philip and Urtasun, Raquel},
+  booktitle = cvpr,
+  pages     = {3354--3361},
+  year      = {2012},
+}
+
 
 
 % =========================================
 %          Object Detection
 % =========================================
+%{{{
+@inproceedings{OD-ICLR2014-OverFeat,
+  title     = {{OverFeat}: Integrated recognition, localization and detection using convolutional networks},
+  author    = {Sermanet, Pierre and Eigen, David and Zhang, Xiang and Mathieu, Micha{\"e}l and Fergus, Rob and LeCun, Yann},
+  booktitle = iclr,
+  year      = {2014},
+}
 @inproceedings{OD-CVPR2014-RCNN,
     title     = {Rich feature hierarchies for accurate object detection and semantic segmentation},
     author    = {Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra},
@@ -157,6 +215,13 @@
     pages     = {21--37},
     year      = {2016},
 }
+@inproceedings{OD-CVPR2016-YOLO,
+  title     = {You only look once: Unified, real-time object detection},
+  author    = {Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+  booktitle = cvpr,
+  pages     = {779--788},
+  year      = {2016},
+}
 @article{OD-TPAMI2017-FasterRCNN,
     title     = {{Faster R-CNN}: towards real-time object detection with region proposal networks},
     author    = {Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
@@ -166,13 +231,39 @@
     year      = {2017},
     publisher = {IEEE},
 }
+@inproceedings{OD-CVPR2017-FPN,
+  title     = {Feature pyramid networks for object detection},
+  author    = {Lin, Tsung-Yi and Doll{\'a}r, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
+  booktitle = cvpr,
+  pages     = {2117--2125},
+  year      = {2017},
+}
+@inproceedings{OD-ICCV2017-RetinaNet,
+    title     = {Focal loss for dense object detection},
+    author    = {Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Doll{\'a}r, Piotr},
+    booktitle = iccv,
+    pages     = {2980--2988},
+    year      = {2017},
+}
+%}}}
 
 
+% =========================================
+%          Super Resolution 
+% =========================================
+@inproceedings{SR-CVPR2016-Shi,
+	title     = {Real-time single image and video super-resolution using an efficient sub-pixel convolutional neural network},
+	author    = {Shi, Wenzhe and Caballero, Jose and Husz{\'a}r, Ferenc and Totz, Johannes and Aitken, Andrew P and Bishop, Rob and Rueckert, Daniel and Wang, Zehan},
+	booktitle = cvpr,
+	pages     = {1874--1883},
+	year      = {2016},
+}
 
 
 % =========================================
 %           face verification
 % =========================================
+%{{{
 @inproceedings{FACE-CVPR2012-Huang,
     title     = {Learning hierarchical representations for face verification with convolutional deep belief networks},
     author    = {Huang, Gary B. and Lee, Honglak and Learned-Miller, Erik},
@@ -202,7 +293,88 @@
     year      = {2016},
     abstract  = {deep learning basis},
 }
+%}}}
 
 
+% =========================================
+%             Attention          
+% =========================================
+@inproceedings{ATTN-NIPS2017-Vaswani,
+    title     = {Attention is all you need},
+    author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+    booktitle = nips,
+    pages     = {5998--6008},
+    year      = {2017},
+}
+@inproceedings{ATTN-NIPS2015-Chorowski,
+    title     = {Attention-based models for speech recognition},
+    author    = {Chorowski, Jan K and Bahdanau, Dzmitry and Serdyuk, Dmitriy and Cho, Kyunghyun and Bengio, Yoshua},
+    booktitle = nips,
+    pages     = {577--585},
+    year      = {2015},
+}
+@inproceedings{ATTN-NAACL2016-Yang,
+    title     = {Hierarchical attention networks for document classification},
+    author    = {Yang, Zichao and Yang, Diyi and Dyer, Chris and He, Xiaodong and Smola, Alex and Hovy, Eduard},
+    booktitle = naacl,
+    pages     = {1480--1489},
+    year      = {2016},
+}
+@inproceedings{ATTN-ACL2017-Cui,
+    title     = {Attention-over-attention neural networks for reading comprehension},
+    author    = {Cui, Yiming and Chen, Zhipeng and Wei, Si and Wang, Shijin and Liu, Ting and Hu, Guoping},
+    booktitle = acl,
+    year      = {2017},
+}
+@inproceedings{ATTN-CVPR2018-Wang,
+    title     = {Non-local neural networks},
+    author    = {Wang, Xiaolong and Girshick, Ross and Gupta, Abhinav and He, Kaiming},
+    booktitle = cvpr,
+    pages     = {7794--7803},
+    year      = {2018},
+}
+
+
+% =========================================
+%           Point Cloud
+% =========================================
+@article{PntCld-arXiv2018-PointPillars,
+    title   = {{PointPillars}: Fast encoders for object detection from point clouds},
+    author  = {Lang, Alex H and Vora, Sourabh and Caesar, Holger and Zhou, Lubing and Yang, Jiong and Beijbom, Oscar},
+    journal = {arXiv preprint arXiv:1812.05784},
+    year    = {2018},
+}
+@inproceedings{PntCld-CVPR2017-PointNet,
+    title     = {{PointNet}: Deep Learning on Point Sets for {3D} Classification and Segmentation},
+    author    = {Qi, Charles R and Su, Hao and Mo, Kaichun and Guibas, Leonidas J},
+    booktitle = cvpr,
+    year      = {2017},
+}
+@inproceedings{PntCld-NIPS2017-DeepSets,
+    title     = {Deep Sets},
+    author    = {Zaheer, Manzil and Kottur, Satwik and Ravanbakhsh, Siamak and Poczos, Barnabas and Salakhutdinov, Ruslan R and Smola, Alexander J},
+    booktitle = nips,
+    pages     = {3391--3401},
+    year      = {2017},
+}
+@inproceedings{PntCld-NIPS2017-pOINTnET++,
+    title     = {{PointNet++}: Deep Hierarchical Feature Learning on Point Sets in a Metric Space},
+    author    = {Qi, Charles R and Yi, Li and Su, Hao and Guibas, Leonidas J},
+    booktitle = nips,
+    year      = {2017},
+}
+@inproceedings{PntCld-CVPR2018-SO-Net,
+    title     = {{SO-Net}: Self-Organizing Network for Point Cloud Analysis},
+    author    = {Li, Jiaxin and Chen, Ben M and Lee, Gim Hee},
+    booktitle = cvpr,
+    year      = {2018},
+}
+@incollection{PntCld-NIPS2018-PointCNN,
+    title     = {{PointCNN}: Convolution On {X}-Transformed Points},
+    author    = {Li, Yangyan and Bu, Rui and Sun, Mingchao and Wu, Wei and Di, Xinhan and Chen, Baoquan},
+    booktitle = nips,
+    pages     = {820--830},
+    year      = {2018},
+}
 
 

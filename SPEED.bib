@@ -114,12 +114,19 @@
     year     = {2018},
 }
 %}}}
+% ==== FFT/DCT based
+@inproceedings{SPEED-ICLR015-Vasilache,
+    title     = {Fast convolutional nets with fbfft: A {GPU} performance evaluation},
+    author    = {Vasilache, Nicolas and Johnson, Jeff and Mathieu, Michael and Chintala, Soumith and Piantino, Serkan and LeCun, Yann},
+    booktitle = iclr,
+    year      = {2015},
+}
 
 
 % ==================================================================
-%                   Non-accurate Speedup 
+%                    Pruning 
 % ==================================================================
-% ==== Pruning / Hashing
+% ==== Sparse
 %{{{
 @inproceedings{SPEED-NIPS1990-LeCun,
   title     = {Optimal brain damage},
@@ -275,13 +282,6 @@
     year      = {2018},
 }
 %}}}
-% ==== FFT/DCT based
-@inproceedings{SPEED-ICLR015-Vasilache,
-    title     = {Fast convolutional nets with fbfft: A {GPU} performance evaluation},
-    author    = {Vasilache, Nicolas and Johnson, Jeff and Mathieu, Michael and Chintala, Soumith and Piantino, Serkan and LeCun, Yann},
-    booktitle = iclr,
-    year      = {2015},
-}
 % ==== Low Rank Approximation (LR) 
 %{{{
 @inproceedings{SPEED-BMVC2014-Jaderberg,
@@ -383,12 +383,16 @@
     year      = {2017}
 }
 @article{SPEED-arXiv2018-Ma,
-    title={A Unified Approximation Framework for Non-Linear Deep Neural Networks},
-    author={Ma, Yuzhe and Chen, Ran and Li, Wei and Shang, Fanhua and Yu, Wenjian and Cho, Minsik and Yu, Bei},
-    journal={arXiv preprint arXiv:1807.10119},
-    year={2018},
+    title   = {A Unified Approximation Framework for Non-Linear Deep Neural Networks},
+    author  = {Ma, Yuzhe and Chen, Ran and Li, Wei and Shang, Fanhua and Yu, Wenjian and Cho, Minsik and Yu, Bei},
+    journal = {arXiv preprint arXiv:1807.10119},
+    year    = {2018},
 }
-% ==== Quantization
+
+
+% ==================================================================
+%                      Quantization 
+% ==================================================================
 @inproceedings{SPEED-ICML2015-Gupta,
     title     = {Deep learning with limited numerical precision},
     author    = {Gupta, Suyog and Agrawal, Ankur and Gopalakrishnan, Kailash and Narayanan, Pritish},
