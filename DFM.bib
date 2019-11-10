@@ -8,8 +8,8 @@
     howpublished = "\url{http://www.itrs.net}",
 }
 @misc{KLAYOUT,
-	title        = {{KLAYOUT}},
-	howpublished = "\url{https://www.klayout.de}",
+    title        = {{KLAYOUT}},
+    howpublished = "\url{https://www.klayout.de}",
 }
 @misc{DFM-USP2014-Robles,
     title  = {Integrated circuit layout design methodology with process variation bands},
@@ -928,15 +928,35 @@
 %                   OPC
 % ===================================================
 % === OPC summary
+@mastersthesis{OPC-MS2011-Subramany,
+    title  = {{GPU} based lithography simulation and {OPC}},
+    author = {Subramany, Lokesh},
+    year   = {2011},
+    school = {University of Massachusetts Amherst},
+}
 @article{OPC-JJAS2016-Bisschop,
-    title={Optical proximity correction: a cross road of data flows},
-    author={De Bisschop, Peter},
-    journal={Japanese Journal of Applied Physics},
-    volume={55},
-    number={6S1},
-    pages={06GA01},
-    year={2016},
-    publisher={IOP Publishing},
+    title     = {Optical proximity correction: a cross road of data flows},
+    author    = {De Bisschop, Peter},
+    journal   = {Japanese Journal of Applied Physics},
+    volume    = {55},
+    number    = {6S1},
+    pages     = {06GA01},
+    year      = {2016},
+    publisher = {IOP Publishing},
+}
+@inproceedings{OPC-SPIE2017-Hooker,
+    title     = {{ILT} optimization of {EUV} masks for sub-7nm lithography},
+    author    = {Hooker, Kevin and Kuechler, Bernd and Kazarian, Aram and Xiao, Guangming and Lucas, Kevin},
+    booktitle = spie,
+    volume    = {10446},
+    year      = {2017},
+}
+@inproceedings{OPC-SPIE2019-Kyle,
+    title     = {{EUV} mask synthesis with rigorous {ILT} for process window improvement},
+    author    = {Braam, Kyle and Selinidis, Kosta and Hoppe, Wolfgang and Cai, Hongyuan and Xiao, Guangming},
+    booktitle = spie,
+    volume    = {10962},
+    year      = {2019},
 }
 % === model-based
 %{{{
@@ -1138,6 +1158,14 @@
     pages     = {49--54},
     year      = {2016},
 }
+@article{OPC-JMEE2017-Ma,
+    title   = {A fast and manufacture-friendly optical proximity correction based on machine learning},
+    author  = {Ma, Xu and Jiang, Shangliang and Wang, Jie and Wu, Bingliang and Song, Zhiyang and Li, Yanqiu},
+    journal = jmee,
+    volume  = {168},
+    pages   = {15--26},
+    year    = {2017},
+}
 %}}}
 % === ILT
 %{{{
@@ -1167,6 +1195,13 @@
     number     = {4},
     pages      = {045601:1--045601:9},
     year       = {2010},
+}
+@inproceedings{OPC-SPIE2010-Torunoglu,
+    title     = {A {GPU}-based full-chip inverse lithography solution for random patterns},
+    author    = {Torunoglu, Ilhami and Karakas, Ahmet and Elsen, Erich and Andrus, Curtis and Bremen, Brandon and Dimitrov, Boris and Ungar, Jeffrey},
+    booktitle = spie,
+    pages     = {764115},
+    year      = {2010},
 }
 @inproceedings{OPC-DATE2011-Liu,
     title     = {An efficient mask optimization method based on homotopy continuation technique},
@@ -1443,10 +1478,10 @@
     year      = {2006}, 
 }
 @inproceedings{CMP-EDSSC2007-Nan, 
-	title     = {Impact of Metal Dummy Fills on the Performance of {CMOS} Inductors}, 
-	author    = {L. Nan and K. Mouthaan and Y. Xiong and J. Shi and S. C. Rustagi and B. Ooi}, 
-	year      = {2007}, 
-	booktitle = {Prof.~EDSSC},
+    title     = {Impact of Metal Dummy Fills on the Performance of {CMOS} Inductors}, 
+    author    = {L. Nan and K. Mouthaan and Y. Xiong and J. Shi and S. C. Rustagi and B. Ooi}, 
+    year      = {2007}, 
+    booktitle = {Prof.~EDSSC},
 }
 @inproceedings{CMP-VMIC2007-Kahng,
     title     = {Performance-aware {CMP} fill pattern optimization},
@@ -1478,11 +1513,11 @@
     year      = {2007},
 }
 @inproceedings{CMP-ISQED2005-Kurokawa,
-	title     = {Dummy filling methods for reducing interconnect capacitance and number of fills},
-	author    = {A. Kurokawa and T. Kanamoto and T. Ibe and A. Kasebe and Chang Wei Fong and T. Kage and Y. Inoue and H. Masuda},
-	booktitle = isqed,
-	pages     = {586--591}, 
-	year      = {2005}, 
+    title     = {Dummy filling methods for reducing interconnect capacitance and number of fills},
+    author    = {A. Kurokawa and T. Kanamoto and T. Ibe and A. Kasebe and Chang Wei Fong and T. Kage and Y. Inoue and H. Masuda},
+    booktitle = isqed,
+    pages     = {586--591}, 
+    year      = {2005}, 
 }
 @article{CMP-TCAD2008-Kahng,
     title     = {{CMP} fill synthesis: A survey of recent studies},
@@ -1963,84 +1998,6 @@
   year      = {2013},
 }
 %}}}
-% ==== Layout Fracturing
-%{{{
-@inproceedings{EBL-SPIE2004-Kahng,
-  title     = {Yield-and Cost-Driven Fracturing for Variable Shaped-Beam Mask Writing},
-  author    = {Andrew B.~Kahng and Xu Xu and Alex Zelikovsky},
-  booktitle = spie,
-  volume    = {5567},
-  year      = {2004},
-}
-@inproceedings{EBL-SPIE2006-Kahng,
-  title     = {Fast Yield-Driven Fracture for Variable Shaped-Beam Mask Writing },
-  author    = {Andrew B.~Kahng and Xu Xu and Alex Zelikovsky},
-  booktitle = spie,
-  volume    = {6283},
-  year      = {2006},
-}
-@inproceedings{EBL-SPIE2008-Dillon,
-  title     = {Case Study: The Impact of {VSB} Fracturing},
-  author    = {Brian Dillon and Tim Norris},
-  booktitle = spie,
-  volume    = {7028},
-  year      = {2008},
-}
-@inproceedings{EBL-SPIE2011-Ma,
-  title     = {A Cost-Driven Fracture Heuristics to Minimize Sliver Length},
-  author    = {Xu Ma and Shangliang Jiang and Avideh Zakhor},
-  booktitle = spie,
-  volume    = {7973},
-  year      = {2011},
-}
-@inproceedings{EBL-SPIE2011-Jiang,
-  title     = {A recursive cost-based approach to fracturing},
-  author    = {Shangliang Jiang and Xu Ma and Avideh Zakhor},
-  booktitle = spie,
-  volume    = {7973},
-  year      = {2011},
-}
-@inproceedings{EBL-ICCAD2014-Chan,
-  title     = {Benchmarking of Mask Fracturing Heuristics},
-  author    = {Tuck Boon Chan and Puneet Gupta and Kwangsoo Han and Abde Ali Kagalwalla and Andrew B. Kahng and Emile Sahouria},
-  booktitle = iccad,
-  pages     = {246--253},
-  year      = {2014},
-}
-% === following are L-Shape Fracturing
-@inproceedings{EBL-SPIE2010-Sahouria,
-  title     = {Generalization of shot definition for variable shaped e-beam machines for write time reduction},
-  author    = {Emile Sahouria and Amanda Bowhill},
-  booktitle = spie,
-  volume    = {7823},
-  year      = {2010},
-  abstract  = {propose the first L-Shape shot},
-}
-@inproceedings{EBL-SPIE2011-Elayat,
-  title     = {Assessment and comparison of different approaches for mask write time reduction},
-  author    = {A.~Elayat and T.~Lin and E.~Sahouria and S.~F.~Schulze},
-  booktitle = spie,
-  volume    = {8166},
-  year      = {2011},
-}
-@inproceedings{EBL-ASPDAC2013-Yu,
-  title     = {{L-Shape} Based Layout Fracturing for {E-Beam} Lithography},
-  author    = {Bei Yu and Jhih-Rong Gao and David Z.~Pan},
-  booktitle = aspdac,
-  pages     = {249--254},
-  year      = {2013}
-}
-@article{JOG1983-Rourke,
-  title    = {An alternate proof of the rectilinear art gallery theorem},
-  author   = {O'Rourke, Joseph},
-  journal  = {Journal of Geometry},
-  pages    = {118--130},
-  volume   = {21},
-  issue    = {1},
-  year     = {1983},
-  abstract = {LShape fracturing in General Computer Science}
-}
-%}}}
 % ==== Beam-to-Beam Stitching
 %{{{
 @inproceedings{EBL-SPIE2011-Takizawa,
@@ -2125,6 +2082,119 @@
   number  = {2},
   pages   = {189--201},
   year    = {2013},
+}
+%}}}
+
+
+% ===================================================
+%              Mask Fracturing 
+% ===================================================
+@inproceedings{MASK-SPIE2004-Kahng,
+    title     = {Yield-and Cost-Driven Fracturing for Variable Shaped-Beam Mask Writing},
+    author    = {Andrew B.~Kahng and Xu Xu and Alex Zelikovsky},
+    booktitle = spie,
+    volume    = {5567},
+    year      = {2004},
+}
+@inproceedings{MASK-SPIE2006-Kahng,
+    title     = {Fast Yield-Driven Fracture for Variable Shaped-Beam Mask Writing },
+    author    = {Andrew B.~Kahng and Xu Xu and Alex Zelikovsky},
+    booktitle = spie,
+    volume    = {6283},
+    year      = {2006},
+}
+@inproceedings{MASK-SPIE2008-Dillon,
+    title     = {Case Study: The Impact of {VSB} Fracturing},
+    author    = {Brian Dillon and Tim Norris},
+    booktitle = spie,
+    volume    = {7028},
+    year      = {2008},
+}
+@inproceedings{MASK-SPIE2011-Ma,
+    title     = {A Cost-Driven Fracture Heuristics to Minimize Sliver Length},
+    author    = {Xu Ma and Shangliang Jiang and Avideh Zakhor},
+    booktitle = spie,
+    volume    = {7973},
+    year      = {2011},
+}
+@inproceedings{MASK-SPIE2011-Jiang,
+    title     = {A recursive cost-based approach to fracturing},
+    author    = {Shangliang Jiang and Xu Ma and Avideh Zakhor},
+    booktitle = spie,
+    volume    = {7973},
+    year      = {2011},
+}
+% ====== overlapping-rect fracturing
+@inproceedings{MASK-SPIE2011-Chua,
+    title     = {Optimization of mask shot count using {MB-MDP} and lithography simulation},
+    author    = {Chua, Gek Soon and Wang, Wei Long and Choi, Byoung IL and Zou, Yi and Tabery, Cyrus and Bork, Ingo and Nguyen, Tam and Fujimura, Aki},
+    booktitle = spie,
+    volume    = {8166},
+    year      = {2011},
+}
+@inproceedings{MASK-ICCAD2014-Chan,
+    title     = {Benchmarking of Mask Fracturing Heuristics},
+    author    = {Tuck Boon Chan and Puneet Gupta and Kwangsoo Han and Abde Ali Kagalwalla and Andrew B. Kahng and Emile Sahouria},
+    booktitle = iccad,
+    pages     = {246--253},
+    year      = {2014},
+}
+@article{MASK-TCAD2017-Chan,
+    title   = {Benchmarking of Mask Fracturing Heuristics},
+    author  = {T.~{Chan} and P.~{Gupta} and K.~{Han} and A.~A.~{Kagalwalla} and A.~B.~{Kahng}},
+    journal = tcad,
+    volume  = {36},
+    pages   = {170--183},
+    year    = {2017},
+}
+% ====== curvilinear fracturing
+@inproceedings{MASK-SPIE2019-Ryan,
+    title     = {How curvilinear mask patterning will enhance the {EUV} process window: a study using rigorous wafer+ mask dual simulation},
+    author    = {Pearman, Ryan and Ungar, Jeff and Shirali, Nagesh and Shendre, Abishek and Niewczas, Mariusz and Pang, Leo and Fujimura, Aki},
+    booktitle = spie,
+    volume    = {11178},
+    year      ={2019},
+}
+@inproceedings{MASK-SPIE2019-Ryan2,
+    title     = {Enhancing {ILT} process window using curvilinear mask patterning: dual mask-wafer simulation},
+    author    = {Pearman, Ryan and Ungar, P Jeffrey and Shirali, Nagesh and Shendre, Abhishek and Niewczas, Mariusz and Pang, Linyong and Fujimura, Aki},
+    booktitle = spie,
+    volume    = {10961},
+    year      = {2019},
+}
+% ====== L-Shape Fracturing
+%{{{
+@inproceedings{MASK-SPIE2010-Sahouria,
+  title     = {Generalization of shot definition for variable shaped e-beam machines for write time reduction},
+  author    = {Emile Sahouria and Amanda Bowhill},
+  booktitle = spie,
+  volume    = {7823},
+  year      = {2010},
+  abstract  = {propose the first L-Shape shot},
+}
+@inproceedings{MASK-SPIE2011-Elayat,
+  title     = {Assessment and comparison of different approaches for mask write time reduction},
+  author    = {A.~Elayat and T.~Lin and E.~Sahouria and S.~F.~Schulze},
+  booktitle = spie,
+  volume    = {8166},
+  year      = {2011},
+}
+@inproceedings{MASK-ASPDAC2013-Yu,
+  title     = {{L-Shape} Based Layout Fracturing for {E-Beam} Lithography},
+  author    = {Bei Yu and Jhih-Rong Gao and David Z.~Pan},
+  booktitle = aspdac,
+  pages     = {249--254},
+  year      = {2013}
+}
+@article{JOG1983-Rourke,
+  title    = {An alternate proof of the rectilinear art gallery theorem},
+  author   = {O'Rourke, Joseph},
+  journal  = {Journal of Geometry},
+  pages    = {118--130},
+  volume   = {21},
+  issue    = {1},
+  year     = {1983},
+  abstract = {LShape fracturing in General Computer Science}
 }
 %}}}
 
@@ -2524,6 +2594,12 @@
     booktitle = spie,
     volume    = {7636},
     year      = {2010},
+}
+@inproceedings{EUV-SPIE2019-Domnenko,
+    title     = {{EUV} computational lithography using accelerated topographic mask simulation},
+    author    = {Domnenko, Vitaly and K{\"u}chler, Bernd and Hoppe, Wolfgang and Preuninger, J{\"u}rgen and Klostermann, Ulrich and Demmerle, Wolfgang and Bohn, Martin and Kr{\"u}ger, Dietmar and Kim, Ryoung Ryoung Han and Tan, Ling Ee},
+    booktitle = SPIE,
+    year      = {2019},
 }
 %}}}
 % ==== EUV pattern relocation
