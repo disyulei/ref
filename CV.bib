@@ -14,6 +14,27 @@
     publisher = {Springer},
 }
 
+% =========================================
+%       Feature Engineering in CV 
+% =========================================
+@inproceedings{CV-ICCV1999-SIFT,
+    title     = {Object recognition from local scale-invariant features.},
+    author    = {Lowe, David G and others},
+    booktitle = iccv,
+    volume    = {99},
+    number    = {2},
+    pages     = {1150--1157},
+    year      = {1999}
+}
+@inproceedings{CV-CVPR2005-HOG,
+    title     = {Histograms of oriented gradients for human detection},
+    author    = {Dalal, Navneet and Triggs, Bill},
+    booktitle = cvpr,
+    pages     = {886--893},
+    year      = {2005},
+}
+
+
 
 % =========================================
 %        Image Classification 
@@ -167,6 +188,12 @@
     pages     = {3354--3361},
     year      = {2012},
 }
+@article{OD-arXiv2019-MMDetection,
+    title   = {{MMDetection}: Open {MMLab} Detection Toolbox and Benchmark},
+    author  = {Chen, Kai and Wang, Jiaqi and Pang, Jiangmiao and Cao, Yuhang and Xiong, Yu and Li, Xiaoxiao and Sun, Shuyang and Feng, Wansen and Liu, Ziwei and Xu, Jiarui and others},
+    journal = {arXiv preprint arXiv:1906.07155},
+    year    = {2019},
+}
 
 
 
@@ -215,6 +242,13 @@
     pages     = {779--788},
     year      = {2016},
 }
+@inproceedings{OD-CVPR2017-YOLO9000,
+    title     = {{YOLO9000}: better, faster, stronger},
+    author    = {Redmon, Joseph and Farhadi, Ali},
+    booktitle = cvpr,
+    pages     = {7263--7271},
+    year      = {2017},
+}
 @article{OD-TPAMI2017-FasterRCNN,
     title     = {{Faster R-CNN}: towards real-time object detection with region proposal networks},
     author    = {Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
@@ -238,19 +272,124 @@
     pages     = {2980--2988},
     year      = {2017},
 }
+@inproceedings{OD-ICCV2017-Dai,
+    title     = {Deformable convolutional networks},
+    author    = {Dai, Jifeng and Qi, Haozhi and Xiong, Yuwen and Li, Yi and Zhang, Guodong and Hu, Han and Wei, Yichen},
+    booktitle = iccv,
+    pages     = {764--773},
+    year      = {2017},
+}
 @inproceedings{OD-CVPR2018-Hu,
     title     = {Relation Networks for Object Detection},
     author    = {Hu, Han and Gu, Jiayuan and Zhang, Zheng and Dai, Jifeng and Wei, Yichen},
     booktitle = cvpr,
+    pages     = {3588--3597},
     year      = {2018},
-} 
-% === video OD
+}
+@inproceedings{OD-ICCV2019-FCOS,
+    title     = {{FCOS}: Fully Convolutional One-Stage Object Detection},
+    author    = {Tian, Zhi and Shen, Chunhua and Chen, Hao and He, Tong},
+    booktitle = iccv,
+    pages     = {9627--9636},
+    year      = {2019},
+}
+@inproceedings{OD-CVPR2019-Zhuxz,
+    title     = {Deformable {ConvNets} v2: More deformable, better results},
+    author    = {Zhu, Xizhou and Hu, Han and Lin, Stephen and Dai, Jifeng},
+    booktitle = cvpr,
+    pages     = {9308--9316},
+    year      = {2019},
+}
+% ====== anchor-free
+@article{OD-arXiv2015-DenseBox,
+    title   = {{DenseBox}: Unifying landmark localization with end to end object detection},
+    author  = {Huang, Lichao and Yang, Yi and Deng, Yafeng and Yu, Yinan},
+    journal = {arXiv preprint arXiv:1509.04874},
+    year    = {2015},
+}
+@inproceedings{OD-ECCV2018-CornerNet,
+    title     = {{CornerNet}: Detecting objects as paired keypoints},
+    author    = {Law, Hei and Deng, Jia},
+    booktitle = eccv,
+    pages     = {734--750},
+    year      = {2018},
+}
+@inproceedings{OD-CVPR2019-Zhucc,
+    title     = {Feature selective anchor-free module for single-shot object detection},
+    author    = {Zhu, Chenchen and He, Yihui and Savvides, Marios},
+    booktitle = cvpr,
+    year      = {2019},
+}
+@article{OD-arXiv2019-FoveaBox,
+    title   = {{FoveaBox}: Beyond Anchor-based Object Detector},
+    author  = {Kong, Tao and Sun, Fuchun and Liu, Huaping and Jiang, Yuning and Shi, Jianbo},
+    journal = {arXiv preprint arXiv:1904.03797},
+    year    = {2019},
+}
+@inproceedings{OD-CVPR2019-Wang,
+    title     = {Region proposal by guided anchoring},
+    author    = {Wang, Jiaqi and Chen, Kai and Yang, Shuo and Loy, Chen Change and Lin, Dahua},
+    booktitle = cvpr,
+    pages     = {2965--2974},
+    year      = {2019},
+}
+@inproceedings{OD-CVPR2019-Zhou,
+    title     = {Bottom-up object detection by grouping extreme and center points},
+    author    = {Zhou, Xingyi and Zhuo, Jiacheng and Krahenbuhl, Philipp},
+    booktitle = cvpr,
+    pages     = {850--859},
+    year      = {2019},
+}
+@inproceedings{OD-ICCV2019-RepPoints,
+    title     = {{RepPoints}: Point Set Representation for Object Detection},
+    author    = {Yang, Ze and Liu, Shaohui and Hu, Han and Wang, Liwei and Lin, Stephen},
+    booktitle = iccv,
+    pages     = {9657--9666},
+    year      = {2019},
+}
+@inproceedings{OD-ICCV2019-CenterNet,
+    title     = {{CenterNet}: Object Detection with Keypoint Triplets},
+    author    = {Duan, Kaiwen and Bai, Song and Xie, Lingxi and Qi, Honggang and Huang, Qingming and Tian, Qi},
+    booktitle = iccv,
+    pages     = {6569--6578},
+    year      = {2019}
+}
+% ====== video OD
 @inproceedings{OD-ICCV2017-Zhu,
     title     = {Flow-Guided Feature Aggregation for Video Object Detection},
     author    = {Xizhou Zhu, Yujie Wang, Jifeng Dai, Lu Yuan, Yichen Wei},
     booktitle = iccv,
     pages     = {408--417},
     year      = {2017},
+}
+% ====== post processing
+@inproceedings{OD-ICCV2017-Soft-NMS,
+    title     = {{Soft-NMS}--Improving Object Detection With One Line of Code},
+    author    = {Bodla, Navaneeth and Singh, Bharat and Chellappa, Rama and Davis, Larry S},
+    booktitle = iccv,
+    pages     = {5561--5569},
+    year      = {2017},
+}
+@inproceedings{OD-GCPR2016-Hosang,
+    title     = {A convnet for non-maximum suppression},
+    author    = {Hosang, Jan and Benenson, Rodrigo and Schiele, Bernt},
+    booktitle = {{German Conference on Pattern Recognition}},
+    pages     = {192--204},
+    year      = {2016},
+}
+@inproceedings{OD-CVPR2017-Hosang,
+    title     = {Learning non-maximum suppression},
+    author    = {Hosang, Jan and Benenson, Rodrigo and Schiele, Bernt},
+    booktitle = cvpr,
+    pages     = {4507--4515},
+    year      = {2017},
+}
+@inproceedings{OD-CVPR2019-He,
+    title     = {Bounding box regression with uncertainty for accurate object detection},
+    author    = {He, Yihui and Zhu, Chenchen and Wang, Jianren and Savvides, Marios and Zhang, Xiangyu},
+    booktitle = cvpr,
+    pages     = {2888--2897},
+    year      = {2019},
 }
 %}}}
 
@@ -313,6 +452,13 @@
     booktitle = nips,
     pages     = {2204--2212},
     year      = {2014},
+}
+@inproceedings{ATTN-NIPS2015-Jaderberg,
+    title     = {Spatial transformer networks},
+    author    = {Jaderberg, Max and Simonyan, Karen and Zisserman, Andrew and others},
+    booktitle = nips,
+    pages     = {2017--2025},
+    year      = {2015},
 }
 @inproceedings{ATTN-NIPS2017-Vaswani,
     title     = {Attention is all you need},
