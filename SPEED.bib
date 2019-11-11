@@ -48,11 +48,20 @@
     pages     = {6848--6856},
     year      = {2018},
 }
+% ====== group convolution
+@inproceedings{SPEED-CVPR2017-ResNeXt,
+    title     = {Aggregated residual transformations for deep neural networks},
+    author    = {Xie, Saining and Girshick, Ross and Doll{\'a}r, Piotr and Tu, Zhuowen and He, Kaiming},
+    booktitle = cvpr,
+    pages     = {1492--1500},
+    year      = {2017},
+}
 
 
 % =========================================
 %         Dataflow Optimization 
 % =========================================
+%{{{
 @inproceedings{SPEED-MICRO2016-Alwani,
     title     = {Fused-layer {CNN} accelerators},
     author    = {Alwani, Manoj and Chen, Han and Ferdman, Michael and Milder, Peter},
@@ -80,6 +89,7 @@
     booktitle = iccad,
     year      = {2019},
 }
+%}}}
 
 
 % ==================================================================
@@ -231,12 +241,6 @@
     booktitle = iclr,
     year      = {2017},
 }
-@inproceedings{SPEED-ICCV2017-He,
-    author    = {He, Yihui and Zhang, Xiangyu and Sun, Jian},
-    title     = {Channel Pruning for Accelerating Very Deep Neural Networks},
-    booktitle = iccv,
-    year      = {2017},
-}
 @inproceedings{SPEED-ICLR2016-Li,
     title     = {Pruning filters for efficient convnets},
     author    = {Li, Hao and Kadav, Asim and Durdanovic, Igor and Samet, Hanan and Graf, Hans Peter},
@@ -284,13 +288,6 @@
     year      = {2017}, 
     pages     = {1775-1780}, 
 }
-@inproceedings{SPEED-ICCV2017-Liu,
-    title     = {Learning efficient convolutional networks through network slimming},
-    author    = {Liu, Zhuang and Li, Jianguo and Shen, Zhiqiang and Huang, Gao and Yan, Shoumeng and Zhang, Changshui},
-    booktitle = iccv,
-    pages     = {2736--2744},
-    year      = {2017},
-}
 @inproceedings{SPEED-ISCA2017-Yu,
     title     = {Scalpel: Customizing dnn pruning to the underlying hardware parallelism},
     author    = {Yu, Jiecao and Lukefahr, Andrew and Palframan, David and Dasika, Ganesh and Das, Reetuparna and Mahlke, Scott},
@@ -319,6 +316,26 @@
     year      = {2018},
 }
 %}}}
+% ==== Channel Prunning
+@inproceedings{SPEED-ICCV2017-He,
+    author    = {He, Yihui and Zhang, Xiangyu and Sun, Jian},
+    title     = {Channel Pruning for Accelerating Very Deep Neural Networks},
+    booktitle = iccv,
+    year      = {2017},
+}
+@inproceedings{SPEED-ICCV2017-Liu,
+    title     = {Learning efficient convolutional networks through network slimming},
+    author    = {Liu, Zhuang and Li, Jianguo and Shen, Zhiqiang and Huang, Gao and Yan, Shoumeng and Zhang, Changshui},
+    booktitle = iccv,
+    pages     = {2736--2744},
+    year      = {2017}
+}
+@inproceedings{SPEED-ICLR2018-Ye,
+    title     = {Rethinking the smaller-norm-less-informative assumption in channel pruning of convolution layers},
+    author    = {Ye, Jianbo and Lu, Xin and Lin, Zhe and Wang, James Z},
+    booktitle = iclr,
+    year      = {2018}
+}
 % ==== Low Rank Approximation (LR) 
 %{{{
 @inproceedings{SPEED-BMVC2014-Jaderberg,
@@ -355,7 +372,7 @@
     year      = {2015},
 }
 @inproceedings{SPEED-ICLR2015-Lebedev,
-    title     = {Speeding-up convolutional neural networks using fine-tuned cp-decomposition},
+    title     = {Speeding-up convolutional neural networks using fine-tuned {CP}-decomposition},
     author    = {Lebedev, Vadim and Ganin, Yaroslav and Rakhuba, Maksim and Oseledets, Ivan and Lempitsky, Victor},
     booktitle = iclr,
     year      = {2015},

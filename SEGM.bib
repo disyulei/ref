@@ -38,6 +38,51 @@
 %          Semantic Segmentation 
 % =========================================
 %{{{
+@article{SEGM-TPAMI2011-Liu,
+    title   = {{SIFT Flow}: Dense Correspondence across Scenes and Its Applications},
+    author  = {Liu, Ce and Yuen, Jenny and Torralba, Antonio},
+    journal = tpami,
+    volume  = {33},
+    number  = {5},
+    pages   = {978--994},
+    year    = {2011},
+}
+@article{SEGM-TPAMI2013-Farabet,
+    title   = {Learning Hierarchical Features for Scene Labeling},
+    author  = {Farabet, Clement and Couprie, Camille and Najman, Laurent and LeCun, Yann},
+    journal = tpami,
+    volume  = {35},
+    number  = {8},
+    pages   = {1915--1929},
+    year    = {2013},
+}
+@inproceedings{SEGM-CVPR2013-Tighe,
+    title     = {Finding Things: Image Parsing with Regions and Per-Exemplar Detectors},
+    author    = {Tighe, Joseph and Lazebnik, Svetlana},
+    booktitle = cvpr,
+    pages     = {3001--3008},
+    year      = {2013},
+}
+@inproceedings{SEGM-CVPR2014-Yang,
+    title     = {Context Driven Scene Parsing with Attention to Rare Classes},
+    author    = {Yang, Jimei and Price, Brian and Cohen, Scott and Yang, Ming Hsuan},
+    booktitle = cvpr,
+    pages     = {3294--3301},
+    year      = {2014},
+}
+@inproceedings{SEGM-ICML2014-Pinheiro,
+    title     = {Recurrent Convolutional Neural Networks for Scene Parsing},
+    author    = {Pinheiro, Pedro H.~O. and Collobert, Ronan},
+    booktitle = icml,
+    pages     = {82--90},
+    year      = {2014},
+}
+@inproceedings{SEGM-NIPS2014-Sharma,
+    title     = {Recursive context propagation network for semantic scene labeling},
+    author    = {Abhishek Sharma and Oncel Tuzel and Ming-Yu Liu},
+    booktitle = nips,
+    year      = {2014},
+}
 @inproceedings{SEGM-ICCV2015-BoxSup,
     title     = {{BoxSup}: Exploiting bounding boxes to supervise convolutional networks for semantic segmentation},
     author    = {Dai, Jifeng and He, Kaiming and Sun, Jian},
@@ -308,7 +353,7 @@
     pages     = {603--612},
     year      = {2019},
 }
-@inproceedings{SEGM-ICCV2019-AsymmetricNL,
+@inproceedings{SEGM-ICCV2019-AsymNL,
     author    = {Zhu, Zhen and Xu, Mengde and Bai, Song and Huang, Tengteng and Bai, Xiang},
     title     = {Asymmetric Non-Local Neural Networks for Semantic Segmentation},
     booktitle = iccv,
@@ -322,80 +367,12 @@
     pages     = {3562--3572},
     year      = {2019},
 }
-
-% ==== following are to classify
-@article{SEGM-yang2017breaking,
-  title       = {Breaking the softmax bottleneck: A high-rank RNN language model},
-  author      = {Yang, Zhilin and Dai, Zihang and Salakhutdinov, Ruslan and Cohen, William W},
-  journal     = {arXiv preprint arXiv:1711.03953},
-  year        = {2017}
-}
-@article{Liu2011SIFT,
-  title       = {SIFT Flow: Dense Correspondence across Scenes and Its Applications},
-  author      = {Liu, Ce and Yuen, Jenny and Torralba, Antonio},
-  journal     = tpami,
-  volume      = {33},
-  number      = {5},
-  pages       = {978-994},
-  year        = {2011},
-}
-@article{SEGM-kolda2009tensor,
-  title       = {Tensor decompositions and applications},
-  author      = {Kolda, Tamara G and Bader, Brett W},
-  journal     = {SIAM review},
-  volume      = {51},
-  number      = {3},
-  pages.      = {455--500},
-  year        = {2009},
-  publisher   = {SIAM}
-}
-@inproceedings{Tighe2013Finding,
-  title       = {Finding Things: Image Parsing with Regions and Per-Exemplar Detectors},
-  author      = {Tighe, Joseph and Lazebnik, Svetlana},
-  booktitle   = cvpr,
-  year        = {2013},
-}
-@article{Farabet2013Learning,
-  title       = {Learning Hierarchical Features for Scene Labeling},
-  author      = {Farabet, Clement and Couprie, Camille and Najman, Laurent and LeCun, Yann},
-  journal     = tpami,
-  volume      = {35},
-  number      = {8},
-  pages       = {1915-1929},
-  year        = {2013},
-}
-@inproceedings{Pinheiro2014Recurrent,
-  title       = {Recurrent Convolutional Neural Networks for Scene Parsing},
-  author      = {Pinheiro, Pedro H. O. and Collobert, Ronan},
-  booktitle   = icml,
-  year        = {2014},
-}
-
-@inproceedings{Abhishek2014Recursive,
-  title       = {Recursive context propagation network for semantic scene labeling},
-  author      = {Abhishek Sharma and Oncel Tuzel and Ming-Yu Liu},
-  booktitle   = nips,
-  year        = {2014},
-}
-
-@inproceedings{Yang2014Context,
-  title       = {Context Driven Scene Parsing with Attention to Rare Classes},
-  author      = {Yang, Jimei and Price, Brian and Cohen, Scott and Yang, Ming Hsuan},
-  booktitle   = cvpr,
-  year        = {2014},
-}
-@article{zhang2019latentgnn,
-  title={LatentGNN: Learning Efficient Non-local Relations for Visual Recognition},
-  author={Zhang, Songyang and Yan, Shipeng and He, Xuming},
-  journal={arXiv preprint arXiv:1905.11634},
-  year={2019}
-}
-@inproceedings{BFP_2019_ICCV,
-author = {Ding, Henghui and Jiang, Xudong and Liu, Ai Qun and Thalmann, Nadia Magnenat and Wang, Gang},
-title = {Boundary-Aware Feature Propagation for Scene Segmentation},
-booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
-month = {October},
-year = {2019}
+@inproceedings{SEGM-ICCV2019-BFP,
+    title     = {Boundary-Aware Feature Propagation for Scene Segmentation},
+    author    = {Ding, Henghui and Jiang, Xudong and Liu, Ai Qun and Thalmann, Nadia Magnenat and Wang, Gang},
+    booktitle = iccv,
+    pages     = {6819--6829},
+    year      = {2019},
 }
 %}}}
 
