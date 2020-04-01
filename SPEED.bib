@@ -56,6 +56,20 @@
     pages     = {1492--1500},
     year      = {2017},
 }
+@inproceedings{SPEED-CVPR2018-CondenseNet,
+    title     = {{CondenseNet}: An efficient densenet using learned group convolutions},
+    author    = {Huang, Gao and Liu, Shichen and Van der Maaten, Laurens and Weinberger, Kilian Q},
+    booktitle = cvpr,
+    pages     = {2752--2761},
+    year      = {2018},
+}
+@inproceedings{SPEED-ICCV2019-Zhang,
+    title     = {Differentiable Learning-to-Group Channels via Groupable Convolutional Neural Networks},
+    author    = {Zhang, Zhaoyang and Li, Jingyu and Shao, Wenqi and Peng, Zhanglin and Zhang, Ruimao and Wang, Xiaogang and Luo, Ping},
+    booktitle = iccv,
+    pages     = {3542--3551},
+    year      = {2019}
+}
 
 
 % =========================================
@@ -315,6 +329,13 @@
     pages     = {2319--2325},
     year      = {2018},
 }
+@inproceedings{SPEED-ECCV2018-Zhang,
+    title     = {A systematic {DNN} weight pruning framework using alternating direction method of multipliers},
+    author    = {Zhang, Tianyun and Ye, Shaokai and Zhang, Kaiqi and Tang, Jian and Wen, Wujie and Fardad, Makan and Wang, Yanzhi},
+    booktitle = eccv,
+    pages     = {184--199},
+    year      = {2018}
+}
 %}}}
 % ==== Channel Prunning
 @inproceedings{SPEED-ICCV2017-He,
@@ -322,13 +343,6 @@
     title     = {Channel Pruning for Accelerating Very Deep Neural Networks},
     booktitle = iccv,
     year      = {2017},
-}
-@inproceedings{SPEED-ICCV2017-Liu,
-    title     = {Learning efficient convolutional networks through network slimming},
-    author    = {Liu, Zhuang and Li, Jianguo and Shen, Zhiqiang and Huang, Gao and Yan, Shoumeng and Zhang, Changshui},
-    booktitle = iccv,
-    pages     = {2736--2744},
-    year      = {2017}
 }
 @inproceedings{SPEED-ICLR2018-Ye,
     title     = {Rethinking the smaller-norm-less-informative assumption in channel pruning of convolution layers},
@@ -419,8 +433,16 @@
     booktitle = ijcnn,
     year      = {2018}
 }
+@inproceedings{SPEED-NIPS2018-GroupReduce,
+    title     = {{GroupReduce}: Block-wise low-rank approximation for neural language model shrinking},
+    author    = {Chen, Patrick and Si, Si and Li, Yang and Chelba, Ciprian and Hsieh, Cho-Jui},
+    booktitle = nips,
+    pages     = {10988--10998},
+    year      = {2018},
+}
 %}}}
 % ==== Low rank + Sparse
+%{{{
 @inproceedings{SPEED-CVPR2017-Yu,
     title      = {On compressing deep models by low rank and sparse decomposition},
     author     = {Yu, Xiyu and Liu, Tongliang and Wang, Xinchao and Tao, Dacheng}, 
@@ -428,6 +450,13 @@
     pages      = {7370--7379},
     year       = {2017},
     abstract   = {LRA + sparse},
+}
+@inproceedings{SPEED-ICCV2017-Liu,
+    title     = {Learning efficient convolutional networks through network slimming},
+    author    = {Liu, Zhuang and Li, Jianguo and Shen, Zhiqiang and Huang, Gao and Yan, Shoumeng and Zhang, Changshui},
+    booktitle = iccv,
+    pages     = {2736--2744},
+    year      = {2017},
 }
 @inproceedings{SPEED-NIPS2017-Alvarez,
     title     = {Compression-aware Training of Deep Networks},
@@ -442,6 +471,7 @@
     booktitle = ictai,
     year      = {2019},
 }
+%}}}
 
 
 % ==================================================================
@@ -462,12 +492,21 @@
     year      = {2016},
 }
 @inproceedings{SPEED-ICLR2018-Khoram,
-  title     = {Adaptive quantization of neural networks},
-  author    = {Khoram, Soroosh and Li, Jing},
-  booktitle = iclr,
-  year      = {2018},
+    title     = {Adaptive quantization of neural networks},
+    author    = {Khoram, Soroosh and Li, Jing},
+    booktitle = iclr,
+    year      = {2018},
 }
-% ==== Binarized / Ternary 
+% ====== quantization + pruning
+@inproceedings{SPEED-CVPR2018-CLIP-Q,
+    title     = {{CLIP-Q}: Deep network compression learning by in-parallel pruning-quantization},
+    author    = {Tung, Frederick and Mori, Greg},
+    booktitle = cvpr,
+    pages     = {7873--7882},
+    year      = {2018},
+}
+% ====== Binarized / Ternary 
+%{{{
 @inproceedings{SPEED-NIPS2015-Novikov,
     title     = {Tensorizing Neural Networks},
     author    = {Novikov, Alexander and Podoprikhin, Dmitry and Osokin, Anton and Vetrov, Dmitry},
@@ -497,11 +536,38 @@
     year      = {2017},
 }
 @inproceedings{SPEED-ICLR2017-Zhu,
-  title     = {Trained ternary quantization},
-  author    = {Zhu, Chenzhuo and Han, Song and Mao, Huizi and Dally, William J.},
-  booktitle = iclr,
-  year      = {2017},
+    title     = {Trained ternary quantization},
+    author    = {Zhu, Chenzhuo and Han, Song and Mao, Huizi and Dally, William J.},
+    booktitle = iclr,
+    year      = {2017},
 }
+@inproceedings{SPEED-ICMLW2019-DeepCABAC,
+    title     = {{DeepCABAC}: Context-adaptive binary arithmetic coding for deep neural network compression},
+    author    = {Wiedemann, Simon and Kirchhoffer, Heiner and Matlage, Stefan and Haase, Paul and Marban, Arturo and Marinc, Talmaj and Neumann, David and Osman, Ahmed and Marpe, Detlev and Schwarz, Heiko and others},
+    booktitle = {ICML Workshop},
+    year      = {2019},
+}
+%}}}
+
+
+% ==================================================================
+%                    Distill Learning 
+% ==================================================================
+@inproceedings{SPEED-EMNLP2016-Kim,
+    title     = {Sequence-level knowledge distillation},
+    author    = {Kim, Yoon and Rush, Alexander M},
+    booktitle = emnlp,
+    pages     = {1317--1327},
+    year      = {2016}
+}
+@inproceedings{SPEED-NIPS2017-Chen,
+    title     = {Learning efficient object detection models with knowledge distillation},
+    author    = {Chen, Guobin and Choi, Wongun and Yu, Xiang and Han, Tony and Chandraker, Manmohan},
+    booktitle = nips,
+    pages     = {742--751},
+    year      = {2017},
+}
+
 
 % ==================================================================
 %                      Hardware Level
