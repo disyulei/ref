@@ -1,5 +1,39 @@
+% ===========================================
+%              Modeling 
+% ===========================================
+@inproceedings{ARCH-MICRO2009-McPAT,
+    title={{McPAT}: An integrated power, area, and timing modeling framework for multicore and manycore architectures},
+    author={Li, Sheng and Ahn, Jung Ho and Strong, Richard D and Brockman, Jay B and Tullsen, Dean M and Jouppi, Norman P},
+    booktitle=micro,
+    pages={469--480},
+    year={2009}
+}
+@inproceedings{ARCH-ICCAD2011-CACTI,
+    title={{CACTI-P}: Architecture-level modeling for {SRAM}-based structures with advanced leakage reduction techniques},
+    author={Li, Sheng and Chen, Ke and Ahn, Jung Ho and Brockman, Jay B and Jouppi, Norman P},
+    booktitle=iccad,
+    pages={694--701},
+    year={2011},
+    organization={IEEE}
+}
+@inproceedings{ARCH-DAC2019-PRIMAL,
+    title={{PRIMAL}: power inference using machine learning},
+    author={Zhou, Yuan and Ren, Haoxing and Zhang, Yanqing and Keller, Ben and Khailany, Brucek and Zhang, Zhiru},
+    booktitle=dac,
+    pages={1--6},
+    year={2019}
+}
+@inproceedings{ARCH-MLCAD2019-Kumar,
+    title={Learning-Based {CPU} Power Modeling},
+    author={Kumar, Ajay Krishna Ananda and Gerstlauer, Andreas},
+    booktitle=mlcad,
+    pages={1--6},
+    year={2019},
+}
 
-
+% ===========================================
+%          datapath optimization
+% ===========================================
 @inproceedings{ARCH-HPCA1999-Brooks,
     title     = {Dynamically exploiting narrow width operands to improve processor power and performance},
     author    = {Brooks, David and Martonosi, Margaret},
@@ -7,6 +41,12 @@
     pages     = {13--22},
     year      = {1999},
 }
+
+
+% ===========================================
+%               Memory 
+% ===========================================
+% === SRAM / Cache
 @inproceedings{ARCH-MICRO1999-Albonesi,
     title     = {Selective cache ways: On-demand cache resource allocation},
     author    = {Albonesi, David H.},
@@ -14,28 +54,52 @@
     pages     = {248--259},
     year      = {1999},
 }
-@article{ARCH-TVLSI2004-Li,
-    title     = {{DCG}: deterministic clock-gating for low-power microprocessor design},
-    author    = {Li, Hai and Bhunia, Swarup and Chen, Yiran and Roy, Kaushik and Vijaykumar, TN},
-    journal   = tvlsi,
-    volume    = {12},
-    number    = {3},
-    pages     = {245--254},
-    year      = {2004},
-    publisher = {IEEE}
-}
-@inproceedings{ARCH-ISLPED2008-Jairam,
-    title     = {Clock gating for power optimization in {ASIC} design cycle theory \& practice.},
-    author    = {Jairam, Sukumar and Rao, Madhusudan and Srinivas, Jithendra and Vishwanath, Parimala and Udayakumar, H and Rao, Jagdish C},
-    booktitle = islped,
-    pages     = {307--308},
-    year      = {2008},
-}
+
+
+% ===========================================
+%              Dark Silicon 
+% ===========================================
 @inproceedings{ARCH-ISCA2011-Esmaeilzadeh,
     title     = {Dark silicon and the end of multicore scaling},
     author    = {Esmaeilzadeh, Hadi and Blem, Emily and Amant, Renee St and Sankaralingam, Karthikeyan and Burger, Doug},
     booktitle = isca,
     pages     = {365--376},
     year      = {2011},
+}
+
+@inproceedings{xu2017standard,
+  title={Standard cell library design and optimization methodology for ASAP7 PDK},
+  author={Xu, Xiaoqing and Shah, Nishi and Evans, Andrew and Sinha, Saurabh and Cline, Brian and Yeric, Greg},
+  booktitle={2017 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},
+  pages={999--1004},
+  year={2017},
+  organization={IEEE}
+}
+
+% ===========================================
+%              RISC-V 
+% ===========================================
+@inproceedings{RISC-RISCVW2016-PULPino,
+    title={{PULPino: A small single-core RISC-V SoC}},
+    author={Traber, Andreas and Zaruba, Florian and Stucki, Sven and Pullini, Antonio and Haugou, Germain and Flamand, Eric and Gurkaynak, Frank K and Benini, Luca},
+    booktitle={3rd RISCV Workshop},
+    year={2016},
+}
+
+@article{RISC-MM2020-Chipyard,
+    title={Chipyard: Integrated Design, Simulation, and Implementation Framework for Custom SoCs},
+    author={Amid, Alon and Biancolin, David and Gonzalez, Abraham and Grubb, Daniel and Karandikar, Sagar and Liew, Harrison and Magyar, Albert and Mao, Howard and Ou, Albert and Pemberton, Nathan and others},
+    journal=mm,
+    volume={40},
+    number={4},
+    pages={10--21},
+    year={2020},
+    publisher={IEEE}
+}
+@techreport{RISC-TR2015-BOOM,
+  title={The berkeley out-of-order machine ({BOOM}): An industry-competitive, synthesizable, parameterized {RISC-V} processor},
+  author={Asanovic, Krste and Patterson, David A and Celio, Christopher},
+  year={2015},
+  institution={University of California at Berkeley Berkeley United States}
 }
 
