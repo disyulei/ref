@@ -63,6 +63,64 @@
   booktitle = {MOS-AK Workshop},
   year      = {2015},
 }
+@article{DFR-TDMR2011-Yelten,
+  title={Surrogate-model-based analysis of analog circuits—Part {II}: Reliability analysis},
+  author={Yelten, Mustafa Berke and Franzon, Paul D and Steer, Michael B},
+  journal=tdmr,
+  volume={11},
+  number={3},
+  pages={466--473},
+  year={2011},
+  publisher={IEEE}
+}
+@article{DFR-TCAD2017-Sengupta,
+  title={Estimating circuit aging due to {BTI} and {HCI} using ring-oscillator-based sensors},
+  author={Sengupta, Deepashree and Sapatnekar, Sachin S},
+  journal=tcad,
+  volume={36},
+  number={10},
+  pages={1688--1701},
+  year={2017},
+  abstract={path delay with time}
+}
+@inproceedings{DFR-IRPS2019-Christian,
+  title={From Device Aging Physics to Automated Circuit Reliability Sign Off},
+  author={Schl{\"u}nder, Christian and Waschneck, Katja and Rotter, Peter and Lachenmann, Susanne and Reisinger, Hans and Ungar, Franz and Georgakos, Georg},
+  booktitle=irps,
+  pages={1--12},
+  year={2019}
+}
+@article{DFR-MicroRel2006-Bernstein,
+  title={Electronic circuit reliability modeling},
+  author={Bernstein, Joseph B and Gurfinkel, Moshe and Li, Xiaojun and Walters, J{\"o}rg and Shapira, Yoram and Talmor, Michael},
+  journal=microrel,
+  volume={46},
+  number={12},
+  pages={1957--1979},
+  year={2006},
+  abstract={analysical device, Circuit models for BTI and HCI}
+}
+@manual{DFR-Cadence2016-T11,
+    title  = {New Generation Reliability Model},
+    note   = "\url{http://www.mos-ak.org/berkeley_2016/publications/T11_Xie_MOS-AK_Berkeley_2016.pdf}",
+    year   = 2016
+}
+
+@manual{DFR-Cadence2018-AMICSA,
+    title  = {Re-Thinking Reliability Analysis},
+    note   = "\url{https://indico.esa.int/event/222/contributions/2089/attachments/1779/2077/AMICSA_06_18_18_ReThinking_Reliability_Analysis.pdf}",
+    year   = 2018
+}
+@article{DFR-TCAD1993-Tu,
+  title={Berkeley reliability tools-{BERT}},
+  author={Tu, Robert H and Rosenbaum, Elyse and Chan, Wilson Y and Li, Chester C and Minami, Eric and Quader, Khandker and Ko, Ping K and Hu, Chenming},
+  journal=tcad,
+  volume={12},
+  number={10},
+  pages={1524--1534},
+  year={1993},
+  abstract={HCI, Voltage controlled current source model}
+}
 %}}}
 
 
@@ -563,6 +621,54 @@
   pages     = {34--1},
   year      = {2014},
 }
+@inproceedings{BTI-IRPS2018-Patra,
+  title={Accelerated {BTI} degradation under stochastic {TDDB} effect},
+  author={Patra, Devyani and Reza, Ahmed Kamal and Katoozi, Mehdi and Cannon, Ethan H and Roy, Kaushik and Cao, Yu},
+  booktitle=irps,
+  pages={5C--5},
+  year={2018}
+}
+@inproceedings{BTI-IRPS2017-Liu,
+  title={New insights into 10nm {F}in{FET} {BTI} and its variation considering the local layout effects},
+  author={Liu, Changze and Jin, Minjung and Uemura, Taiki and Kim, Jinju and Kim, Jungin and Jung, Ukjin and Sagong, Hyun Chul and Kim, Gunrae and Park, Junekyun and Shin, Sangchul and others},
+  booktitle=irps,
+  pages={XT--2},
+  year={2017}
+}
+@inproceedings{BTI-IEDM2007-Huard,
+  title={New characterization and modeling approach for {NBTI} degradation from transistor to product level},
+  author={Huard, V and Parthasarathy, C and Rallet, N and Guerin, C and Mammase, M and Barge, D and Ouvrard, C},
+  booktitle=iedm,
+  pages={797--800},
+  year={2007}
+}
+@inproceedings{BTI-ICCAD2006-Kumar,
+  title={An analytical model for negative bias temperature instability},
+  author={Kumar, Sanjay V and Kim, Chris H and Sapatnekar, Sachin S},
+  booktitle=iccad,
+  pages={493--496},
+  year={2006},
+  abstract={NBTI, RD model, frequency independence}
+}
+@article{BTI-TED1993-Quader,
+  title={A bidirectional {NMOSFET} current reduction model for simulation of hot-carrier-induced circuit degradation},
+  author={Quader, Khandker N and Li, Chester C and Tu, Robert and Rosenbaum, Elyse and Ko, Ping K and Hu, Chenming},
+  journal=ted,
+  volume={40},
+  number={12},
+  pages={2245--2254},
+  year={1993},
+  abstract={change in drain current, VCCS model, linear, saturation}
+}
+@article{BTI-MicroRel2005-Reddy,
+  title={Impact of negative bias temperature instability on digital circuit reliability},
+  author={Reddy, Vijay and Krishnan, Anand T and Marshall, Andrew and Rodriguez, John and Natarajan, Sreedhar and Rost, Tim and Krishnan, Srikanth},
+  journal=microrel,
+  volume={45},
+  number={1},
+  pages={31--38},
+  year={2005}
+}
 %}}}
 % ==== BTI architecture level
 %{{{
@@ -766,7 +872,13 @@
   pages     = {35--42},
   year      = {2009},
 }
-
+@inproceedings{STRESS-IRPS2015-Sutaria,
+  title={Duty cycle shift under static/dynamic aging in 28nm {HK}-{MG} technology},
+  author={Sutaria, Ketul B and Ren, Pengpeng and Mohanty, Abinash and Feng, Xixiang and Wang, Runsheng and Huang, Ru and Cao, Yu},
+  booktitle=irps,
+  pages={CA--7},
+  year={2015}
+}
 
 % ====================================================================
 %                          HEAT 
@@ -793,3 +905,31 @@
   year      = {1981},
 }
 
+% ====================================================================
+%                        HCI
+% ====================================================================
+@article{HCI-TED2020-Yu,
+  title={Hot Carrier Degradation-Induced Dynamic Variability in {F}in{FET}s: Experiments and Modeling},
+  author={Yu, Zhuoqing and Sun, Zixuan and Wang, Runsheng and Zhang, Jiayang and Huang, Ru},
+  journal=ted,
+  volume={67},
+  number={4},
+  pages={1517--1522},
+  year={2020}
+}
+@inproceedings{HCI-IEDM2017-Yu,
+  title={New insights into the hot carrier degradation ({HCD}) in {F}in{FET}: New observations, unified compact model, and impacts on circuit reliability},
+  author={Yu, Zhuoqing and Zhang, Jiayang and Wang, Runsheng and Guo, Shaofeng and Liu, Changze and Huang, Ru},
+  booktitle=iedm,
+  pages={7--2},
+  year={2017}
+}
+@inproceedings{HCI-ISCAS2001-Karam,
+  title={Implementation of hot-carrier reliability simulation in {E}ldo},
+  author={Karam, Medhat and Fikry, Wael and Haddara, Hisham and Ragai, Hani},
+  booktitle=iscas,
+  volume={5},
+  pages={515--518},
+  year={2001},
+  abstract={model unify the subthreshold, linear and saturation regions with single equation}
+}
