@@ -1,0 +1,172 @@
+% this file is about DNN speed-up references
+
+% ==== summary
+@article{SPEED-arXiv2016-Dumoulin,
+    title={A guide to convolution arithmetic for deep learning},
+    author={Dumoulin, Vincent and Visin, Francesco},
+    journal={arXiv preprint arXiv:1603.07285},
+    year={2016}
+}
+@article{SPEED-arXiv2017-Canziani,
+    title   = {An analysis of deep neural network models for practical applications},
+    author  = {Canziani, Alfredo and Paszke, Adam and Culurciello, Eugenio},
+    journal = {arXiv preprint arXiv:1605.07678},
+    year    = {2017},
+}
+@inproceedings{SPEED-DAC2018-Han,
+    title     = {Bandwidth-efficient Deep Learning},
+    author    = {Han, Song and Dally, William J.},
+    booktitle = dac,
+    year      = {2018},
+    pages     = {147:1--147:6},
+}
+@article{SPEED-JNeuCom2019-Zhang,
+    title     = {Recent advances in convolutional neural network acceleration},
+    author    = {Zhang, Qianru and Zhang, Meng and Chen, Tinghuan and Sun, Zhifei and Ma, Yuzhe and Yu, Bei},
+    journal   = jneucom,
+    volume    = {323},
+    pages     = {37--51},
+    year      = {2019},
+    publisher = {Elsevier},
+}
+@inproceedings{SPEED-MLSys2020-MNN,
+    author = {Jiang, Xiaotang and Wang, Huan and Chen, Yiliu and Wu, Ziqi and Wang, Lichuan and Zou, Bin and Yang, Yafeng and Cui, Zongyang and Cai, Yu and Yu, Tianhang and Lv, Chengfei and Wu, Zhihua},
+    title = {{MNN}: A Universal and Efficient Inference Engine},
+    booktitle = mlsys,
+    year = {2020}
+}
+
+
+% ==================================================================
+%                      Architecture Level
+% ==================================================================
+@inproceedings{SPEED-ISCA2017-Yu,
+    title     = {Scalpel: Customizing {DNN} pruning to the underlying hardware parallelism},
+    author    = {Yu, Jiecao and Lukefahr, Andrew and Palframan, David and Dasika, Ganesh and Das, Reetuparna and Mahlke, Scott},
+    booktitle = isca,
+    pages     = {548--560},
+    year      = {2017},
+}
+@inproceedings{SPEED-CVPR2018-MobileNetV2,
+    title     = {{MobileNetV2}: Inverted residuals and linear bottlenecks},
+    author    = {Sandler, Mark and Howard, Andrew and Zhu, Menglong and Zhmoginov, Andrey and Chen, Liang-Chieh},
+    booktitle = cvpr,
+    pages     = {4510--4520},
+    year      = {2018},
+}
+@inproceedings{SPEED-CVPR2018-ShuffleNet,
+    title     = {{ShuffleNet}: An extremely efficient convolutional neural network for mobile devices},
+    author    = {Zhang, Xiangyu and Zhou, Xinyu and Lin, Mengxiao and Sun, Jian},
+    booktitle = cvpr,
+    pages     = {6848--6856},
+    year      = {2018},
+}
+% ====== group convolution
+@inproceedings{SPEED-CVPR2017-ResNeXt,
+    title     = {Aggregated residual transformations for deep neural networks},
+    author    = {Xie, Saining and Girshick, Ross and Doll{\'a}r, Piotr and Tu, Zhuowen and He, Kaiming},
+    booktitle = cvpr,
+    pages     = {1492--1500},
+    year      = {2017},
+}
+@inproceedings{SPEED-CVPR2018-CondenseNet,
+    title     = {{CondenseNet}: An efficient densenet using learned group convolutions},
+    author    = {Huang, Gao and Liu, Shichen and Van der Maaten, Laurens and Weinberger, Kilian Q},
+    booktitle = cvpr,
+    pages     = {2752--2761},
+    year      = {2018},
+}
+@inproceedings{SPEED-ICCV2019-Zhang,
+    title     = {Differentiable Learning-to-Group Channels via Groupable Convolutional Neural Networks},
+    author    = {Zhang, Zhaoyang and Li, Jingyu and Shao, Wenqi and Peng, Zhanglin and Zhang, Ruimao and Wang, Xiaogang and Luo, Ping},
+    booktitle = iccv,
+    pages     = {3542--3551},
+    year      = {2019}
+}
+
+
+
+
+% ==================================================================
+%                      Accurate Speedup 
+% ==================================================================
+% ==== dense convolution
+%{{{
+@inproceedings{SPEED-ICANN2014-Cong,
+    title     = {Minimizing computation in convolutional neural networks},
+    author    = {Cong, Jason and Xiao, Bingjun},
+    booktitle = icann,
+    pages     = {281--290},
+    year      = {2014},
+}
+@article{SPEED-arXiv2017-Shi,
+    title   = {Speeding up Convolutional Neural Networks By Exploiting the Sparsity of Rectifier Units},
+    author  = {Shi, Shaohuai and Chu, Xiaowen},
+    journal = arxiv,
+    year    = {2017},
+}
+@inproceedings{SPEED-ICML2017-Cho,
+    title     = {{MEC}: memory-efficient convolution for deep neural network},
+    author    = {Cho, Minsik and Brand, Daniel},
+    booktitle = icml,
+    year      = {2017},
+}
+@inproceedings{SPEED-ASPDAC2017-Mishra,
+    title     = {Fine-grained accelerators for sparse machine learning workloads},
+    author    = {Mishra, Asit K. and Nurvitadhi, Eriko and Venkatesh, Ganesh and Pearce, Jonathan and Marr, Debbie},
+    booktitle = aspdac,
+    pages     = {635--640},
+    year      = {2017},
+}
+%}}}
+% ==== sparse convolution
+%{{{
+@inproceedings{SPEED-CVPR2015-Liu,
+    title     = {Sparse Convolutional Neural Networks},
+    author    = {Liu, Baoyuan and Wang, Min and Foroosh, Hassan and Tappen, Marshall and Penksy, Marianna},
+    booktitle = cvpr,
+    pages     = {806--814},
+    year      = {2015},
+}
+@inproceedings{SPEED-ICLR2017-Park,
+    title     = {Faster {CNNs} with direct sparse convolutions and guided pruning},
+    author    = {Park, Jongsoo and Li, Sheng and Wen, Wei and Tang, Ping Tak Peter and Li, Hai and Chen, Yiran and Dubey, Pradeep},
+    booktitle = iclr,
+    year      = {2017},
+    abstract  = {SkimCaffe},
+}
+% ==== winograd-based
+@inproceedings{SPEED-CVPR2016-Lavin,
+    title     = {Fast Algorithms for Convolutional Neural Networks},
+    author    = {Lavin, Andrew and Gray, Scott},
+    booktitle = cvpr,
+    pages     = {4013--4021},
+    year      = {2016},
+}
+@inproceedings{SPEED-ICLR2018-Liu,
+    title    = {Efficient sparse-winograd convolutional neural networks},
+    author   = {Liu, Xingyu and Pool, Jeff and Han, Song and Dally, William J.},
+    booktitle= iclr,
+    year     = {2018},
+}
+%}}}
+% ==== FFT/DCT based
+@inproceedings{SPEED-ICLR015-Vasilache,
+    title     = {Fast convolutional nets with fbfft: A {GPU} performance evaluation},
+    author    = {Vasilache, Nicolas and Johnson, Jeff and Mathieu, Michael and Chintala, Soumith and Piantino, Serkan and LeCun, Yann},
+    booktitle = iclr,
+    year      = {2015},
+}
+
+% ==================================================================
+%                      Hardware Level
+% ==================================================================
+% ====== ASIC
+@inproceedings{SPEED-ISCA2016-Han,
+    title     = {{EIE}: efficient inference engine on compressed deep neural network},
+    author    = {Han, Song and Liu, Xingyu and Mao, Huizi and Pu, Jing and Pedram, Ardavan and Horowitz, Mark A and Dally, William J},
+    booktitle = isca,
+    pages     = {243--254},
+    year      = {2016},
+}
+
